@@ -6,7 +6,12 @@
 *.txt
 *.vdf
 *.dll
-*.csv
+*.xpak
+*.json
+# *.all.sabl
+# *.all.sabs
+# *.ff
+AssetFileList.csv
 
 # Directorys
 /_custom
@@ -33,7 +38,12 @@
 /source_data
 /sw4
 /texture_assets
-/usermaps
+
+/usermaps/mp_combine
+/usermaps/zm_giant
+/usermaps/zm_test
+/usermaps/zm_undead_asylum
+
 /video
 /win64
 /xanim_export

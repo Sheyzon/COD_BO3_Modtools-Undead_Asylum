@@ -1,0 +1,30 @@
+return 5003000
+^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
+  material:el/gfx_dlc1_keeper_beam
+    fx:dlc1/castle/fx_ritual_key_soul_src_igc
+      csv:zone_source/zm_jans_haven.zone
+^1ERROR: xanim 'o_zombie_dreamcatcher_idle_twitch_shake' not found
+  xanim:o_zombie_dreamcatcher_idle_twitch_shake
+    scriptbundle:wolf_bundle
+      csv:lednors_wolf_souls.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^1ERROR: xanim 'o_zombie_dreamcatcher_idle_twitch_yawn' not found
+  xanim:o_zombie_dreamcatcher_idle_twitch_yawn
+    scriptbundle:wolf_bundle
+      csv:lednors_wolf_souls.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^1ERROR: Could not open 'vision/zombie_last_stand.vision'
+  rawfile:vision/zombie_last_stand.vision
+    csv:lednors_bw.zpkg
+      csv:zone_source/zm_jans_haven.zone
+^1ERROR: Material mtl_origins_camo_alt was not found in gdtDB
+  material:mc/mtl_origins_camo_alt
+    weaponcamo:t9_camo_nail_gun_table
+      weapon:t9_nail_gun_up
+        csv:zone_source/zm_jans_haven.zone
+^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
+  zbarrier:zmcore_bgb_machine
+    col_map:maps/zm/zm_jans_haven.d3dbsp
+^3Found 2 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
+  game_map:maps/zm/zm_jans_haven.d3dbsp
+^3Found 146 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.

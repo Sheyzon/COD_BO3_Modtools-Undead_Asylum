@@ -1,0 +1,695 @@
+#using scripts\codescripts\struct;
+
+#using scripts\shared\array_shared;
+#using scripts\shared\callbacks_shared;
+#using scripts\shared\clientfield_shared;
+#using scripts\shared\compass;
+#using scripts\shared\exploder_shared;
+#using scripts\shared\flag_shared;
+#using scripts\shared\laststand_shared;
+#using scripts\shared\math_shared;
+#using scripts\shared\scene_shared;
+#using scripts\shared\util_shared;
+
+#insert scripts\shared\shared.gsh;
+#insert scripts\shared\version.gsh;
+
+#insert scripts\zm\_zm_utility.gsh;
+
+#using scripts\lilrobot\_inspectable_weapons;
+
+#using scripts\zm\_load;
+#using scripts\zm\_zm;
+#using scripts\zm\_zm_audio;
+#using scripts\zm\_zm_powerups;
+#using scripts\zm\_zm_utility;
+#using scripts\zm\_zm_weapons;
+#using scripts\zm\_zm_zonemgr;
+#using scripts\zm\_zm_score;
+
+#using scripts\shared\ai\zombie_utility;
+
+//Perks
+#using scripts\zm\_zm_pack_a_punch;
+#using scripts\zm\_zm_pack_a_punch_util;
+#using scripts\zm\_zm_perk_additionalprimaryweapon;
+#using scripts\zm\_zm_perk_doubletap2;
+#using scripts\zm\_zm_perk_deadshot;
+#using scripts\zm\_zm_perk_juggernaut;
+#using scripts\zm\_zm_perk_quick_revive;
+#using scripts\zm\_zm_perk_sleight_of_hand;
+#using scripts\zm\_zm_perk_staminup;
+#using scripts\zm\_zm_perk_electric_cherry;
+#using scripts\zm\_zm_perk_widows_wine;
+#using scripts\zm\_zm_perk_vulture_aid;
+#using scripts\zm\_zm_perk_whoswho;
+#using scripts\zm\_zm_perk_tombstone;
+#using scripts\zm\_zm_perk_phdflopper;
+#using scripts\zm\_zm_perk_elemental_pop;
+
+//BOWS
+#using scripts\zm\_zm_weap_elemental_bow;
+#using scripts\zm\_zm_weap_elemental_bow_storm;
+#using scripts\zm\_zm_weap_elemental_bow_rune_prison;
+#using scripts\zm\_zm_weap_elemental_bow_wolf_howl;
+#using scripts\zm\_zm_weap_elemental_bow_demongate;
+
+#using scripts\zm\_t9_wonderfizz;
+
+#using scripts\zm\_zm_bgb_machine;
+
+//Powerups
+#using scripts\zm\_zm_powerup_double_points;
+#using scripts\zm\_zm_powerup_carpenter;
+#using scripts\zm\_zm_powerup_fire_sale;
+#using scripts\zm\_zm_powerup_free_perk;
+#using scripts\zm\_zm_powerup_full_ammo;
+#using scripts\zm\_zm_powerup_insta_kill;
+#using scripts\zm\_zm_powerup_nuke;
+//#using scripts\zm\_zm_powerup_weapon_minigun;
+#using scripts\zm\_hb21_zm_magicbox;
+
+#using scripts\zm\_zm_easteregg_song;
+
+//Traps
+#using scripts\zm\_zm_trap_electric;
+
+// Sickle
+#using scripts\zm\_zm_melee_weapon;
+
+// WW2 Power Switch
+#using scripts\fanatic\ww2\ww2_power_switch;
+
+#using scripts\zm\zm_usermap;
+
+#using scripts\zm\zm_wolf_soul_colletors;
+
+#using scripts\zm\_hb21_zm_behavior;
+
+// Giant ZombieMGR
+#using scripts\zm\zm_giant_cleanup_mgr;
+
+#using scripts\_redspace\rs_o_jump_pad;
+
+#using scripts\zm\growing_soulbox;
+
+// Sphynx's Buyable Perk Slot
+#using scripts\Sphynx\_zm_perk_increment;
+
+//SG4Y & MR.Lednor’s BW Vision,
+#using scripts\zm\lednors_black_and_white;
+
+//-----FX Cache-----
+#precache( "fx", "dlc2/island/fx_fire_spot_xxsm_island" );
+#precache( "fx", "zombie/fx_perk_quick_revive_factory_zmb" );
+#precache( "fx", "zombie/fx_barrier_buy_zmb" );
+#precache( "fx", "zombie/fx_elec_gen_idle_sm_zmb" );
+#precache( "fx", "zombie/fx_elec_gen_tip_zmb" );
+#precache( "fx", "lensflares/fx_lensflare_light_warm_sm" );
+#precache( "fx", "lensflares/fx_lensflare_grime01" );
+#precache( "fx", "dlc2/island/fx_fog_ground_thin_lg_island" );
+#precache( "fx", "dlc2/island/fx_fog_ground_lg_island" );
+#precache( "fx", "dirt/fx_dust_motes_200x200_pcloud" );
+#precache( "fx", "dlc1/castle/fx_ritual_key_soul_exp_igc" );
+
+#define QUICK_REVIVE_MACHINE_LIGHT_FX                       "revive_light"
+
+//*****************************************************************************
+// MAIN
+//*****************************************************************************
+
+function main()
+{
+	zm_usermap::main();
+
+	// WW2 Power Switch
+	ww2_power_switch::init();
+
+	level.enemy_location_override_func = &enemy_location_override;
+	level.no_target_override = &no_target_override;
+
+	// Stielhandgranate
+	zm_utility::register_lethal_grenade_for_level( "frag_grenade_potato_masher" );
+	level.zombie_lethal_grenade_player_init = GetWeapon( "frag_grenade_potato_masher" );
+
+	// Sickle
+	zm_melee_weapon::init( "sickle_knife", "sickle_flourish", "knife_ballistic_sickle", "knife_ballistic_sickle_upgraded", 3000, "sickle_upgrade", "Hold ^3[{+activate}]^7 for Sickle [Cost: 3000]", "sickle", undefined );
+
+	level._zombie_custom_add_weapons =&custom_add_weapons;
+
+	//-----StartingWeapon-----
+	level.start_weapon = (getWeapon("melee_katana"));
+
+	level.explodefx = "dlc1/castle/fx_ritual_key_soul_exp_igc";
+
+	level thread MonitorPower();
+
+	//If dogs are allowed (Useless?)
+	//level.dog_rounds_allowed=0;
+
+	//-----Perklimit-----
+	level.perk_purchase_limit = 4;
+
+	// Last Stand Weapon
+	lastStandWeapon = "t9_nail_gun_up";
+	level.default_laststandpistol = getWeapon(lastStandWeapon);
+	level.default_solo_laststandpistol = getWeapon(lastStandWeapon);
+
+	level._zombie_custom_add_weapons =&custom_add_weapons;
+	level.pack_a_punch_camo_index = 121;
+    level.pack_a_punch_camo_index_number_variants = 4;
+
+	level._effect[QUICK_REVIVE_MACHINE_LIGHT_FX]                = "zombie/fx_perk_quick_revive_factory_zmb";
+	level._effect["poltergeist"]								= "zombie/fx_barrier_buy_zmb";
+	
+	//Setup the levels Zombie Zone Volumes
+	level.zones = [];
+	level.zone_manager_init_func =&asylum_zone_init;
+	init_zones[0] = "start_zone";
+	init_zones[1] = "jump";
+	init_zones[2] = "jump_4";
+	init_zones[3] = "pap";
+	init_zones[4] = "pap2";
+	level thread zm_zonemgr::manage_zones( init_zones );
+
+	zm_audio::loadPlayerVoiceCategories("gamedata/audio/zm/zm_genesis_vox.csv");
+
+	thread zm_easteregg_song::init();
+
+	thread asylumEntrance();
+	thread buildable_bonfire();
+	thread MaxAmmo();
+	thread lit_bonfire();
+	thread door_drop();
+	thread drop_summoning_key();
+	thread bonfire_1();
+	thread bonfire_2();
+	thread bonfire_3();
+
+	level.player_starting_points = 500;
+
+	level.pathdist_type = PATHDIST_ORIGINAL;
+
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw"), 5.13 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi"), 4.66 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi_up"), 4.66 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg"), 5.13 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg_up"), 5.13 );
+
+	grow_soul::init(  );
+}
+
+function asylum_zone_init()
+{
+	zm_zonemgr::add_adjacent_zone( "start_zone", "start_hallway_zone", "ez1");
+	zm_zonemgr::add_adjacent_zone( "start_hallway_zone", "start_hallway_zone_2", "ez1");
+	zm_zonemgr::add_adjacent_zone( "start_hallway_zone_2", "jumpad_lower", "ez2");
+
+	zm_zonemgr::add_adjacent_zone( "jumpad_lower", "jumpad_upper", "ez2");
+
+	zm_zonemgr::add_adjacent_zone( "jumpad_upper", "southwing_lower", "ez2");
+	zm_zonemgr::add_adjacent_zone( "southwing_lower", "main_room", "ez3");
+
+	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez3");
+	zm_zonemgr::add_adjacent_zone( "main_room", "PaP", "ez3");
+	zm_zonemgr::add_adjacent_zone( "main_room", "PaP2", "ez3");
+	zm_zonemgr::add_adjacent_zone( "PaP", "PaP2", "ez3");
+
+	zm_zonemgr::add_adjacent_zone( "westwing_staircase_01", "westwing_middle", "ez4");
+	zm_zonemgr::add_adjacent_zone( "westwing_middle", "westwing_staircase_02", "ez4");
+	
+	zm_zonemgr::add_adjacent_zone( "westwing_staircase_02", "Southwing_upper_middle", "ez5");
+
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "southwing_upper_filler_01", "ez5");
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "southwing_upper_filler_02", "ez5");
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "southwing_stairs_upper_oposite", "ez5");
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "southwing_stairs_upper", "ez5");
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "southwing_sideroom", "ez5");
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "jump");
+	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "southwing_stairs_lower", "ez5");
+	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "southwing_sideroom", "ez5");
+
+	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "balcony_lt", "ez6");
+	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "balcony_lt", "ez6");
+	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "power_room", "ez6");
+	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "power_room_tunnel", "ez6");
+	zm_zonemgr::add_adjacent_zone( "power_room", "power_room_tunnel", "ez6");
+	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "jump_2");
+}
+
+function buildable_bonfire()
+{
+	struct = GetEnt("bonfiresword","targetname");
+    trig = GetEnt("bonfiresword_trig","targetname");
+	model = GetEnt("bonfiresword_model","targetname");
+	trig2 = GetEnt("bonfiresword_trig_2","targetname");
+
+    trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig SetHintString("Press ^3&&1^7 for Part"); // Changes the string that shows when looking at the trigger.
+	trig UseTriggerRequireLookAt();
+
+	trig2 SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	//trig2 UseTriggerRequireLookAt();
+
+	trig waittill("trigger", player);
+	player zm_audio::create_and_play_dialog( "general", "pickup" );
+	model Delete();
+	trig Delete();
+
+	trig2 SetHintString("Press ^3&&1^7 to Place Part"); // Changes the string that shows when looking at the trigger.
+
+	trig2 waittill("trigger", player);
+	//struct MoveTo(bonfire_origin.origin, 1, 1, 1);
+	struct MoveZ(76.75, 0.01, 0, 0);
+
+	trig2 SetHintString("Press ^3&&1^7 to Light Bonfire"); // Changes the string that shows when looking at the trigger.
+
+	trig2 waittill("trigger", player);
+	trig2 Delete();
+	player PlayLocalSound("bonfire_lit");
+	exploder::exploder("buildable_bonfire_fx");	
+	level flag::set( "bbf" );
+	//exploder::kill_exploder("alias");
+}
+
+function lit_bonfire()
+{
+	trig = GetEnt("power_hintstring","targetname");
+	trig SetHintString("Ignite the flames"); // Changes the string that shows when looking at the trigger.
+	
+	model = GetEnt("power_gate","targetname");
+	clip = GetEnt("power_door_gate_clip","targetname");
+
+	level flag::wait_till("bbf");
+	level flag::wait_till("bf1");
+	level flag::wait_till("bf2");
+	level flag::wait_till("bf3");
+
+	//model MoveZ(-69, 1, 0.15, 0.05); //time needs to be at least 1
+	model RotateYaw(90, 1);
+	
+	clip Delete();
+	trig Delete();
+}
+
+function bonfire_1()
+{
+	trig = GetEnt("bonfire_trig_1","targetname");
+	trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig SetHintString("Press ^3&&1^7 to Light Bonfire"); // Changes the string that shows when looking at the trigger.
+	trig UseTriggerRequireLookAt();
+
+	trig waittill("trigger", player);
+	player PlayLocalSound("bonfire_lit");
+	exploder::exploder("bonfire_fire_1");	
+	level flag::set( "bf1" );
+	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
+
+	pos = GetEnt("summoning_key_pos_1","targetname");
+	chest = GetEnt("grow_soul","targetname");
+
+	level flag::wait_till("has_summoning_key");
+
+	bullshit = true;
+	while(bullshit)
+	{
+		trig waittill("trigger", player);
+		if (!level flag::exists("soulchest_occ") && level flag::exists("has_summoning_key"))
+		{
+			level flag::set( "soulchest_occ" );
+			level flag::delete( "soulchest_done" );
+			chest MoveZ(329, 0.01, 0, 0);
+			exploder::exploder("collecting_souls_root_fx_1");
+			wait(0.01);
+			chest MoveZ(49, 1, 0.1, 0.1);
+			wait(0.9);
+			chest.origin = pos.origin;
+			exploder::exploder("collecting_souls_summoning_fx_1");
+			trig Delete();
+			bullshit = false;
+		}
+	}
+	level flag::wait_till( "soulchest_done" );
+	level flag::set( "soul_trig" );
+	exploder::kill_exploder("collecting_souls_root_fx_1");
+	exploder::kill_exploder("collecting_souls_summoning_fx_1");
+	PlayFX(level.explodefx, pos.origin);
+}
+
+function bonfire_2()
+{
+	trig = GetEnt("bonfire_trig_2","targetname");
+	trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig SetHintString("Press ^3&&1^7 to Light Bonfire"); // Changes the string that shows when looking at the trigger.	
+	trig UseTriggerRequireLookAt();
+
+	trig waittill("trigger", player);
+	player PlayLocalSound("bonfire_lit");
+	exploder::exploder("bonfire_fire_2");	
+	level flag::set( "bf2" );
+	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
+
+	pos = GetEnt("summoning_key_pos_2","targetname");
+	chest = GetEnt("grow_soul2","targetname");
+	
+	level flag::wait_till("has_summoning_key");
+
+	bullshit = true;
+	while(bullshit)
+	{
+		trig waittill("trigger", player);
+		if (!level flag::exists("soulchest_occ") && level flag::exists("has_summoning_key"))
+		{
+			level flag::set( "soulchest_occ" );
+			level flag::delete( "soulchest_done" );
+			chest MoveZ(274, 0.01, 0, 0);
+			exploder::exploder("collecting_souls_root_fx_2");
+			wait(0.01);
+			chest MoveZ(49, 1, 0.1, 0.1);
+			wait(0.9);
+			chest.origin = pos.origin;
+			exploder::exploder("collecting_souls_summoning_fx_2");
+			trig Delete();
+			bullshit = false;
+		}
+	}
+	level flag::wait_till( "soulchest_done" );
+	level flag::set( "soul_trig2" );
+	exploder::kill_exploder("collecting_souls_root_fx_2");
+	exploder::kill_exploder("collecting_souls_summoning_fx_2");
+	PlayFX(level.explodefx, pos.origin);
+}
+
+function bonfire_3()
+{
+	trig = GetEnt("bonfire_trig_3","targetname");
+	trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig SetHintString("Press ^3&&1^7 to Light Bonfire"); // Changes the string that shows when looking at the trigger.
+	trig UseTriggerRequireLookAt();
+
+	trig waittill("trigger", player);
+	player PlayLocalSound("bonfire_lit");
+	exploder::exploder("bonfire_fire_3");	
+	level flag::set( "bf3" );
+	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
+
+	pos = GetEnt("summoning_key_pos_3","targetname");
+	chest = GetEnt("grow_soul3","targetname");
+
+	level flag::wait_till("has_summoning_key");
+
+	bullshit = true;
+	while(bullshit)
+	{
+		trig waittill("trigger", player);
+		if (!level flag::exists("soulchest_occ") && level flag::exists("has_summoning_key"))
+		{
+			level flag::set( "soulchest_occ" );
+			level flag::delete( "soulchest_done" );
+			chest MoveZ(913, 0.01, 0, 0);
+			exploder::exploder("collecting_souls_root_fx_3");
+			wait(0.01);
+			chest MoveZ(49, 1, 0.1, 0.1);
+			wait(0.9);
+			chest.origin = pos.origin;
+			exploder::exploder("collecting_souls_summoning_fx_3");
+			trig Delete();
+			bullshit = false;
+		}
+	}
+	level flag::wait_till( "soulchest_done" );
+	level flag::set( "soul_trig3" );
+	exploder::kill_exploder("collecting_souls_root_fx_3");
+	exploder::kill_exploder("collecting_souls_summoning_fx_3");
+	PlayFX(level.explodefx, pos.origin);
+}
+
+function door_drop()
+{
+	trig = GetEnt("door_drop_trig","targetname");
+	trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig UseTriggerRequireLookAt();
+
+	trig2 = GetEnt("door_drop_trig_door","targetname");
+	trig2 SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig2 SetHintString("A key is required"); // Changes the string that shows when looking at the trigger.
+	
+	model = GetEnt("balcony_gate","targetname");
+	clip = GetEnt("balcony_clip","targetname");
+	
+	level flag::wait_till("ez5");
+
+	trig SetHintString("Press ^3&&1^7 to Pillage corpse"); // Changes the string that shows when looking at the trigger.
+	exploder::exploder("ds_door_drop");
+	trig waittill("trigger", player);
+	player PlayLocalSound("ee_trigger");
+	IPrintLnBold("Door key found");
+	trig Delete();
+	exploder::kill_exploder("ds_door_drop");
+
+	wait(1);
+	player zm_audio::create_and_play_dialog( "general", "pickup" );
+
+	trig2 waittill("trigger", player);
+	model MoveZ(-69, 1, 0.15, 0.05);
+	clip Delete();
+	trig2 Delete();
+	level flag::set( "ez6" );
+}
+
+function drop_summoning_key()
+{
+	trig = GetEnt("drop_trig_1","targetname");
+	trig UseTriggerRequireLookAt();
+
+	level flag::wait_till("initial_blackscreen_passed");
+	exploder::exploder("drop_1");
+
+	trig waittill("trigger", player);
+
+	player PlayLocalSound("ee_trigger");
+	IPrintLnBold("Summoning Key found");
+	exploder::kill_exploder("drop_1");
+	trig Delete();
+	level flag::set("has_summoning_key"); //give summoning key
+
+	wait(1);
+	player zm_audio::create_and_play_dialog( "general", "pickup" );
+}
+
+function asylumEntrance()
+{
+	clip = GetEnt("door_clip","targetname");
+	door_rt_1 = GetEnt("door_rt_01","targetname");
+	door_rt_2 = GetEnt("door_rt_02","targetname");
+
+	door_lt_1 = GetEnt("door_lt_01","targetname");
+	door_lt_2 = GetEnt("door_lt_02","targetname");
+
+    trig = GetEnt("bf_trig","targetname");
+    trig SetHintString("Press ^3&&1^7 to Open Door [Cost: 2000]"); // Changes the string that shows when looking at the trigger.
+    trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	
+	bullshit = false;
+
+	while (!bullshit)
+	{
+		trig waittill("trigger", player);
+		if(player.score >= 2000)
+		{
+			player zm_score::minus_to_player_score(2000);
+			player PlayLocalSound("zmb_cha_ching");
+			level flag::set( "ez3" );
+
+			door_rt_1 RotateYaw(-120, 1);
+			door_rt_2 RotateYaw(-120, 1);
+			door_lt_1 RotateYaw(120, 1);
+			door_lt_2 RotateYaw(120, 1);
+
+			clip Delete();
+			trig Delete();
+			bullshit = true;
+		}
+	}
+}
+
+function MaxAmmo()
+{
+	wip = GetEnt("trigger_wip","targetname");
+    wip SetHintString("This area is under construction!"); // Changes the string that shows when looking at the trigger.
+    wip SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+   
+    trigger = GetEnt("maxammo_trigger", "targetname");
+    trigger SetHintString("You must turn on the Power first!"); // Changes the string that shows when looking at the trigger.
+    trigger SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+    trigger1cost = 25000;
+
+	level flag::wait_till("power_on");
+
+	trigger SetHintString("Press ^3&&1^7 for max ammo. Cost [25000]"); // Changes the string that shows when looking at the trigger.
+
+	while(1)
+	{
+		// Purchase Code
+		trigger waittill("trigger", player);
+				
+		if(player.score >= trigger1cost)
+		{
+			player zm_score::minus_to_player_score(trigger1cost);
+			player PlayLocalSound("zmb_cha_ching");
+			level thread zm_powerups::specific_powerup_drop("full_ammo", player.origin);
+			wait(5);
+		}
+		else
+		{
+			trigger PlayLocalSound( "zmb_no_cha_ching" );
+		}
+	}
+}
+
+function MonitorPower()
+{
+	level flag::wait_till("initial_blackscreen_passed");
+	//level util::set_lighting_state(1);
+
+	model = GetEnt("doe","targetname");
+	clip = GetEnt("doe_clip","targetname");	
+	trig = GetEnt("doe_hintstring","targetname");
+    trig SetHintString("Locked by some contraption"); // Changes the string that shows when looking at the trigger.
+    trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+
+	level flag::wait_till("power_on");
+	//level thread scene::play( "power_switch", "targetname" );
+
+	exploder::exploder("ammo_light");
+	
+	model MoveZ(-69, 1, 0.15, 0.05);
+	clip Delete();
+	trig Delete();
+	
+	// level thread scene::play( "fxanim_diff_engine_tele_rt", "targetname" );
+	// level thread scene::play( "fxanim_diff_engine_tele_lt", "targetname" );
+	//level util::set_lighting_state(0);
+}
+
+function usermap_test_zone_init()
+{
+	level flag::init( "always_on" );
+	level flag::set( "always_on" );
+}	
+
+function custom_add_weapons()
+{
+	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
+}
+
+function enemy_location_override( zombie, enemy )
+{
+	AIProfile_BeginEntry( "factory-enemy_location_override" );
+
+	if ( IS_TRUE( zombie.is_trapped ) )
+	{
+		AIProfile_EndEntry();
+		return zombie.origin;
+	}
+
+	AIProfile_EndEntry();
+	return undefined;
+}
+
+// --------------------------------
+//	NO TARGET OVERRIDE
+// --------------------------------
+function validate_and_set_no_target_position( position )
+{
+	if( IsDefined( position ) )
+	{
+		goal_point = GetClosestPointOnNavMesh( position.origin, 100 );
+		if( IsDefined( goal_point ) )
+		{
+			self SetGoal( goal_point );
+			self.has_exit_point = 1;
+			return true;
+		}
+	}
+	
+	return false;
+}
+
+function no_target_override( zombie )
+{
+	if( isdefined( zombie.has_exit_point ) )
+	{
+		return;
+	}
+	
+	players = level.players;
+	
+	dist_zombie = 0;
+	dist_player = 0;
+	dest = 0;
+
+	if ( isdefined( level.zm_loc_types[ "dog_location" ] ) )
+	{
+		locs = array::randomize( level.zm_loc_types[ "dog_location" ] );
+		
+		for ( i = 0; i < locs.size; i++ )
+		{
+			found_point = false;
+			foreach( player in players )
+			{
+				if( player laststand::player_is_in_laststand() )
+				{
+					continue;
+				}
+				
+				away = VectorNormalize( self.origin - player.origin );
+				endPos = self.origin + VectorScale( away, 600 );
+				dist_zombie = DistanceSquared( locs[i].origin, endPos );
+				dist_player = DistanceSquared( locs[i].origin, player.origin );
+		
+				if ( dist_zombie < dist_player )
+				{
+					dest = i;
+					found_point= true;
+				}
+				else
+				{
+					found_point = false;
+				}
+			}
+			if( found_point )
+			{
+				if( zombie validate_and_set_no_target_position( locs[i] ) )
+				{
+					return;
+				}
+			}
+		}
+	}
+	
+	
+	escape_position = zombie giant_cleanup::get_escape_position_in_current_zone();
+			
+	if( zombie validate_and_set_no_target_position( escape_position ) )
+	{
+		return;
+	}
+	
+	escape_position = zombie giant_cleanup::get_escape_position();
+	
+	if( zombie validate_and_set_no_target_position( escape_position ) )
+	{
+		return;
+	}
+	
+	zombie.has_exit_point = 1;
+	
+	zombie SetGoal( zombie.origin );
+}
