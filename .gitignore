@@ -18,6 +18,10 @@ AssetFileList.csv
 !/.gitignore
 !/.gitattributes
 
+!/bin/
+/bin/*
+!/bin/libtiff64r.dll
+
 !/share/
 /share/assetconvert
 /share/zone_source
