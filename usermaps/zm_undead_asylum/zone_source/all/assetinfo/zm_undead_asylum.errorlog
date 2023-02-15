@@ -1,0 +1,24 @@
+return 5002000
+^1ERROR: xmodel 'p9_sur_machine_perk_off' is missing
+  xmodel:p9_sur_machine_perk_off
+    csv:db_wunderfizz.zpkg
+      csv:zone_source/zm_undead_asylum.zone
+^1ERROR: [worldspawn vcolor] could not open 'grades/none.lvi'
+  col_map:maps/zm/zm_undead_asylum.d3dbsp
+^1ERROR: Material mtl_origins_camo_alt was not found in gdtDB
+  material:mc/mtl_origins_camo_alt
+    weaponcamo:t8_camo_abr223_table
+      weapon:t8_abr223_up
+        csv:zone_source/zm_undead_asylum.zone
+^1ERROR: image 'i_t6_reticle_rocket_launcher' is missing
+  image:i_t6_reticle_rocket_launcher
+    weapon:t8_hellion_salvo
+      csv:zone_source/zm_undead_asylum.zone
+^1ERROR: image 'i_t6_minigun_center_reticle' is missing
+  image:i_t6_minigun_center_reticle
+    weapon:t8_overkill_zm
+      csv:zone_source/zm_undead_asylum.zone
+^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
+  zbarrier:zmcore_bgb_machine
+    col_map:maps/zm/zm_undead_asylum.d3dbsp
+^3Found 139 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_undead_asylum/zone_source/all/assetinfo/zm_undead_asylum_bulletreport.csv file.
