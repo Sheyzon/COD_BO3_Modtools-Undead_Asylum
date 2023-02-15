@@ -22,6 +22,10 @@ AssetFileList.csv
 /bin/*
 !/bin/libtiff64r.dll
 
+!sound_assets
+/sound_assets/*
+!/sound_assets/music
+
 !/share/
 /share/assetconvert
 /share/zone_source
