@@ -15,3 +15,17 @@ AssetFileList.csv
 
 # Directorys
 /*
+!/.gitignore
+!/.gitattributes
+
+!/share/
+/share/assetconvert
+/share/zone_source
+/share/raw/*
+!/share/raw/sound/
+/share/raw/sound/*
+!/share/raw/sound/aliases
+
+!/usermaps
+/usermaps/*
+!/usermaps/zm_jans_haven
