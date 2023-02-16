@@ -47,6 +47,11 @@
 #using scripts\zm\_zm_perk_phdflopper;
 #using scripts\zm\_zm_perk_elemental_pop;
 
+// BO3 WEAPONS
+#using scripts\zm\craftables\_hb21_zm_craft_blundersplat;
+#using scripts\zm\_hb21_zm_weap_blundersplat;
+#using scripts\zm\_hb21_zm_weap_magmagat;
+
 //BOWS
 #using scripts\zm\_zm_weap_elemental_bow;
 #using scripts\zm\_zm_weap_elemental_bow_storm;
@@ -120,6 +125,21 @@
 
 function main()
 {
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw"), 5.13 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi"), 4.66 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi_up"), 4.66 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg"), 5.13 );
+	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg_up"), 5.13 );
+
+	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun"), 2.76 );
+	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun_up"), 2.76 );
+
 	zm_usermap::main();
 
 	// WW2 Power Switch
@@ -187,18 +207,6 @@ function main()
 	level.player_starting_points = 50000;
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
-
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw"), 5.13 );
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
-
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi"), 4.66 );
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi_up"), 4.66 );
-
-	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
-	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
-
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg"), 5.13 );
-	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg_up"), 5.13 );
 
 	grow_soul::init(  );
 }

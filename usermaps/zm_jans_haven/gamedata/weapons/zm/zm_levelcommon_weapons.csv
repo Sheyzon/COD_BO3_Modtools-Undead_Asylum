@@ -12,7 +12,7 @@ hero_annihilator,hero_annihilator,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,speci
 frag_grenade_potato_masher,,,250,grenade,,250,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,grenade,,,
 sickle_knife,,,3000,wpck_bowie,,,,,FALSE,FALSE,,,,FALSE,FALSE,special,,,
 
-ray_gun,ray_gun_upgraded,,10000,wpck_ray,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,
+# ray_gun,ray_gun_upgraded,,10000,wpck_ray,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,
 raygun_mark3,raygun_mark3_upgraded,,10000,ray3,,0,,,TRUE,FALSE,TRUE,1,,FALSE,FALSE,special,TRUE,TRUE,
 tesla_gun,tesla_gun_upgraded,,10000,tesla,,,,,TRUE,FALSE,TRUE,1,,FALSE,TRUE,special,TRUE,TRUE,
 thundergun,thundergun_upgraded,,10000,thundergun,,,,,TRUE,FALSE,TRUE,1,,FALSE,TRUE,special,TRUE,TRUE,
@@ -102,3 +102,8 @@ elemental_bow_rune_prison,elemental_bow_rune_prison,,500,,,,,,FALSE,FALSE,FALSE,
 elemental_bow_storm,elemental_bow_storm,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,,
 elemental_bow_wolf_howl,elemental_bow_wolf_howl,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,,
 elemental_bow_demongate,elemental_bow_demongate,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,,
+
+t9_ray_gun,t9_ray_gun_up,,10000,wpck_ray,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,TRUE,
+t8_shotgun_blundergat,t8_shotgun_blundergat_upgraded,,5000,shotgun,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
+t8_shotgun_acidgat,t8_shotgun_acidgat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
+t8_shotgun_magmagat,t8_shotgun_magmagat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
