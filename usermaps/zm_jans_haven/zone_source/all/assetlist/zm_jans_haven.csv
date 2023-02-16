@@ -2705,6 +2705,7 @@ xmodel,aac_hotel_mirror_01
 xmodel,aac_kitchen_sink_01
 xmodel,aac_trash_debris_paper_01
 xmodel,asylum_balcony
+xmodel,asylum_demon
 xmodel,asylum_main_door_south
 xmodel,asylum_mainroom
 xmodel,asylum_mainroom_floor
@@ -3463,6 +3464,7 @@ xmodelmesh,asylum_bonfire_swordlessfbf90fe1
 xmodelmesh,asylum_bonfireaf8fd3ab
 xmodelmesh,asylum_bonfireb05a74e6
 xmodelmesh,asylum_bonfiree07716fe
+xmodelmesh,asylum_demon32f0a24f
 xmodelmesh,asylum_main_door_south6cf5d817
 xmodelmesh,asylum_main_room6a18ffc4
 xmodelmesh,asylum_main_room_floord4f071c8
@@ -5822,6 +5824,7 @@ material,gfx_decal_blood_spray_02
 material,gfx_decal_blood_spray_02|dup
 material,luts_t7_default
 material,mc/asche
+material,mc/asylum_demon_alphatest
 material,mc/attachment_vm_barrel02
 material,mc/attachment_vm_laser_mount01
 material,mc/attachment_vm_laser_mount02
@@ -8084,6 +8087,9 @@ image,i_asche_c
 image,i_asche_e
 image,i_asche_n
 image,i_asche_o
+image,i_asylum_demon_alphatest_c
+image,i_asylum_demon_alphatest_g
+image,i_asylum_demon_alphatest_n
 image,i_attach_t7_loot_ar_m16_barrel_c
 image,i_attach_t7_loot_ar_m16_barrel_g
 image,i_attach_t7_loot_ar_m16_barrel_n

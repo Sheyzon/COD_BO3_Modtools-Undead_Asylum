@@ -168,8 +168,6 @@ function main()
 	init_zones[0] = "start_zone";
 	init_zones[1] = "jump";
 	init_zones[2] = "jump_4";
-	init_zones[3] = "pap";
-	init_zones[4] = "pap2";
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	zm_audio::loadPlayerVoiceCategories("gamedata/audio/zm/zm_genesis_vox.csv");
@@ -186,7 +184,7 @@ function main()
 	thread bonfire_2();
 	thread bonfire_3();
 
-	level.player_starting_points = 500;
+	level.player_starting_points = 50000;
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
@@ -217,10 +215,11 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "southwing_lower", "main_room", "ez3");
 
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez3");
-	zm_zonemgr::add_adjacent_zone( "main_room", "PaP", "ez3");
-	zm_zonemgr::add_adjacent_zone( "main_room", "PaP2", "ez3");
-	zm_zonemgr::add_adjacent_zone( "PaP", "PaP2", "ez3");
-
+	zm_zonemgr::add_adjacent_zone( "main_room", "pap", "ez3");
+	zm_zonemgr::add_adjacent_zone( "main_room", "pap2", "ez3");
+	zm_zonemgr::add_adjacent_zone( "pap", "pap2", "ez3");
+	
+	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_middle", "ez4");
 	zm_zonemgr::add_adjacent_zone( "westwing_staircase_01", "westwing_middle", "ez4");
 	zm_zonemgr::add_adjacent_zone( "westwing_middle", "westwing_staircase_02", "ez4");
 	
