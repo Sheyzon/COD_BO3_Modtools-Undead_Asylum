@@ -1,1 +1,0 @@
-#define USE_CLOSEABLE_DOORS			true	
