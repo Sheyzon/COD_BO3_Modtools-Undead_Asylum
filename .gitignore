@@ -12,6 +12,7 @@
 *.all.sabs
 *.all.sabs~lk
 *.ff
+*.partial
 AssetFileList.csv
 
 # Directorys
@@ -47,5 +48,4 @@ AssetFileList.csv
 /usermaps/*
 !/usermaps/zm_jans_haven
 !/usermaps/zm_undead_asylum
-*.partial
-*.ff
+
