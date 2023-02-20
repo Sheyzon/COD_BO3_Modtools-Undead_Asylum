@@ -24,11 +24,14 @@
 #define ADDITIONAL_PRIMARY_WEAPON_PERK_BOTTLE_WEAPON			"zombie_perk_bottle_additionalprimaryweapon"
 
 // MODELS
+// #define ADDITIONAL_PRIMARY_WEAPON_MACHINE_DISABLED_MODEL		"p9_sur_machine_mule_kick_off"
+// #define ADDITIONAL_PRIMARY_WEAPON_MACHINE_ACTIVE_MODEL			"p9_sur_machine_mule_kick"
 // ======================================================================================================
-#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_DISABLED_MODEL		"p9_sur_machine_mule_kick_off"
-#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_ACTIVE_MODEL			"p9_sur_machine_mule_kick"
+#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_DISABLED_MODEL		"p7_zm_vending_three_gun"
+#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_ACTIVE_MODEL			"p7_zm_vending_three_gun"
 
 // FX
+// #define ADDITIONAL_PRIMARY_WEAPON_MACHINE_LIGHT_FX					"harry/zm_perks/fx_perk_mule_kick_light"	
 // ======================================================================================================
-#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_LIGHT_FX					"harry/zm_perks/fx_perk_mule_kick_light"	
+#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_LIGHT_FX					"zombie/fx_perk_mule_kick_factory_zmb"	
 #define ADDITIONAL_PRIMARY_WEAPON_VULTUREAID_WAYPOINT			"harry/vulture_aid/fx_vulture_aid_waypoint_mule_kick"	

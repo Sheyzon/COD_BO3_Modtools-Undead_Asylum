@@ -22,9 +22,11 @@
 #define SLEIGHT_OF_HAND_PERK_BOTTLE_WEAPON						"zombie_perk_bottle_sleight"
 
 // MODELS
+// #define SLEIGHT_OF_HAND_MACHINE_DISABLED_MODEL				"p9_sur_machine_speed_cola_off"
+// #define SLEIGHT_OF_HAND_MACHINE_ACTIVE_MODEL					"p9_sur_machine_speed_cola"
 // ======================================================================================================
-#define SLEIGHT_OF_HAND_MACHINE_DISABLED_MODEL				"p9_sur_machine_speed_cola_off"
-#define SLEIGHT_OF_HAND_MACHINE_ACTIVE_MODEL					"p9_sur_machine_speed_cola"
+#define SLEIGHT_OF_HAND_MACHINE_DISABLED_MODEL				"p7_zm_vending_sleight"
+#define SLEIGHT_OF_HAND_MACHINE_ACTIVE_MODEL					"p7_zm_vending_sleight"
 #define SLEIGHT_OF_HAND_MACHINE_CANS_MODEL						"p9_fxanim_zm_gp_speed_cola_lava_xmodel"
 
 // SCRIPTBUNDLE
@@ -32,6 +34,7 @@
 #define SLEIGHT_OF_HAND_MACHINE_CANS_SB								"p9_fxanim_zm_gp_speed_cola_lava_sb"
 
 // FX
+// #define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX								"harry/zm_perks/fx_perk_sleight_of_hand_light"	
 // ======================================================================================================
-#define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX								"harry/zm_perks/fx_perk_sleight_of_hand_light"	
+#define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX								"zombie/fx_perk_sleight_of_hand_factory_zmb"	
 #define SLEIGHT_OF_HAND_VULTUREAID_WAYPOINT						"harry/vulture_aid/fx_vulture_aid_waypoint_speed_cola"	

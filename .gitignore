@@ -8,9 +8,10 @@
 *.dll
 *.xpak
 *.json
-# *.all.sabl
-# *.all.sabs
-# *.ff
+*.all.sabl
+*.all.sabs
+*.all.sabs~lk
+*.ff
 AssetFileList.csv
 
 # Directorys
@@ -46,3 +47,5 @@ AssetFileList.csv
 /usermaps/*
 !/usermaps/zm_jans_haven
 !/usermaps/zm_undead_asylum
+*.partial
+*.ff

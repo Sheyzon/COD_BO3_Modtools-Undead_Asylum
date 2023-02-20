@@ -58,7 +58,7 @@ function init()
 	level.grow_soul_explode = true;
 	level.grow_soulfx_limit = 5;
 	level.grow_soul_growth = 0.1;//growth per zombie
-	level.grow_soul_size = 3.5;//how big you want it to get scale wise
+	level.grow_soul_size =  7.0;//how big you want it to get scale wise
 	level.grow_souldistance = 300;//how far away they can be
 	level.growspeed = .015;//how fast to grow
 	level.grow_soul_scaler = .001;//how much it grows during growspeed

@@ -107,6 +107,7 @@
 //-----FX Cache-----
 #precache( "fx", "dlc2/island/fx_fire_spot_xxsm_island" );
 #precache( "fx", "zombie/fx_perk_quick_revive_factory_zmb" );
+#precache( "fx", "zombie/fx_perk_sleight_of_hand_factory_zmb" );
 #precache( "fx", "zombie/fx_barrier_buy_zmb" );
 #precache( "fx", "zombie/fx_elec_gen_idle_sm_zmb" );
 #precache( "fx", "zombie/fx_elec_gen_tip_zmb" );
@@ -118,6 +119,9 @@
 #precache( "fx", "dlc1/castle/fx_ritual_key_soul_exp_igc" );
 
 #define QUICK_REVIVE_MACHINE_LIGHT_FX                       "revive_light"
+#define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX                    "sleight_light"
+#define ADDITIONAL_PRIMARY_WEAPON_MACHINE_LIGHT_FX          "additionalprimaryweapon_light"
+
 
 //*****************************************************************************
 // MAIN
@@ -194,6 +198,10 @@ function main()
 
 	thread zm_easteregg_song::init();
 
+	thread zombie_limit_increase(28, 10);
+
+	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum");
+
 	thread asylumEntrance();
 	thread buildable_bonfire();
 	thread MaxAmmo();
@@ -203,8 +211,9 @@ function main()
 	thread bonfire_1();
 	thread bonfire_2();
 	thread bonfire_3();
+	thread watch_pap_door();
 
-	level.player_starting_points = 50000;
+	level.player_starting_points = 500;
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
@@ -223,9 +232,10 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "southwing_lower", "main_room", "ez3");
 
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez3");
-	zm_zonemgr::add_adjacent_zone( "main_room", "pap", "ez3");
-	zm_zonemgr::add_adjacent_zone( "main_room", "pap2", "ez3");
-	zm_zonemgr::add_adjacent_zone( "pap", "pap2", "ez3");
+
+	zm_zonemgr::add_adjacent_zone( "main_room", "pap", "pap_flag");
+	zm_zonemgr::add_adjacent_zone( "main_room", "pap2", "pap_flag");
+	zm_zonemgr::add_adjacent_zone( "pap", "pap2", "pap_flag");
 	
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_middle", "ez4");
 	zm_zonemgr::add_adjacent_zone( "westwing_staircase_01", "westwing_middle", "ez4");
@@ -449,8 +459,6 @@ function door_drop()
 	
 	model = GetEnt("balcony_gate","targetname");
 	clip = GetEnt("balcony_clip","targetname");
-	
-	level flag::wait_till("ez5");
 
 	trig SetHintString("Press ^3&&1^7 to Pillage corpse"); // Changes the string that shows when looking at the trigger.
 	exploder::exploder("ds_door_drop");
@@ -470,12 +478,36 @@ function door_drop()
 	level flag::set( "ez6" );
 }
 
+function watch_pap_door()
+{
+	trig = GetEnt("pap_door_trig","targetname");
+	trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
+	trig UseTriggerRequireLookAt();
+	trig SetHintString("Mach Summoning Key du Opfer"); // Changes the string that shows when looking at the trigger.
+	
+	brushmodel = GetEnt("pap_door","targetname");
+
+	level flag::wait_till("soul_trig");
+	level flag::wait_till("soul_trig2");
+	level flag::wait_till("soul_trig3");
+
+	trig SetHintString("Drück ^3&&1^7 Um des scheiß Brushmodel verschwinden zu lassen wie es ein Vater einst tat"); // Changes the string that shows when looking at the trigger.
+	trig waittill("trigger", player);
+
+	trig Delete();
+	brushmodel Delete();
+
+	level flag::set( "pap_flag" );
+}
+
 function drop_summoning_key()
 {
 	trig = GetEnt("drop_trig_1","targetname");
 	trig UseTriggerRequireLookAt();
 
 	level flag::wait_till("initial_blackscreen_passed");
+	level flag::wait_till("power_on");
+
 	exploder::exploder("drop_1");
 
 	trig waittill("trigger", player);
@@ -608,6 +640,62 @@ function enemy_location_override( zombie, enemy )
 
 	AIProfile_EndEntry();
 	return undefined;
+}
+
+// model thread zm_sphynx_util::rotateFull(6, 8);
+function rotateRandomFull(rotateSpeedMin = 6, rotateSpeedMax = 7){
+    while(isdefined(self)){
+        rotationSpeed = RandomIntRange(rotateSpeedMin, rotateSpeedMax);
+        self RotateYaw(360, rotationSpeed);
+        wait rotationSpeed;
+    }
+}
+
+function zombie_limit_increase( base_limit, increase_by )
+{
+    level endon( "end_game" );
+    while ( isdefined( self ) )
+    {
+        level waittill( "start_of_round" );
+        
+        level.zombie_actor_limit = base_limit + (increase_by * GetPlayers().size);
+        level.zombie_ai_limit = base_limit + (increase_by * GetPlayers().size);
+    }
+}
+
+function intro_screen_text(text_1 = "", text_2 = "", text_3 = "")
+{
+    wait(1); // wait for flags to init
+    level flag::wait_till("initial_blackscreen_passed");
+
+    intro_hud = [];
+    str_text = Array( text_1, text_2, text_3 ); // Edit these lines to say what you want
+
+	wait(2);
+    for ( i = 0; i < str_text.size; i++ )
+    {
+        intro_hud[i] = NewHudElem();
+        intro_hud[i].x = 120;		//20
+        intro_hud[i].y = -50 + ( 20 * i ); // -250
+        intro_hud[i].fontscale = ( IsSplitScreen() ? 2.75 : 1.75 );
+        intro_hud[i].alignx = "LEFT";
+        intro_hud[i].aligny = "BOTTOM";
+        intro_hud[i].horzalign = "LEFT";
+        intro_hud[i].vertalign = "BOTTOM";
+        intro_hud[i].color = (1.0, 1.0, 1.0);
+        intro_hud[i].alpha = 1;
+        intro_hud[i].sort = 0;
+        intro_hud[i].foreground = true;
+        intro_hud[i].hidewheninmenu = true;
+        intro_hud[i].archived = false;
+        intro_hud[i].showplayerteamhudelemtospectator = true;
+        intro_hud[i] SetText(str_text[i]);
+        intro_hud[i] SetTypewriterFX( 90, 10000 - ( 3000 * i ), 3000 );
+        wait(2);
+    }
+
+    wait(10);
+    foreach ( hudelem in intro_hud ) hudelem Destroy();
 }
 
 // --------------------------------

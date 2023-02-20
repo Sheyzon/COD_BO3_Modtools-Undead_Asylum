@@ -54,9 +54,7 @@ function peds()
 
 function pickup( w_weapon )
 {
-	level flag::wait_till("soul_trig");
-	level flag::wait_till("soul_trig2");
-	level flag::wait_till("soul_trig3");
+	level flag::wait_till("soul_catchers_charged");
 
 	self setHintString( "Press and hold ^3&&1^7 to take " + w_weapon.displayname );
 	while ( isDefined( self ) )
