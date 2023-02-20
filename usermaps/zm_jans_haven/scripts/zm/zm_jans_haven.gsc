@@ -461,6 +461,9 @@ function door_drop()
 	clip = GetEnt("balcony_clip","targetname");
 
 	trig SetHintString("Press ^3&&1^7 to Pillage corpse"); // Changes the string that shows when looking at the trigger.
+	
+	level flag::wait_till("initial_blackscreen_passed");
+	
 	exploder::exploder("ds_door_drop");
 	trig waittill("trigger", player);
 	player PlayLocalSound("ee_trigger");

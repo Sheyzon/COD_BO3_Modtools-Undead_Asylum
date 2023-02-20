@@ -1,4 +1,4 @@
-return 6003000
+return 5003000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -22,7 +22,6 @@ return 6003000
     weaponcamo:t9_camo_nail_gun_table
       weapon:t9_nail_gun_up
         csv:zone_source/zm_jans_haven.zone
-^1ERROR: failed to write D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\\usermaps\zm_jans_haven\zone\zm_jans_haven.xpak: 32
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
