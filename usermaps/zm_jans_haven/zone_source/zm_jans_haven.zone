@@ -38,11 +38,13 @@ include,hb21_mystery_boxes
 include,hb21_perks
 include,hb21_pack_a_punches
 include,hb21_elemental_bows
+include,zm_ai_mechz
 include,db_wunderfizz
 include,t7_weapons_dlc
 include,lednors_wolf_souls
-include,ww2_power_switch
 include,lednors_bw
+include,ww2_power_switch
+
 
 xmodel,skybox_default_day
 material,luts_t7_default

@@ -47,5 +47,5 @@ AssetFileList.csv
 !/usermaps
 /usermaps/*
 !/usermaps/zm_jans_haven
-!/usermaps/zm_undead_asylum
+# !/usermaps/zm_undead_asylum
 

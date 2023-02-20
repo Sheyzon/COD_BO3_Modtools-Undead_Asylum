@@ -5,7 +5,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{82952295-B156-11ED-91F3-34CFF6FAFB90}"
+guid "{F4B182DE-B16E-11ED-91F4-34CFF6FAFB90}"
 "classname" "worldspawn"
 "lutmaterial" "xl_nws3"
 "vbloom" "mp_freerun_02"
@@ -29961,7 +29961,7 @@ guid "{4EBBB3CA-A33E-11ED-91E7-34CFF6FAFB90}"
 "MAKEROOM" "1"
 "angles" "0 270 0"
 "export" "3"
-"origin" "-3009.65 -2391.15 3836.9"
+"origin" "-2954.65 -2391.15 3836.9"
 "script_forcespawn" "1"
 "script_noteworthy" "zombie_dog_spawner"
 "targetname" "special_dog_spawner"
@@ -46913,7 +46913,7 @@ guid "{25E6426E-A7D4-11ED-91EA-34CFF6FAFB90}"
 guid "{42864C74-A7D5-11ED-91EA-34CFF6FAFB90}"
 "classname" "misc_model"
 "angles" "0 31.7988 0"
-"model" "p7_zm_moo_console_monitor"
+"model" "p7_zm_moo_console_monitor_ra"
 "origin" "4.74334 521.029 2567.5"
 "lightingstate1" "1"
 "lightingstate2" "1"
@@ -58268,4 +58268,226 @@ guid "{82952299-B156-11ED-91F3-34CFF6FAFB90}"
  ( -1063.3417 118.56763 2532.5 ) ( -1063.3417 86.567627 2532.5 ) ( -1063.3417 86.567627 2516.5 ) trigger 64 64 -1957.6296 -453.99658 0 0 lightmap_gray 16384 16384 -1957.6296 -453.99658 0 0
  ( -1104.3417 58.317627 2532.5 ) ( -1072.3417 58.317627 2532.5 ) ( -1072.3417 58.317627 2516.5 ) trigger 64 -64 325.20874 453.99658 180 0 lightmap_gray 16384 -16384 325.20874 453.99658 180 0
 }
+}
+// entity 2251
+{
+guid "{CB23EF16-B15F-11ED-91F3-34CFF6FAFB90}"
+"classname" "trigger_use"
+"cursorhint" "HINT_NOICON"
+"targetname" "welcome_to_the_breakdown"
+"_color" "0.3 0.5 0.8"
+// brush 0
+{
+ guid "{CB23EF15-B15F-11ED-91F3-34CFF6FAFB90}"
+ ( 35 535.75 2573 ) ( 3 535.75 2573 ) ( 3 503.75 2573 ) trigger 64 64 -20.5 40.25 0 0 lightmap_gray 16384 16384 -20.5 40.25 0 0
+ ( 3.75 503.75 2591 ) ( 3.75 535.75 2591 ) ( 35.75 535.75 2591 ) trigger 64 64 -19.75 40.25 0 0 lightmap_gray 16384 16384 -19.75 40.25 0 0
+ ( 3.5 509.5 2583.75 ) ( 35.5 509.5 2583.75 ) ( 35.5 509.5 2567.75 ) trigger 64 64 -20 16.5 0 0 lightmap_gray 16384 16384 -20 16.5 0 0
+ ( 26.25 504.75 2583.75 ) ( 26.25 536.75 2583.75 ) ( 26.25 536.75 2567.75 ) trigger 64 64 -39.25 16.5 0 0 lightmap_gray 16384 16384 -39.25 16.5 0 0
+ ( 34.75 530.25 2583.75 ) ( 2.75 530.25 2583.75 ) ( 2.75 530.25 2567.75 ) trigger 64 64 -20.75 16.5 0 0 lightmap_gray 16384 16384 -20.75 16.5 0 0
+ ( 21.25 536 2583.75 ) ( 21.25 504 2583.75 ) ( 21.25 504 2567.75 ) trigger 64 64 -40 16.5 0 0 lightmap_gray 16384 16384 -40 16.5 0 0
+}
+}
+// entity 2252
+{
+guid "{6BCB4AC2-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "293.345 1034.16 1846.38"
+"targetname" "start_hallway_zone_spawner"
+}
+// entity 2253
+{
+guid "{6BCB4AC5-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "2115.8 1001.85 2033.88"
+"targetname" "start_hallway_zone_spawner"
+}
+// entity 2254
+{
+guid "{6BCB4AC8-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 3.41509e-006 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1185.35 581.994 2407.17"
+"targetname" "southing_lower_zone_spawner"
+}
+// entity 2255
+{
+guid "{6BCB4ACB-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "611.887 103.682 2532.17"
+"targetname" "southing_lower_zone_spawner"
+}
+// entity 2256
+{
+guid "{6BCB4ACE-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-939.113 103.682 2532.17"
+"targetname" "main_room_spawner"
+}
+// entity 2257
+{
+guid "{6BCB4AD1-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "421.793 97.1288 2532.17"
+"targetname" "main_room_spawner"
+}
+// entity 2258
+{
+guid "{6BCB4AD4-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-701.381 -1777.2 2189.92"
+"targetname" "westwing_middle_spawner"
+}
+// entity 2259
+{
+guid "{6BCB4AD7-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 360 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1849.01 -586.525 2730.42"
+"targetname" "westwing_staircase_02_spawner"
+}
+// entity 2260
+{
+guid "{6BCB4ADA-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "360 90.0001 -0.000128746"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1277.46 -655.947 2726.42"
+"targetname" "upper_spawner"
+}
+// entity 2261
+{
+guid "{6BCB4AE0-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1182.3 -2102.81 2556.67"
+"targetname" "westwing_middle_spawner"
+}
+// entity 2262
+{
+guid "{6BCB4AE3-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 3.41509e-006 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "635.102 -1681.12 2501.42"
+"targetname" "westwing_middle_spawner"
+}
+// entity 2263
+{
+guid "{6BCB4AE6-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "149.176 -2060.23 2446.17"
+"targetname" "westwing_middle_spawner"
+}
+// entity 2264
+{
+guid "{6BCB4AE9-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1553.3 -2079.81 2612.67"
+"targetname" "westwing_middle_spawner"
+}
+// entity 2265
+{
+guid "{6BCB4AEC-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 3.41509e-006 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-1175.91 796.007 3097.42"
+"targetname" "balcony_lt_spawner"
+}
+// entity 2266
+{
+guid "{6BCB4AEF-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 3.41509e-006 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-1023.53 -393.744 3098.17"
+"targetname" "bow_spawner"
+}
+// entity 2267
+{
+guid "{6BCB4AF5-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1161.9 -381.744 2407.17"
+"targetname" "southing_lower_zone_spawner"
+}
+// entity 2268
+{
+guid "{6BCB4AF8-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-863.25 1033 1825"
+"targetname" "start_zone_spawners"
+}
+// entity 2269
+{
+guid "{C15C3862-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 3.41509e-006 -0.000128746"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "1609.54 901.308 2729.92"
+"targetname" "upper_spawner"
+}
+// entity 2270
+{
+guid "{EE8E3754-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-1352.12 104.265 2513.17"
+"targetname" "pap_spawner"
+}
+// entity 2271
+{
+guid "{EE8E3768-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 226.8 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-1486.17 -219.494 2445.47"
+"targetname" "pap_spawner"
+}
+// entity 2272
+{
+guid "{F4B182E2-B16E-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 303.399 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_zombie_spawn_point.map"
+"origin" "-1470.52 390.554 2448.73"
+"targetname" "pap_spawner"
+}
+// entity 2273
+{
+guid "{129E972F-B16F-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_jump_both_custom.map"
+"origin" "2050.75 257 2137.75"
+}
+// entity 2274
+{
+guid "{42B833C2-B170-11ED-91F4-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm/harrybo21_prefabs/mechz/t7_genesis_mech_zombie_spawner.map"
+"origin" "-3012 -2385 3834"
 }

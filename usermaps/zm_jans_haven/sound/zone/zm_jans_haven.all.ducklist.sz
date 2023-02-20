@@ -1,7 +1,10 @@
 Name
 cmn_sniper_fire_3rd
+exp_barrel
 exp_grenade
 exp_medium
+exp_small
+exp_vehicle
 wpn_cmn_shot_3p
 wpn_cmn_shot_plr
 wpn_cmn_suppressed_plr

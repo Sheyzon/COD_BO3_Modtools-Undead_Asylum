@@ -10,10 +10,11 @@ function init()
 	level.eym = "ease_your_mind";
 	level.bmth = "bring_me_the_horizon";
 	level.dov = "dawn_of_victory";
+	level.wtb = "welcome_to_the_breakdown_RA";
 	level.multipleActivations = true;						// whether or not the song can be activated multiple times (true means it can, false means just once)
 	level.canBePlayed = true;
 	/*	End of Editable Variables - don't touch anything below here */
-
+	
 	setupMusic();
 }
 
@@ -21,7 +22,7 @@ function setupMusic()
 {
 	level.triggersActive = 0;
 	triggers = GetEntArray("song_trigger", "targetname");
-
+	
 	foreach(trigger in triggers)
 	{
 		trigger SetCursorHint("HINT_NOICON");
@@ -36,6 +37,7 @@ function registerTriggers(numTriggers)
 	thread sound_of_madness();
 	thread bring_me_the_horizon();
 	thread dawn_of_victory();
+	thread welcome_to_the_breakdown_RA();
 
 	ent = self play_2D_loop_sound(level.easterEggTriggerLoopSound);
 
@@ -116,10 +118,23 @@ function sound_of_madness()
 function dawn_of_victory()
 { 
 	trigger = GetEnt("dawn_of_victory", "targetname");
+	trigger UseTriggerRequireLookAt();
 
 	while(1)
 	{
 		trigger waittill("trigger", player);
 		play_2D_sound(level.dov);
+	}
+}
+
+function welcome_to_the_breakdown_RA()
+{ 
+	trigger = GetEnt("welcome_to_the_breakdown", "targetname");
+	trigger UseTriggerRequireLookAt();
+
+	while(1)
+	{
+		trigger waittill("trigger", player);
+		play_2D_sound(level.wtb);
 	}
 }

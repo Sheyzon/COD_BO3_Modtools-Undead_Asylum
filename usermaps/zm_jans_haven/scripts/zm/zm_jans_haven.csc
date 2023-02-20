@@ -29,6 +29,9 @@
 #using scripts\zm\_zm_perk_phdflopper;
 #using scripts\zm\_zm_perk_elemental_pop;
 
+// MECHZ ZOMBIE
+#using scripts\zm\_zm_ai_mechz;
+
 // BO3 WEAPONS
 #using scripts\zm\craftables\_hb21_zm_craft_blundersplat;
 #using scripts\zm\_hb21_zm_weap_blundersplat;

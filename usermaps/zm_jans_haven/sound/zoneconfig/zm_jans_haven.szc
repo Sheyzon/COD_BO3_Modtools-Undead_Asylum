@@ -75,6 +75,12 @@
 },
 {
 	"Type" : "ALIAS",
+	"Name" : "zm_ai_mech",
+	"Filename" : "zm_ai_mech.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
 	"Name" : "music",
 	"Filename" : "music.csv",
 	"Specs" : [ ]
