@@ -6,3 +6,5 @@ This is for learning purposes only.
 Like you can look up how i did things in scripting and stuff 
 but take into account i don't know the best ways of coding in ModTools.
 I just can say it works and it's stable so. It will improve all over time.
+
+And it's open source in case i die or something else happens so someone can improve on it.
