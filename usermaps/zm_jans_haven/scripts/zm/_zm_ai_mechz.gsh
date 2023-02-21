@@ -10,9 +10,9 @@
 #define	MECHZ_POWERCAP_COVER_BASE_HEALTH								500		
 #define	MECHZ_POWERCAP_BASE_HEALTH											500		
 #define	MECHZ_ARMOR_BASE_HEALTH												250		
-#define	MECHZ_HEALTH_MAX_BASE													22500		
+#define	MECHZ_HEALTH_MAX_BASE													33500	//22500	
 #define	MECHZ_HEALTH_CO_OP_MULTI												.75		
-#define	MECHZ_HEALTH_INCREASE													5000		
+#define	MECHZ_HEALTH_INCREASE													15000		
 #define	MECHZ_SHOTGUN_DAMAGE_MOD											1.5		
 #define	MECHZ_DAMAGE_PERCENT													.1		
 #define	MECHZ_HELMET_HEALTH_PERCENTAGE									.1		
