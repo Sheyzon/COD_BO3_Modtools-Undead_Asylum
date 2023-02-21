@@ -4294,8 +4294,8 @@ index,type,name,resident,streamed,parentStack
 4293,scriptparsetree,scripts/shared/ai/mechz.gsc,31160,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
 4294,scriptparsetree,scripts/shared/ai/mechz.csc,10876,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
 4295,scriptparsetree,scripts/shared/ai/mechz.gsh,148,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
-4296,scriptparsetree,scripts/zm/_zm_ai_mechz.gsc,49372,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
-4297,scriptparsetree,scripts/zm/_zm_ai_mechz.csc,3696,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
+4296,scriptparsetree,scripts/zm/_zm_ai_mechz.gsc,49380,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
+4297,scriptparsetree,scripts/zm/_zm_ai_mechz.csc,3720,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
 4298,scriptparsetree,scripts/zm/_zm_ai_mechz.gsh,148,0,|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
 4299,material,ei/gfx_light_ray_thruster_em,30,0,|dlc1/castle/fx_mech_jump_booster_loop|fx|ai_zm_dlc1_soldat_arrive|xanim|mechz_tomb.ai_am|animmappingtable|spawner_zm_tomb_mechz|aitype|cin_tomb_mechz_burn_player|scriptbundle|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
 4300,fx,dlc1/castle/fx_mech_wpn_flamethrower,5381,0,|dlc1/castle/fx_mech_wpn_flamethrower.efx|fx|zm_ai_mechz.zpkg|csv|zone_source/zm_jans_haven.zone|csv
@@ -15422,7 +15422,7 @@ index,type,name,resident,streamed,parentStack
 15421,image,i_t7_grass_lawn_medium_small_green_n,293,1441792,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15422,image,*cookie_array,2796454,0,|maps/zm/zm_jans_haven.d3dbsp|cookieArray
 15423,cookieArray,maps/zm/zm_jans_haven.d3dbsp,10,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
-15424,vertexData0,maps/zm/zm_jans_haven.d3dbsp,155742,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
+15424,vertexData0,maps/zm/zm_jans_haven.d3dbsp,155710,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15425,vertexData1,maps/zm/zm_jans_haven.d3dbsp,259544,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15426,indices,maps/zm/zm_jans_haven.d3dbsp,97008,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15427,image,xl_nws3_i,4194402,0,|xl_nws3|material|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
@@ -15430,7 +15430,7 @@ index,type,name,resident,streamed,parentStack
 15429,image,vdReveal,25,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15430,gfx_map,maps/zm/zm_jans_haven.d3dbsp,3466053,13063472,|zone_source/zm_jans_haven.zone|csv
 15431,game_map,maps/zm/zm_jans_haven.d3dbsp,40689,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
-15432,navmesh,maps/zm/zm_jans_haven_navmesh,181440,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
+15432,navmesh,maps/zm/zm_jans_haven_navmesh,180992,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15433,navvolume,maps/zm/zm_jans_haven_navvolume,333008,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15434,physpreset,wpn_t7_zmb_perk_bottle_2tap_view,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15435,physpreset,wpn_t7_zmb_perk_bottle_jugg_view,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
@@ -15440,7 +15440,7 @@ index,type,name,resident,streamed,parentStack
 15439,physpreset,wpn_zm_perk_can_double_tap_t9_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15440,physpreset,wpn_t9_zm_perk_can_speed_cola_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15441,physpreset,wpn_t9_zm_perk_can_stamina_up_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
-15442,col_map,maps/zm/zm_jans_haven.d3dbsp,1256400,0,|zone_source/zm_jans_haven.zone|csv
+15442,col_map,maps/zm/zm_jans_haven.d3dbsp,1256752,0,|zone_source/zm_jans_haven.zone|csv
 15443,sound,zm_jans_haven.all,2649876,0,||assetlist
 15444,stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv,9992,0,|zone_source/zm_jans_haven.zone|csv
 15445,stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv,36574,0,|zone_source/zm_jans_haven.zone|csv
