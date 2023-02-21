@@ -15430,7 +15430,7 @@ index,type,name,resident,streamed,parentStack
 15429,image,vdReveal,25,0,|maps/zm/zm_jans_haven.d3dbsp|gfx_map|zone_source/zm_jans_haven.zone|csv
 15430,gfx_map,maps/zm/zm_jans_haven.d3dbsp,3466053,13063472,|zone_source/zm_jans_haven.zone|csv
 15431,game_map,maps/zm/zm_jans_haven.d3dbsp,40689,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
-15432,navmesh,maps/zm/zm_jans_haven_navmesh,180928,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
+15432,navmesh,maps/zm/zm_jans_haven_navmesh,181440,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15433,navvolume,maps/zm/zm_jans_haven_navvolume,333008,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15434,physpreset,wpn_t7_zmb_perk_bottle_2tap_view,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15435,physpreset,wpn_t7_zmb_perk_bottle_jugg_view,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
@@ -15440,8 +15440,8 @@ index,type,name,resident,streamed,parentStack
 15439,physpreset,wpn_zm_perk_can_double_tap_t9_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15440,physpreset,wpn_t9_zm_perk_can_speed_cola_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
 15441,physpreset,wpn_t9_zm_perk_can_stamina_up_world,0,0,|maps/zm/zm_jans_haven.d3dbsp|col_map|zone_source/zm_jans_haven.zone|csv
-15442,col_map,maps/zm/zm_jans_haven.d3dbsp,1256992,0,|zone_source/zm_jans_haven.zone|csv
-15443,sound,zm_jans_haven.all,2649860,0,||assetlist
+15442,col_map,maps/zm/zm_jans_haven.d3dbsp,1256400,0,|zone_source/zm_jans_haven.zone|csv
+15443,sound,zm_jans_haven.all,2649876,0,||assetlist
 15444,stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv,9992,0,|zone_source/zm_jans_haven.zone|csv
 15445,stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv,36574,0,|zone_source/zm_jans_haven.zone|csv
 15446,stringtable,gamedata/audio/zm/zm_genesis_vox.csv,14130,0,|zone_source/zm_jans_haven.zone|csv
