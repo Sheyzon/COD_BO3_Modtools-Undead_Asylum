@@ -1,4 +1,4 @@
-return 5023000
+return 5006000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -22,69 +22,21 @@ return 5023000
     weaponcamo:t9_camo_nail_gun_table
       weapon:t9_nail_gun_up
         csv:zone_source/zm_jans_haven.zone
-^3470 warnings encountered while processing xmodel 'asylum_main_door_south_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_main_door_south_maya_f0_s1.000000_geo_rigid_5B452JFVZIKJ33VMRMQ3UIK56F.log
-  xmodel:asylum_main_door_south_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3470 warnings encountered while processing xmodel 'asylum_main_door_south_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_main_door_south_maya_f0_s1.000000_collision_rigid_MXKD5PMG6L3YAIEBBHTOZH7J7M.log
-  xmodel:asylum_main_door_south_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^31184 warnings encountered while processing xmodel 'asylum_main_room_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_main_room_maya_f0_s1.000000_geo_rigid_4ERDFQIV5PKMBAYU74BVLYQU4R.log
-  xmodel:asylum_mainroom_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^31184 warnings encountered while processing xmodel 'asylum_main_room_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_main_room_maya_f0_s1.000000_collision_rigid_NSH5CWBG2M352TJZPXCAGXFANY.log
-  xmodel:asylum_mainroom_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 1 warnings encountered while processing xmodel 'asylum_starting_hallway_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_starting_hallway_maya_f0_s1.000000_geo_rigid_L7CLKEA7SBA6GBROUFAEOTRLVO.log
-  xmodel:asylum_start_hallway_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 1 warnings encountered while processing xmodel 'asylum_starting_hallway_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_starting_hallway_maya_f0_s1.000000_collision_rigid_2JUVNCJMVCRP5SADEODRD4E7UH.log
-  xmodel:asylum_start_hallway_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 2 warnings encountered while processing xmodel 'asylum_balcony_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_balcony_maya_f0_s1.000000_geo_rigid_P3CT25YKVWONL6Q77HW5ZSIYYK.log
-  xmodel:asylum_balcony_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 2 warnings encountered while processing xmodel 'asylum_balcony_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_balcony_maya_f0_s1.000000_collision_rigid_6NUN53RZSV74QNBSPMVIU55M5D.log
-  xmodel:asylum_balcony_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 11 warnings encountered while processing xmodel 'asylum_outdoor_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_outdoor_maya_f0_s1.000000_geo_rigid_XOPC6Y3EJZCRLKLKUOLYMJG6G2.log
-  xmodel:asylum_outdoor_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 11 warnings encountered while processing xmodel 'asylum_outdoor_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_outdoor_maya_f0_s1.000000_collision_rigid_GYZ4Z6SXO2TAQZ2HEFINBGTKTT.log
-  xmodel:asylum_outdoor_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 54 warnings encountered while processing xmodel 'asylum_southwing_upper_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_southwing_upper_maya_f0_s1.000000_geo_rigid_24MSDXY6PXHZZOJ4YQ5EVLFFFW.log
-  xmodel:asylum_southwing_upper_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 55 warnings encountered while processing xmodel 'asylum_southwing_upper_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_southwing_upper_maya_f0_s1.000000_collision_rigid_LK2MERRNIUWIC5YRI36RYEQRU7.log
-  xmodel:asylum_southwing_upper_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 1 warnings encountered while processing xmodel 'asylum_southwing_lower_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_southwing_lower_maya_f0_s1.000000_geo_rigid_ZYTLHTZMWHMQXMN5XOH235SR2D.log
-  xmodel:asylum_southwing_lower_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 1 warnings encountered while processing xmodel 'asylum_southwing_lower_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_southwing_lower_maya_f0_s1.000000_collision_rigid_IOFVAVQ7RE5BM74QHFEPWSHF7K.log
-  xmodel:asylum_southwing_lower_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^392 warnings encountered while processing xmodel 'asylum_west_wing_one_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_west_wing_one_maya_f0_s1.000000_geo_rigid_J2QYTILYTC4S3PLOIJC7TKJLJV.log
-  xmodel:asylum_westwing_one_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^392 warnings encountered while processing xmodel 'asylum_west_wing_one_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_west_wing_one_maya_f0_s1.000000_collision_rigid_YMGGUOCLUBNDA42DYCBK6F4744.log
-  xmodel:asylum_westwing_one_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 57 warnings encountered while processing xmodel 'asylum_west_wing_two_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_west_wing_two_maya_f0_s1.000000_geo_rigid_W5ZOHG2J7L2YPMTWFTMYMNMCMI.log
-  xmodel:asylum_westwing_two_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 59 warnings encountered while processing xmodel 'asylum_west_wing_two_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_west_wing_two_maya_f0_s1.000000_collision_rigid_HLPQAAT2YILJU7C3VYPNBCZWZB.log
-  xmodel:asylum_westwing_two_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 1 warnings encountered while processing xmodel 'asylum_starting_hallway_two_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_starting_hallway_two_maya_f0_s1.000000_geo_rigid_YY6ZWYODYHIDJM2JSP62QHQ7YI.log
-  xmodel:asylum_start_hallway_two_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
-^3DROPPED VERTS. 2 warnings encountered while processing xmodel 'asylum_starting_hallway_two_maya'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\asylum_starting_hallway_two_maya_f0_s1.000000_collision_rigid_JOIHR6HQ7EZSS7LECE5P5IFLNB.log
-  xmodel:asylum_start_hallway_two_maya
-    col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
+^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_geo_MEBDSA5Z6F2DDXBIF756IQOM6N.log
+  xmodel:p7_fxanim_zm_vending_wonder_body_mod
+    zbarrier:zmcore_perk_random_machine
+      col_map:maps/zm/zm_jans_haven.d3dbsp
+^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_collision_rigid_ETM63J3Y2SJB4ANCPMA73UFUV2.log
+  xmodel:p7_fxanim_zm_vending_wonder_body_mod
+    zbarrier:zmcore_perk_random_machine
+      col_map:maps/zm/zm_jans_haven.d3dbsp
+^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_geo_rigid_VF2A4PSL5RYQHT4P7HDKW3QAQT.log
+  xmodel:p7_fxanim_zm_vending_wonder_body_mod
+    zbarrier:zmcore_perk_random_machine
+      col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3Found 2 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
   game_map:maps/zm/zm_jans_haven.d3dbsp
-^3Found 169 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
+^3Found 171 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
