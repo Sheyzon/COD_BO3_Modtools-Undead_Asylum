@@ -74,6 +74,7 @@
 #using scripts\zm\_zm_powerup_full_ammo;
 #using scripts\zm\_zm_powerup_insta_kill;
 #using scripts\zm\_zm_powerup_nuke;
+#using scripts\zm\_zm_ancient_evil_challenges;
 //#using scripts\zm\_zm_powerup_weapon_minigun;
 #using scripts\zm\_hb21_zm_magicbox;
 
@@ -203,7 +204,7 @@ function main()
 
 	thread zombie_limit_increase(28, 10);
 
-	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum");
+	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
 
 	thread asylumEntrance();
 	thread buildable_bonfire();
@@ -463,20 +464,24 @@ function door_drop()
 	model = GetEnt("balcony_gate","targetname");
 	clip = GetEnt("balcony_clip","targetname");
 
-	trig SetHintString("Press ^3&&1^7 to Pillage corpse"); // Changes the string that shows when looking at the trigger.
+	trig SetHintString("Press ^3&&1^7 to Pillage crate"); // Changes the string that shows when looking at the trigger.
 	
 	level flag::wait_till("initial_blackscreen_passed");
 	
 	exploder::exploder("ds_door_drop");
 	trig waittill("trigger", player);
 	player PlayLocalSound("ee_trigger");
-	IPrintLnBold("Door key found");
+	//IPrintLnBold("Door key found");
+
+	thread intro_screen_text("Door key found", undefined, undefined, 20, -250);
+
 	trig Delete();
 	exploder::kill_exploder("ds_door_drop");
 
 	wait(1);
 	player zm_audio::create_and_play_dialog( "general", "pickup" );
-
+	
+	trig2 SetHintString("Press ^3&&1^7 to Pillage crate"); // Changes the string that shows when looking at the trigger.
 	trig2 waittill("trigger", player);
 	model MoveZ(-69, 1, 0.15, 0.05);
 	clip Delete();
@@ -515,11 +520,15 @@ function drop_summoning_key()
 	level flag::wait_till("power_on");
 
 	exploder::exploder("drop_1");
+	trig SetHintString("Press ^3&&1^7 to Pillage corpse"); // Changes the string that shows when looking at the trigger.
 
 	trig waittill("trigger", player);
 
 	player PlayLocalSound("ee_trigger");
-	IPrintLnBold("Summoning Key found");
+	//IPrintLnBold("Summoning Key found");
+
+	thread intro_screen_text("Summoning Key found", undefined, undefined, 20, -250);
+
 	exploder::kill_exploder("drop_1");
 	trig Delete();
 	level flag::set("has_summoning_key"); //give summoning key
@@ -634,6 +643,46 @@ function custom_add_weapons()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
 }
 
+/*
+With trigger "buyable_powerup_trig", "targetname"
+and struct "powerup_spawn", "targetname"
+function buyable_powerup()
+{
+	level.buyable_powerup_cost = 100; // Cost for powerup
+	level.buyable_powerup_cooldown = 20; // Cooldown in seconds for buyable trigger
+	while(1)
+	{
+		while(1)
+		{
+			buyable_powerup_trig = GetEnt("buyable_powerup_trig", "targetname");	
+			buyable_powerup_trig SetHintString("Press and hold &&1 to spawn Powerup [Cost: " + level.buyable_powerup_cost + "]");
+			buyable_powerup_trig SetCursorHint("HINT_NOICON");
+			buyable_powerup_spawn = struct::get( "powerup_spawn", "targetname" );
+			buyable_powerup_trig waittill("trigger", player);
+
+			if(player.score >= level.buyable_powerup_cost)
+			{
+				player zm_score::minus_to_player_score(level.buyable_powerup_cost);
+
+				break;
+			}
+		}
+
+		
+		//	If you want a specific powerup, then uncomment the buyable_powerup_spawn below and delete or comment out the one above it.
+		//	Available Powerups: double_points, free_perk, full_ammo, nuke, fire_sale, carpenter, insta_kill, shield_charge, bonfire_sale,
+		
+
+		buyable_powerup_spawn thread zm_powerups::special_powerup_drop(buyable_powerup_spawn.origin);
+		//buyable_powerup_spawn thread zm_powerups::specific_powerup_drop("full_ammo", buyable_powerup_spawn.origin);
+
+		buyable_powerup_trig SetHintString("Recharing...");
+
+		wait(level.buyable_powerup_cooldown);
+	}
+}
+*/
+
 function enemy_location_override( zombie, enemy )
 {
 	AIProfile_BeginEntry( "factory-enemy_location_override" );
@@ -669,20 +718,23 @@ function zombie_limit_increase( base_limit, increase_by )
     }
 }
 
-function intro_screen_text(text_1 = "", text_2 = "", text_3 = "")
+function intro_screen_text(text_1 = "", text_2 = "", text_3 = "", _x, _y)
 {
-    wait(1); // wait for flags to init
-    level flag::wait_till("initial_blackscreen_passed");
+	if (_x == 120)
+	{
+		wait(1); // wait for flags to init
+		level flag::wait_till("initial_blackscreen_passed");
+		wait(2);
+	}
 
     intro_hud = [];
     str_text = Array( text_1, text_2, text_3 ); // Edit these lines to say what you want
 
-	wait(2);
     for ( i = 0; i < str_text.size; i++ )
     {
         intro_hud[i] = NewHudElem();
-        intro_hud[i].x = 120;		//20
-        intro_hud[i].y = -50 + ( 20 * i ); // -250
+        intro_hud[i].x = _x;		//20
+        intro_hud[i].y = _y + ( 20 * i ); // -250
         intro_hud[i].fontscale = ( IsSplitScreen() ? 2.75 : 1.75 );
         intro_hud[i].alignx = "LEFT";
         intro_hud[i].aligny = "BOTTOM";

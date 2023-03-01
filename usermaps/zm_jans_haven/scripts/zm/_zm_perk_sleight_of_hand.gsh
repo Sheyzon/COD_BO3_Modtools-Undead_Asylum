@@ -31,7 +31,9 @@
 
 // SCRIPTBUNDLE
 // ======================================================================================================
-#define SLEIGHT_OF_HAND_MACHINE_CANS_SB								"p9_fxanim_zm_gp_speed_cola_lava_sb"
+// #define SLEIGHT_OF_HAND_MACHINE_CANS_SB								"p9_fxanim_zm_gp_speed_cola_lava_sb"
+#define SLEIGHT_OF_HAND_MACHINE_CANS_SB								undefined
+
 
 // FX
 // #define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX								"harry/zm_perks/fx_perk_sleight_of_hand_light"	

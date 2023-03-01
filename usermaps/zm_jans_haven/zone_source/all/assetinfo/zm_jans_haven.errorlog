@@ -1,4 +1,4 @@
-return 5006000
+return 5003000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -25,18 +25,6 @@ return 5006000
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
-^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_geo_MEBDSA5Z6F2DDXBIF756IQOM6N.log
-  xmodel:p7_fxanim_zm_vending_wonder_body_mod
-    zbarrier:zmcore_perk_random_machine
-      col_map:maps/zm/zm_jans_haven.d3dbsp
-^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_collision_rigid_ETM63J3Y2SJB4ANCPMA73UFUV2.log
-  xmodel:p7_fxanim_zm_vending_wonder_body_mod
-    zbarrier:zmcore_perk_random_machine
-      col_map:maps/zm/zm_jans_haven.d3dbsp
-^342 warnings encountered while processing xmodel 'p7_fxanim_zm_vending_wonder_body_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_vending_wonder_body_mod_f0_s1.000000_geo_rigid_VF2A4PSL5RYQHT4P7HDKW3QAQT.log
-  xmodel:p7_fxanim_zm_vending_wonder_body_mod
-    zbarrier:zmcore_perk_random_machine
-      col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3Found 2 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
   game_map:maps/zm/zm_jans_haven.d3dbsp
 ^3Found 171 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.

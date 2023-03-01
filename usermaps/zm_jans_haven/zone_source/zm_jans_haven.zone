@@ -56,10 +56,14 @@ gfx_map,maps/zm/zm_jans_haven.d3dbsp
 // Audio
 sound,zm_jans_haven
 
+fx,fire/fx_fire_barrel_30x30
+
 stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 stringtable,gamedata/audio/zm/zm_genesis_vox.csv
 
+scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.gsc
+scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.csc
 scriptparsetree,scripts/Sphynx/_zm_perk_increment.gsc
 scriptparsetree,scripts/zm/growing_soulbox.gsc
 scriptparsetree,scripts/zm/_hb21_zm_behavior.gsc

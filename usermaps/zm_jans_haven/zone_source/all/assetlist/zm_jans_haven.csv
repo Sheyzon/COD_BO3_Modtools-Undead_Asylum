@@ -14070,6 +14070,7 @@ fx,explosions/fx_ability_exp_ravage_core_optim.efx
 fx,explosions/fx_exp_dest_barrel_concussion_sm_optim.efx
 fx,explosions/fx_exp_discgun_default
 fx,fire/fx_embers_burst_optim.efx
+fx,fire/fx_fire_barrel_30x30
 fx,fire/fx_fire_candle_flame_tall
 fx,harry/blundersplat/fx_blundersplat_blink.efx
 fx,harry/blundersplat/fx_blundersplat_exp
@@ -14361,6 +14362,8 @@ scriptparsetree,scripts/zm/_t9_wonderfizz.gsc
 scriptparsetree,scripts/zm/_zm_ai_mechz.csc
 scriptparsetree,scripts/zm/_zm_ai_mechz.gsc
 scriptparsetree,scripts/zm/_zm_ai_mechz.gsh
+scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.csc
+scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.gsc
 scriptparsetree,scripts/zm/_zm_bgb_machine.csc
 scriptparsetree,scripts/zm/_zm_bgb_machine.gsc
 scriptparsetree,scripts/zm/_zm_easteregg_song.gsc
