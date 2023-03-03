@@ -46,6 +46,7 @@
 #using scripts\zm\_zm_perk_tombstone;
 #using scripts\zm\_zm_perk_phdflopper;
 #using scripts\zm\_zm_perk_elemental_pop;
+#using scripts\zm\_zm_perk_random;
 
 // MECHZ ZOMBIE
 #using scripts\zm\_zm_ai_mechz;
@@ -91,15 +92,13 @@
 
 #using scripts\zm\zm_usermap;
 
+#using scripts\Sphynx\craftables\_zm_craft_vineshield;
 #using scripts\zm\zm_wolf_soul_colletors;
-
 #using scripts\zm\_hb21_zm_behavior;
 
 // Giant ZombieMGR
 #using scripts\zm\zm_giant_cleanup_mgr;
-
 #using scripts\_redspace\rs_o_jump_pad;
-
 #using scripts\zm\growing_soulbox;
 
 // Sphynx's Buyable Perk Slot
@@ -293,7 +292,9 @@ function buildable_bonfire()
 
 	trig2 waittill("trigger", player);
 	trig2 Delete();
-	player PlayLocalSound("bonfire_lit");
+
+	player PlaySound("bonfire_lit");
+	
 	exploder::exploder("buildable_bonfire_fx");	
 	level flag::set( "bbf" );
 	//exploder::kill_exploder("alias");
@@ -327,7 +328,10 @@ function bonfire_1()
 	trig UseTriggerRequireLookAt();
 
 	trig waittill("trigger", player);
-	player PlayLocalSound("bonfire_lit");
+
+	player PlaySound("bonfire_lit");
+	//zm_utility::play_sound_at_pos( "bonfire_lit", player.origin );
+
 	exploder::exploder("bonfire_fire_1");	
 	level flag::set( "bf1" );
 	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
@@ -371,7 +375,10 @@ function bonfire_2()
 	trig UseTriggerRequireLookAt();
 
 	trig waittill("trigger", player);
-	player PlayLocalSound("bonfire_lit");
+
+	player PlaySound("bonfire_lit");
+	//zm_utility::play_sound_at_pos( "bonfire_lit", player.origin );
+
 	exploder::exploder("bonfire_fire_2");	
 	level flag::set( "bf2" );
 	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
@@ -415,7 +422,10 @@ function bonfire_3()
 	trig UseTriggerRequireLookAt();
 
 	trig waittill("trigger", player);
-	player PlayLocalSound("bonfire_lit");
+	
+	player PlaySound("bonfire_lit");
+	//zm_utility::play_sound_at_pos( "bonfire_lit", player.origin );
+
 	exploder::exploder("bonfire_fire_3");	
 	level flag::set( "bf3" );
 	trig SetHintString(""); // Changes the string that shows when looking at the trigger.
@@ -602,7 +612,9 @@ function MaxAmmo()
 		}
 		else
 		{
-			trigger PlayLocalSound( "zmb_no_cha_ching" );
+			player PlayLocalSound( "zmb_no_cha_ching" );
+			//zm_utility::play_sound_at_pos( "no_purchase", player.origin );
+			player zm_audio::create_and_play_dialog( "general", "outofmoney" );
 		}
 	}
 }

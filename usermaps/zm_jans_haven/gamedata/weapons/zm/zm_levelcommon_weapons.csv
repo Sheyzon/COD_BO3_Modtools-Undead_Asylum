@@ -107,3 +107,4 @@ t9_ray_gun,t9_ray_gun_up,,10000,wpck_ray,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,speci
 t8_shotgun_blundergat,t8_shotgun_blundergat_upgraded,,5000,shotgun,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
 t8_shotgun_acidgat,t8_shotgun_acidgat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
 t8_shotgun_magmagat,t8_shotgun_magmagat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
+spx_vine_shield,spx_vine_shield_upgraded,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,,

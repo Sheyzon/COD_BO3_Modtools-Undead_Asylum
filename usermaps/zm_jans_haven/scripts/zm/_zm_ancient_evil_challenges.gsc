@@ -30,6 +30,7 @@
 #namespace zm_ancient_evil_challenges;
 
 #precache( "fx", "fire/fx_fire_barrel_30x30" );
+#precache( "fx", "dlc4/genesis/fx_rune_glow_purple" );
 #precache("xmodel", "zombie_z_money_icon");
 
 
@@ -48,6 +49,20 @@ function challeneges_init()
 {
 	callback::on_connect( &on_player_connect );
 	level waittill( "intro_hud_done" );
+
+	//precachemodel( "wpn_t7_zmb_perk_bottle_jugg_view" );
+
+	players = GetPlayers();
+	players[0].has_perkshard = 0;
+	players[1].has_perkshard = 0;
+	players[2].has_perkshard = 0;
+	players[3].has_perkshard = 0;
+
+	players[0].perkshard_count = 0;
+	players[1].perkshard_count = 0;
+	players[2].perkshard_count = 0;
+	players[3].perkshard_count = 0;
+
 
 	add_challenege("Headshots",			&challenege_headshot,		"Kill Zombies With Headshots");
 	add_challenege("Kills",				&challenege_kill,			"Kill Zombies With Anything");
@@ -84,10 +99,9 @@ function challeneges_init()
 	add_challenge_reward(4,				level.zombie_powerups["full_ammo"].model_name,			&spawn_powerup,		"full_ammo");
 	add_challenge_reward(4,				"zombie_z_money_icon",									&bonus_points,		3000);
 	add_challenge_reward(4,				getweapon("ray_gun").worldModel,						&free_gun,			getweapon("ray_gun"));
-
 	
-	
-	
+	//Custom Drop FX.
+	// zombie/fx_powerup_grab_green_zmb	
 	
 	podium_challenge = struct::get_array("podium_challenge", "targetname");
 	array::thread_all( podium_challenge, &podium_challenge_activate );
@@ -143,7 +157,7 @@ function podium_challenge_activate()
 	while(!isdefined(level.round_number)) wait .1;
 	fxOrg = Spawn( "script_model", self.origin );
 	fxOrg SetModel( "tag_origin" );
-	fx = PlayFxOnTag( "fire/fx_fire_barrel_30x30", fxOrg, "tag_origin" );
+	fx = PlayFxOnTag( "dlc4/genesis/fx_rune_glow_purple", fxOrg, "tag_origin" );
 	trig = Spawn( "trigger_radius", self.origin - (0, 0, 60), 0, 60, 80 );
 	trig SetCursorHint( "HINT_NOICON" );
 	for( ;; )
@@ -288,11 +302,21 @@ function podium_challenge_redeem(num)
 		}
 		if(players[num].ancient_evil_challenge_power == 100)
 		{
-			reward = get_random_reward(4);
-			fxOrg = Spawn( "script_model", self.origin );
-			fxOrg setmodel(level.ancient_evil_challenge_reward[reward].reward_model);
-			fx = PlayFxOnTag( "zombie/fx_powerup_on_green_zmb", fxOrg, "tag_origin" );			
-			trig thread offer_reward_timed(reward,num,fxOrg);
+			if (players[num].perkshard_count <= 3)
+			{
+				fxOrg = Spawn( "script_model", self.origin );
+				fxOrg setmodel("wpn_t7_zmb_perk_bottle_powerup_view");
+				fx = PlayFxOnTag( "zombie/fx_powerup_on_green_zmb", fxOrg, "tag_origin" );			
+				trig thread offer_reward_timed(undefined,num,fxOrg);
+			}
+			else
+			{
+				reward = get_random_reward(4);
+				fxOrg = Spawn( "script_model", self.origin );
+				fxOrg setmodel(level.ancient_evil_challenge_reward[reward].reward_model);
+				fx = PlayFxOnTag( "zombie/fx_powerup_on_green_zmb", fxOrg, "tag_origin" );			
+				trig thread offer_reward_timed(reward,num,fxOrg);
+			}
 		}
 		else
 		if(players[num].ancient_evil_challenge_power > 75)
@@ -340,8 +364,12 @@ function offer_reward_timed(reward,num,fxOrg)
 		player = GetPlayers()[num];
 		if(player UseButtonPressed() && player istouching(self))
 		{
-			if(isdefined(self.has_reward))
+			if(isdefined(self.has_reward) && isdefined(reward))
 				player thread [[ level.ancient_evil_challenge_reward[reward].reward_func ]](level.ancient_evil_challenge_reward[reward].reward_parm);
+			else
+				player.has_perkshard++;
+				player.perkshard_count++;
+				fx = PlayFxOnTag( "zombie/fx_powerup_grab_green_zmb	", fxOrg, "tag_origin" );			
 			if(isdefined(fxOrg))
 				fxOrg delete();
 			self.has_reward = undefined;

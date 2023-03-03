@@ -210,6 +210,7 @@ xmodel,p7_gib_chunk_flesh_03
 xmodel,p7_gib_chunk_bone_03
 material,mc/mtl_c_gen_gib_alpha
 material,mc/mtl_c_gen_gib_stump
+localize,craftables
 xmodel,p7_ven_charred_body_advanced
 xmodel,c_zom_der_zombie_body1
 sound,zm_jans_haven

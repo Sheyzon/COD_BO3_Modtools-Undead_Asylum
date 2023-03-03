@@ -54,5 +54,6 @@ image,i_mtl_p7_ven_charred_torso_n
 image,i_mtl_ven_charred_bones_c
 image,i_mtl_ven_charred_bones_n
 sound,zm_jans_haven
+localize,craftables
 localize,hb21_zm_perks
 keyvaluepairs,zm_jans_haven

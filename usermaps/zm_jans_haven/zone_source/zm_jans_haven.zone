@@ -12,11 +12,13 @@ xmodel,wpn_t7_zmb_perk_bottle_rev_view
 xmodel,wpn_t7_zmb_perk_bottle_speed_view
 xmodel,wpn_t7_zmb_perk_bottle_stimup_view
 xmodel,wpn_t7_zmb_perk_bottle_wido_view
+xmodel,wpn_t7_zmb_perk_bottle_powerup_view
 xmodel,tag_origin
 
 fx,redspace/fx_launchpad_blue.efx
 fx,redspace/fx_launchpad_red.efx
 fx,dlc4/genesis/fx_corrupteng_zombie_soul_115
+fx,dlc4/genesis/fx_rune_glow_purple
 fx,dlc1/castle/fx_ritual_key_soul_exp_igc
 fx,dlc1/castle/fx_ritual_key_soul_src_igc
 fx,dlc1/castle/fx_ritual_key_soul_tgt_igc
@@ -44,7 +46,9 @@ include,t7_weapons_dlc
 include,lednors_wolf_souls
 include,lednors_bw
 include,ww2_power_switch
+include,spx_craftable_vine_shield
 
+localize,craftables
 
 xmodel,skybox_default_day
 material,luts_t7_default

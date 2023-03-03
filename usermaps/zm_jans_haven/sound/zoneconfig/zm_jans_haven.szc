@@ -14,16 +14,16 @@
  "Builds" : [ "T7" ],
  "Sources" : [
  {
- "Type" : "ALIAS",
- "Name" : "user_aliases",
- "Filename" : "user_aliases.csv",
- "Specs" : [ ] 
+	"Type" : "ALIAS",
+	"Name" : "user_aliases",
+	"Filename" : "user_aliases.csv",
+	"Specs" : [ ] 
 },
 {
- "Type" : "ALIAS",
- "Name" : "t7_weapons_dlc",
- "Filename" : "t7_weapons_dlc.csv",
- "Specs" : [ ] 
+	"Type" : "ALIAS",
+	"Name" : "t7_weapons_dlc",
+	"Filename" : "t7_weapons_dlc.csv",
+	"Specs" : [ ] 
 },
 {
 	"Type" : "ALIAS",
@@ -41,6 +41,12 @@
 	"Type" : "ALIAS",
 	"Name" : "perk_sounds",
 	"Filename" : "perk_sounds.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
+	"Name" : "wonderfizz_sounds",
+	"Filename" : "wonderfizz_sounds.csv",
 	"Specs" : [ ] 
 },
 {

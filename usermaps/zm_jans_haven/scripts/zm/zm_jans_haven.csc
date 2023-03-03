@@ -28,6 +28,7 @@
 #using scripts\zm\_zm_perk_tombstone;
 #using scripts\zm\_zm_perk_phdflopper;
 #using scripts\zm\_zm_perk_elemental_pop;
+#using scripts\zm\_zm_perk_random;
 
 // MECHZ ZOMBIE
 #using scripts\zm\_zm_ai_mechz;
@@ -60,6 +61,8 @@
 #using scripts\zm\_zm_trap_electric;
 
 #using scripts\zm\zm_usermap;
+
+#using scripts\Sphynx\craftables\_zm_craft_vineshield;
 
 //Snow
 #define SNOW_FX "dlc0/factory/fx_snow_player_os_factory"
