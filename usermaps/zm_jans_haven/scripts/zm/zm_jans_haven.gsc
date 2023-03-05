@@ -92,6 +92,7 @@
 
 #using scripts\zm\zm_usermap;
 
+#using scripts\_NSZ\nsz_kino_teleporter;
 #using scripts\Sphynx\craftables\_zm_craft_vineshield;
 #using scripts\zm\zm_wolf_soul_colletors;
 #using scripts\zm\_hb21_zm_behavior;
@@ -132,6 +133,8 @@
 
 function main()
 {
+	level thread nsz_kino_teleporter::init(); 
+
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw"), 5.13 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
 
@@ -565,9 +568,9 @@ function asylumEntrance()
 	while (!bullshit)
 	{
 		trig waittill("trigger", player);
-		if(player.score >= 2000)
+		if(player.score >= 1500)
 		{
-			player zm_score::minus_to_player_score(2000);
+			player zm_score::minus_to_player_score(1500);
 			player PlayLocalSound("zmb_cha_ching");
 			level flag::set( "ez3" );
 

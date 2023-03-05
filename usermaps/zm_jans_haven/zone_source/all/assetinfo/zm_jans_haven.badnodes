@@ -3,8 +3,8 @@ INFO: AI will not use BAD NODES, and will error if forced to do so.
 INFO: USELESS NODES can be used by AI, but AI will not be able to shoot enemies.
 --------------------------------------------------------------------------------
 
-begin negotiation node at ( 1458.16, -154.47, 2445 ) will overlap with begin negotiation node at ( 1458.16, -154.47, 2445 ) in game, marked as a bad node
+begin negotiation node at ( -669.84, -2008.47, 2445 ) will overlap with begin negotiation node at ( -669.84, -2008.47, 2445 ) in game, marked as a bad node
 
-end negotiation node at ( 1458.16, -36.47, 2445 ) will overlap with end negotiation node at ( 1458.16, -36.47, 2445 ) in game, marked as a bad node
+end negotiation node at ( -669.839, -1890.47, 2445 ) will overlap with end negotiation node at ( -669.839, -1890.47, 2445 ) in game, marked as a bad node
 
 

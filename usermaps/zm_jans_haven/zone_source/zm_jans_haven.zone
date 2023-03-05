@@ -62,6 +62,10 @@ sound,zm_jans_haven
 
 fx,fire/fx_fire_barrel_30x30
 
+// Kino Teleporter
+fx,_NSZ/Kino_Tele/kino_swirl
+scriptparsetree,scripts/_NSZ/nsz_kino_teleporter.gsc
+
 stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 stringtable,gamedata/audio/zm/zm_genesis_vox.csv

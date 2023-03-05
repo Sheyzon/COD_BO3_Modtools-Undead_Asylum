@@ -100,9 +100,6 @@ function challeneges_init()
 	add_challenge_reward(4,				"zombie_z_money_icon",									&bonus_points,		3000);
 	add_challenge_reward(4,				getweapon("ray_gun").worldModel,						&free_gun,			getweapon("ray_gun"));
 	
-	//Custom Drop FX.
-	// zombie/fx_powerup_grab_green_zmb	
-	
 	podium_challenge = struct::get_array("podium_challenge", "targetname");
 	array::thread_all( podium_challenge, &podium_challenge_activate );
 	
@@ -302,7 +299,7 @@ function podium_challenge_redeem(num)
 		}
 		if(players[num].ancient_evil_challenge_power == 100)
 		{
-			if (players[num].perkshard_count <= 3)
+			if (players[num].perkshard_count <= 4)
 			{
 				fxOrg = Spawn( "script_model", self.origin );
 				fxOrg setmodel("wpn_t7_zmb_perk_bottle_powerup_view");
