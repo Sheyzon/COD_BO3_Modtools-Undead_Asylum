@@ -1,5 +1,6 @@
 #using scripts\shared\array_shared;
 #using scripts\shared\flag_shared;
+#using scripts\shared\exploder_shared;
 #using scripts\shared\callbacks_shared;
 #using scripts\shared\clientfield_shared;
 #using scripts\shared\math_shared;
@@ -54,8 +55,16 @@ function peds()
 
 function pickup( w_weapon )
 {
-	level flag::wait_till("soul_catchers_charged");
+	level flag::wait_till("bbf");
+	level flag::wait_till("bf1");
+	level flag::wait_till("bf2");
+	level flag::wait_till("bf3");
 
+	model = GetEnt("basic_bitch_bow");
+	model MoveZ(78, 1, 0.1, 0.3);
+	exploder::exploder("basic_bitch_bow_fx");
+	wait(1);
+	
 	self setHintString( "Press and hold ^3&&1^7 to take " + w_weapon.displayname );
 	while ( isDefined( self ) )
 	{

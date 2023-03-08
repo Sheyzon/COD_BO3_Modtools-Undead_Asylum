@@ -198,6 +198,7 @@ function main()
 	init_zones[0] = "start_zone";
 	init_zones[1] = "jump";
 	init_zones[2] = "jump_4";
+	init_zones[3] = "firelink_shrine";
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	zm_audio::loadPlayerVoiceCategories("gamedata/audio/zm/zm_genesis_vox.csv");
@@ -294,13 +295,40 @@ function buildable_bonfire()
 	trig2 SetHintString("Press ^3&&1^7 to Light Bonfire"); // Changes the string that shows when looking at the trigger.
 
 	trig2 waittill("trigger", player);
-	trig2 Delete();
-
+	trig2 SetHintString(""); // Changes the string that shows when looking at the trigger.
 	player PlaySound("bonfire_lit");
-	
 	exploder::exploder("buildable_bonfire_fx");	
 	level flag::set( "bbf" );
 	//exploder::kill_exploder("alias");
+
+	pos = GetEnt("summoning_key_pos_4","targetname");
+	chest = GetEnt("grow_soul4","targetname");
+	level flag::wait_till("has_summoning_key");
+
+	bullshit = true;
+	while(bullshit)
+	{
+		trig2 waittill("trigger", player);
+		if (!level flag::exists("soulchest_occ") && level flag::exists("has_summoning_key"))
+		{
+			level flag::set( "soulchest_occ" );
+			level flag::delete( "soulchest_done" );
+			chest MoveZ(589, 0.01, 0, 0);
+			exploder::exploder("collecting_souls_root_fx_4");
+			wait(0.01);
+			chest MoveZ(80, 1, 0.1, 0.1);
+			wait(0.9);
+			chest.origin = pos.origin;
+			exploder::exploder("collecting_souls_summoning_fx_4");
+			trig Delete();
+			bullshit = false;
+		}
+	}
+	level flag::wait_till( "soulchest_done" );
+	level flag::set( "soul_trig4" );
+	exploder::kill_exploder("collecting_souls_root_fx_4");
+	exploder::kill_exploder("collecting_souls_summoning_fx_4");
+	PlayFX(level.explodefx, pos.origin);
 }
 
 function lit_bonfire()
@@ -355,7 +383,7 @@ function bonfire_1()
 			chest MoveZ(329, 0.01, 0, 0);
 			exploder::exploder("collecting_souls_root_fx_1");
 			wait(0.01);
-			chest MoveZ(49, 1, 0.1, 0.1);
+			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
 			exploder::exploder("collecting_souls_summoning_fx_1");
@@ -402,7 +430,7 @@ function bonfire_2()
 			chest MoveZ(274, 0.01, 0, 0);
 			exploder::exploder("collecting_souls_root_fx_2");
 			wait(0.01);
-			chest MoveZ(49, 1, 0.1, 0.1);
+			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
 			exploder::exploder("collecting_souls_summoning_fx_2");
@@ -449,7 +477,7 @@ function bonfire_3()
 			chest MoveZ(913, 0.01, 0, 0);
 			exploder::exploder("collecting_souls_root_fx_3");
 			wait(0.01);
-			chest MoveZ(49, 1, 0.1, 0.1);
+			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
 			exploder::exploder("collecting_souls_summoning_fx_3");
@@ -514,8 +542,9 @@ function watch_pap_door()
 	level flag::wait_till("soul_trig");
 	level flag::wait_till("soul_trig2");
 	level flag::wait_till("soul_trig3");
+	level flag::wait_till("soul_trig4");
 
-	trig SetHintString("Drück ^3&&1^7 Um des scheiß Brushmodel verschwinden zu lassen wie es ein Vater einst tat"); // Changes the string that shows when looking at the trigger.
+	trig SetHintString("Drück ^3&&1^7 Um des scheiß Brushmodel verschwinden zu lassen wie es dein Vater einst tat"); // Changes the string that shows when looking at the trigger.
 	trig waittill("trigger", player);
 
 	trig Delete();
@@ -560,7 +589,7 @@ function asylumEntrance()
 	door_lt_2 = GetEnt("door_lt_02","targetname");
 
     trig = GetEnt("bf_trig","targetname");
-    trig SetHintString("Press ^3&&1^7 to Open Door [Cost: 2000]"); // Changes the string that shows when looking at the trigger.
+    trig SetHintString("Press ^3&&1^7 to Open Door [Cost: 1500]"); // Changes the string that shows when looking at the trigger.
     trig SetCursorHint("HINT_NOICON"); // Changes the icon that shows when looking at the trigger.
 	
 	bullshit = false;

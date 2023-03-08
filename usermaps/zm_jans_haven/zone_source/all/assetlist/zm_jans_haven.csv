@@ -3216,6 +3216,7 @@ xmodel,p7_tools_jar_glass_nails_screws
 xmodel,p7_tools_nail
 xmodel,p7_tools_screwdriver
 xmodel,p7_trash_bin_small_01_green_dirty
+xmodel,p7_urinal_bathroom
 xmodel,p7_vld_rock_pile_small_01
 xmodel,p7_vld_rock_pile_small_02
 xmodel,p7_water_heater
@@ -3392,6 +3393,7 @@ xmodel,p7_zm_teddybear_sitting
 xmodel,p7_zm_vending_packapunch
 xmodel,p7_zm_vending_packapunch_on
 xmodel,p7_zm_vending_packapunch_weapon
+xmodel,p7_zm_ver_bathtub
 xmodel,p7_zm_ver_fountain
 xmodel,p7_zm_ver_fountain_base
 xmodel,p7_zm_ver_pole_telephone_whole
@@ -3399,6 +3401,7 @@ xmodel,p7_zm_ver_poster_perk_doubletap
 xmodel,p7_zm_ver_poster_perk_juggernog
 xmodel,p7_zm_ver_poster_perk_revive
 xmodel,p7_zm_ver_poster_perk_speed
+xmodel,p7_zm_ver_table_bathroom_sink_single
 xmodel,p7_zm_zod_beast_basin
 xmodel,p7_zm_zod_bookcase_vintage_ladder
 xmodel,p7_zm_zod_magic_box_tentacle_teddy
@@ -3449,6 +3452,7 @@ xmodel,par_newspaper_debris_01
 xmodel,par_office_binder_book_02
 xmodel,par_office_binder_book_03
 xmodel,par_outside_heater_01
+xmodel,par_soap_dispenser_bathroom_01
 xmodel,rhapsody_poster
 xmodel,rune_prison_death_skull
 xmodel,skybox_default_black
@@ -5087,6 +5091,14 @@ xmodelmesh,p7_trash_bin_small_01_black_lod37591bf98
 xmodelmesh,p7_trash_bin_small_01_black_lod413ded4c2
 xmodelmesh,p7_trash_bin_small_01_black_lod5dec19b1d
 xmodelmesh,p7_trash_bin_small_01_black_lod69b3ffe95
+xmodelmesh,p7_urinal_bathroom_lod03fdd1290
+xmodelmesh,p7_urinal_bathroom_lod1ec64f5d2
+xmodelmesh,p7_urinal_bathroom_lod2357d1378
+xmodelmesh,p7_urinal_bathroom_lod3d030466
+xmodelmesh,p7_urinal_bathroom_lod4438ebe70
+xmodelmesh,p7_urinal_bathroom_lod448de2f52
+xmodelmesh,p7_urinal_bathroom_lod4a73dcd4d
+xmodelmesh,p7_urinal_bathroom_lod4b926052e
 xmodelmesh,p7_vld_rock_pile_small_01_lod0160f6083
 xmodelmesh,p7_vld_rock_pile_small_01_lod04801cce9
 xmodelmesh,p7_vld_rock_pile_small_01_lod058a13ba4
@@ -5670,6 +5682,7 @@ xmodelmesh,p7_zm_vending_packapunch_lod0e27f6c62
 xmodelmesh,p7_zm_vending_packapunch_lod0fe3f6618
 xmodelmesh,p7_zm_vending_packapunch_weapon_lod02b8eda8
 xmodelmesh,p7_zm_vending_pap_body_col75e90a9
+xmodelmesh,p7_zm_ver_bathtub_lod0854a8c7e
 xmodelmesh,p7_zm_ver_fountain_base_lod0ae8a7d05
 xmodelmesh,p7_zm_ver_fountain_lod056ffaaec
 xmodelmesh,p7_zm_ver_pole_telephone_whole_lod0d4306976
@@ -5677,6 +5690,7 @@ xmodelmesh,p7_zm_ver_poster_perk_doubletap_lod063f76d08
 xmodelmesh,p7_zm_ver_poster_perk_juggernog_lod07e1f4f9f
 xmodelmesh,p7_zm_ver_poster_perk_revive_lod06341631b
 xmodelmesh,p7_zm_ver_poster_perk_speed_lod066462793
+xmodelmesh,p7_zm_ver_table_bathroom_sink_single_lod076b4fc66
 xmodelmesh,p7_zm_zod_beast_basin_colbc5268d4
 xmodelmesh,p7_zm_zod_beast_basin_lod077b604f7
 xmodelmesh,p7_zm_zod_beast_basin_lod1bc58e9d0
@@ -5777,6 +5791,10 @@ xmodelmesh,par_outside_heater_01_lod01ef5acb5
 xmodelmesh,par_outside_heater_01_lod03026191e
 xmodelmesh,par_outside_heater_01_lod06a27685c
 xmodelmesh,par_outside_heater_01_lod06ab6da5e
+xmodelmesh,par_soap_dispenser_bathroom_01_lod055ef6220
+xmodelmesh,par_soap_dispenser_bathroom_01_lod05a31ebcd
+xmodelmesh,par_soap_dispenser_bathroom_01_lod08d3b41c1
+xmodelmesh,par_soap_dispenser_bathroom_01_lod0d025bc30
 xmodelmesh,rune_prison_death_skull100c80a3
 xmodelmesh,sunlight_shield1e00e616
 xmodelmesh,sunlight_shield4654637b
@@ -6303,6 +6321,7 @@ material,gfx_decal_blood_spray_01|dup
 material,gfx_decal_blood_spray_02
 material,gfx_decal_blood_spray_02|dup
 material,luts_t7_default
+material,mc/$default
 material,mc/asche
 material,mc/attachment_vm_barrel02
 material,mc/attachment_vm_laser_mount01
@@ -6722,6 +6741,9 @@ material,mc/mtl_p7_sin_generator_blackstation_dock_dark
 material,mc/mtl_p7_sin_wool_blanket_flat_01_blue
 material,mc/mtl_p7_sin_wool_blanket_flat_01_green
 material,mc/mtl_p7_sin_wool_blanket_folded_01_tan
+material,mc/mtl_p7_sink_ceramic_old_01
+material,mc/mtl_p7_sink_ceramic_old_01_faucet
+material,mc/mtl_p7_sink_ceramic_old_01_pipes
 material,mc/mtl_p7_skulls_bones_set
 material,mc/mtl_p7_snow_slush_floor
 material,mc/mtl_p7_sofa_leather_clean
@@ -6733,6 +6755,7 @@ material,mc/mtl_p7_toolbox_handheld_small_red
 material,mc/mtl_p7_tools_screwdriver
 material,mc/mtl_p7_trash_bin_small_01_set_plastic_bag_01
 material,mc/mtl_p7_trash_bin_small_01_set_plastic_bucket_01_green
+material,mc/mtl_p7_urinal_bathroom
 material,mc/mtl_p7_water_heater
 material,mc/mtl_p7_weapon_rack_safehouse_02_01_aluminum
 material,mc/mtl_p7_weapon_rack_safehouse_02_02_black_metal
@@ -7269,6 +7292,11 @@ material,mc/mtl_p7_zm_vending_wonder_18
 material,mc/mtl_p7_zm_vending_wonder_19
 material,mc/mtl_p7_zm_vending_wonder_20
 material,mc/mtl_p7_zm_vending_wonder_21
+material,mc/mtl_p7_zm_ver_bathtub
+material,mc/mtl_p7_zm_ver_bathtub_broken
+material,mc/mtl_p7_zm_ver_bathtub_dirty_01
+material,mc/mtl_p7_zm_ver_bathtub_dirty_02
+material,mc/mtl_p7_zm_ver_bathtub_metal
 material,mc/mtl_p7_zm_ver_fountain_01
 material,mc/mtl_p7_zm_ver_fountain_02
 material,mc/mtl_p7_zm_ver_fountain_03
@@ -7359,6 +7387,8 @@ material,mc/mtl_par_liquor_bottle_01_glass_out
 material,mc/mtl_par_metal_goblet_01
 material,mc/mtl_par_newspaper_debris
 material,mc/mtl_par_outside_heater_01
+material,mc/mtl_par_soap_dispenser_bathroom_01
+material,mc/mtl_par_soap_dispenser_bathroom_01_glass
 material,mc/mtl_perk_mtl_attach_t9_pistol_revolver_optic_rail
 material,mc/mtl_perk_mtl_p9_sur_elemental_pop_container
 material,mc/mtl_perk_mtl_p9_sur_elemental_pop_decal
@@ -8209,6 +8239,7 @@ material,mc/t7_decal_foliage_ivy_vine_alphatest
 material,mc/t7_decal_foliage_ivy_vine_dense_alphatest
 material,mc/t7_decal_grunge_leakage_01
 material,mc/t7_decal_grunge_rust_01
+material,mc/t7_decal_grunge_rust_blend
 material,mc/t7_decal_grunge_trash_01
 material,mc/t7_decal_lab_monitor_background
 material,mc/t7_decal_signage_caution_stripes_slanted_red
@@ -8228,6 +8259,7 @@ material,mc/t7_metal_chainlink
 material,mc/t7_metal_chainlink_worn
 material,mc/t7_metal_grate_flooring
 material,mc/t7_metal_grunge_med_01
+material,mc/t7_metal_iron_grunge_01
 material,mc/t7_metal_planter_top_trim_large_painted_black_worn
 material,mc/t7_metal_ramses_gold_worn
 material,mc/t7_metal_rust_ceiling_01
@@ -8654,7 +8686,6 @@ material,wc/mtl_p7_zur_blood_waterfall_01
 material,wc/mtl_pt_oc
 material,wc/mtl_zm_blueprint_build_generic
 material,wc/mw4_concrete_damaged_02
-material,wc/mw4_metal_painted_old_01
 material,wc/shadowcaster
 material,wc/t7_brick_worn_heavy_grout_red_wet
 material,wc/t7_decal_blood_puddles_01
@@ -8677,6 +8708,7 @@ material,xl_nws3
 techset,el/effect_lit_scroll_emissive_blend#3236dcd6
 techset,mc/decal_emissive_mask#e6142445
 techset,mc/decal_emissive_scroll#e6142445
+techset,mc/default#e6142445
 techset,mc/emissive_add#e6142445
 techset,mc/fxanim_backlit_alphatest#e6142445
 techset,mc/fxanim_vegetation#e6142445
@@ -9933,6 +9965,14 @@ image,i_mtl_p7_sin_wool_blanket_flat_01_m
 image,i_mtl_p7_sin_wool_blanket_flat_01_n
 image,i_mtl_p7_sin_wool_blanket_folded_01_m
 image,i_mtl_p7_sin_wool_blanket_folded_01_n
+image,i_mtl_p7_sink_ceramic_old_01_faucet_m
+image,i_mtl_p7_sink_ceramic_old_01_faucet_n
+image,i_mtl_p7_sink_ceramic_old_01_faucet_o
+image,i_mtl_p7_sink_ceramic_old_01_m
+image,i_mtl_p7_sink_ceramic_old_01_n
+image,i_mtl_p7_sink_ceramic_old_01_pipes_m
+image,i_mtl_p7_sink_ceramic_old_01_pipes_n
+image,i_mtl_p7_sink_ceramic_old_01_pipes_o
 image,i_mtl_p7_skulls_bones_set_c
 image,i_mtl_p7_skulls_bones_set_n
 image,i_mtl_p7_suspension_bridge_bolt_01_m
@@ -9956,6 +9996,8 @@ image,i_mtl_p7_trash_bin_small_01_set_plastic_bag_o
 image,i_mtl_p7_trash_bin_small_01_set_plastic_bucket_01_m
 image,i_mtl_p7_trash_bin_small_01_set_plastic_bucket_01_n
 image,i_mtl_p7_trash_bin_small_01_set_plastic_bucket_o
+image,i_mtl_p7_urinal_bathroom_c
+image,i_mtl_p7_urinal_bathroom_n
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_c
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_n
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_normal_m
@@ -10427,6 +10469,8 @@ image,i_mtl_p7_zm_vending_wonder_03_n
 image,i_mtl_p7_zm_vending_wonder_03_t
 image,i_mtl_p7_zm_vending_wonder_04_m
 image,i_mtl_p7_zm_vending_wonder_04_n
+image,i_mtl_p7_zm_ver_bathtub_m
+image,i_mtl_p7_zm_ver_bathtub_n
 image,i_mtl_p7_zm_ver_fountain_01_m
 image,i_mtl_p7_zm_ver_fountain_01_n
 image,i_mtl_p7_zm_ver_fountain_02_m
@@ -11000,10 +11044,6 @@ image,i_mw4_concrete_damaged_02_blend_c
 image,i_mw4_concrete_damaged_02_blend_g
 image,i_mw4_concrete_damaged_02_blend_n
 image,i_mw4_concrete_damaged_02_blend_o
-image,i_mw4_metal_painted_old_01_c
-image,i_mw4_metal_painted_old_01_g
-image,i_mw4_metal_painted_old_01_n
-image,i_mw4_metal_painted_old_01_o
 image,i_mw4_snow_slush_01_blend_r
 image,i_mw4_snow_slush_01_c
 image,i_mw4_snow_slush_01_g
@@ -11114,6 +11154,10 @@ image,i_par_newspaper_debris_g
 image,i_par_newspaper_debris_o
 image,i_par_outside_heater_01_g
 image,i_par_outside_heater_01_o
+image,i_par_soap_dispenser_bathroom_01_g
+image,i_par_soap_dispenser_bathroom_01_glass_g
+image,i_par_soap_dispenser_bathroom_01_glass_o
+image,i_par_soap_dispenser_bathroom_01_o
 image,i_pt_oc_c
 image,i_rhapsody_cover_c
 image,i_rock_tombstone1_c
@@ -11241,11 +11285,16 @@ image,i_t7_decal_grunge_dirty_tile_01_c
 image,i_t7_decal_grunge_dirty_tile_01_g
 image,i_t7_decal_grunge_leakage_01_c
 image,i_t7_decal_grunge_leakage_01_g
+image,i_t7_decal_grunge_moss_grime_c
 image,i_t7_decal_grunge_paint_discolored_01_c
 image,i_t7_decal_grunge_rust_01_c
 image,i_t7_decal_grunge_rust_02_g
 image,i_t7_decal_grunge_rust_02_n
 image,i_t7_decal_grunge_rust_04_c
+image,i_t7_decal_grunge_rust_blend_c
+image,i_t7_decal_grunge_rust_blend_g
+image,i_t7_decal_grunge_rust_blend_r
+image,i_t7_decal_grunge_scorch_03_r
 image,i_t7_decal_grunge_scratch_pockmark_n
 image,i_t7_decal_grunge_side_01_c
 image,i_t7_decal_grunge_trash_01_c
@@ -11347,6 +11396,7 @@ image,i_t7_metal_bare_n
 image,i_t7_metal_bare_polished_g
 image,i_t7_metal_bare_worn_01_g
 image,i_t7_metal_brass_old_g
+image,i_t7_metal_bronze_dirty_n
 image,i_t7_metal_chain_c
 image,i_t7_metal_chain_n
 image,i_t7_metal_chain_o
@@ -11444,6 +11494,7 @@ image,i_t7_micro_metal_grunge_pockmarks_01_g
 image,i_t7_micro_metal_grunge_pockmarks_01_n
 image,i_t7_micro_metal_grunge_pockmarks_01_s
 image,i_t7_micro_metal_grunge_scratch_01_g
+image,i_t7_micro_metal_grunge_scratch_02_g
 image,i_t7_micro_metal_grunge_scratch_03_n
 image,i_t7_micro_metal_grunge_scratch_fine_01_c
 image,i_t7_micro_metal_grunge_scratch_fine_01_g
@@ -11478,6 +11529,7 @@ image,i_t7_micro_metal_rust_heavy_02_c
 image,i_t7_micro_metal_rust_n
 image,i_t7_micro_paint_01_c
 image,i_t7_micro_paint_01_g
+image,i_t7_micro_plaster_01_c
 image,i_t7_micro_plaster_01_n
 image,i_t7_micro_plaster_smooth_dirty_01_c
 image,i_t7_micro_plaster_smooth_light_01_c
@@ -13587,6 +13639,11 @@ image,mtl_par_newspaper_debris_n
 image,mtl_par_newspaper_debris_s
 image,mtl_par_outside_heater_01_c
 image,mtl_par_outside_heater_01_n
+image,mtl_par_soap_dispenser_bathroom_01_c
+image,mtl_par_soap_dispenser_bathroom_01_glass_c
+image,mtl_par_soap_dispenser_bathroom_01_glass_n
+image,mtl_par_soap_dispenser_bathroom_01_glass_s
+image,mtl_par_soap_dispenser_bathroom_01_n
 image,mtl_perk_ch_metal_rusty_01_nml
 image,mtl_perk_eb_art_wall_metal_oldbrush_silver_c
 image,mtl_perk_eb_art_wall_metal_oldbrush_silver_n

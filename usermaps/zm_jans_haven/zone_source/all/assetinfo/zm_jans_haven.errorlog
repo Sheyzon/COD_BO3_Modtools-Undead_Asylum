@@ -1,4 +1,4 @@
-return 5003000
+return 7004000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -17,14 +17,24 @@ return 5003000
   rawfile:vision/zombie_last_stand.vision
     csv:lednors_bw.zpkg
       csv:zone_source/zm_jans_haven.zone
+^1ERROR: Material t7_metal_bare_iron_brushed_2_matte was not found in gdtDB
+  material:mc/t7_metal_bare_iron_brushed_2_matte
+    xmodel:p7_zm_ver_table_bathroom_sink_single
+      col_map:maps/zm/zm_jans_haven.d3dbsp
+^1The model (p7_zm_ver_table_bathroom_sink_single) uses material (t7_metal_bare_iron_brushed_2_matte) but there is no techset for surface 4
+  xmodel:p7_zm_ver_table_bathroom_sink_single
+    col_map:maps/zm/zm_jans_haven.d3dbsp
 ^1ERROR: Material mtl_origins_camo_alt was not found in gdtDB
   material:mc/mtl_origins_camo_alt
     weaponcamo:t9_camo_nail_gun_table
       weapon:t9_nail_gun_up
         csv:zone_source/zm_jans_haven.zone
+^35 warnings encountered while processing xmodel 'par_soap_dispenser_bathroom_01_lod0'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\par_soap_dispenser_bathroom_01_lod0_f0_s1.000000_geo_rigid_WBN4HPJLYYT7BMG76RLODKDL7Z.log
+  xmodel:par_soap_dispenser_bathroom_01
+    col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3Found 2 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
   game_map:maps/zm/zm_jans_haven.d3dbsp
-^3Found 172 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
+^3Found 174 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
