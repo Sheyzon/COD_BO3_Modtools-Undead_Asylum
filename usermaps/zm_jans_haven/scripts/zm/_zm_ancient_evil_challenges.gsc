@@ -299,7 +299,7 @@ function podium_challenge_redeem(num)
 		}
 		if(players[num].ancient_evil_challenge_power == 100)
 		{
-			if (players[num].perkshard_count <= 4)
+			if (players[num].perkshard_count <= 3)
 			{
 				fxOrg = Spawn( "script_model", self.origin );
 				fxOrg setmodel("wpn_t7_zmb_perk_bottle_powerup_view");

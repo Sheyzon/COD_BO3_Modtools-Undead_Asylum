@@ -238,13 +238,12 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "jumpad_upper", "southwing_lower", "ez2");
 	zm_zonemgr::add_adjacent_zone( "southwing_lower", "main_room", "ez3");
 
-	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez3");
-
 	zm_zonemgr::add_adjacent_zone( "main_room", "pap", "pap_flag");
 	zm_zonemgr::add_adjacent_zone( "main_room", "pap2", "pap_flag");
 	zm_zonemgr::add_adjacent_zone( "pap", "pap2", "pap_flag");
 	
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_middle", "ez4");
+	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez4");
 	zm_zonemgr::add_adjacent_zone( "westwing_staircase_01", "westwing_middle", "ez4");
 	zm_zonemgr::add_adjacent_zone( "westwing_middle", "westwing_staircase_02", "ez4");
 	
@@ -514,7 +513,7 @@ function door_drop()
 	player PlayLocalSound("ee_trigger");
 	//IPrintLnBold("Door key found");
 
-	thread intro_screen_text("Door key found", undefined, undefined, 20, -250);
+	thread intro_screen_text("Door key found", undefined, undefined, 20, -270);
 
 	trig Delete();
 	exploder::kill_exploder("ds_door_drop");
@@ -522,7 +521,7 @@ function door_drop()
 	wait(1);
 	player zm_audio::create_and_play_dialog( "general", "pickup" );
 	
-	trig2 SetHintString("Press ^3&&1^7 to Pillage crate"); // Changes the string that shows when looking at the trigger.
+	trig2 SetHintString("Press ^3&&1^7 to open gate"); // Changes the string that shows when looking at the trigger.
 	trig2 waittill("trigger", player);
 	model MoveZ(-69, 1, 0.15, 0.05);
 	clip Delete();
@@ -569,7 +568,7 @@ function drop_summoning_key()
 	player PlayLocalSound("ee_trigger");
 	//IPrintLnBold("Summoning Key found");
 
-	thread intro_screen_text("Summoning Key found", undefined, undefined, 20, -250);
+	thread intro_screen_text("Summoning Key found", undefined, undefined, 20, -270);
 
 	exploder::kill_exploder("drop_1");
 	trig Delete();

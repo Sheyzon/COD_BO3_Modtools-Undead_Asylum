@@ -61203,7 +61203,7 @@ guid "{AAFE4268-B2F2-11ED-91F5-34CFF6FAFB90}"
 {
 guid "{DF431E23-BAC3-11ED-91F7-34CFF6FAFB90}"
 "classname" "misc_prefab"
-"angles" "0 33.999 0"
+"angles" "0 213.999 0"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "6044 -2491 610"
 }
@@ -61211,7 +61211,7 @@ guid "{DF431E23-BAC3-11ED-91F7-34CFF6FAFB90}"
 {
 guid "{E561F456-BAC3-11ED-91F7-34CFF6FAFB90}"
 "classname" "misc_prefab"
-"angles" "0 3.39898 0"
+"angles" "0 183.399 0"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "6073 -2554 610"
 }
@@ -61219,7 +61219,7 @@ guid "{E561F456-BAC3-11ED-91F7-34CFF6FAFB90}"
 {
 guid "{E561F45E-BAC3-11ED-91F7-34CFF6FAFB90}"
 "classname" "misc_prefab"
-"angles" "0 339.798 0"
+"angles" "0 159.798 0"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "6071 -2630 610"
 }
@@ -61227,7 +61227,7 @@ guid "{E561F45E-BAC3-11ED-91F7-34CFF6FAFB90}"
 {
 guid "{E561F466-BAC3-11ED-91F7-34CFF6FAFB90}"
 "classname" "misc_prefab"
-"angles" "0 310.799 0"
+"angles" "0 130.799 0"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "6030 -2686 617"
 }
@@ -62158,4 +62158,22 @@ guid "{EF32BE02-BE0E-11ED-91F8-34CFF6FAFB90}"
 "in_play_space" "1"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
+}
+// entity 2370
+{
+guid "{299BD372-BE86-11ED-91FA-34CFF6FAFB90}"
+"classname" "trigger_use"
+"targetname" "link_pad"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{299BD371-BE86-11ED-91FA-34CFF6FAFB90}"
+ ( -2065.75 -1735.25 2519 ) ( -2073.75 -1735.25 2519 ) ( -2073.75 -1751.25 2519 ) trigger 64 64 -2193.75 495.25 0 0 lightmap_gray 16384 16384 -2193.75 495.25 0 0
+ ( -2033.75 -1751.25 2527 ) ( -2033.75 -1735.25 2527 ) ( -2025.75 -1735.25 2527 ) trigger 64 64 -2153.75 495.25 0 0 lightmap_gray 16384 16384 -2153.75 495.25 0 0
+ ( -2073.75 -1783.25 2535 ) ( -2065.75 -1783.25 2535 ) ( -2065.75 -1783.25 2519 ) trigger 64 64 -2193.75 -2503 0 0 lightmap_gray 16384 16384 -2193.75 -2503 0 0
+ ( -2017.75 -1751.25 2535 ) ( -2017.75 -1735.25 2535 ) ( -2017.75 -1735.25 2519 ) trigger 64 64 -495.25 -2503 0 0 lightmap_gray 16384 16384 -495.25 -2503 0 0
+ ( -2065.75 -1719.25 2535 ) ( -2073.75 -1719.25 2535 ) ( -2073.75 -1719.25 2519 ) trigger 64 64 -2193.75 -2503 0 0 lightmap_gray 16384 16384 -2193.75 -2503 0 0
+ ( -2081.75 -1735.25 2535 ) ( -2081.75 -1751.25 2535 ) ( -2081.75 -1751.25 2519 ) trigger 64 64 -495.25 -2503 0 0 lightmap_gray 16384 16384 -495.25 -2503 0 0
+}
 }
