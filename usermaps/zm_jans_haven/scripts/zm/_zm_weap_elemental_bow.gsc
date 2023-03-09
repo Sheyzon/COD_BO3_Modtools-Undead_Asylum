@@ -60,7 +60,7 @@ function pickup( w_weapon )
 	level flag::wait_till("bf2");
 	level flag::wait_till("bf3");
 
-	model = GetEnt("basic_bitch_bow");
+	model = GetEnt("basic_bitch_bow","targetname");	
 	model MoveZ(78, 1, 0.1, 0.3);
 	exploder::exploder("basic_bitch_bow_fx");
 	wait(1);

@@ -6360,7 +6360,9 @@ material,mc/floor_10
 material,mc/fx_magma_splat02_mtl
 material,mc/gfx_crater_blacktop_splat
 material,mc/girls_and_panzer_poster
+material,mc/grave_10
 material,mc/griff
+material,mc/ground_10
 material,mc/ground_11
 material,mc/guitar_basecolor
 material,mc/guitar_basecolor_two
@@ -8223,8 +8225,10 @@ material,mc/p7_zm_ctl_decal_emissive115_spray_02
 material,mc/rhapsody_cover
 material,mc/schaedel
 material,mc/skull
+material,mc/staircase_10
 material,mc/stairs_00
 material,mc/stairs_01
+material,mc/stairs_10_snow
 material,mc/steine
 material,mc/sunlight_shield_surface
 material,mc/t7_brick_worn_red
@@ -8640,7 +8644,6 @@ material,vd/gfx_decal_blood_spray_02|dup
 material,vd/hur_moss_rock_05_dec
 material,vd/mtl_p7_zm_der_teleporter_iron_cross_decal
 material,vd/mtl_t7_decal_grunge_drip_singapore
-material,vd/mw4_snow_slush_01_blend
 material,vd/shinedown_cover
 material,vd/t7_brick_worn_heavy_grout_brown_blend
 material,vd/t7_decal_blood_drips_03_dry
@@ -8700,6 +8703,7 @@ material,wc/t7_mud_footprints_blend
 material,wc/t7_mud_sludge_wet_02_reveal
 material,wc/t7_water_zm_der_vats
 material,wc/t7_wood_mulch_01
+material,wc/t7_wood_mulch_01_asylum_clip
 material,wc/t7_wood_panel_blonde_stained
 material,wc/weapon_vm_sm_augolf_wall_chalk
 material,wc/weapon_vm_sm_scharlie_wall_chalk
@@ -8790,7 +8794,6 @@ techset,vd/lit_decal_normal_gloss_reveal#36ede2cf
 techset,vd/lit_decal_reveal#36ede2cf
 techset,vd/lit_decal_reveal_advanced#36ede2cf
 techset,vd/lit_detail_decal_plus#36ede2cf
-techset,vd/lit_detail_decal_reveal_plus#36ede2cf
 techset,wc/lit#882572b8
 techset,wc/lit_advanced_fullspec#882572b8
 techset,wc/lit_alphatest#882572b8
@@ -9402,9 +9405,13 @@ image,i_gfx_fxt_env_dust_mote_pcloud_add_r
 image,i_gfx_fxt_smk_light
 image,i_girls_and_panzer_dakimakura_c
 image,i_girls_and_panzer_poster_c
+image,i_grave_10_c
+image,i_grave_10_n
 image,i_griff_c
 image,i_griff_e
 image,i_griff_n
+image,i_ground_10_c
+image,i_ground_10_n
 image,i_ground_11_c
 image,i_ground_11_n
 image,i_guitar_basecolor_c
@@ -11044,11 +11051,6 @@ image,i_mw4_concrete_damaged_02_blend_c
 image,i_mw4_concrete_damaged_02_blend_g
 image,i_mw4_concrete_damaged_02_blend_n
 image,i_mw4_concrete_damaged_02_blend_o
-image,i_mw4_snow_slush_01_blend_r
-image,i_mw4_snow_slush_01_c
-image,i_mw4_snow_slush_01_g
-image,i_mw4_snow_slush_01_n
-image,i_mw4_snow_slush_01_o
 image,i_ndy_bunk_blanket_02_g
 image,i_ndy_bunk_blanket_02_o
 image,i_ndy_table_lamp_01_g
@@ -11171,10 +11173,15 @@ image,i_shinedown_cover_c
 image,i_skull_c
 image,i_skybox_cotd
 image,i_specialty_vulture_zombies_glow
+image,i_staircase_10_c
+image,i_staircase_10_n
 image,i_stairs_00_c
 image,i_stairs_00_n
 image,i_stairs_01_c
 image,i_stairs_01_n
+image,i_stairs_10_snow_c
+image,i_stairs_10_snow_g
+image,i_stairs_10_snow_n
 image,i_steine_c
 image,i_steine_g
 image,i_steine_n

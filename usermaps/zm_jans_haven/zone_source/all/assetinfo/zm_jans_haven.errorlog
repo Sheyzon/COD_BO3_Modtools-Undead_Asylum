@@ -1,4 +1,4 @@
-return 7004000
+return 7003000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -29,9 +29,6 @@ return 7004000
     weaponcamo:t9_camo_nail_gun_table
       weapon:t9_nail_gun_up
         csv:zone_source/zm_jans_haven.zone
-^35 warnings encountered while processing xmodel 'par_soap_dispenser_bathroom_01_lod0'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\par_soap_dispenser_bathroom_01_lod0_f0_s1.000000_geo_rigid_WBN4HPJLYYT7BMG76RLODKDL7Z.log
-  xmodel:par_soap_dispenser_bathroom_01
-    col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
