@@ -121,6 +121,8 @@
 #precache( "fx", "dlc2/island/fx_fog_ground_lg_island" );
 #precache( "fx", "dirt/fx_dust_motes_200x200_pcloud" );
 #precache( "fx", "dlc1/castle/fx_ritual_key_soul_exp_igc" );
+#precache( "fx", "dlc1/zmb_weapon/fx_bow_wolf_arrow_trail_zmb" );
+#precache( "fx", "dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb" );
 
 #define QUICK_REVIVE_MACHINE_LIGHT_FX                       "revive_light"
 #define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX                    "sleight_light"
@@ -694,8 +696,11 @@ function wolf_bow_()
 	istriggered = true;
 	trig = GetEnt("wolf_bow_trig", "targetname");
 	pos = GetEnt("wolf_arrow_pos", "targetname");
-
+	fxStart = GetEnt("fxOrg", "targetname");
+	fxEnd = GetEnt("fxEnd", "targetname");
 	arrow_model = GetEnt("wolf_arrow", "targetname");
+	arrow_trig = GetEnt("wolf_arrow_trig", "targetname");
+	arrow_trig SetCursorHint( "HINT_NOICON" );
 
 	desiredweapon = getWeapon("elemental_bow"); // Weapon you want the player to have when shot
 
@@ -706,28 +711,53 @@ function wolf_bow_()
         
         if( current_weapon == desiredweapon )
         {
-			arrow_model MoveZ(41, 1, 0.1, 1);
+			arrow_model MoveZ(41, 1, 0.1, 2);
 			exploder::exploder("wolf_painting_fx");
 			wait(1);
 			exploder::exploder("wolf_arrow_fx");
 			arrow_model.origin = pos.origin;
-			arrow_trig = GetEnt("wolf_arrow_trig", "targetname");
-			arrow_trig SetCursorHint( "HINT_NOICON" );
 			arrow_trig SetHintString("Press ^3&&1^7 to pick up arrow"); // Changes the string that shows when looking at the trigger.
 			arrow_trig waittill( "trigger", player );
+			arrow_model MoveZ(-41, 1, 0.1, 0.1);
 			player.has_arrow = true;
 			level flag::set( "player_has_wolf_arrow" );
 			player PlayLocalSound("ee_trigger");
 			player zm_audio::create_and_play_dialog( "general", "pickup" );
 			exploder::kill_exploder("wolf_arrow_fx");
-			arrow_model Delete();
-			arrow_trig Delete();
-			trig Delete();
-			pos Delete();
+			arrow_trig SetHintString(""); // Changes the string that shows when looking at the trigger.
 			istriggered = false;
         }
 		wait(1);
     }
+	level flag::wait_till("soul_catchers_charged");
+	arrow_trig SetHintString("Press ^3&&1^7 to use this twigger"); // Changes the string that shows when looking at the trigger.
+	exploder::exploder("wolf_recive_arrow_fx");
+	arrow_trig waittill( "trigger", player );
+	arrow_trig SetHintString(""); // Changes the string that shows when looking at the trigger.
+	exploder::kill_exploder("wolf_recive_arrow_fx");
+	fxOrg = util::spawn_model( "tag_origin", fxStart.origin );
+	fx = PlayFxOnTag("dlc1/zmb_weapon/fx_bow_wolf_arrow_trail_zmb", fxOrg, "tag_origin" );
+	time = Distance(fxStart.origin,fxEnd.origin)/100;
+	fxOrg MoveTo(fxEnd.origin,time);
+	wait(time - .05);
+	fxOrg moveto(fxEnd.origin, .5);
+	fxOrg waittill("movedone");
+	fx = PlayFxOnTag("dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb", fxOrg, "tag_origin" );
+	wait(1);
+	fxOrg MoveTo(fxStart.origin,time);
+	fxOrg waittill("movedone");
+	fx Delete();
+	arrow_model MoveZ(41, 1, 0.1, 0.1);
+	wait(1);
+	arrow_trig SetHintString("Press ^3&&1^7 to pickup"); // Changes the string that shows when looking at the trigger.
+	exploder::exploder("wolf_arrow_fx");
+	arrow_model.origin = pos.origin;
+	arrow_trig waittill( "trigger", player );
+	arrow_trig Delete();
+	arrow_model Delete();
+	exploder::kill_exploder("wolf_arrow_fx");
+	exploder::kill_exploder("wolf_painting_fx");
+	level flag::set("wolf_arrow_done");
 }
 
 function usermap_test_zone_init()

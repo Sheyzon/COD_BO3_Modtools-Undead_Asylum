@@ -5,7 +5,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{23AC3041-BEC5-11ED-91FA-34CFF6FAFB90}"
+guid "{EA8D64F3-BF7C-11ED-91FA-34CFF6FAFB90}"
 "classname" "worldspawn"
 "lutmaterial" "xl_nws3"
 "vbloom" "mp_sector_03"
@@ -24819,22 +24819,22 @@ guid "{23AC3041-BEC5-11ED-91FA-34CFF6FAFB90}"
 // brush 1029
 {
  guid "{D9C647A8-BEC3-11ED-91FA-34CFF6FAFB90}"
- ( -1578.75 -1677.5 2532 ) ( -1633.25 -1613.75 2532 ) ( -1640.75 -1620 2532 ) clip 64 63.992409 1880.7673 503.81793 -49.399933 6.9869871e-005 lightmap_gray 16384.279 16381.875 1880.7817 503.87817 -49.399933 7.0047092e-005
- ( -1640.75 -1620 2629.25 ) ( -1633.25 -1613.75 2629.25 ) ( -1578.75 -1677.5 2629.25 ) clip 64 63.992409 1880.7673 503.81793 -49.399933 6.9869871e-005 lightmap_gray 16384.279 16381.875 1880.7817 503.87817 -49.399933 7.0047092e-005
- ( -1640.75 -1620 2629.25 ) ( -1586.25 -1683.75 2629.25 ) ( -1586.25 -1683.75 2532 ) clip 48.596859 -64 2924.8821 0 -180 0 lightmap_gray 12440.796 -16384 2924.8821 0 -180 0
- ( -1586.25 -1683.75 2629.25 ) ( -1578.75 -1677.5 2629.25 ) ( -1578.75 -1677.5 2532 ) clip 48.635265 64 -221.11368 0 0 0 lightmap_gray 12450.282 16384 -221.10669 0 0 0
- ( -1578.75 -1677.5 2629.25 ) ( -1633.25 -1613.75 2629.25 ) ( -1633.25 -1613.75 2532 ) clip 48.597137 -64 2918.5415 0 180 0 lightmap_gray 12440.867 -16384 2918.5415 0 180 0
- ( -1629.75 -1621 2629.25 ) ( -1637.25 -1627.25 2629.25 ) ( -1637.25 -1627.25 2532 ) clip 48.63308 64 -272.01508 0 0 0 lightmap_gray 12449.879 16384 -272.01022 0 0 0
+ ( -1580.172 -1676.4666 2532 ) ( -1648.3051 -1627.5571 2532 ) ( -1654.0975 -1635.4156 2532 ) clip 64 63.991325 1325.541 496.46686 -35.600025 5.9141577e-005 lightmap_gray 16384.207 16381.598 1325.5502 496.5257 -35.600029 5.9289236e-005
+ ( -1654.0975 -1635.4156 2629.25 ) ( -1648.3051 -1627.5571 2629.25 ) ( -1580.172 -1676.4666 2629.25 ) clip 64 63.991325 1325.541 496.46686 -35.600025 5.9141577e-005 lightmap_gray 16384.207 16381.598 1325.5502 496.5257 -35.600029 5.9289236e-005
+ ( -1654.0975 -1635.4156 2629.25 ) ( -1585.9647 -1684.3252 2629.25 ) ( -1585.9647 -1684.3252 2532 ) clip 51.937885 64 -259.50479 0 0 0 lightmap_gray 13296.099 16384 -259.50479 0 0 0
+ ( -1585.9647 -1684.3252 2629.25 ) ( -1580.172 -1676.4666 2629.25 ) ( -1580.172 -1676.4666 2532 ) clip 50.960957 64 -253.90947 0 0 0 lightmap_gray 13045.643 16384 -253.90193 0 0 0
+ ( -1580.172 -1676.4666 2629.25 ) ( -1648.3051 -1627.5571 2629.25 ) ( -1648.3051 -1627.5571 2532 ) clip 51.93837 64 -253.80632 0 0 0 lightmap_gray 13296.223 16384 -253.80632 0 0 0
+ ( -1643.1768 -1633.7629 2629.25 ) ( -1648.9695 -1641.621 2629.25 ) ( -1648.9695 -1641.621 2532 ) clip 50.954708 64 -211.21312 0 0 0 lightmap_gray 13044.209 16384 -211.20705 0 0 0
 }
 // brush 1030
 {
- guid "{F7F07217-BEC3-11ED-91FA-34CFF6FAFB90}"
- ( -1586.25 -1815.25 2532 ) ( -1652 -1867.25 2532 ) ( -1646 -1875 2532 ) clip 64 63.994591 -736.22186 -1349.3484 38.399651 0.00012753239 lightmap_gray 16384.141 16382.438 -736.22351 -1349.2889 38.399654 0.00012729125
- ( -1646 -1875 2629.25 ) ( -1652 -1867.25 2629.25 ) ( -1586.25 -1815.25 2629.25 ) clip 64 63.994591 -736.22186 -1349.3484 38.399651 0.00012753239 lightmap_gray 16384.141 16382.438 -736.22351 -1349.2889 38.399654 0.00012729125
- ( -1646 -1875 2629.25 ) ( -1580.25 -1823 2629.25 ) ( -1580.25 -1823 2532 ) clip 50.156712 64 -299.31906 0 0 0 lightmap_gray 12840.118 16384 -299.31906 0 0 0
- ( -1580.25 -1823 2629.25 ) ( -1586.25 -1815.25 2629.25 ) ( -1586.25 -1815.25 2532 ) clip 50.15704 64 -415.03918 0 0 0 lightmap_gray 12840.005 16384 -415.03421 0 0 0
- ( -1586.25 -1815.25 2629.25 ) ( -1652 -1867.25 2629.25 ) ( -1652 -1867.25 2532 ) clip 50.156712 64 -305.37628 0 0 0 lightmap_gray 12840.118 16384 -305.37628 0 0 0
- ( -1641.5 -1859 2629.25 ) ( -1635.5 -1866.75 2629.25 ) ( -1635.5 -1866.75 2532 ) clip 50.15704 64 -458.81033 0 0 0 lightmap_gray 12840.005 16384 -458.80499 0 0 0
+ guid "{EA8D64F8-BF7C-11ED-91FA-34CFF6FAFB90}"
+ ( -1587.5334 -1816.172 2532 ) ( -1636.4429 -1884.3051 2532 ) ( -1628.5844 -1890.0975 2532 ) clip 64 63.991325 -766.54993 -2020.1079 54.399956 5.9171372e-005 lightmap_gray 16384.207 16381.598 -766.54285 -2020.0476 54.399956 5.9289236e-005
+ ( -1628.5844 -1890.0975 2629.25 ) ( -1636.4429 -1884.3051 2629.25 ) ( -1587.5334 -1816.172 2629.25 ) clip 64 63.991325 -766.54993 -2020.1079 54.399956 5.9171372e-005 lightmap_gray 16384.207 16381.598 -766.54285 -2020.0476 54.399956 5.9289236e-005
+ ( -1628.5844 -1890.0975 2629.25 ) ( -1579.6748 -1821.9647 2629.25 ) ( -1579.6748 -1821.9647 2532 ) clip 51.937885 64 -495.50494 0 0 0 lightmap_gray 13296.099 16384 -495.50494 0 0 0
+ ( -1579.6748 -1821.9647 2629.25 ) ( -1587.5334 -1816.172 2629.25 ) ( -1587.5334 -1816.172 2532 ) clip 50.960957 -64 3010.0906 0 180 0 lightmap_gray 13045.643 -16384 3010.0979 0 180 0
+ ( -1587.5334 -1816.172 2629.25 ) ( -1636.4429 -1884.3051 2629.25 ) ( -1636.4429 -1884.3051 2532 ) clip 51.93837 64 -489.80823 0 0 0 lightmap_gray 13296.223 16384 -489.80823 0 0 0
+ ( -1630.2371 -1879.1768 2629.25 ) ( -1622.379 -1884.9695 2629.25 ) ( -1622.379 -1884.9695 2532 ) clip 50.954708 -64 3052.7886 0 180 0 lightmap_gray 13044.209 -16384 3052.7927 0 180 0
 }
 }
 // entity 1
@@ -27035,10 +27035,16 @@ guid "{A7333A52-9F6D-11ED-91E6-34CFF6FAFB90}"
 "ao_range" "16"
 "ao_strength_double_sided" "0.200000002980232"
 "blend_maxs" "3 3 31"
+"clickedPlane02" "-1991.27 -3353.62 2266.29"
+"KvpMetaData00" "KvpName clickedPlane02 type vec3d exportMeta true toolsOnly true hidden true"
+"clickedPlane03" "-2121.07 -3574 2265.28"
+"KvpMetaData01" "KvpName clickedPlane03 type vec3d exportMeta true toolsOnly true hidden true"
+"clickedPlane05" "-2095.44 -3411.89 2201.41"
+"KvpMetaData02" "KvpName clickedPlane05 type vec3d exportMeta true toolsOnly true hidden true"
 "name" "westwing_probe_011"
 "origin" "-2031.2 -3458.35 2273.25"
-"size_max" "179.087 109.291 213.081"
-"size_min" "180.186 110.745 69.9148"
+"size_max" "179.087 104.733 213.081"
+"size_min" "180.186 115.652 71.8384"
 "adaptive_quality_boost" "Off"
 "ao_strength" "1"
 "blend_mins" "3 3 3"
@@ -30093,7 +30099,7 @@ guid "{892EB51D-A02F-11ED-91E6-34CFF6FAFB90}"
 "classname" "light"
 "PRIMARY_NOSHADOWMAP" "1"
 "PROBE_ONLY" "1"
-"_color" "0.6196 0.7843 0.898"
+"_color" "0.9137 0.6804 0.473"
 "far_edge" "0.499999992549419"
 "fov_outer" "120"
 "name" "light_017"
@@ -30101,7 +30107,7 @@ guid "{892EB51D-A02F-11ED-91E6-34CFF6FAFB90}"
 "penumbraRadius" "1.5"
 "radius" "500"
 "roundness" "1"
-"stops" "18"
+"stops" "19"
 "volumetricSampleCount" "8"
 "ENABLE_FALLOFF" "1"
 "PRIMARY_TYPE" "PRIMARY_OMNI"
@@ -62327,28 +62333,12 @@ guid "{3C086009-BEC3-11ED-91FA-34CFF6FAFB90}"
 }
 // entity 2378
 {
-guid "{7CC9B310-BEC3-11ED-91FA-34CFF6FAFB90}"
-"classname" "fx"
-"delay" "-19495"
-"exploder_count" "1"
-"exploder_index_0" "ver=2 don=0 doff=0 snd= off=0 name=wolf_arrow_fx"
-"fxdef" "dlc2/island/fx_bucket_115_glow_no_light"
-"origin" "-1674.47 -1751.27 2527"
-"fxstate1" "1"
-"fxstate2" "1"
-"fxstate3" "1"
-"fxstate4" "1"
-"primaryLightFraction" "1"
-"timescale" "1"
-}
-// entity 2379
-{
 guid "{635BB837-9FFC-11ED-91E6-34CFF6FAFB90}"
 "classname" "misc_prefab"
 "model" "_prefabs/undead_asylum/zm_ua_door_rt.map"
 "origin" "-2128 -1854 0"
 }
-// entity 2380
+// entity 2379
 {
 guid "{21845F4B-BEC4-11ED-91FA-34CFF6FAFB90}"
 "classname" "light"
@@ -62386,7 +62376,7 @@ guid "{21845F4B-BEC4-11ED-91FA-34CFF6FAFB90}"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "66"
 }
-// entity 2381
+// entity 2380
 {
 guid "{F9CAD05B-BEC4-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62403,7 +62393,7 @@ guid "{F9CAD05B-BEC4-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2382
+// entity 2381
 {
 guid "{0E62DFDB-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62420,7 +62410,7 @@ guid "{0E62DFDB-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2383
+// entity 2382
 {
 guid "{14F5F077-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62437,7 +62427,7 @@ guid "{14F5F077-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2384
+// entity 2383
 {
 guid "{14F5F07A-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62454,7 +62444,7 @@ guid "{14F5F07A-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2385
+// entity 2384
 {
 guid "{14F5F089-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62471,7 +62461,7 @@ guid "{14F5F089-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2386
+// entity 2385
 {
 guid "{14F5F08C-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62488,7 +62478,7 @@ guid "{14F5F08C-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2387
+// entity 2386
 {
 guid "{1B2C7518-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62505,7 +62495,7 @@ guid "{1B2C7518-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2388
+// entity 2387
 {
 guid "{23AC304C-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62522,7 +62512,7 @@ guid "{23AC304C-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2389
+// entity 2388
 {
 guid "{23AC304F-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62539,7 +62529,7 @@ guid "{23AC304F-BEC5-11ED-91FA-34CFF6FAFB90}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2390
+// entity 2389
 {
 guid "{23AC3052-BEC5-11ED-91FA-34CFF6FAFB90}"
 "classname" "fx"
@@ -62549,6 +62539,112 @@ guid "{23AC3052-BEC5-11ED-91FA-34CFF6FAFB90}"
 "exploder_index_0" "ver=2 don=0 doff=0 snd= off=0 name=wolf_painting_fx"
 "fxdef" "dlc1/zmb_weapon/fx_bow_wolf_wrap_torso"
 "origin" "-1591.5 -1793 2862"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 2390
+{
+guid "{E1A87799-BF63-11ED-91FA-34CFF6FAFB90}"
+"classname" "misc_model"
+"model" "p7_zm_zod_table_ritual"
+"origin" "-2031.25 -3424 2203.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2391
+{
+guid "{7CC9B310-BEC3-11ED-91FA-34CFF6FAFB90}"
+"classname" "fx"
+"delay" "-19495"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 snd= off=0 name=wolf_arrow_fx"
+"fxdef" "dlc2/island/fx_bucket_115_glow_no_light"
+"origin" "-1674.47 -1751.27 2527"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 2392
+{
+guid "{7EBE0952-BF64-11ED-91FA-34CFF6FAFB90}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9137 0.6804 0.473"
+"far_edge" "1"
+"fov_outer" "120"
+"name" "light_018"
+"origin" "-2029.69 -3458.62 2396"
+"penumbraRadius" "1.5"
+"radius" "300"
+"roundness" "1"
+"stops" "14"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"superellipse" "0.75 1 0.75 1"
+"spawnflags" "68"
+}
+// entity 2393
+{
+guid "{E1A877AA-BF63-11ED-91FA-34CFF6FAFB90}"
+"classname" "misc_model"
+"model" "p7_zm_zod_table_ritual_cloth"
+"origin" "-2031.25 -3424 2203.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2394
+{
+guid "{ADA3C911-BF78-11ED-91FA-34CFF6FAFB90}"
+"classname" "script_origin"
+"origin" "-1674.47 -1751.27 2551.5"
+"targetname" "fxOrg"
+"_color" "0.4 0 0.8"
+"client_server" "ClientSide"
+}
+// entity 2395
+{
+guid "{4C850707-BF79-11ED-91FA-34CFF6FAFB90}"
+"classname" "script_origin"
+"origin" "-1674.47 -1751.27 2893.75"
+"targetname" "fxEnd"
+"_color" "0.4 0 0.8"
+"client_server" "ClientSide"
+}
+// entity 2396
+{
+guid "{A1C81BC9-BF75-11ED-91FA-34CFF6FAFB90}"
+"classname" "fx"
+"delay" "-28828"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 snd= off=0 name=wolf_recive_arrow_fx"
+"fxdef" "dlc1/zmb_weapon/fx_bow_wolf_torso_trail"
+"origin" "-1674.47 -1751.27 2527"
 "fxstate1" "1"
 "fxstate2" "1"
 "fxstate3" "1"
