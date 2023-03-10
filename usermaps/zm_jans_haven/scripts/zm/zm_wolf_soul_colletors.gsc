@@ -573,7 +573,7 @@ function get_the_zoms()
 
 function watch_for_death()
 {   
-    level flag::wait_till( "power_on" ); //add a gsh with a flag 
+    level flag::wait_till( "player_has_wolf_arrow" ); //add a gsh with a flag 
 	self waittill("death", attacker);
 	//IPrintLnBold("zombie_died");
 	i = 0;

@@ -208,6 +208,7 @@ function main()
 	thread zombie_limit_increase(28, 10);
 
 	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
+	level thread intro_screen_text("Music is on", "The music slider", undefined, 20, -350);
 
 	thread asylumEntrance();
 	thread buildable_bonfire();
@@ -219,12 +220,20 @@ function main()
 	thread bonfire_2();
 	thread bonfire_3();
 	thread watch_pap_door();
+	thread wolf_bow_();
 
-	level.player_starting_points = 500;
+	level.player_starting_points = 50000;
+
+	players = GetPlayers();
+	players[0].has_arrow = false;
+	players[1].has_arrow = false;
+	players[2].has_arrow = false;
+	players[3].has_arrow = false;
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
 	grow_soul::init(  );
+
 }
 
 function asylum_zone_init()
@@ -513,7 +522,7 @@ function door_drop()
 	player PlayLocalSound("ee_trigger");
 	//IPrintLnBold("Door key found");
 
-	thread intro_screen_text("Door key found", undefined, undefined, 20, -270);
+	thread intro_screen_text("Door key found", undefined, undefined, 20, -280);
 
 	trig Delete();
 	exploder::kill_exploder("ds_door_drop");
@@ -568,7 +577,7 @@ function drop_summoning_key()
 	player PlayLocalSound("ee_trigger");
 	//IPrintLnBold("Summoning Key found");
 
-	thread intro_screen_text("Summoning Key found", undefined, undefined, 20, -270);
+	thread intro_screen_text("Summoning Key found", undefined, undefined, 20, -280);
 
 	exploder::kill_exploder("drop_1");
 	trig Delete();
@@ -610,6 +619,10 @@ function asylumEntrance()
 			clip Delete();
 			trig Delete();
 			bullshit = true;
+		}
+		else
+		{
+			player zm_audio::create_and_play_dialog( "general", "outofmoney" );
 		}
 	}
 }
@@ -673,6 +686,48 @@ function MonitorPower()
 	// level thread scene::play( "fxanim_diff_engine_tele_rt", "targetname" );
 	// level thread scene::play( "fxanim_diff_engine_tele_lt", "targetname" );
 	//level util::set_lighting_state(0);
+}
+
+function wolf_bow_()
+{
+	level flag::wait_till("initial_blackscreen_passed");
+	istriggered = true;
+	trig = GetEnt("wolf_bow_trig", "targetname");
+	pos = GetEnt("wolf_arrow_pos", "targetname");
+
+	arrow_model = GetEnt("wolf_arrow", "targetname");
+
+	desiredweapon = getWeapon("elemental_bow"); // Weapon you want the player to have when shot
+
+    while(istriggered)
+    {        
+        trig waittill( "trigger", player );
+        current_weapon = player getCurrentWeapon();
+        
+        if( current_weapon == desiredweapon )
+        {
+			arrow_model MoveZ(41, 1, 0.1, 1);
+			exploder::exploder("wolf_painting_fx");
+			wait(1);
+			exploder::exploder("wolf_arrow_fx");
+			arrow_model.origin = pos.origin;
+			arrow_trig = GetEnt("wolf_arrow_trig", "targetname");
+			arrow_trig SetCursorHint( "HINT_NOICON" );
+			arrow_trig SetHintString("Press ^3&&1^7 to pick up arrow"); // Changes the string that shows when looking at the trigger.
+			arrow_trig waittill( "trigger", player );
+			player.has_arrow = true;
+			level flag::set( "player_has_wolf_arrow" );
+			player PlayLocalSound("ee_trigger");
+			player zm_audio::create_and_play_dialog( "general", "pickup" );
+			exploder::kill_exploder("wolf_arrow_fx");
+			arrow_model Delete();
+			arrow_trig Delete();
+			trig Delete();
+			pos Delete();
+			istriggered = false;
+        }
+		wait(1);
+    }
 }
 
 function usermap_test_zone_init()
@@ -763,11 +818,14 @@ function zombie_limit_increase( base_limit, increase_by )
 
 function intro_screen_text(text_1 = "", text_2 = "", text_3 = "", _x, _y)
 {
-	if (_x == 120)
+	if (_x == 120 || text_1 == "Music is on")
 	{
 		wait(1); // wait for flags to init
 		level flag::wait_till("initial_blackscreen_passed");
 		wait(2);
+
+		if (text_1 == "Music is on")
+			wait(4);
 	}
 
     intro_hud = [];

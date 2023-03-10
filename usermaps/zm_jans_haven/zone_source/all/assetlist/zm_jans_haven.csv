@@ -2893,6 +2893,7 @@ xmodel,asylum_mainroom_maya
 xmodel,asylum_mainroom_pillar_top
 xmodel,asylum_outdoor_maya
 xmodel,asylum_pap
+xmodel,asylum_sith_painting
 xmodel,asylum_southwing_lower_maya
 xmodel,asylum_southwing_upper_maya
 xmodel,asylum_spawner_room
@@ -3714,6 +3715,10 @@ xmodelmesh,aac_kitchen_sink_01_lod080c7f8b1
 xmodelmesh,aac_kitchen_sink_01_lod0955316e1
 xmodelmesh,aac_kitchen_sink_01_lod0c5cf3adb
 xmodelmesh,aac_kitchen_sink_01_lod0e261e36c
+xmodelmesh,aac_painting_frame_05_lod0715b8f34
+xmodelmesh,aac_painting_frame_05_lod098d1b524
+xmodelmesh,aac_painting_frame_05_lod0b0857bc4
+xmodelmesh,aac_painting_frame_05_lod0ddc79b09
 xmodelmesh,aac_trash_debris_paper_01_lod0119f9e00
 xmodelmesh,aac_trash_debris_paper_01_lod0153e6bd1
 xmodelmesh,aac_trash_debris_paper_01_lod052f07cb6
@@ -6111,6 +6116,8 @@ material,ei/gfx_debris_clumps_em
 material,ei/gfx_debris_clumps_em|dup
 material,ei/gfx_debris_embers_em
 material,ei/gfx_debris_embers_em|dup
+material,ei/gfx_debris_trash_multiple_em_full_max_desat
+material,ei/gfx_debris_trash_multiple_em_full_max_desat|dup
 material,ei/gfx_debris_trash_multiple_lit
 material,ei/gfx_debris_trash_multiple_lit_t3
 material,ei/gfx_debris_trash_multiple_lit_t3|dup
@@ -6243,6 +6250,8 @@ material,ei/gfx_light_core_soft_em
 material,ei/gfx_light_core_soft_em|dup
 material,ei/gfx_light_incandescent_hot_em_i2048
 material,ei/gfx_light_incandescent_hot_em_i2048|dup
+material,ei/gfx_light_incandescent_hot_em_nocull
+material,ei/gfx_light_incandescent_hot_em_nocull|dup
 material,ei/gfx_light_incandescent_hot_lg
 material,ei/gfx_light_incandescent_hot_lg|dup
 material,ei/gfx_light_ray_solid_wide_em
@@ -6433,8 +6442,10 @@ material,mc/metal_01
 material,mc/metal_10
 material,mc/mtl_aac_coffee_table_01
 material,mc/mtl_aac_couch_01_sofa
+material,mc/mtl_aac_frame_back_01
 material,mc/mtl_aac_hotel_mirror_01
 material,mc/mtl_aac_kitchen_sink_01
+material,mc/mtl_aac_painting_frames_01
 material,mc/mtl_aac_trash_debris_paper_01
 material,mc/mtl_aml_gen_monkey_dead_01_alpha
 material,mc/mtl_aml_gen_monkey_dead_01_puddle
@@ -8229,6 +8240,7 @@ material,mc/p7_zm_ctl_decal_emissive115_spray_01
 material,mc/p7_zm_ctl_decal_emissive115_spray_02
 material,mc/rhapsody_cover
 material,mc/schaedel
+material,mc/sith_painting
 material,mc/skull
 material,mc/staircase_10
 material,mc/stairs_00
@@ -8913,12 +8925,16 @@ image,i_aac_coffee_table_01_g
 image,i_aac_coffee_table_01_o
 image,i_aac_couch_01_sofa_g
 image,i_aac_couch_01_sofa_o
+image,i_aac_frame_back_01_g
+image,i_aac_frame_back_01_o
 image,i_aac_hotel_mirror_01_c
 image,i_aac_hotel_mirror_01_g
 image,i_aac_hotel_mirror_01_o
 image,i_aac_hotel_mirror_01_s
 image,i_aac_kitchen_sink_01_g
 image,i_aac_kitchen_sink_01_o
+image,i_aac_painting_frames_01_g
+image,i_aac_painting_frames_01_o
 image,i_aac_trash_debris_paper_01_g
 image,i_aac_trash_debris_paper_01_o
 image,i_aml_gen_monkey_dead_01_c
@@ -11188,6 +11204,7 @@ image,i_schaedel_g
 image,i_schaedel_n
 image,i_schaedel_o
 image,i_shinedown_cover_c
+image,i_sith_painting_c
 image,i_skull_c
 image,i_skybox_cotd
 image,i_snow_11_c
@@ -13588,9 +13605,15 @@ image,mtl_aac_coffee_table_01_s
 image,mtl_aac_couch_01_sofa_c
 image,mtl_aac_couch_01_sofa_n
 image,mtl_aac_couch_01_sofa_s
+image,mtl_aac_frame_back_01_c
+image,mtl_aac_frame_back_01_n
+image,mtl_aac_frame_back_01_s
 image,mtl_aac_kitchen_sink_01_c
 image,mtl_aac_kitchen_sink_01_n
 image,mtl_aac_kitchen_sink_01_s
+image,mtl_aac_painting_frames_01_c
+image,mtl_aac_painting_frames_01_n
+image,mtl_aac_painting_frames_01_s
 image,mtl_aac_trash_debris_paper_01_c
 image,mtl_aac_trash_debris_paper_01_n
 image,mtl_aac_trash_debris_paper_01_s
@@ -14339,6 +14362,7 @@ fx,dlc1/castle/fx_ritual_key_soul_exp_igc
 fx,dlc1/castle/fx_ritual_key_soul_src_igc
 fx,dlc1/castle/fx_ritual_key_soul_tgt_igc
 fx,dlc1/castle/fx_tesla_trap_body_exp.efx
+fx,dlc1/castle/fx_wolf_arrow_whole_float_glow_light
 fx,dlc1/castle/fx_wonder_fizz_on
 fx,dlc1/castle/fx_wonder_fizz_on_mist
 fx,dlc1/castle/fx_wonder_fizz_portal
@@ -14401,6 +14425,7 @@ fx,dlc1/zmb_weapon/fx_bow_storm_orb_zmb.efx
 fx,dlc1/zmb_weapon/fx_bow_storm_rock_ambient_1p
 fx,dlc1/zmb_weapon/fx_bow_storm_trail_emit_zmb
 fx,dlc1/zmb_weapon/fx_bow_storm_trail_zmb
+fx,dlc1/zmb_weapon/fx_bow_wolf_ambient_1p_zmb
 fx,dlc1/zmb_weapon/fx_bow_wolf_ambient_1p_zmb.efx
 fx,dlc1/zmb_weapon/fx_bow_wolf_arrow_displace_ug_zmb
 fx,dlc1/zmb_weapon/fx_bow_wolf_arrow_spiral_ug_zmb.efx
@@ -14417,6 +14442,7 @@ fx,dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb.efx
 fx,dlc1/zmb_weapon/fx_bow_wolf_impact_zmb.efx
 fx,dlc1/zmb_weapon/fx_bow_wolf_muz_flash_ug_1p_zmb.efx
 fx,dlc1/zmb_weapon/fx_bow_wolf_torso_trail.efx
+fx,dlc1/zmb_weapon/fx_bow_wolf_wrap_torso
 fx,dlc1/zmb_weapon/fx_bow_wolf_wrap_torso.efx
 fx,dlc2/island/fx_bucket_115_glow
 fx,dlc2/island/fx_bucket_115_glow_no_light
@@ -14999,6 +15025,7 @@ lightdescription,new-336352872
 lightdescription,new-354520543
 lightdescription,new-364795981
 lightdescription,new-428406688
+lightdescription,new-469752638
 lightdescription,new-474895612
 lightdescription,new-547986880
 lightdescription,new-558869595
