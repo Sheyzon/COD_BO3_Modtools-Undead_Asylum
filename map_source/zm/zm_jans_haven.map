@@ -5,7 +5,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{EA8D64F3-BF7C-11ED-91FA-34CFF6FAFB90}"
+guid "{BEB019F1-BF92-11ED-91FA-34CFF6FAFB90}"
 "classname" "worldspawn"
 "lutmaterial" "xl_nws3"
 "vbloom" "mp_sector_03"
@@ -62274,9 +62274,9 @@ guid "{EA384D79-BEB9-11ED-91FA-34CFF6FAFB90}"
 {
 guid "{6B83D8BE-BEBA-11ED-91FA-34CFF6FAFB90}"
 "classname" "script_origin"
+"_color" "0.0376 0.8 0"
 "origin" "-1681.61 -1756.77 2553"
 "targetname" "wolf_arrow_pos"
-"_color" "0.4 0 0.8"
 "client_server" "ClientSide"
 }
 // entity 2375

@@ -210,7 +210,7 @@ function main()
 	thread zombie_limit_increase(28, 10);
 
 	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
-	level thread intro_screen_text("Music is on", "The music slider", undefined, 20, -350);
+	level thread intro_screen_text("Music is on", "The music slider!", undefined, 20, -350);
 
 	thread asylumEntrance();
 	thread buildable_bonfire();
@@ -224,13 +224,13 @@ function main()
 	thread watch_pap_door();
 	thread wolf_bow_();
 
-	level.player_starting_points = 50000;
+	level.player_starting_points = 500;
 
 	players = GetPlayers();
-	players[0].has_arrow = false;
-	players[1].has_arrow = false;
-	players[2].has_arrow = false;
-	players[3].has_arrow = false;
+	players[0].has_arrow = "";
+	players[1].has_arrow = "";
+	players[2].has_arrow = "";
+	players[3].has_arrow = "";
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
@@ -708,6 +708,7 @@ function wolf_bow_()
     {        
         trig waittill( "trigger", player );
         current_weapon = player getCurrentWeapon();
+		
         
         if( current_weapon == desiredweapon )
         {
@@ -719,7 +720,7 @@ function wolf_bow_()
 			arrow_trig SetHintString("Press ^3&&1^7 to pick up arrow"); // Changes the string that shows when looking at the trigger.
 			arrow_trig waittill( "trigger", player );
 			arrow_model MoveZ(-41, 1, 0.1, 0.1);
-			player.has_arrow = true;
+			player.has_arrow = "has_wolf_arrow";
 			level flag::set( "player_has_wolf_arrow" );
 			player PlayLocalSound("ee_trigger");
 			player zm_audio::create_and_play_dialog( "general", "pickup" );
@@ -743,7 +744,9 @@ function wolf_bow_()
 	fxOrg moveto(fxEnd.origin, .5);
 	fxOrg waittill("movedone");
 	fx = PlayFxOnTag("dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb", fxOrg, "tag_origin" );
+	
 	wait(1);
+
 	fxOrg MoveTo(fxStart.origin,time);
 	fxOrg waittill("movedone");
 	fx Delete();
