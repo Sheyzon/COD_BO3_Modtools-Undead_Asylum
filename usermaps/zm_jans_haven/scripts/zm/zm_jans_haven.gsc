@@ -108,6 +108,8 @@
 //SG4Y & MR.Lednor’s BW Vision,
 #using scripts\zm\lednors_black_and_white;
 
+//#using scripts\zm\_zm_arenamode;
+
 //-----FX Cache-----
 #precache( "fx", "dlc2/island/fx_fire_spot_xxsm_island" );
 #precache( "fx", "zombie/fx_perk_quick_revive_factory_zmb" );
@@ -134,27 +136,25 @@
 //*****************************************************************************
 
 function main()
-{
-	level thread nsz_kino_teleporter::init(); 
-
+{	
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw"), 5.13 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
-
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi"), 4.66 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi_up"), 4.66 );
-
 	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
 	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
-
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg"), 5.13 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg_up"), 5.13 );
-
 	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun"), 2.76 );
 	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun_up"), 2.76 );
+	
+	callback::on_ai_spawned(&infinite_spawning);
+	
+	level thread nsz_kino_teleporter::init(); 
+	level.randomize_perk_machine_location = false; // set before zm_usermap::main 
+ 	level.dog_rounds_allowed=1; // set before zm_usermap::main
 
 	zm_usermap::main();
-
-	// WW2 Power Switch
 	ww2_power_switch::init();
 
 	level.enemy_location_override_func = &enemy_location_override;
@@ -171,14 +171,8 @@ function main()
 
 	//-----StartingWeapon-----
 	level.start_weapon = (getWeapon("melee_katana"));
-
 	level.explodefx = "dlc1/castle/fx_ritual_key_soul_exp_igc";
-
 	level thread MonitorPower();
-
-	//If dogs are allowed (Useless?)
-	//level.dog_rounds_allowed=0;
-
 	//-----Perklimit-----
 	level.perk_purchase_limit = 4;
 
@@ -204,9 +198,7 @@ function main()
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	zm_audio::loadPlayerVoiceCategories("gamedata/audio/zm/zm_genesis_vox.csv");
-
 	thread zm_easteregg_song::init();
-
 	thread zombie_limit_increase(28, 10);
 
 	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
@@ -223,6 +215,8 @@ function main()
 	thread bonfire_3();
 	thread watch_pap_door();
 	thread wolf_bow_();
+	//thread _zm_arenamode::lockdown_test();
+
 
 	level.player_starting_points = 500;
 
@@ -235,7 +229,6 @@ function main()
 	level.pathdist_type = PATHDIST_ORIGINAL;
 
 	grow_soul::init(  );
-
 }
 
 function asylum_zone_init()
@@ -888,6 +881,20 @@ function intro_screen_text(text_1 = "", text_2 = "", text_3 = "", _x, _y)
 
     wait(10);
     foreach ( hudelem in intro_hud ) hudelem Destroy();
+}
+
+function infinite_spawning()
+{
+    if ( IsDefined(level.infinite_spawning_enabled) && IS_TRUE(level.infinite_spawning_enabled) )
+    {
+        if( zombie_utility::get_current_zombie_count() < level.zombie_ai_limit ) // only update if less than the ai limit
+        {
+            level.zombie_total = level.zombie_ai_limit;
+        }
+
+        self waittill("death");
+        level.zombie_respawns++; // get ai back in the level faster
+    }
 }
 
 // --------------------------------

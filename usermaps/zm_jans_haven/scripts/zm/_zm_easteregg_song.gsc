@@ -63,11 +63,13 @@ function play_2D_sound(sound)
 	if(level.canBePlayed)
 	{
 		level.canBePlayed = false;
+
 		temp_ent = spawn("script_origin", (0,0,0));
 		temp_ent PlaySoundWithNotify(sound, sound + "wait");
 		temp_ent waittill (sound + "wait");
 		wait(0.05);
 		temp_ent delete();	
+		
 		level.canBePlayed = true;
 	}
 }
