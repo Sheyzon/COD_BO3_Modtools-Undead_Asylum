@@ -58,7 +58,7 @@ function init()
 	level.grow_soul_explode = true;
 	level.grow_soulfx_limit = 5;
 	level.grow_soul_growth = 0.1;//growth per zombie
-	level.grow_soul_size =  3.5;//how big you want it to get scale wise
+	level.grow_soul_size =  3;//how big you want it to get scale wise
 	level.grow_souldistance = 300;//how far away they can be
 	level.growspeed = .015;//how fast to grow
 	level.grow_soul_scaler = .001;//how much it grows during growspeed
@@ -629,7 +629,7 @@ function SendSoul(start)
 		fxOrg = util::spawn_model( "tag_origin", start );
 		fx = PlayFxOnTag( level.grow_soulsoulfx, fxOrg, "tag_origin" );
 		time = Distance(start,end)/level.soul_speed_divider;
-		fxOrg MoveTo(end+(0,0,50),time);
+		fxOrg MoveTo(end+(0,0,0),time);
 		wait(time - .05);
 		fxOrg moveto(end, .5);
 		fxOrg waittill("movedone");

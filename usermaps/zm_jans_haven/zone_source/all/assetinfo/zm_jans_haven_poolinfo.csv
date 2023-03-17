@@ -3,12 +3,12 @@ physpreset,276,33
 physconstraints,172,0
 destructibledef,128,0
 xanim,25000,3107
-xmodel,10240,891
-xmodelmesh,34816,2590
-material,20480,3305
+xmodel,10240,902
+xmodelmesh,34816,2623
+material,20480,3328
 computeshaderset,256,0
 techset,1024,188
-image,49152,5920
+image,49152,5955
 sound,32,1
 sound_patch,16,0
 col_map,2,1
@@ -37,9 +37,9 @@ customizationtable,8,0
 customizationtable_feimages,8,0
 customizationtablecolor,1024,0
 snddriverglobals,1,0
-fx,1875,543
+fx,1875,547
 tagfx,64,2
-klf,64,18
+klf,64,20
 impactsfxtable,256,18
 impactsoundstable,64,15
 player_character,8,0
@@ -53,7 +53,7 @@ leaderboarddef,256,0
 ddl,64,0
 glasses,2,0
 texturelist,8,0
-scriptparsetree,1024,114
+scriptparsetree,1024,115
 keyvaluepairs,64,1
 vehicle,64,0
 addon_map_ents,1,0
@@ -81,7 +81,7 @@ behaviortree,64,3
 behaviorstatemachine,128,0
 ttf,48,0
 sanim,1024,0
-lightdescription,500,195
+lightdescription,500,196
 shellshock,64,1
 xcam,512,1
 bgcache,32,1

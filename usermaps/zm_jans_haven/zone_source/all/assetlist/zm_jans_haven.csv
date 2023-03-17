@@ -2892,7 +2892,6 @@ xmodel,asylum_mainroom_floor_maya
 xmodel,asylum_mainroom_maya
 xmodel,asylum_mainroom_pillar_top
 xmodel,asylum_outdoor_maya
-xmodel,asylum_pap
 xmodel,asylum_sith_painting
 xmodel,asylum_southwing_lower_maya
 xmodel,asylum_southwing_upper_maya
@@ -2901,6 +2900,7 @@ xmodel,asylum_start_hallway_fix
 xmodel,asylum_start_hallway_fix_two
 xmodel,asylum_start_hallway_maya
 xmodel,asylum_start_hallway_two_maya
+xmodel,asylum_underground_bossroom_maya
 xmodel,asylum_westwing_one_maya
 xmodel,asylum_westwing_two_maya
 xmodel,attach_t7_loot_snp_mosin_ads_scope_view
@@ -2984,6 +2984,7 @@ xmodel,car_foliage_s2_ivy_rooftop_01
 xmodel,car_foliage_s2_ivy_top_01
 xmodel,car_foliage_s2_ivy_top_02
 xmodel,ch_tombstone1
+xmodel,cob_church_candle_table_01_off
 xmodel,cob_church_chair_01a_dstry
 xmodel,cob_firewood_01_cap_01
 xmodel,darksouls_blacksmith_statue
@@ -3003,6 +3004,7 @@ xmodel,ease_your_mind_ganja_white_night_poster
 xmodel,firelink_shrine
 xmodel,for_table_lamp_01
 xmodel,fx_char_gib_chunk_flesh01
+xmodel,fx_char_gib_chunk_flesh02
 xmodel,fx_char_gib_chunk_meat02
 xmodel,fx_magma_splat02_mesh
 xmodel,fx_magma_splat03_mesh
@@ -3077,6 +3079,11 @@ xmodel,p7_cai_vista_mountain_long_01_snow
 xmodel,p7_cai_work_table_wood_02_bare
 xmodel,p7_camp_fire_pit_hanging_pot
 xmodel,p7_camp_fire_pit_kettle_large
+xmodel,p7_candle_med_melt
+xmodel,p7_candle_med_melt_on
+xmodel,p7_candle_sml_melt_on
+xmodel,p7_candle_sml_on
+xmodel,p7_candle_splatter
 xmodel,p7_chain_metal_bracket_01
 xmodel,p7_chain_metal_str_32
 xmodel,p7_chemistry_kit_jar_lg
@@ -3169,6 +3176,7 @@ xmodel,p7_glassware_whiskey_01
 xmodel,p7_gramophone
 xmodel,p7_icicle_128_02
 xmodel,p7_icicle_128_03
+xmodel,p7_inf_foy_candle_holder
 xmodel,p7_lab_chemistry_set_beaker
 xmodel,p7_light_chandelier_chain
 xmodel,p7_light_chandelier_vintage_03
@@ -3397,6 +3405,7 @@ xmodel,p7_zm_vending_packapunch_weapon
 xmodel,p7_zm_ver_bathtub
 xmodel,p7_zm_ver_fountain
 xmodel,p7_zm_ver_fountain_base
+xmodel,p7_zm_ver_gib_arm_l
 xmodel,p7_zm_ver_pole_telephone_whole
 xmodel,p7_zm_ver_poster_perk_doubletap
 xmodel,p7_zm_ver_poster_perk_juggernog
@@ -3406,9 +3415,11 @@ xmodel,p7_zm_ver_table_bathroom_sink_single
 xmodel,p7_zm_zod_beast_basin
 xmodel,p7_zm_zod_bookcase_vintage_ladder
 xmodel,p7_zm_zod_magic_box_tentacle_teddy
+xmodel,p7_zm_zod_magic_circle_ritual_192_paint_asylum
 xmodel,p7_zm_zod_phone_wall_vintage
 xmodel,p7_zm_zod_table_ritual
 xmodel,p7_zm_zod_table_ritual_cloth
+xmodel,p7_zm_zod_table_ritual_urn
 xmodel,p7_zm_zod_telephone_transformer
 xmodel,p7_zur_coffee_bag_01_dark
 xmodel,p7_zur_nw_clamp_lamp_factory_hanging
@@ -3748,7 +3759,7 @@ xmodelmesh,asylum_main_room_pillar_top7cab4942
 xmodelmesh,asylum_main_room_pillar_topa42aa177
 xmodelmesh,asylum_main_room_pillar_topda32786d
 xmodelmesh,asylum_outdoor_foliage_maya3ae37171
-xmodelmesh,asylum_pap917a5c1f
+xmodelmesh,asylum_pap_mayaa0f937d3
 xmodelmesh,asylum_southwing_lower_maya9a930188
 xmodelmesh,asylum_southwing_upper_maya7370f70f
 xmodelmesh,asylum_spawner_roomdf224645
@@ -3979,6 +3990,9 @@ xmodelmesh,car_foliage_s2_ivy_top_02_lod03f5d3bf9
 xmodelmesh,car_foliage_s2_ivy_top_02_lod043e461c
 xmodelmesh,car_foliage_s2_ivy_top_02_lod068fa57c0
 xmodelmesh,ch_tombstone12f4ee3a5
+xmodelmesh,cob_church_candle_table_01_off_lod011b5fa3d
+xmodelmesh,cob_church_candle_table_01_off_lod0246b7419
+xmodelmesh,cob_church_candle_table_01_off_lod06d3b48f
 xmodelmesh,cob_church_chair_01a_dstry_lod066afd08d
 xmodelmesh,cob_church_chair_01a_dstry_lod08f32edc1
 xmodelmesh,cob_firewood_01_cap_01_lod030d5d754
@@ -4022,6 +4036,7 @@ xmodelmesh,for_table_lamp_01_lod085f307ed
 xmodelmesh,for_table_lamp_01_lod0d377fad1
 xmodelmesh,fx_bullet_chainafbc4c1d
 xmodelmesh,fx_char_gib_chunk_flesh014542d258
+xmodelmesh,fx_char_gib_chunk_flesh0273507ced
 xmodelmesh,fx_char_gib_chunk_meat02defcc3ab
 xmodelmesh,fx_magma_splat02_mesh669a76ef
 xmodelmesh,fx_magma_splat03_mesh3be3545d
@@ -4349,6 +4364,21 @@ xmodelmesh,p7_camp_fire_pit_kettle_large_lod02bff68a8
 xmodelmesh,p7_camp_fire_pit_kettle_large_lod078a6c40c
 xmodelmesh,p7_camp_fire_pit_kettle_large_lod0d39c39db
 xmodelmesh,p7_camp_fire_pit_kettle_large_lod0d729e837
+xmodelmesh,p7_candle_med_melt_col141b80f4
+xmodelmesh,p7_candle_med_melt_lod057ce7d27
+xmodelmesh,p7_candle_med_melt_lod1597f68c6
+xmodelmesh,p7_candle_med_melt_lod1a155e9e4
+xmodelmesh,p7_candle_sml_lod0ca9f88b0
+xmodelmesh,p7_candle_sml_lod192e880d5
+xmodelmesh,p7_candle_sml_lod1e0ec9636
+xmodelmesh,p7_candle_sml_melt_lod0cf4b800b
+xmodelmesh,p7_candle_sml_melt_lod11c37b206
+xmodelmesh,p7_candle_sml_melt_lod14a4e5c43
+xmodelmesh,p7_candle_sml_melt_lod1711f3796
+xmodelmesh,p7_candle_sml_melt_lod192f455af
+xmodelmesh,p7_candle_sml_melt_lod1de2aaf26
+xmodelmesh,p7_candle_splatter_lod046562646
+xmodelmesh,p7_candle_splatter_lod09335dc7a
 xmodelmesh,p7_chain_metal_bracket_01_colec45ed35
 xmodelmesh,p7_chain_metal_bracket_01_lod040ff8444
 xmodelmesh,p7_chain_metal_bracket_01_lod0762c8b72
@@ -4712,7 +4742,7 @@ xmodelmesh,p7_fxanim_zm_zod_crate_breakable_03_canal_static_lod0bf8af247
 xmodelmesh,p7_fxanim_zm_zod_crate_breakable_03_canal_static_lod0dae8ca03
 xmodelmesh,p7_fxanim_zm_zod_crate_breakable_03_canal_static_lod0f73bd7bb
 xmodelmesh,p7_fxanim_zm_zod_crate_breakable_03_canal_static_lod0f78c9cac
-xmodelmesh,p7_fxanim_zm_zod_summoning_key_centered65343bcf
+xmodelmesh,p7_fxanim_zm_zod_summoning_key_centered_mayada773956
 xmodelmesh,p7_fxp_debris_metal_scrap_01_lod032e58785
 xmodelmesh,p7_fxp_debris_metal_scrap_01_lod0cf74a155
 xmodelmesh,p7_fxp_debris_metal_scrap_01_lod0f6d08498
@@ -4753,6 +4783,12 @@ xmodelmesh,p7_icicle_128_03_lod46878d702
 xmodelmesh,p7_icicle_128_03_lod5e9774bf2
 xmodelmesh,p7_icicle_128_03_lod66a1fb706
 xmodelmesh,p7_icicle_128_03_lod6fab3949f
+xmodelmesh,p7_inf_foy_candle_holder_col1659ed55
+xmodelmesh,p7_inf_foy_candle_holder_lod0c0bfb3bf
+xmodelmesh,p7_inf_foy_candle_holder_lod1af4fb06c
+xmodelmesh,p7_inf_foy_candle_holder_lod2ebcfaa2c
+xmodelmesh,p7_inf_foy_candle_holder_lod335d94a66
+xmodelmesh,p7_inf_foy_candle_holder_lod3e3483ef9
 xmodelmesh,p7_jar_glass_lrg_colc913fad6
 xmodelmesh,p7_lab_chemistry_set_beaker_lod01f8fd944
 xmodelmesh,p7_lab_chemistry_set_beaker_lod027f8b2e7
@@ -5692,6 +5728,7 @@ xmodelmesh,p7_zm_vending_pap_body_col75e90a9
 xmodelmesh,p7_zm_ver_bathtub_lod0854a8c7e
 xmodelmesh,p7_zm_ver_fountain_base_lod0ae8a7d05
 xmodelmesh,p7_zm_ver_fountain_lod056ffaaec
+xmodelmesh,p7_zm_ver_gib_arm_l_lod0880e7164
 xmodelmesh,p7_zm_ver_pole_telephone_whole_lod0d4306976
 xmodelmesh,p7_zm_ver_poster_perk_doubletap_lod063f76d08
 xmodelmesh,p7_zm_ver_poster_perk_juggernog_lod07e1f4f9f
@@ -5730,6 +5767,7 @@ xmodelmesh,p7_zm_zod_crate_breakable_03_waterfront_staticb1ccf5db
 xmodelmesh,p7_zm_zod_crate_breakable_03_waterfront_staticc9e431fa
 xmodelmesh,p7_zm_zod_crate_breakable_03_waterfront_staticef5e97d
 xmodelmesh,p7_zm_zod_magic_box_tentacle_teddyb54f1fcd
+xmodelmesh,p7_zm_zod_magic_circle_192_lod0486a9cad
 xmodelmesh,p7_zm_zod_phone_wall_vintage_lod0bd80d507
 xmodelmesh,p7_zm_zod_phone_wall_vintage_lod17d7f81d9
 xmodelmesh,p7_zm_zod_phone_wall_vintage_lod2138ce102
@@ -5751,6 +5789,12 @@ xmodelmesh,p7_zm_zod_table_ritual_lod4511955c8
 xmodelmesh,p7_zm_zod_table_ritual_lod53556f142
 xmodelmesh,p7_zm_zod_table_ritual_lod6f5ca6f77
 xmodelmesh,p7_zm_zod_table_ritual_lod74c0f527a
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod09cd02be8
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod153570740
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod231d9ffa7
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod36323281d
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod4cad0572f
+xmodelmesh,p7_zm_zod_table_ritual_urn_lod580b206b9
 xmodelmesh,p7_zur_coffee_bag_01_col548a9e8e
 xmodelmesh,p7_zur_coffee_bag_01_lod0c1c2a46e
 xmodelmesh,p8_anim_zm_al_magic_box_lock_reda50aae8e
@@ -6121,6 +6165,7 @@ xmodelmesh,zombietron_gib_chunk_flesh_02a94a34be
 xmodelmesh,zombietron_gib_chunk_flesh_02d382eb53
 xmodelmesh,zombietron_gib_chunk_flesh_02e28d3b2
 xmodelmesh,zombietron_gib_chunk_flesh_02ec84cf41
+material,ec/gfx_debris_trash_multiple_pcloud_lit
 material,ec/gfx_dirt_pcloud_03_lit
 material,ec/gfx_dirt_pcloud_04_lit
 material,ec/gfx_fxt_env_dust_mote_pcloud_add
@@ -6278,6 +6323,8 @@ material,ei/gfx_light_ray_spread_streaks_em
 material,ei/gfx_light_ray_spread_streaks_em|dup
 material,ei/gfx_light_ray_superwide_em
 material,ei/gfx_light_ray_superwide_em|dup
+material,ei/gfx_light_ray_superwide_soft_em
+material,ei/gfx_light_ray_superwide_soft_em|dup
 material,ei/gfx_light_ray_wide_em_nocull
 material,ei/gfx_light_ray_wide_em_nocull|dup
 material,ei/gfx_lightning_beam_em_i1000|dup
@@ -6287,6 +6334,8 @@ material,ei/gfx_lightning_bolt_ground_em_i1024
 material,ei/gfx_lightning_bolt_ground_em_i1024|dup
 material,ei/gfx_lightning_bolt_ground_em_i32
 material,ei/gfx_lightning_bolt_ground_em_i32|dup
+material,ei/gfx_nixnumbers_em
+material,ei/gfx_nixnumbers_em|dup
 material,ei/gfx_ring_thin_nocull
 material,ei/gfx_ring_thin_nocull|dup
 material,ei/gfx_smk_billow_thick_anim_em
@@ -6309,6 +6358,8 @@ material,ei/gfx_smk_wisp_string_em
 material,ei/gfx_smk_wisp_string_em|dup
 material,ei/gfx_smk_wisp_string_lit
 material,ei/gfx_smk_wisp_string_lit|dup
+material,ei/gfx_spark_omni_desat_em
+material,ei/gfx_spark_omni_desat_em|dup
 material,ei/gfx_spark_single_em_i12000
 material,ei/gfx_spark_single_em_i12000|dup
 material,ei/gfx_spark_single_orange_em
@@ -6458,6 +6509,7 @@ material,mc/mc_mtl_p_rus_desklamp_on_wmd
 material,mc/metal_00
 material,mc/metal_01
 material,mc/metal_10
+material,mc/mlt_p7_zm_zod_magic_circle_ritual_paint_asylum
 material,mc/mtl_aac_coffee_table_01
 material,mc/mtl_aac_couch_01_sofa
 material,mc/mtl_aac_frame_back_01
@@ -6550,6 +6602,9 @@ material,mc/mtl_c_zom_wolfhead_head
 material,mc/mtl_c_zom_zod_zombie_fem_body_1_skin
 material,mc/mtl_c_zom_zod_zombie_fem_boots
 material,mc/mtl_car_foliage_s2_ivy_01
+material,mc/mtl_cob_church_candle_01_glass
+material,mc/mtl_cob_church_candle_01_off
+material,mc/mtl_cob_church_candle_table_01
 material,mc/mtl_cob_church_chair_01b
 material,mc/mtl_cob_firewood_set_01
 material,mc/mtl_det_medical_books_01
@@ -6621,6 +6676,9 @@ material,mc/mtl_p7_cai_work_table_wood_02_bare_bend
 material,mc/mtl_p7_cai_work_table_wood_dirty
 material,mc/mtl_p7_cai_work_table_wood_face
 material,mc/mtl_p7_camp_fire_pit_equipment
+material,mc/mtl_p7_candle_set_off
+material,mc/mtl_p7_candle_set_on
+material,mc/mtl_p7_candle_set_spatter
 material,mc/mtl_p7_chain_metal_bracket_01
 material,mc/mtl_p7_chemistry_kit_cork
 material,mc/mtl_p7_chemistry_kit_glass
@@ -6723,6 +6781,7 @@ material,mc/mtl_p7_gramophone_base_01
 material,mc/mtl_p7_gramophone_base_02
 material,mc/mtl_p7_gramophone_metal
 material,mc/mtl_p7_icicle_ice
+material,mc/mtl_p7_inf_foy_candle_holder
 material,mc/mtl_p7_jars_glass
 material,mc/mtl_p7_jars_glass_contents
 material,mc/mtl_p7_jars_glass_inside
@@ -6792,6 +6851,8 @@ material,mc/mtl_p7_tools_screwdriver
 material,mc/mtl_p7_trash_bin_small_01_set_plastic_bag_01
 material,mc/mtl_p7_trash_bin_small_01_set_plastic_bucket_01_green
 material,mc/mtl_p7_urinal_bathroom
+material,mc/mtl_p7_ven_gib_armleg
+material,mc/mtl_p7_ven_gib_tshirt_a
 material,mc/mtl_p7_water_heater
 material,mc/mtl_p7_weapon_rack_safehouse_02_01_aluminum
 material,mc/mtl_p7_weapon_rack_safehouse_02_02_black_metal
@@ -7389,6 +7450,7 @@ material,mc/mtl_p7_zm_zod_table_ritual_cloth_decal
 material,mc/mtl_p7_zm_zod_table_ritual_cloth_edge
 material,mc/mtl_p7_zm_zod_table_ritual_skull
 material,mc/mtl_p7_zm_zod_table_ritual_stone_dirty
+material,mc/mtl_p7_zm_zod_table_ritual_urn
 material,mc/mtl_p7_zur_coffee_bag_01_dark
 material,mc/mtl_p9_sur_machine_perk_bare_metal
 material,mc/mtl_p9_sur_machine_perk_brass
@@ -8713,6 +8775,7 @@ material,vd/t7_decal_signage_terra_farms_personnel_01
 material,vd/t7_decal_snow_sparkle
 material,vd/t7_dirt_chunky_01_blend
 material,vd/t7_dirt_cracks_large_01_blend
+material,vd/t7_stone_moss_lichen_blend_wet
 material,vd/t7_zm_decal_logo_935_metal_gry
 material,vd/t7_zm_decal_logo_iron_cross_white
 material,vd/t7_zm_der_chalk_help
@@ -8727,10 +8790,12 @@ material,wc/cor_wood_floorboards_01_oak
 material,wc/floor_03
 material,wc/infinite_blackness
 material,wc/mt_pt_number_lightning_flash
+material,wc/mtl_buttercake_pie
+material,wc/mtl_drawing_unique_bunnygirl
 material,wc/mtl_hyperspeedstep
 material,wc/mtl_kiara
 material,wc/mtl_p7_zur_blood_waterfall_01
-material,wc/mtl_pt_oc
+material,wc/mtl_pt_oc_upright_eyes
 material,wc/mtl_zm_blueprint_build_generic
 material,wc/mw4_concrete_damaged_02
 material,wc/shadowcaster
@@ -8928,6 +8993,8 @@ image,fxt_light_ray_solid_wide
 image,fxt_light_ray_solid_wide_mask
 image,fxt_light_ray_spread_streaks
 image,fxt_light_ray_superwide
+image,fxt_light_ray_superwide_soft
+image,fxt_nixnumbers
 image,fxt_sam_trail_smk
 image,fxt_smk_cigar_whisp
 image,fxt_smk_rolling_dense_lg_anim
@@ -8942,6 +9009,7 @@ image,fxt_water_fall_beads_anim
 image,fxt_water_splash_side_bits_mask
 image,fxt_water_splash_tall_center_anim
 image,fxt_water_splash_trident_anim
+image,glass_clear_01_c
 image,glo_dec_mature_blood_pool_med_c
 image,hur_moss_rock_05_dec_c
 image,hur_moss_rock_05_dec_n
@@ -9049,6 +9117,7 @@ image,i_break_block_10_c
 image,i_break_block_10_n
 image,i_btr_persian_carpet_03_g
 image,i_btr_persian_carpet_03_o
+image,i_buttercake_pie_c
 image,i_c_gen_reveal_2k_sq_r
 image,i_c_spc_decayman_stage2_arms_r
 image,i_c_t7_dlc1_zom_chomper_demongate_c
@@ -9378,6 +9447,11 @@ image,i_c_zom_zod_zombie_fem_body_1_skin_n
 image,i_c_zom_zod_zombie_fem_boots_c
 image,i_c_zom_zod_zombie_fem_boots_g
 image,i_c_zom_zod_zombie_fem_boots_n
+image,i_cob_church_candle_01_glass_g
+image,i_cob_church_candle_01_off_g
+image,i_cob_church_candle_01_off_o
+image,i_cob_church_candle_table_01_g
+image,i_cob_church_candle_table_01_o
 image,i_cob_church_chair_01b_g
 image,i_cob_church_chair_01b_o
 image,i_cob_firewood_set_01_c
@@ -9400,6 +9474,7 @@ image,i_det_school_books_01_o
 image,i_dragon_tooth_surface_c
 image,i_dragon_tooth_surface_g
 image,i_dragon_tooth_surface_n
+image,i_drawing_unique_bunnygirl_c
 image,i_dun_food_sandwich_plate_01_g
 image,i_dun_food_sandwich_plate_01_o
 image,i_ease_your_mind_ganja_white_night_c
@@ -9630,6 +9705,9 @@ image,i_metal_00_n
 image,i_metal_01_c
 image,i_metal_10_c
 image,i_metal_10_g
+image,i_mlt_p7_zm_zod_magic_circle_ritual_c
+image,i_mlt_p7_zm_zod_magic_circle_ritual_n
+image,i_mlt_p7_zm_zod_magic_circle_ritual_r
 image,i_mp_hub_allies_portable_power_gen_c
 image,i_mp_hub_allies_portable_power_gen_g
 image,i_mp_hub_allies_portable_power_gen_n
@@ -9740,6 +9818,9 @@ image,i_mtl_p7_cai_work_table_wood_face_c
 image,i_mtl_p7_cai_work_table_wood_face_n
 image,i_mtl_p7_camp_fire_pit_equipment_c
 image,i_mtl_p7_camp_fire_pit_equipment_n
+image,i_mtl_p7_candle_set_c
+image,i_mtl_p7_candle_set_e
+image,i_mtl_p7_candle_set_n
 image,i_mtl_p7_chain_metal_bracket_01_m
 image,i_mtl_p7_chain_metal_bracket_01_n
 image,i_mtl_p7_chemistry_kit_cork_c
@@ -10060,6 +10141,11 @@ image,i_mtl_p7_trash_bin_small_01_set_plastic_bucket_01_n
 image,i_mtl_p7_trash_bin_small_01_set_plastic_bucket_o
 image,i_mtl_p7_urinal_bathroom_c
 image,i_mtl_p7_urinal_bathroom_n
+image,i_mtl_p7_ven_gib_armleg_c
+image,i_mtl_p7_ven_gib_armleg_n
+image,i_mtl_p7_ven_gib_tshirt_a_c
+image,i_mtl_p7_ven_gib_tshirt_a_g
+image,i_mtl_p7_ven_gib_tshirt_a_n
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_c
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_n
 image,i_mtl_p7_wall_mobile_dep_decal_details_01_normal_m
@@ -10608,6 +10694,8 @@ image,i_mtl_p7_zm_zod_table_ritual_stone_01_c
 image,i_mtl_p7_zm_zod_table_ritual_stone_01_n
 image,i_mtl_p7_zm_zod_table_ritual_stone_02_c
 image,i_mtl_p7_zm_zod_table_ritual_stone_02_n
+image,i_mtl_p7_zm_zod_table_ritual_urn_c
+image,i_mtl_p7_zm_zod_table_ritual_urn_n
 image,i_mtl_p7_zur_coffee_bag_01_c
 image,i_mtl_p7_zur_coffee_bag_01_n
 image,i_mtl_p7_zur_coffee_bag_01_o
@@ -11174,6 +11262,11 @@ image,i_p7_food_shop_item_set_01_n
 image,i_p7_food_shop_item_set_02_m
 image,i_p7_food_shop_item_set_02_n
 image,i_p7_fxanim_fray_brown_01_c
+image,i_p7_inf_foy_candle_holder_c
+image,i_p7_inf_foy_candle_holder_g
+image,i_p7_inf_foy_candle_holder_n
+image,i_p7_inf_foy_candle_holder_o
+image,i_p7_inf_foy_candle_holder_s
 image,i_p7_light_flashlight_c
 image,i_p7_light_flashlight_n
 image,i_p7_medical_divider_folding_cloth_blend_tras_t
@@ -11233,7 +11326,7 @@ image,i_par_soap_dispenser_bathroom_01_g
 image,i_par_soap_dispenser_bathroom_01_glass_g
 image,i_par_soap_dispenser_bathroom_01_glass_o
 image,i_par_soap_dispenser_bathroom_01_o
-image,i_pt_oc_c
+image,i_pt_oc__upright_eyes_c
 image,i_rhapsody_cover_c
 image,i_rock_tombstone1_c
 image,i_rock_tombstone1_n
@@ -11630,6 +11723,7 @@ image,i_t7_micro_stone_granite_n
 image,i_t7_micro_stone_mixed_02_c
 image,i_t7_micro_stone_mixed_moss_c
 image,i_t7_micro_stone_mixed_moss_n
+image,i_t7_micro_stone_mixed_moss_r
 image,i_t7_micro_stone_mixed_n
 image,i_t7_micro_stone_sandstone_01_g
 image,i_t7_micro_stone_sandstone_02_c
@@ -13658,6 +13752,12 @@ image,mtl_aac_trash_debris_paper_01_n
 image,mtl_aac_trash_debris_paper_01_s
 image,mtl_car_foliage_s2_ivy_01_c
 image,mtl_car_foliage_s2_ivy_01_n
+image,mtl_cob_church_candle_01_glass_n
+image,mtl_cob_church_candle_01_off_c
+image,mtl_cob_church_candle_01_off_n
+image,mtl_cob_church_candle_01_off_s
+image,mtl_cob_church_candle_table_01_c
+image,mtl_cob_church_candle_table_01_n
 image,mtl_cob_church_chair_01b_c
 image,mtl_cob_church_chair_01b_n
 image,mtl_cob_church_chair_01b_s
@@ -14489,11 +14589,15 @@ fx,dlc2/island/fx_bucket_115_glow_no_light
 fx,dlc2/island/fx_fire_spot_xxsm_island
 fx,dlc2/island/fx_fog_ground_lg_island
 fx,dlc2/island/fx_fog_ground_thin_lg_island
+fx,dlc3/stalingrad/fx_raygun_l_projectile_blackhole_lg_hit
 fx,dlc4/genesis/fx_corrupteng_zombie_death_energy_trail_thick
 fx,dlc4/genesis/fx_corrupteng_zombie_death_energy_trail_thin
 fx,dlc4/genesis/fx_corrupteng_zombie_soul_115
 fx,dlc4/genesis/fx_rune_glow_purple
 fx,dlc4/genesis/fx_wisp_tendril_115_loop
+fx,dlc5/cosmo/fx_blackhole_zombie_breakup
+fx,dlc5/cosmo/fx_zmb_blackhole_exit
+fx,dlc5/cosmo/fx_zmb_trail_blackhole_low
 fx,dlc5/tomb/fx_tomb_magicbox_amb_base.efx
 fx,dlc5/tomb/fx_tomb_magicbox_amb_slab.efx
 fx,dlc5/tomb/fx_tomb_magicbox_beam_tgt_left.efx
@@ -14730,7 +14834,9 @@ klf,4d8a4954-832e-4d54-b1ac-c99f50c00f0f
 klf,67ea347c-9641-457f-a5c8-ec1fc82b50d4
 klf,7ce185be-18a1-443d-87dc-14ab4ae56c5b
 klf,873207a4-aeb4-4faa-b33f-044f2d665e4e
+klf,8a029d5b-c72f-4c24-9b11-98ca86674940
 klf,99516092-d81a-4736-b883-94dddb059309
+klf,a6611eaa-e785-458d-98c6-4be05937d789
 klf,afa139de-9021-4b31-88e4-7870c66a2e5b
 klf,b52d9ac8-e1ad-4915-9a35-9733a11e9538
 klf,dc0e2ad2-ceed-488b-8da4-4ba2527f5b00
@@ -14834,6 +14940,7 @@ scriptparsetree,scripts/zm/_zm_ai_mechz.gsc
 scriptparsetree,scripts/zm/_zm_ai_mechz.gsh
 scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.csc
 scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.gsc
+scriptparsetree,scripts/zm/_zm_arenamode.gsc
 scriptparsetree,scripts/zm/_zm_bgb_machine.csc
 scriptparsetree,scripts/zm/_zm_bgb_machine.gsc
 scriptparsetree,scripts/zm/_zm_easteregg_song.gsc
@@ -15098,6 +15205,7 @@ lightdescription,new1562845951414689815
 lightdescription,new1562845951983253743
 lightdescription,new1616419811
 lightdescription,new1618745188-1046887334
+lightdescription,new1622248299
 lightdescription,new163005656927332986
 lightdescription,new1646588002-765059176
 lightdescription,new16649025471664429141
