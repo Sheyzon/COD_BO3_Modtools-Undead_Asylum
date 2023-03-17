@@ -1,7 +1,6 @@
 >class,zm_mod_level
 >group,modtools
 
-xmodel,p7_zm_zod_magic_circle_ritual_192_paint_asylum
 xmodel,km_vending_nuke_vm
 xmodel,km_vending_nuke_on_vm
 xmodel,wpn_t7_zmb_perk_bottle_2tap_view
@@ -42,7 +41,7 @@ include,hb21_perks
 include,hb21_pack_a_punches
 include,hb21_elemental_bows
 include,zm_ai_mechz
-include,db_wunderfizz
+//include,db_wunderfizz
 include,t7_weapons_dlc
 include,lednors_wolf_souls
 include,lednors_bw

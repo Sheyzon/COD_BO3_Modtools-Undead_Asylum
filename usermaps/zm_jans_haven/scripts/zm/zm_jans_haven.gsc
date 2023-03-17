@@ -63,7 +63,7 @@
 #using scripts\zm\_zm_weap_elemental_bow_wolf_howl;
 #using scripts\zm\_zm_weap_elemental_bow_demongate;
 
-#using scripts\zm\_t9_wonderfizz;
+//#using scripts\zm\_t9_wonderfizz;
 
 #using scripts\zm\_zm_bgb_machine;
 
@@ -220,7 +220,7 @@ function main()
 	thread _zm_arenamode::lockdown_test();
 	thread bosstrigger();
 
-	level.player_starting_points = 50000;
+	level.player_starting_points = 500;
 
 	players = GetPlayers();
 	players[0].has_arrow = "";
@@ -276,10 +276,13 @@ function asylum_zone_init()
 
 function bosstrigger()
 {
+	level flag::wait_till("initial_blackscreen_passed");
     trig = GetEnt("tele_boss_trig","targetname");
+	wait(5); //Dirty fix for now
+	level flag::set("is_boss_time");
+	level flag::clear("is_boss_time");
+	level flag::wait_till("summoningkey_done");
 	trig SetHintString("Press ^3&&1^7 for bossflag"); 
-	trig waittill("trigger", player);
-	trig SetHintString("Press ^3&&1^7: flag is set"); 
 	while (1)
 	{
 		trig waittill("trigger", player);
@@ -606,10 +609,10 @@ function drop_summoning_key()
 	wait(1);
 	
 	player zm_audio::create_and_play_dialog( "general", "pickup" );
-	//level flag::wait_till("soul_trig");
-	//level flag::wait_till("soul_trig2");
-	//level flag::wait_till("soul_trig3");
-	//level flag::wait_till("soul_trig4");
+	level flag::wait_till("soul_trig");
+	level flag::wait_till("soul_trig2");
+	level flag::wait_till("soul_trig3");
+	level flag::wait_till("soul_trig4");
 	trig waittill("trigger", player);
 
 	model = util::spawn_model( "script_model", trig.origin );

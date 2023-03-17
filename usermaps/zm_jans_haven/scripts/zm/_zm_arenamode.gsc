@@ -32,7 +32,11 @@ function lockdown_test()
 		zombie_utility::set_run_speed();
 		trig SetHintString(""); 
 		
-		//need to exclude mech rounds
+		// Edit 0: 	need to exclude mech rounds. 
+		// 			May crash internal server during mech rounds!
+		// Edit1: 	Clear map of all ai when spawning into bossroom
+		// Edit2: 	Dog rounds behave... Strange but OK
+		
 		s_loc = zm_ai_mechz::get_mechz_spawn_pos();
 		wait (60);
 		ai = zm_ai_mechz::spawn_mechz( s_loc, 1 );

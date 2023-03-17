@@ -70,8 +70,8 @@
 
 function main()
 {
-    LuiLoad( "ui.uieditor.menus.hud.t7hud_zm_factory" );
-    LuiLoad( "ui.uieditor.menus.Craftables.WonderfizzMenuBase");
+    //LuiLoad( "ui.uieditor.menus.hud.t7hud_zm_factory" );
+    //LuiLoad( "ui.uieditor.menus.Craftables.WonderfizzMenuBase");
     // P-06
 	LuiLoad( "ui.uieditor.widgets.Reticles.ChargeShot.ChargeShot_reticle" );
 	// R70 Ajax
