@@ -63,11 +63,14 @@ function pickup( w_weapon )
 	if (w_weapon == getWeapon("elemental_bow_wolf_howl"))
 		level flag::wait_till("wolf_arrow_done");
 	else if (w_weapon == getWeapon("elemental_bow_storm"))
-		level flag::wait_till("storm_arrow_done");
+		//level flag::wait_till("storm_arrow_done");
+		level flag::wait_till("lockdown_end");
 	else if (w_weapon == getWeapon("elemental_bow_demongate"))
-		level flag::wait_till("deamon_arrow_done");
+		//level flag::wait_till("deamon_arrow_done");
+		level flag::wait_till("lockdown_end");
 	else if (w_weapon == getWeapon("elemental_bow_rune_prison"))
-		level flag::wait_till("rune_arrow_done");
+		//level flag::wait_till("rune_arrow_done");
+		level flag::wait_till("lockdown_end");
 
 	model = GetEnt("basic_bitch_bow","targetname");	
 	model MoveZ(78, 1, 0.1, 0.3);

@@ -98,7 +98,7 @@ function challeneges_init()
 	add_challenge_reward(4,				level.zombie_powerups["free_perk"].model_name,			&spawn_powerup,		"free_perk");
 	add_challenge_reward(4,				level.zombie_powerups["full_ammo"].model_name,			&spawn_powerup,		"full_ammo");
 	add_challenge_reward(4,				"zombie_z_money_icon",									&bonus_points,		3000);
-	add_challenge_reward(4,				getweapon("ray_gun").worldModel,						&free_gun,			getweapon("ray_gun"));
+	add_challenge_reward(4,				getweapon("ray_gun").worldModel,						&free_gun,			getweapon("t9_ray_gun"));
 	
 	podium_challenge = struct::get_array("podium_challenge", "targetname");
 	array::thread_all( podium_challenge, &podium_challenge_activate );

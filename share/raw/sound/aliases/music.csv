@@ -14,3 +14,6 @@ bonfire_lit,,,music\bonfire_lit.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,85,85,,,,,,,,3,old
 collect_soul_sound,,,music\collect_soul_sound.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,70,70,,,,,,,,3,oldest,,,1,1,,,,,,3d,wpn_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ee_loop_trigger,,,music\ee_loop_trigger.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,72,72,100,500,750,,,,,,,,,0,0,100,100,0,1,,3d,,, LOOPING,,,,,,,0.3,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ee_trigger,,,music\ee_trigger.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,75,75,100,500,700,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+# custom ambient sounds 
+kiln_ambience,,,sounds\kiln_ambience.wav,,,UIN_MOD,,,,,BUS_FX,,,,0,0,93,93,0,2000,2000,,,,,,,,,0,0,100,100,0,1,,2d,front,,LOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

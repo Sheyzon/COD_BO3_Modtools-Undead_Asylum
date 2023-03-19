@@ -197,6 +197,7 @@ function main()
 	init_zones[3] = "firelink_shrine";
 	init_zones[4] = "secret_tp_room_1";
 	init_zones[5] = "boss_room";
+	init_zones[6] = "boss_room";
 	level thread zm_zonemgr::manage_zones( init_zones );
 
 	zm_audio::loadPlayerVoiceCategories("gamedata/audio/zm/zm_genesis_vox.csv");
@@ -571,19 +572,28 @@ function watch_pap_door()
 	trig = GetEnt("pap_door_trig","targetname");
 	trig SetCursorHint("HINT_NOICON"); 
 	trig UseTriggerRequireLookAt();
-	trig SetHintString("Mach Summoning Key du Opfer"); 
-	
+	trig SetHintString("Press ^3&&1^7 to Open Door [Cost: 1000]");
 	brushmodel = GetEnt("pap_door","targetname");
 
-	level flag::wait_till("summoningkey_done");
+	bullshit = false;
 
-	trig SetHintString("Drück ^3&&1^7 Um des scheiß Brushmodel verschwinden zu lassen wie es dein Vater einst tat");
-	trig waittill("trigger", player);
-
-	trig Delete();
-	brushmodel Delete();
-
-	level flag::set( "pap_flag" );
+	while (!bullshit)
+	{
+		trig waittill("trigger", player);
+		if(player.score >= 1000)
+		{
+			player zm_score::minus_to_player_score(1500);
+			player PlayLocalSound("zmb_cha_ching");
+			level flag::set( "pap_flag" );
+			trig Delete();
+			brushmodel Delete();
+			bullshit = true;
+		}
+		else
+		{
+			player zm_audio::create_and_play_dialog( "general", "outofmoney" );
+		}
+	}
 }
 
 function drop_summoning_key()

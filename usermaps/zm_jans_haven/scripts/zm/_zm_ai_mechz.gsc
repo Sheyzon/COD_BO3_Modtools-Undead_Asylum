@@ -1844,6 +1844,8 @@ function mechz_health_increases()
 		if ( a_players.size > 1 )
 			n_player_modifier = a_players.size * MECHZ_HEALTH_CO_OP_MULTI;
 		
+
+		//TODO Max health cap. 75000 HP or so
 		level.mechz_health = int( n_player_modifier * ( level.mechz_base_health + ( level.mechz_health_increase * level.mechz_round_count ) ) );
 		
 		if ( level.mechz_health >= MECHZ_HEALTH_MAX_BASE * n_player_modifier )
