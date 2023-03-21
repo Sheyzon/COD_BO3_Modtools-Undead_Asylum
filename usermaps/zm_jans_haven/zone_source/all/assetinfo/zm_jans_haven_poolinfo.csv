@@ -3,12 +3,12 @@ physpreset,276,33
 physconstraints,198,0
 destructibledef,128,0
 xanim,25000,3110
-xmodel,10240,907
-xmodelmesh,34816,2668
-material,20480,3308
+xmodel,10240,910
+xmodelmesh,34816,2679
+material,20480,3317
 computeshaderset,256,0
 techset,1024,191
-image,49152,5971
+image,49152,5985
 sound,32,1
 sound_patch,16,0
 col_map,2,1
@@ -37,7 +37,7 @@ customizationtable,8,0
 customizationtable_feimages,8,0
 customizationtablecolor,1024,0
 snddriverglobals,1,0
-fx,1875,544
+fx,1875,545
 tagfx,64,2
 klf,64,18
 impactsfxtable,256,18

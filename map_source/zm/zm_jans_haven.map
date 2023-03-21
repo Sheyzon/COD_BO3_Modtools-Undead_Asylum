@@ -5,11 +5,11 @@ iwmap 4
 "The Map" flags expanded 
 "fire_link_shrine" flags hidden 
 "kiln_of_the_first_flame" flags hidden 
-"sif_arena" flags 
+"sif_arena" flags hidden 
 "undead_asylum" flags expanded 
 // entity 0
 {
-guid "{5A2C1A67-C73D-11ED-91FE-34CFF6FAFB90}"
+guid "{C1CCAA91-C80F-11ED-91FE-34CFF6FAFB90}"
 "classname" "worldspawn"
 "lutmaterial" "xl_nws3"
 "vbloom" "mp_sector_03"
@@ -24485,81 +24485,6 @@ layer "undead_asylum"
 }
 // brush 1022
  {
-  guid "{8F667937-C0DD-11ED-91FA-34CFF6FAFB90}"
-  curve
-  {
-layer "undead_asylum"
-  toolFlags;
-   cor_wood_floorboards_01_oak
-   lightmap_gray
-   9 5 16 8
-   (
-	v -9732 7143 2598 t 0 -0 1 1
-	v -9732 7143 2600.5 t 0 -120 1 3
-	v -9732 7143 2603 t 0 -0 1 3
-	v -9732 7143 2605.5 t 0 -120 1 3
-	v -9732 7143 2613 t 0 -240 1 3
-   )
-   (
-	v -9722 7143 2598 t 160 -0 3 1
-	v -9722 7143 2600.5 t 160 -120 3 3
-	v -9722 7143 2603 t 160 -0 3 3
-	v -9722 7143 2605.5 t 160 -120 3 3
-	v -9722 7143 2613 t 160 -240 3 3
-   )
-   (
-	v -9722 7146.5 2598 t 216 -0 5 1
-	v -9722 7146.5 2600.5 t 216 -120 5 3
-	v -9722 7146.5 2603 t 216 -0 5 3
-	v -9722 7146.5 2605.5 t 216 -120 5 3
-	v -9722 7146.5 2613 t 216 -240 5 3
-   )
-   (
-	v -9722 7150 2598 t 272 -0 7 1
-	v -9722 7150 2600.5 t 272 -120 7 3
-	v -9722 7150 2603 t 272 -0 7 3
-	v -9722 7150 2605.5 t 272 -120 7 3
-	v -9722 7150 2613 t 272 -240 7 3
-   )
-   (
-	v -9732 7150 2598 t 432 -0 9 1
-	v -9732 7150 2600.5 t 432 -120 9 3
-	v -9732 7150 2603 t 432 -0 9 3
-	v -9732 7150 2605.5 t 432 -120 9 3
-	v -9732 7150 2613 t 432 -240 9 3
-   )
-   (
-	v -9742 7150 2598 t 592 -0 11 1
-	v -9742 7150 2600.5 t 592 -120 11 3
-	v -9742 7150 2603 t 592 -0 11 3
-	v -9742 7150 2605.5 t 592 -120 11 3
-	v -9742 7150 2613 t 592 -240 11 3
-   )
-   (
-	v -9742 7146.5 2598 t 648 -0 13 1
-	v -9742 7146.5 2600.5 t 648 -120 13 3
-	v -9742 7146.5 2603 t 648 -0 13 3
-	v -9742 7146.5 2605.5 t 648 -120 13 3
-	v -9742 7146.5 2613 t 648 -240 13 3
-   )
-   (
-	v -9742 7143 2598 t 704 -0 15 1
-	v -9742 7143 2600.5 t 704 -120 15 3
-	v -9742 7143 2603 t 704 -0 15 3
-	v -9742 7143 2605.5 t 704 -120 15 3
-	v -9742 7143 2613 t 704 -240 15 3
-   )
-   (
-	v -9732 7143 2598 t 864 -0 17 1
-	v -9732 7143 2600.5 t 864 -120 17 3
-	v -9732 7143 2603 t 864 -0 17 3
-	v -9732 7143 2605.5 t 864 -120 17 3
-	v -9732 7143 2613 t 864 -240 17 3
-   )
-  }
- }
-// brush 1023
- {
   guid "{60EAB1F5-C2AD-11ED-91FA-34CFF6FAFB90}"
   mesh
   {
@@ -24570,16 +24495,16 @@ layer "undead_asylum"
    lightmap_gray
    2 2 16 8
    (
-	v -8072.5 5569 1650.25 t -9540 22840 -25.5625 130.48438
-	v -10402.75 5569 1650.25 t -28182 22840 -55.640625 130.48438
+	v -8072.5 5569 1656.25 t -9540 22840 -25.5625 130.48438
+	v -10402.75 5569 1656.25 t -28182 22840 -55.640625 130.48438
    )
    (
-	v -8072.5 7776.25 1650.25 t -9540 5182 -25.5625 90.65625
-	v -10402.75 7776.25 1650.25 t -28182 5182 -55.640625 90.65625
+	v -8072.5 7776.25 1656.25 t -9540 5182 -25.5625 90.65625
+	v -10402.75 7776.25 1656.25 t -28182 5182 -55.640625 90.65625
    )
   }
  }
-// brush 1024
+// brush 1023
 {
  guid "{B9927406-C2B5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24590,7 +24515,7 @@ layer "undead_asylum"
  ( -9267.75 5843 1650.5 ) ( -9504 5843 1650.5 ) ( -9504 5843 1650.25 ) clip 64 64 -6873.75 0 0 0 lightmap_gray 16384 16384 -6873.75 0 0 0
  ( -9688.75 5843.25 1650.5 ) ( -9688.75 5814.75 1650.5 ) ( -9688.75 5814.75 1650.25 ) clip 64 64 8233.5 0 0 0 lightmap_gray 16384 16384 8233.5 0 0 0
 }
-// brush 1025
+// brush 1024
 {
  guid "{E9408DCB-C2B5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24601,7 +24526,7 @@ layer "undead_asylum"
  ( -8623 6014 1834 ) ( -8797.75 6014 1834 ) ( -8797.75 6014 1650.25 ) clip 64 64 -6863.5 0 0 0 lightmap_gray 16384 16384 -6863.5 0 0 0
  ( -8799.75 5864.25 1834 ) ( -8799.75 5798.5 1834 ) ( -8799.75 5798.5 1650.25 ) clip 64 64 8372.75 0 0 0 lightmap_gray 16384 16384 8372.75 0 0 0
 }
-// brush 1026
+// brush 1025
 {
  guid "{02343814-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24612,7 +24537,7 @@ layer "undead_asylum"
  ( -8638.5 6539 1834 ) ( -8670.75 6539 1834 ) ( -8670.75 6539 1650.25 ) clip 64 64 -6912.75 0 0 0 lightmap_gray 16384 16384 -6912.75 0 0 0
  ( -8649 6122.75 1834 ) ( -8649 5965.25 1834 ) ( -8649 5965.25 1650.25 ) clip 64 64 8372 0 0 0 lightmap_gray 16384 16384 8372 0 0 0
 }
-// brush 1027
+// brush 1026
 {
  guid "{2E4073D3-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24623,7 +24548,7 @@ layer "undead_asylum"
  ( -8639.5 7329.75 1834 ) ( -8671.75 7329.75 1834 ) ( -8671.75 7329.75 1650.25 ) clip 64 64 -6913.75 0 0 0 lightmap_gray 16384 16384 -6913.75 0 0 0
  ( -8645.5 6961.25 1834 ) ( -8645.5 6803.75 1834 ) ( -8645.5 6803.75 1650.25 ) clip 64 64 9210.5 0 0 0 lightmap_gray 16384 16384 9210.5 0 0 0
 }
-// brush 1028
+// brush 1027
 {
  guid "{3B42ABFA-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24634,7 +24559,7 @@ layer "undead_asylum"
  ( -8591.5 7519.25 1834 ) ( -8653.5 7519.25 1834 ) ( -8653.5 7519.25 1650.25 ) clip 64 64 -6854.75 0 0 0 lightmap_gray 16384 16384 -6854.75 0 0 0
  ( -8800 7338.5 1834 ) ( -8800 7293.5 1834 ) ( -8800 7293.5 1650.25 ) clip 64 64 8427.75 0 0 0 lightmap_gray 16384 16384 8427.75 0 0 0
 }
-// brush 1029
+// brush 1028
 {
  guid "{59A1D2C2-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24645,7 +24570,7 @@ layer "undead_asylum"
  ( -8731.25 7557 1834 ) ( -9194.5 7557 1834 ) ( -9194.5 7557 1650.25 ) clip 64 64 -6905.25 0 0 0 lightmap_gray 16384 16384 -6905.25 0 0 0
  ( -9850 7544.5 1834 ) ( -9850 7487.5 1834 ) ( -9850 7487.5 1650.25 ) clip 64 64 8592.75 0 0 0 lightmap_gray 16384 16384 8592.75 0 0 0
 }
-// brush 1030
+// brush 1029
 {
  guid "{8027CEF2-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24656,7 +24581,7 @@ layer "undead_asylum"
  ( -9853 7329.75 1834 ) ( -9885.25 7329.75 1834 ) ( -9885.25 7329.75 1650.25 ) clip 64 64 -8127.25 0 0 0 lightmap_gray 16384 16384 -8127.25 0 0 0
  ( -10054 6981.25 1834 ) ( -10054 6823.75 1834 ) ( -10054 6823.75 1650.25 ) clip 64 64 9230.5 0 0 0 lightmap_gray 16384 16384 9230.5 0 0 0
 }
-// brush 1031
+// brush 1030
 {
  guid "{8027CEF3-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24667,7 +24592,7 @@ layer "undead_asylum"
  ( -9852 6539 1834 ) ( -9884.25 6539 1834 ) ( -9884.25 6539 1650.25 ) clip 64 64 -8126.25 0 0 0 lightmap_gray 16384 16384 -8126.25 0 0 0
  ( -10067.5 6149.75 1834 ) ( -10067.5 5992.25 1834 ) ( -10067.5 5992.25 1650.25 ) clip 64 64 8399 0 0 0 lightmap_gray 16384 16384 8399 0 0 0
 }
-// brush 1032
+// brush 1031
 {
  guid "{8763E9C6-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24678,7 +24603,7 @@ layer "undead_asylum"
  ( -9648.25 7519.25 1834 ) ( -9710.25 7519.25 1834 ) ( -9710.25 7519.25 1650.25 ) clip 64 64 -7911.5 0 0 0 lightmap_gray 16384 16384 -7911.5 0 0 0
  ( -9856.75 7338.5 1834 ) ( -9856.75 7293.5 1834 ) ( -9856.75 7293.5 1650.25 ) clip 64 64 8427.75 0 0 0 lightmap_gray 16384 16384 8427.75 0 0 0
 }
-// brush 1033
+// brush 1032
 {
  guid "{8763E9CE-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24689,7 +24614,7 @@ layer "undead_asylum"
  ( -9649.75 6014 1834 ) ( -9824.5 6014 1834 ) ( -9824.5 6014 1650.25 ) clip 64 64 -7890.25 0 0 0 lightmap_gray 16384 16384 -7890.25 0 0 0
  ( -9826.5 5864.25 1834 ) ( -9826.5 5798.5 1834 ) ( -9826.5 5798.5 1650.25 ) clip 64 64 8372.75 0 0 0 lightmap_gray 16384 16384 8372.75 0 0 0
 }
-// brush 1034
+// brush 1033
 {
  guid "{CC6E272D-C2B6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24700,7 +24625,7 @@ layer "undead_asylum"
  ( -8328.5 6806.25 1834 ) ( -8475.75 6806.25 1834 ) ( -8475.75 6806.25 1650.25 ) clip 64 64 -6862.75 0 0 0 lightmap_gray 16384 16384 -6862.75 0 0 0
  ( -8469.5 6781.75 1834 ) ( -8469.5 6553 1834 ) ( -8469.5 6553 1650.25 ) clip 64 64 8447.25 0 0 0 lightmap_gray 16384 16384 8447.25 0 0 0
 }
-// brush 1035
+// brush 1034
  {
   guid "{B4E7E786-C2B9-11ED-91FA-34CFF6FAFB90}"
   mesh
@@ -24720,7 +24645,7 @@ layer "undead_asylum"
    )
   }
  }
-// brush 1036
+// brush 1035
  {
   guid "{5301F3A1-C2BA-11ED-91FA-34CFF6FAFB90}"
   mesh
@@ -24740,7 +24665,7 @@ layer "undead_asylum"
    )
   }
  }
-// brush 1037
+// brush 1036
 {
  guid "{7F3427F9-C2C0-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24751,7 +24676,7 @@ layer "undead_asylum"
  ( -10008 6806.25 1834 ) ( -10155.25 6806.25 1834 ) ( -10155.25 6806.25 1650.25 ) clip 64 64 -8542.25 0 0 0 lightmap_gray 16384 16384 -8542.25 0 0 0
  ( -10153.25 6779.75 1834 ) ( -10153.25 6551 1834 ) ( -10153.25 6551 1650.25 ) clip 64 64 8445.25 0 0 0 lightmap_gray 16384 16384 8445.25 0 0 0
 }
-// brush 1038
+// brush 1037
 {
  guid "{31435E65-C336-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24762,7 +24687,7 @@ layer "undead_asylum"
  ( -9823.5 7428.25 1976 ) ( -9823.5 7411.5 1976 ) ( -9823.5 7411.5 1798 ) clip 64 64 6542.25 0 0 0 lightmap_gray 16384.059 16384 9047.0049 -1 0 0
  ( -11335.25 7337 1976 ) ( -11252 7337 1976 ) ( -11252 7337 1798 ) clip 64 64 -10038.75 0 0 0 lightmap_gray 16384 -16384 10160.25 1 180 0
 }
-// brush 1039
+// brush 1038
 {
  guid "{947D5D7B-C337-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -24773,7 +24698,7 @@ layer "undead_asylum"
  ( -9823.5 5923.5 1976 ) ( -9823.5 5906.75 1976 ) ( -9823.5 5906.75 1798 ) clip 64 64 5037.5 0 0 0 lightmap_gray 16384.059 16384 7542.2554 -1 0 0
  ( -11335.25 5832.25 1976 ) ( -11252 5832.25 1976 ) ( -11252 5832.25 1798 ) clip 64 64 -10038.75 0 0 0 lightmap_gray 16384 -16384 10160.25 1 180 0
 }
-// brush 1040
+// brush 1039
  {
   guid "{CED22E3A-C2B0-11ED-91FA-34CFF6FAFB90}"
   mesh
@@ -27385,7 +27310,7 @@ layer "undead_asylum"
    )
   }
  }
-// brush 1041
+// brush 1040
 {
  guid "{5C746FAA-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27396,7 +27321,7 @@ layer "undead_asylum"
  ( -8800 5923.5 1976 ) ( -8800 5906.75 1976 ) ( -8800 5906.75 1798 ) clip 64 64 5037.5 0 0 0 lightmap_gray 16384.059 16384 7542.2554 -1 0 0
  ( -10311.75 5832.25 1976 ) ( -10228.5 5832.25 1976 ) ( -10228.5 5832.25 1798 ) clip 64 64 -9015.25 0 0 0 lightmap_gray 16384 -16384 9136.75 1 180 0
 }
-// brush 1042
+// brush 1041
 {
  guid "{4343A346-C37A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27407,7 +27332,7 @@ layer "undead_asylum"
  ( -8755.75 28966.5 124906 ) ( -9519 28330.5 1656 ) ( -9519 6330.5 1656 ) clip 64 64 6623.25 876 0 0 lightmap_gray 16384 16384 6623.25 876 0 0
  ( 15222 -16902.5 1902.5 ) ( -9552 -16902.5 1902.5 ) ( -9552 6369.5 1902.5 ) clip 64 64 -9018 -6617 0 0 lightmap_gray 16384 16384 -9018 -6617 0 0
 }
-// brush 1043
+// brush 1042
 {
  guid "{413EB367-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27418,7 +27343,7 @@ layer "undead_asylum"
  ( -8458.75 28966.5 124906 ) ( -9222 28330.5 1656 ) ( -9222 6330.5 1656 ) clip 64 64 6623.25 876 0 0 lightmap_gray 16384 16384 6623.25 876 0 0
  ( 15519 -16902.5 1902.5 ) ( -9255 -16902.5 1902.5 ) ( -9255 6369.5 1902.5 ) clip 64 64 -8721 -6617 0 0 lightmap_gray 16384 16384 -8721 -6617 0 0
 }
-// brush 1044
+// brush 1043
 {
  guid "{4A397102-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27429,7 +27354,7 @@ layer "undead_asylum"
  ( -8161.75 28966.5 124906 ) ( -8925 28330.5 1656 ) ( -8925 6330.5 1656 ) clip 64 64 6623.25 876 0 0 lightmap_gray 16384 16384 6623.25 876 0 0
  ( 15816 -16902.5 1902.5 ) ( -8958 -16902.5 1902.5 ) ( -8958 6369.5 1902.5 ) clip 64 64 -8424 -6617 0 0 lightmap_gray 16384 16384 -8424 -6617 0 0
 }
-// brush 1045
+// brush 1044
 {
  guid "{55EB1955-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27440,7 +27365,7 @@ layer "undead_asylum"
  ( -8161.75 29607 124906 ) ( -8925 28971 1656 ) ( -8925 6971 1656 ) clip 64 64 7263.75 876 0 0 lightmap_gray 16384 16384 7263.75 876 0 0
  ( 15816 -16262 1902.5 ) ( -8958 -16262 1902.5 ) ( -8958 7010 1902.5 ) clip 64 64 -8424 -7257.5 0 0 lightmap_gray 16384 16384 -8424 -7257.5 0 0
 }
-// brush 1046
+// brush 1045
 {
  guid "{75138283-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27451,7 +27376,7 @@ layer "undead_asylum"
  ( -8458.75 29607 124906 ) ( -9222 28971 1656 ) ( -9222 6971 1656 ) clip 64 64 7263.75 876 0 0 lightmap_gray 16384 16384 7263.75 876 0 0
  ( 15519 -16262 1902.5 ) ( -9255 -16262 1902.5 ) ( -9255 7010 1902.5 ) clip 64 64 -8721 -7257.5 0 0 lightmap_gray 16384 16384 -8721 -7257.5 0 0
 }
-// brush 1047
+// brush 1046
 {
  guid "{7E56B7F7-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27462,7 +27387,7 @@ layer "undead_asylum"
  ( -8755.75 29607 124906 ) ( -9519 28971 1656 ) ( -9519 6971 1656 ) clip 64 64 7263.75 876 0 0 lightmap_gray 16384 16384 7263.75 876 0 0
  ( 15222 -16262 1902.5 ) ( -9552 -16262 1902.5 ) ( -9552 7010 1902.5 ) clip 64 64 -9018 -7257.5 0 0 lightmap_gray 16384 16384 -9018 -7257.5 0 0
 }
-// brush 1048
+// brush 1047
 {
  guid "{99392130-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27473,7 +27398,7 @@ layer "undead_asylum"
  ( -8161.75 29957 124906 ) ( -8925 29321 1656 ) ( -8925 7321 1656 ) clip 64 64 7613.75 876 0 0 lightmap_gray 16384 16384 7613.75 876 0 0
  ( 15816 -15912 1902.5 ) ( -8958 -15912 1902.5 ) ( -8958 7360 1902.5 ) clip 64 64 -8424 -7607.5 0 0 lightmap_gray 16384 16384 -8424 -7607.5 0 0
 }
-// brush 1049
+// brush 1048
 {
  guid "{99392131-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27484,7 +27409,7 @@ layer "undead_asylum"
  ( -8458.75 29957 124906 ) ( -9222 29321 1656 ) ( -9222 7321 1656 ) clip 64 64 7613.75 876 0 0 lightmap_gray 16384 16384 7613.75 876 0 0
  ( 15519 -15912 1902.5 ) ( -9255 -15912 1902.5 ) ( -9255 7360 1902.5 ) clip 64 64 -8721 -7607.5 0 0 lightmap_gray 16384 16384 -8721 -7607.5 0 0
 }
-// brush 1050
+// brush 1049
 {
  guid "{99392132-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27495,7 +27420,7 @@ layer "undead_asylum"
  ( -8755.75 29957 124906 ) ( -9519 29321 1656 ) ( -9519 7321 1656 ) clip 64 64 7613.75 876 0 0 lightmap_gray 16384 16384 7613.75 876 0 0
  ( 15222 -15912 1902.5 ) ( -9552 -15912 1902.5 ) ( -9552 7360 1902.5 ) clip 64 64 -9018 -7607.5 0 0 lightmap_gray 16384 16384 -9018 -7607.5 0 0
 }
-// brush 1051
+// brush 1050
 {
  guid "{A6DEBA25-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27506,7 +27431,7 @@ layer "undead_asylum"
  ( -8161.75 28617.25 124906 ) ( -8925 27981.25 1656 ) ( -8925 5981.25 1656 ) clip 64 64 6274 876 0 0 lightmap_gray 16384 16384 6274 876 0 0
  ( 15816 -17251.75 1902.5 ) ( -8958 -17251.75 1902.5 ) ( -8958 6020.25 1902.5 ) clip 64 64 -8424 -6267.75 0 0 lightmap_gray 16384 16384 -8424 -6267.75 0 0
 }
-// brush 1052
+// brush 1051
 {
  guid "{A6DEBA26-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27517,7 +27442,7 @@ layer "undead_asylum"
  ( -8458.75 28617.25 124906 ) ( -9222 27981.25 1656 ) ( -9222 5981.25 1656 ) clip 64 64 6274 876 0 0 lightmap_gray 16384 16384 6274 876 0 0
  ( 15519 -17251.75 1902.5 ) ( -9255 -17251.75 1902.5 ) ( -9255 6020.25 1902.5 ) clip 64 64 -8721 -6267.75 0 0 lightmap_gray 16384 16384 -8721 -6267.75 0 0
 }
-// brush 1053
+// brush 1052
 {
  guid "{A6DEBA27-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27528,7 +27453,7 @@ layer "undead_asylum"
  ( -8755.75 28617.25 124906 ) ( -9519 27981.25 1656 ) ( -9519 5981.25 1656 ) clip 64 64 6274 876 0 0 lightmap_gray 16384 16384 6274 876 0 0
  ( 15222 -17251.75 1902.5 ) ( -9552 -17251.75 1902.5 ) ( -9552 6020.25 1902.5 ) clip 64 64 -9018 -6267.75 0 0 lightmap_gray 16384 16384 -9018 -6267.75 0 0
 }
-// brush 1054
+// brush 1053
 {
  guid "{B36C80AF-C40B-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27539,7 +27464,7 @@ layer "undead_asylum"
  ( -8882.25 5027 2220.75 ) ( -8938 5027 2220.75 ) ( -8938 5027 2200.75 ) clip 64 64 -6880.25 39 0 0 lightmap_gray 16384 16384 -6880.25 39 0 0
  ( -8938 5027 2220.75 ) ( -8938 4987.5 2220.75 ) ( -8938 4987.5 2200.75 ) clip 64 64 8431.5 39 0 0 lightmap_gray 16384 16384 8431.5 39 0 0
 }
-// brush 1055
+// brush 1054
 {
  guid "{3CA73E0F-C40F-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27550,7 +27475,7 @@ layer "undead_asylum"
  ( -8764.5 5069.5 2220.75 ) ( -8820.25 5069.5 2220.75 ) ( -8820.25 5069.5 2200.75 ) clip 64 64 -6762.5 39 0 0 lightmap_gray 16384 16384 -6762.5 39 0 0
  ( -8804.75 4997.25 2220.75 ) ( -8804.75 4957.75 2220.75 ) ( -8804.75 4957.75 2200.75 ) clip 64 64 8401.75 39 0 0 lightmap_gray 16384 16384 8401.75 39 0 0
 }
-// brush 1056
+// brush 1055
 {
  guid "{5481A83F-C40F-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27561,7 +27486,7 @@ layer "undead_asylum"
  ( -9009 5069.5 2220.75 ) ( -9064.75 5069.5 2220.75 ) ( -9064.75 5069.5 2200.75 ) clip 64 64 -7007 39 0 0 lightmap_gray 16384 16384 -7007 39 0 0
  ( -9049.25 4997.25 2220.75 ) ( -9049.25 4957.75 2220.75 ) ( -9049.25 4957.75 2200.75 ) clip 64 64 8401.75 39 0 0 lightmap_gray 16384 16384 8401.75 39 0 0
 }
-// brush 1057
+// brush 1056
 {
  guid "{D867D579-A7C6-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27572,7 +27497,7 @@ layer "undead_asylum"
  ( -8779.25 5079.75 2222.25 ) ( -8867.25 5079.75 2222.25 ) ( -8867.25 5079.75 2190.75 ) shadowcaster 16 16 -9008 0 0 0 lightmap_gray 16384 16384 -8820.25 0 0 0
  ( -9049.25 4997.75 2222.25 ) ( -9049.25 4990.5 2222.25 ) ( -9049.25 4990.5 2190.75 ) shadowcaster 16 16 6570 0 0 0 lightmap_gray 16384 16384 6708.75 0 0 0
 }
-// brush 1058
+// brush 1057
 {
  guid "{D867D49E-A7C6-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -27583,7 +27508,7 @@ layer "undead_asylum"
  ( -8779.25 5079.75 2222.25 ) ( -8867.25 5079.75 2222.25 ) ( -8867.25 5079.75 2190.75 ) clip 64 64 -9008 0 0 0 lightmap_gray 16384 16384 -8820.25 0 0 0
  ( -9049.25 4997.75 2222.25 ) ( -9049.25 4990.5 2222.25 ) ( -9049.25 4990.5 2190.75 ) clip 64 64 6570 0 0 0 lightmap_gray 16384 16384 6708.75 0 0 0
 }
-// brush 1059
+// brush 1058
  {
   guid "{5A696CDA-BAAA-11ED-91F7-34CFF6FAFB90}"
   mesh
@@ -28875,7 +28800,7 @@ layer "fire_link_shrine"
    )
   }
  }
-// brush 1060
+// brush 1059
 {
  guid "{940806B1-C4C9-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -28886,7 +28811,7 @@ layer "undead_asylum"
  ( -9261.75 6345 2677.25 ) ( -9274.75 6345 2677.25 ) ( -9274.75 6345 2532 ) clip 64 64 -9258.75 0 0 0 lightmap_gray 16384 16384 -9258.75 0 0 0
  ( -9271.75 6389 2677.25 ) ( -9271.75 6322.5 2677.25 ) ( -9271.75 6322.5 2532 ) clip 64 64 6681 0 0 0 lightmap_gray 16384 16384 6681 0 0 0
 }
-// brush 1061
+// brush 1060
 {
  guid "{9C5F78FD-C4C9-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -28897,7 +28822,7 @@ layer "undead_asylum"
  ( -9014 6345 2677.25 ) ( -9027 6345 2677.25 ) ( -9027 6345 2532 ) clip 64 64 -9011 0 0 0 lightmap_gray 16384 16384 -9011 0 0 0
  ( -9024 6389 2677.25 ) ( -9024 6322.5 2677.25 ) ( -9024 6322.5 2532 ) clip 64 64 6681 0 0 0 lightmap_gray 16384 16384 6681 0 0 0
 }
-// brush 1062
+// brush 1061
 {
  guid "{40619043-C72C-11ED-91FE-34CFF6FAFB90}"
  ( -3040 -2048 -8160 ) ( -3040 2048 -8160 ) ( -2016 2048 -8160 ) sky 64 64 0 0 0 0 lightmap_gray 16384 16384 -4096 0 0 0
@@ -28907,7 +28832,7 @@ layer "undead_asylum"
  ( -16384 -11744 -8192 ) ( -16384 -15840 -8192 ) ( -16384 -15840 -9216 ) sky 64 64 -8160 12800 0 0 lightmap_gray 16384 16384 -13792 9216 0 0
  ( 32 2048 -8192 ) ( 32 -2048 -8192 ) ( 1056 2048 -8192 ) sky 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1063
+// brush 1062
 {
  guid "{3DB78158-9F67-11ED-91E6-34CFF6FAFB90}"
  ( 15328 2048 -8192 ) ( 14304 2048 -8192 ) ( 14304 -2048 -8192 ) sky 16 16 13536 0 0 0 lightmap_gray 16384 16384 13536 0 0 0
@@ -28917,7 +28842,7 @@ layer "undead_asylum"
  ( 15328 16384 1024 ) ( 14304 16384 1024 ) ( 14304 16384 0 ) sky 16 16 14560 0 0 0 lightmap_gray 16384 16384 14560 0 0 0
  ( 16352 1792 800 ) ( 16352 -2304 800 ) ( 16352 1792 -224 ) sky 16 16 512 448 0 0 lightmap_gray 16384 16384 512 448 0 0
 }
-// brush 1064
+// brush 1063
 {
  guid "{168A24E8-C733-11ED-91FE-34CFF6FAFB90}"
  ( 1412.75 2408 4371.75 ) ( -45.25 11341.25 4923.75 ) ( -7495.75 6471.75 2403.25 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -28951,7 +28876,7 @@ layer "undead_asylum"
  ( -25515.25 6698.5 6887.5 ) ( -13734.25 8116.75 8513.25 ) ( -7487 6462 2423.75 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( 45097.75 8071.5 3506 ) ( 33284.75 6653.25 1880.75 ) ( -7605 6462 2433.75 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1065
+// brush 1064
 {
  guid "{168A24F0-C733-11ED-91FE-34CFF6FAFB90}"
  ( 14381.5 -32154.25 740 ) ( 32760.25 -45493.25 3474 ) ( -7662.25 6967 2401.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -28995,7 +28920,7 @@ layer "undead_asylum"
  ( -2202.75 5489.75 12829.25 ) ( 5558.75 -674 -6429.75 ) ( -7638 6867.5 2421.75 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( -15373.25 13016.25 21663 ) ( -42 4272.5 10027 ) ( -7611.75 6852.5 2404 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1066
+// brush 1065
 {
  guid "{1C8B634D-C733-11ED-91FE-34CFF6FAFB90}"
  ( 14381.5 -32154.25 772 ) ( 32760.25 -45493.25 3506 ) ( -7662.25 6967 2433.5 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -29039,7 +28964,7 @@ layer "undead_asylum"
  ( -2202.75 5489.75 12861.25 ) ( 5558.75 -674 -6397.75 ) ( -7638 6867.5 2453.75 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -32 0 0
  ( -15373.25 13016.25 21695 ) ( -42 4272.5 10059 ) ( -7611.75 6852.5 2436 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -32 0 0
 }
-// brush 1067
+// brush 1066
 {
  guid "{27898EAB-C733-11ED-91FE-34CFF6FAFB90}"
  ( -958.25 4120.25 1539 ) ( -10438.25 892.75 2848.25 ) ( -7062.25 7705.5 2081.75 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -29055,7 +28980,7 @@ layer "undead_asylum"
  ( -3337.25 16309.75 2061.5 ) ( -7851.25 14119.25 2115.5 ) ( -7066.25 7688.25 2034.25 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( 529 10169.5 2060.5 ) ( -3337.25 16309.75 2061.5 ) ( -7066.25 7688.25 2034.25 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1068
+// brush 1067
 {
  guid "{27898EB3-C733-11ED-91FE-34CFF6FAFB90}"
  ( -6571.25 -4172.25 27621.5 ) ( -6347 12022.75 34246 ) ( -7033.75 7685.5 2033.5 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -29081,7 +29006,7 @@ layer "undead_asylum"
  ( -3831.75 -2838.25 21079 ) ( 666.75 8542.5 1855.25 ) ( -7049.25 7683.75 2034 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( 666.5 8543.5 1855.25 ) ( -7864.75 14236.25 1984.25 ) ( -7049.25 7683.75 2034 ) clip_player 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1069
+// brush 1068
 {
  guid "{32874349-C733-11ED-91FE-34CFF6FAFB90}"
  ( -12772 1037.75 5728.5 ) ( -14736.5 -1484.5 -3084.25 ) ( -7118.5 7668.5 2049.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -29099,7 +29024,7 @@ layer "undead_asylum"
  ( 6860.25 -2238 -478.75 ) ( -1035 14124.5 -1337.5 ) ( -7133.75 7650.25 2039.25 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( 773.75 -8699.5 2891.5 ) ( 6599 -3551 3105.25 ) ( -7121.5 7663 2032.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
-// brush 1070
+// brush 1069
 {
  guid "{2A166852-C73A-11ED-91FE-34CFF6FAFB90}"
  ( 1040 -5848 -8160 ) ( 1040 -19176 -8160 ) ( 1408 -19176 -8160 ) caulk 16 16 -3472 -808 90 0 lightmap_gray 16384 16384 -3472 -808 90 0
@@ -29109,7 +29034,7 @@ layer "undead_asylum"
  ( 1040 -5848 -2704 ) ( 1040 -19176 -2704 ) ( 1040 -19176 -8112 ) caulk 16 16 -3472 0 0 0 lightmap_gray 16384 16384 -3472 0 0 0
  ( 984 -16352 -2624 ) ( 1352 -16352 -2624 ) ( 1352 -16352 -8032 ) caulk 16 -16 808 80 180 0 lightmap_gray 16384 -16384 864 80 180 0
 }
-// brush 1071
+// brush 1070
 {
  guid "{08DA4989-C73A-11ED-91FE-34CFF6FAFB90}"
  ( -2376 -3584 -8160 ) ( -15704 -3584 -8160 ) ( -15704 -3952 -8160 ) caulk 16 16 0 1736 0 0 lightmap_gray 16384 16384 0 1736 0 0
@@ -29119,7 +29044,7 @@ layer "undead_asylum"
  ( -2376 -3584 -2704 ) ( -15704 -3584 -2704 ) ( -15704 -3584 -8112 ) caulk 16 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( -16352 -3528 -2704 ) ( -16352 -3896 -2704 ) ( -16352 -3896 -8112 ) caulk 16 16 -1736 0 0 0 lightmap_gray 16384 16384 -1680 0 0 0
 }
-// brush 1072
+// brush 1071
 {
  guid "{4F753402-C66A-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -29130,7 +29055,7 @@ layer "kiln_of_the_first_flame"
  ( -7505.4111 8179.4121 -6139 ) ( -7630.3345 8175.0498 -6139 ) ( -7630.3345 8175.0498 -6159 ) mtl_p7_zur_blood_waterfall_01 127.92223 128 -6883.7935 1589 0 0 lightmap_gray 16373.949 16384 -8249.8828 1589 0 0
  ( -7790.5005 8377.584 -6139 ) ( -7769.2129 7767.9551 -6139 ) ( -7769.2129 7767.9551 -6159 ) mtl_p7_zur_blood_waterfall_01 127.9229 128 8410.5635 1589 0 0 lightmap_gray 16374.025 16384 10869.067 1589 0 0
 }
-// brush 1073
+// brush 1072
  {
   guid "{8FF41654-C5C5-11ED-91FE-34CFF6FAFB90}"
   mesh
@@ -34697,7 +34622,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1074
+// brush 1073
  {
   guid "{B9EC83E7-C5E6-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -34754,7 +34679,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1075
+// brush 1074
  {
   guid "{5F065841-C5E8-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -34811,7 +34736,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1076
+// brush 1075
  {
   guid "{4F82FB37-C5E8-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -34868,7 +34793,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1077
+// brush 1076
  {
   guid "{3E0B5B8B-C5E8-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -34925,7 +34850,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1078
+// brush 1077
  {
   guid "{30C36C5D-C5E8-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -34982,7 +34907,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1079
+// brush 1078
  {
   guid "{2232D9EA-C5E8-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35039,7 +34964,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1080
+// brush 1079
  {
   guid "{69069F62-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35096,7 +35021,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1081
+// brush 1080
  {
   guid "{5D6331B0-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35153,7 +35078,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1082
+// brush 1081
  {
   guid "{4BDC7974-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35210,7 +35135,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1083
+// brush 1082
  {
   guid "{30C1DF8E-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35267,7 +35192,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1084
+// brush 1083
  {
   guid "{24E0223E-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35324,7 +35249,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1085
+// brush 1084
  {
   guid "{06CF9AFB-C5E7-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35381,7 +35306,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1086
+// brush 1085
  {
   guid "{F23303F5-C5E6-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35438,7 +35363,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1087
+// brush 1086
  {
   guid "{E83D54AD-C5E6-11ED-91FE-34CFF6FAFB90}"
   curve
@@ -35495,7 +35420,7 @@ layer "kiln_of_the_first_flame"
    )
   }
  }
-// brush 1088
+// brush 1087
 {
  guid "{AC166072-C5AF-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -35506,7 +35431,7 @@ layer "kiln_of_the_first_flame"
  ( -5462.5 8137 -4263.75 ) ( -9303.5 8137 -4263.75 ) ( -9303.5 8137 -5532.75 ) shadowcaster 16 16 -6916.5 918.75 0 0 lightmap_gray 16384 16384 -6916.5 918.75 0 0
  ( -8902 8136 -4263.75 ) ( -8902 4538 -4263.75 ) ( -8902 4538 -5532.75 ) shadowcaster 16 16 8469 918.75 0 0 lightmap_gray 16384 16384 8469 918.75 0 0
 }
-// brush 1089
+// brush 1088
 {
  guid "{9FE64345-C73D-11ED-91FE-34CFF6FAFB90}"
  ( -5332 -10374 -6765 ) ( -9721 -10374 -6765 ) ( -9721 -14535 -6765 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
@@ -35515,6 +35440,37 @@ layer "kiln_of_the_first_flame"
  ( -5332 -14535 -6764 ) ( -5332 -10374 -6764 ) ( -5332 -10374 -6765 ) clip 64 64 0 -75 0 0 lightmap_gray 16384 16384 0 -75 0 0
  ( -5332 -10374 -6764 ) ( -9721 -10374 -6764 ) ( -9721 -10374 -6765 ) clip 64 64 0 -75 0 0 lightmap_gray 16384 16384 0 -75 0 0
  ( -9721 -10374 -6764 ) ( -9721 -14535 -6764 ) ( -9721 -14535 -6765 ) clip 64 64 0 -75 0 0 lightmap_gray 16384 16384 0 -75 0 0
+}
+// brush 1089
+{
+ guid "{BDE5BE7A-C808-11ED-91FE-34CFF6FAFB90}"
+ ( -8375.6875 7431.1416 2723.4998 ) ( -8375.6875 7463.1416 2723.4998 ) ( -8407.6875 7463.1416 2723.4998 ) traverse 32 32 -7447.1416 8335.6875 -90 0 lightmap_gray 16384 16384 -7447.1416 8335.6875 -90 0
+ ( -8399.6875 7463.1416 2731.4998 ) ( -8367.6875 7463.1416 2731.4998 ) ( -8367.6875 7431.1416 2731.4998 ) traverse 32 32 -7447.1416 8335.6875 -90 0 lightmap_gray 16384 16384 -7447.1416 8335.6875 -90 0
+ ( -8400.6875 7461.1416 2733.4998 ) ( -8400.6875 7429.1416 2733.4998 ) ( -8400.6875 7429.1416 2725.4998 ) traverse 32 -32 -7447.1416 2635.5 -180 0 lightmap_gray 16384 -16384 -7447.1416 2635.5 -180 0
+ ( -8407.6875 7431.1416 2731.4998 ) ( -8375.6875 7431.1416 2731.4998 ) ( -8375.6875 7431.1416 2723.4998 ) traverse 32 32 -8335.6875 -2635.5 0 0 lightmap_gray 16384 16384 -8335.6875 -2635.5 0 0
+ ( -8368.6875 7431.1416 2731.4998 ) ( -8368.6875 7463.1416 2731.4998 ) ( -8368.6875 7463.1416 2723.4998 ) traverse 32 -32 -7447.1416 2635.5 180 0 lightmap_gray 16384 -16384 -7447.1416 2635.5 180 0
+ ( -8375.6875 7463.1416 2731.4998 ) ( -8407.6875 7463.1416 2731.4998 ) ( -8407.6875 7463.1416 2723.4998 ) traverse 32 32 -8335.6875 -2635.5 0 0 lightmap_gray 16384 16384 -8335.6875 -2635.5 0 0
+}
+// brush 1090
+{
+ guid "{BDE5BE7B-C808-11ED-91FE-34CFF6FAFB90}"
+ ( -8320.6875 7431.1416 2410.2498 ) ( -8320.6875 7463.1416 2410.2498 ) ( -8352.6875 7463.1416 2410.2498 ) traverse 32 32 -7447.1416 8320.6875 -90 0 lightmap_gray 16384 16384 -7447.1416 8320.6875 -90 0
+ ( -8352.6875 7463.1416 2418.2498 ) ( -8320.6875 7463.1416 2418.2498 ) ( -8320.6875 7431.1416 2418.2498 ) traverse 32 32 -7447.1416 8320.6875 -90 0 lightmap_gray 16384 16384 -7447.1416 8320.6875 -90 0
+ ( -8336.6875 7463.1416 2418.2498 ) ( -8336.6875 7431.1416 2418.2498 ) ( -8336.6875 7431.1416 2410.2498 ) traverse 32 -32 -7447.1416 2418.25 180 0 lightmap_gray 16384 -16384 -7447.1416 2418.25 180 0
+ ( -8352.6875 7431.1416 2418.2498 ) ( -8320.6875 7431.1416 2418.2498 ) ( -8320.6875 7431.1416 2410.2498 ) traverse 32 32 -8320.6875 -2418.25 0 0 lightmap_gray 16384 16384 -8320.6875 -2418.25 0 0
+ ( -8272.6875 7463.1416 2418.2498 ) ( -8304.6875 7463.1416 2418.2498 ) ( -8304.6875 7463.1416 2410.2498 ) traverse 32 32 -8320.6875 -2418.25 0 0 lightmap_gray 16384 16384 -8320.6875 -2418.25 0 0
+ ( -8304.6875 7463.1416 2410.2498 ) ( -8304.6875 7463.1416 2418.2498 ) ( -8304.6875 7495.1416 2418.2498 ) traverse 16 16 7447.1416 -2658.25 0 0 lightmap_gray 16384 16384 7447.1416 -2658.25 0 0
+}
+// brush 1091
+{
+ guid "{13DF7C00-C809-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+ ( -9241.25 6653 1643.75 ) ( -9241.25 6474.5 1643.75 ) ( -9059.5 6474.5 1643.75 ) clip_water 64 64 -8703 -8449 0 0 lightmap_gray 16384 16384 4863.5 -8106.25 90 0
+ ( -9058.5 6478.25 1657.25 ) ( -9240.25 6478.25 1657.25 ) ( -9240.25 6656.75 1657.25 ) clip_water 64 64 -8702 -8449 0 0 lightmap_gray 16384 16384 4867.25 -8105.25 90 0
+ ( -8409.5 5818.5 1962 ) ( -8409.5 5997 1962 ) ( -8409.5 5997 1602.75 ) clip_water 64 64 7773 530 0 0 lightmap_gray 16384 16384 4207.5 431.25 0 0
+ ( -9537.75 7544.25 1962 ) ( -9719.5 7544.25 1962 ) ( -9719.5 7544.25 1602.75 ) clip_water 64 64 -9171 530 0 0 lightmap_gray 16384 -16384 8584.5 -431.25 180 0
+ ( -10065.75 6667.75 1962 ) ( -10065.75 6489.25 1962 ) ( -10065.75 6489.25 1602.75 ) clip_water 64 64 8690 530 0 0 lightmap_gray 16384 16384 4878.25 431.25 0 0
+ ( -8766.25 5800.5 1962 ) ( -8584.5 5800.5 1962 ) ( -8584.5 5800.5 1602.75 ) clip_water 64 64 -7960 530 0 0 lightmap_gray 16384 -16384 7631.25 -431.25 180 0
 }
 }
 // entity 1
@@ -36453,10 +36409,12 @@ layer "undead_asylum"
 "ao_power" "8"
 "ao_range" "16"
 "ao_strength_double_sided" "0.200000002980232"
+"clickedPlane03" "-7913.79 5955.34 2472.05"
+"KvpMetaData00" "KvpName clickedPlane03 type vec3d exportMeta true toolsOnly true hidden true"
 "name" "southwing_probe_007"
 "origin" "-7756.25 6056.5 2496.75"
 "size_max" "265.328 79.909 195.388"
-"size_min" "258.272 98.7449 84.0303"
+"size_min" "258.272 101.162 84.0303"
 "adaptive_quality_boost" "Off"
 "ao_strength" "1"
 "blend_maxs" "3 3 3"
@@ -66769,6 +66727,7 @@ layer "undead_asylum"
 "def_scroll" "0.2 0.2"
 "def_tile" "0 0"
 "far_edge" "0.100000001490116"
+"lightingstate1" "0"
 "name" "light_012"
 "origin" "-9570.11 6295.48 2746.7"
 "penumbraRadius" "1.5"
@@ -66787,7 +66746,6 @@ layer "undead_asylum"
 "excludeDedicated" "Off"
 "falloffdistance" "12"
 "fov_outer" "90"
-"lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
 "lightingstate4" "1"
@@ -66805,22 +66763,6 @@ layer "undead_asylum"
 "origin" "-9540.18 6300.27 2751.64"
 }
 // entity 1867
-{
-guid "{0068E473-ABF4-11ED-91EC-34CFF6FAFB90}"
-layer "undead_asylum"
-"classname" "fx"
-"angles" "315.6 270 -3.53116e-005"
-"delay" "-27074"
-"fxdef" "lensflares/fx_lensflare_light_warm_sm"
-"fxstate2" "0"
-"origin" "-9569.95 6295.43 2746.82"
-"fxstate1" "1"
-"fxstate3" "1"
-"fxstate4" "1"
-"primaryLightFraction" "1"
-"timescale" "1"
-}
-// entity 1868
 {
 guid "{07F3DB67-ABF2-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66859,7 +66801,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 1869
+// entity 1868
 {
 guid "{A905C0E2-ABF4-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66874,7 +66816,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1870
+// entity 1869
 {
 guid "{24D5A149-ABF5-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66898,7 +66840,7 @@ layer "undead_asylum"
  ( 15976.75 -16175.5 2778.5 ) ( -8797.25 -16175.5 2778.5 ) ( -8797.25 7096.5 2778.5 ) clip 64 64 -8954.75 -6570 0 0 lightmap_gray 16384 16384 -8758.5 -6597 0 0
 }
 }
-// entity 1871
+// entity 1870
 {
 guid "{D4D9EA85-ABF5-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66913,7 +66855,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1872
+// entity 1871
 {
 guid "{27F3270D-ABF7-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66922,7 +66864,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/craftables/craftable_table_open.map"
 "origin" "-8751.75 7140 2526.25"
 }
-// entity 1873
+// entity 1872
 {
 guid "{ABB72B2D-ABF8-11ED-91EC-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -66941,7 +66883,7 @@ layer "fire_link_shrine"
 "modelscale" "1"
 "shadow_casting" "1"
 }
-// entity 1874
+// entity 1873
 {
 guid "{ABB72B30-ABF8-11ED-91EC-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -66951,7 +66893,7 @@ layer "fire_link_shrine"
 "targetname" "auto7"
 "_color" "1 0 0"
 }
-// entity 1875
+// entity 1874
 {
 guid "{A4BFE39D-ABD6-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66966,7 +66908,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1876
+// entity 1875
 {
 guid "{77D1087E-ABD6-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66981,7 +66923,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1877
+// entity 1876
 {
 guid "{559E4120-ABE1-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -66996,7 +66938,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 1878
+// entity 1877
 {
 guid "{0D6E1F12-ABDB-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67005,7 +66947,7 @@ layer "undead_asylum"
 "model" "_prefabs/fanatic/ww2/ww2_power_switch.map"
 "origin" "-8668.5 7290.75 2531.5"
 }
-// entity 1879
+// entity 1878
 {
 guid "{1F5E8381-AC8D-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67038,7 +66980,7 @@ layer "undead_asylum"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 1880
+// entity 1879
 {
 guid "{FDBF5FA4-AC8D-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67058,7 +67000,7 @@ layer "undead_asylum"
  ( -8652.8721 7087.498 2527.0598 ) ( -8652.8721 7055.4985 2527.0598 ) ( -8652.8721 7055.4985 2511.0598 ) trigger 64 64 6308.4902 -448.5564 0 0 lightmap_gray 16383.75 16384 6308.3765 -448.5564 0 0
 }
 }
-// entity 1881
+// entity 1880
 {
 guid "{F37A5A8D-A7DB-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67076,7 +67018,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "shadow_casting" "1"
 }
-// entity 1882
+// entity 1881
 {
 guid "{BF74058E-AD58-11ED-91EF-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67088,7 +67030,7 @@ layer "undead_asylum"
 "targetname" "pap_spawner"
 "_color" "1 0 0"
 }
-// entity 1883
+// entity 1882
 {
 guid "{DB987C0F-AD58-11ED-91EF-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67100,7 +67042,7 @@ layer "undead_asylum"
 "targetname" "pap_spawner"
 "_color" "1 0 0"
 }
-// entity 1884
+// entity 1883
 {
 guid "{7E20F8F8-AD8D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67109,7 +67051,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_marathon_struct.map"
 "origin" "-10267.7 7406.21 3097"
 }
-// entity 1885
+// entity 1884
 {
 guid "{8EA4829B-AD8D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67118,7 +67060,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_sleight_struct.map"
 "origin" "-9715.71 4648.26 2190.75"
 }
-// entity 1886
+// entity 1885
 {
 guid "{1E883275-AD8E-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67127,7 +67069,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_additionalprimaryweapon_struct.map"
 "origin" "-9993.5 6180 2532"
 }
-// entity 1887
+// entity 1886
 {
 guid "{04865A32-AD8F-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67135,7 +67077,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/mysterybox/t8_chaos_mysterybox_2.map"
 "origin" "-7159.25 6799.75 2732"
 }
-// entity 1888
+// entity 1887
 {
 guid "{2C374733-AD8F-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67174,7 +67116,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "66"
 }
-// entity 1889
+// entity 1888
 {
 guid "{2C374739-AD8F-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67190,7 +67132,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1890
+// entity 1889
 {
 guid "{AF2128D8-AD90-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67199,7 +67141,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/zm_giant/geo/zm_giant_light_cage_03.map"
 "origin" "-7047.93 6528.47 2916.1"
 }
-// entity 1891
+// entity 1890
 {
 guid "{AF2128DB-AD90-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67214,7 +67156,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1892
+// entity 1891
 {
 guid "{3C6EE0A1-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67246,7 +67188,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "82"
 }
-// entity 1893
+// entity 1892
 {
 guid "{3C6EE0A4-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67282,7 +67224,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "68"
 }
-// entity 1894
+// entity 1893
 {
 guid "{3C6EE0A7-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67296,7 +67238,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1895
+// entity 1894
 {
 guid "{56E5D984-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67328,7 +67270,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "82"
 }
-// entity 1896
+// entity 1895
 {
 guid "{56E5D987-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67364,7 +67306,7 @@ layer "undead_asylum"
 "stops" "16"
 "spawnflags" "68"
 }
-// entity 1897
+// entity 1896
 {
 guid "{56E5D98A-AD91-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67378,7 +67320,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1898
+// entity 1897
 {
 guid "{05C9BDCF-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67410,7 +67352,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "82"
 }
-// entity 1899
+// entity 1898
 {
 guid "{05C9BDD5-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67424,7 +67366,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1900
+// entity 1899
 {
 guid "{05C9BDD2-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67460,7 +67402,7 @@ layer "undead_asylum"
 "stops" "16"
 "spawnflags" "68"
 }
-// entity 1901
+// entity 1900
 {
 guid "{D058ECE8-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67474,7 +67416,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1902
+// entity 1901
 {
 guid "{D058ECEE-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67506,7 +67448,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "82"
 }
-// entity 1903
+// entity 1902
 {
 guid "{24329BEC-AD93-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67539,7 +67481,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 1904
+// entity 1903
 {
 guid "{D058ECEB-AD92-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67575,7 +67517,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "68"
 }
-// entity 1905
+// entity 1904
 {
 guid "{C69B21D6-A0C7-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67608,7 +67550,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 1906
+// entity 1905
 {
 guid "{9E4FD408-AD93-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67645,7 +67587,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "68"
 }
-// entity 1907
+// entity 1906
 {
 guid "{A164E374-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67660,7 +67602,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1908
+// entity 1907
 {
 guid "{AC37524A-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67675,7 +67617,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1909
+// entity 1908
 {
 guid "{AC37524D-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67690,7 +67632,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1910
+// entity 1909
 {
 guid "{B9FFDC10-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67705,7 +67647,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1911
+// entity 1910
 {
 guid "{B9FFDC13-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67720,7 +67662,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1912
+// entity 1911
 {
 guid "{C25DF9C9-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67735,7 +67677,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1913
+// entity 1912
 {
 guid "{C25DF9CC-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67750,7 +67692,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1914
+// entity 1913
 {
 guid "{CFE4E29B-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67765,7 +67707,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1915
+// entity 1914
 {
 guid "{CFE4E29E-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67780,7 +67722,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1916
+// entity 1915
 {
 guid "{31D4C7D5-AD95-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67789,7 +67731,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/mysterybox/t8_chaos_mysterybox_3.map"
 "origin" "-9863.25 7171 3097.75"
 }
-// entity 1917
+// entity 1916
 {
 guid "{0068E476-ABF4-11ED-91EC-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67828,7 +67770,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 1918
+// entity 1917
 {
 guid "{6707F5A4-A489-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67848,7 +67790,7 @@ layer "undead_asylum"
  ( -8854.75 7467.25 2442.75 ) ( -8854.75 7467.25 2122.75 ) ( -6614.75 7467.25 2122.75 ) volume 64 64 -7566.75 -2258.75 0 0 lightmap_gray 16384 16384 -7566.75 -2258.75 0 0
 }
 }
-// entity 1919
+// entity 1918
 {
 guid "{2C0EFA53-AE43-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67856,7 +67798,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/acidgat/acidgat_craftable_bench.map"
 "origin" "-8798.5 5415 1420.75"
 }
-// entity 1920
+// entity 1919
 {
 guid "{3B7FC12B-AE43-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67864,7 +67806,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/magmagat/magmagat_upgrade_machine.map"
 "origin" "-8720.75 5469 1409.5"
 }
-// entity 1921
+// entity 1920
 {
 guid "{3B7FC13F-AE43-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67873,7 +67815,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/acidgat/acidgat_craftable_part_0.map"
 "origin" "-9074.09 6057.73 2532.25"
 }
-// entity 1922
+// entity 1921
 {
 guid "{41846931-AE43-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67882,7 +67824,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/acidgat/acidgat_craftable_part_1.map"
 "origin" "-9157.32 7022.18 2570"
 }
-// entity 1923
+// entity 1922
 {
 guid "{4184693C-AE43-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67891,7 +67833,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/acidgat/acidgat_craftable_part_2.map"
 "origin" "-9013.83 7195 2577.74"
 }
-// entity 1924
+// entity 1923
 {
 guid "{2C37473C-AD8F-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67931,7 +67873,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 1925
+// entity 1924
 {
 guid "{0F46D068-AEED-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67946,7 +67888,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1926
+// entity 1925
 {
 guid "{3087D936-AEED-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -67978,7 +67920,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "82"
 }
-// entity 1927
+// entity 1926
 {
 guid "{7A0F45D0-AE2A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68015,7 +67957,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "68"
 }
-// entity 1928
+// entity 1927
 {
 guid "{A164E377-AD94-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68030,7 +67972,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1929
+// entity 1928
 {
 guid "{959F493D-AEED-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68045,7 +67987,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1930
+// entity 1929
 {
 guid "{88163517-AEF1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68053,7 +67995,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_phdflopper_struct.map"
 "origin" "-9510.99 6194.8 3097.67"
 }
-// entity 1931
+// entity 1930
 {
 guid "{077FAF3E-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68070,7 +68012,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1932
+// entity 1931
 {
 guid "{0F13D0E4-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68087,7 +68029,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1933
+// entity 1932
 {
 guid "{0F13D0EC-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68104,7 +68046,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1934
+// entity 1933
 {
 guid "{0F13D0F4-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68121,7 +68063,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1935
+// entity 1934
 {
 guid "{2AE5F3F4-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68138,7 +68080,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1936
+// entity 1935
 {
 guid "{2AE5F3FC-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68155,7 +68097,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1937
+// entity 1936
 {
 guid "{341D57C4-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68172,7 +68114,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1938
+// entity 1937
 {
 guid "{3D3AB8FD-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68189,7 +68131,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1939
+// entity 1938
 {
 guid "{3D3AB905-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68206,7 +68148,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1940
+// entity 1939
 {
 guid "{3D3AB90D-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68223,7 +68165,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1941
+// entity 1940
 {
 guid "{3D3AB915-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68240,7 +68182,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1942
+// entity 1941
 {
 guid "{4E58FF69-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68257,7 +68199,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1943
+// entity 1942
 {
 guid "{4E58FF71-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68274,7 +68216,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1944
+// entity 1943
 {
 guid "{54B13359-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68291,7 +68233,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1945
+// entity 1944
 {
 guid "{54B13361-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68308,7 +68250,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 1946
+// entity 1945
 {
 guid "{63855D55-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68323,7 +68265,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1947
+// entity 1946
 {
 guid "{E26D22CE-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68337,7 +68279,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1948
+// entity 1947
 {
 guid "{F239BE3E-AEF2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68351,7 +68293,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1949
+// entity 1948
 {
 guid "{01B92ACD-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68366,7 +68308,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1950
+// entity 1949
 {
 guid "{159DCAA1-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68381,7 +68323,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1951
+// entity 1950
 {
 guid "{365DBDD3-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68396,7 +68338,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1952
+// entity 1951
 {
 guid "{48909795-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68411,7 +68353,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1953
+// entity 1952
 {
 guid "{4ECE25A2-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68426,7 +68368,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1954
+// entity 1953
 {
 guid "{5FE13EB7-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68441,7 +68383,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1955
+// entity 1954
 {
 guid "{7830559F-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68456,7 +68398,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1956
+// entity 1955
 {
 guid "{92803EF0-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68471,7 +68413,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1957
+// entity 1956
 {
 guid "{99C033C4-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68486,7 +68428,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1958
+// entity 1957
 {
 guid "{B0303382-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68501,7 +68443,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1959
+// entity 1958
 {
 guid "{B0303385-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68516,7 +68458,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1960
+// entity 1959
 {
 guid "{B0303388-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68531,7 +68473,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1961
+// entity 1960
 {
 guid "{E71894C2-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68568,7 +68510,7 @@ layer "undead_asylum"
 "shadowmapScale" "1"
 "spawnflags" "68"
 }
-// entity 1962
+// entity 1961
 {
 guid "{E71894C5-AEF3-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68584,7 +68526,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 1963
+// entity 1962
 {
 guid "{DE3E0695-AEF4-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68598,7 +68540,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1964
+// entity 1963
 {
 guid "{3D86D907-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68612,7 +68554,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1965
+// entity 1964
 {
 guid "{48B48918-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68626,7 +68568,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1966
+// entity 1965
 {
 guid "{48B4891B-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68640,7 +68582,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1967
+// entity 1966
 {
 guid "{48B4892F-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68654,7 +68596,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1968
+// entity 1967
 {
 guid "{48B48932-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68668,7 +68610,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1969
+// entity 1968
 {
 guid "{4FF13974-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68682,7 +68624,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1970
+// entity 1969
 {
 guid "{4FF13977-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68696,7 +68638,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1971
+// entity 1970
 {
 guid "{4FF13986-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68710,7 +68652,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1972
+// entity 1971
 {
 guid "{4FF13989-AEF5-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68724,7 +68666,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1973
+// entity 1972
 {
 guid "{919F5399-AF2A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68739,7 +68681,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1974
+// entity 1973
 {
 guid "{919F539C-AF2A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68754,7 +68696,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1975
+// entity 1974
 {
 guid "{919F539F-AF2A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68769,7 +68711,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1976
+// entity 1975
 {
 guid "{919F53A2-AF2A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68784,7 +68726,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1977
+// entity 1976
 {
 guid "{250BCA56-AF2D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68798,7 +68740,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1978
+// entity 1977
 {
 guid "{2B24B1F1-AF2D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68812,7 +68754,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1979
+// entity 1978
 {
 guid "{3E42D8E1-AF2D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68826,7 +68768,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1980
+// entity 1979
 {
 guid "{4595D072-AF2D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68840,7 +68782,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1981
+// entity 1980
 {
 guid "{E08C026F-AFAC-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68855,7 +68797,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1982
+// entity 1981
 {
 guid "{F0A7FA1F-AFAC-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68870,7 +68812,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1983
+// entity 1982
 {
 guid "{FDB87162-AFAC-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68885,7 +68827,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1984
+// entity 1983
 {
 guid "{0C30EBBD-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68900,7 +68842,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1985
+// entity 1984
 {
 guid "{270358C7-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68915,7 +68857,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1986
+// entity 1985
 {
 guid "{2D919ABC-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68930,7 +68872,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1987
+// entity 1986
 {
 guid "{2D919AC4-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68945,7 +68887,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1988
+// entity 1987
 {
 guid "{2D919ACC-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68960,7 +68902,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1989
+// entity 1988
 {
 guid "{2D919AD4-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68975,7 +68917,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1990
+// entity 1989
 {
 guid "{2D919ADC-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -68990,7 +68932,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1991
+// entity 1990
 {
 guid "{3518A400-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69005,7 +68947,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1992
+// entity 1991
 {
 guid "{53B21E55-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69020,7 +68962,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1993
+// entity 1992
 {
 guid "{5D012A18-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69035,7 +68977,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1994
+// entity 1993
 {
 guid "{633FBE72-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69050,7 +68992,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1995
+// entity 1994
 {
 guid "{729FC6BA-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69065,7 +69007,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1996
+// entity 1995
 {
 guid "{D362DAF6-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69080,7 +69022,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1997
+// entity 1996
 {
 guid "{A9DE4329-AFAD-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69095,7 +69037,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1998
+// entity 1997
 {
 guid "{0176A79F-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69110,7 +69052,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 1999
+// entity 1998
 {
 guid "{0F480EA0-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69125,7 +69067,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2000
+// entity 1999
 {
 guid "{16299989-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69140,7 +69082,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2001
+// entity 2000
 {
 guid "{472D6F52-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69155,7 +69097,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2002
+// entity 2001
 {
 guid "{80025A3E-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69170,7 +69112,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2003
+// entity 2002
 {
 guid "{80025A41-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69185,7 +69127,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2004
+// entity 2003
 {
 guid "{80025A44-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69200,7 +69142,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2005
+// entity 2004
 {
 guid "{80025A47-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69215,7 +69157,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2006
+// entity 2005
 {
 guid "{80025A4A-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69230,7 +69172,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2007
+// entity 2006
 {
 guid "{B16F4F66-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69245,7 +69187,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2008
+// entity 2007
 {
 guid "{B16F4F69-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69260,7 +69202,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2009
+// entity 2008
 {
 guid "{B16F4F6C-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69275,7 +69217,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2010
+// entity 2009
 {
 guid "{B16F4F6F-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69290,7 +69232,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2011
+// entity 2010
 {
 guid "{B16F4F72-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69305,7 +69247,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2012
+// entity 2011
 {
 guid "{B16F4F75-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69320,7 +69262,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2013
+// entity 2012
 {
 guid "{B16F4F78-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69335,7 +69277,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2014
+// entity 2013
 {
 guid "{C9D104E2-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69350,7 +69292,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2015
+// entity 2014
 {
 guid "{E09EC815-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69365,7 +69307,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2016
+// entity 2015
 {
 guid "{E09EC832-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69380,7 +69322,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2017
+// entity 2016
 {
 guid "{E77B676B-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69395,7 +69337,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2018
+// entity 2017
 {
 guid "{FC26FD43-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69410,7 +69352,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2019
+// entity 2018
 {
 guid "{F56002CA-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69425,7 +69367,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2020
+// entity 2019
 {
 guid "{1762656C-AFAF-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69440,7 +69382,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2021
+// entity 2020
 {
 guid "{1D95A488-AFAF-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69455,7 +69397,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2022
+// entity 2021
 {
 guid "{1D95A493-AFAF-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69470,7 +69412,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2023
+// entity 2022
 {
 guid "{4241B4AB-AFAF-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69485,7 +69427,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2024
+// entity 2023
 {
 guid "{3916E443-AFB0-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69504,7 +69446,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2025
+// entity 2024
 {
 guid "{FB68BA87-AFB0-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69523,7 +69465,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2026
+// entity 2025
 {
 guid "{02CFFEB0-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69542,7 +69484,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2027
+// entity 2026
 {
 guid "{02CFFEBB-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69561,7 +69503,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2028
+// entity 2027
 {
 guid "{0ACD128B-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69580,7 +69522,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2029
+// entity 2028
 {
 guid "{12E7CA7C-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69599,7 +69541,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2030
+// entity 2029
 {
 guid "{1F60526D-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69618,7 +69560,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2031
+// entity 2030
 {
 guid "{1F605278-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69637,7 +69579,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2032
+// entity 2031
 {
 guid "{DCD30FEB-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69656,7 +69598,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2033
+// entity 2032
 {
 guid "{DCD30FEE-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69675,7 +69617,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2034
+// entity 2033
 {
 guid "{DCD30FF1-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69694,7 +69636,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2035
+// entity 2034
 {
 guid "{DCD30FF4-AFB1-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69713,7 +69655,7 @@ layer "undead_asylum"
 "model" "vol_decal_cube"
 "textureTiling" "1 1"
 }
-// entity 2036
+// entity 2035
 {
 guid "{26874C3D-AFB2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69727,7 +69669,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2037
+// entity 2036
 {
 guid "{2F538DFD-AFB2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69741,7 +69683,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2038
+// entity 2037
 {
 guid "{2F538E08-AFB2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69755,7 +69697,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2039
+// entity 2038
 {
 guid "{2F538E13-AFB2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69770,7 +69712,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2040
+// entity 2039
 {
 guid "{2F538E1E-AFB2-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69785,7 +69727,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2041
+// entity 2040
 {
 guid "{FA876FF1-B052-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69794,7 +69736,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_tombstone_struct.map"
 "origin" "-10807.5 6180.5 2366"
 }
-// entity 2042
+// entity 2041
 {
 guid "{DC09C408-B055-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69833,7 +69775,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 2043
+// entity 2042
 {
 guid "{913F30DE-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69848,7 +69790,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2044
+// entity 2043
 {
 guid "{B2E4A720-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69863,7 +69805,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2045
+// entity 2044
 {
 guid "{BDA952C6-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69878,7 +69820,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2046
+// entity 2045
 {
 guid "{BDA952D1-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69893,7 +69835,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2047
+// entity 2046
 {
 guid "{BDA952E0-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69908,7 +69850,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2048
+// entity 2047
 {
 guid "{C3B1EB2F-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69923,7 +69865,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2049
+// entity 2048
 {
 guid "{C3B1EB32-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69938,7 +69880,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2050
+// entity 2049
 {
 guid "{C3B1EB35-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69953,7 +69895,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2051
+// entity 2050
 {
 guid "{80025A3B-AFAE-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69968,7 +69910,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2052
+// entity 2051
 {
 guid "{E7C6AADA-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69983,7 +69925,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2053
+// entity 2052
 {
 guid "{FFD0DD22-B056-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -69998,7 +69940,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2054
+// entity 2053
 {
 guid "{0CF3BAAC-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70013,7 +69955,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2055
+// entity 2054
 {
 guid "{1A74460A-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70028,7 +69970,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2056
+// entity 2055
 {
 guid "{1A74461B-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70043,7 +69985,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2057
+// entity 2056
 {
 guid "{452452E8-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70058,7 +70000,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2058
+// entity 2057
 {
 guid "{5409A3F8-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70073,7 +70015,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2059
+// entity 2058
 {
 guid "{5409A403-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70088,7 +70030,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2060
+// entity 2059
 {
 guid "{72E57E0A-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70103,7 +70045,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2061
+// entity 2060
 {
 guid "{7B7D5B26-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70118,7 +70060,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2062
+// entity 2061
 {
 guid "{CF1FB513-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70133,7 +70075,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2063
+// entity 2062
 {
 guid "{D60BC852-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70148,7 +70090,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2064
+// entity 2063
 {
 guid "{D60BC85D-B057-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70163,7 +70105,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2065
+// entity 2064
 {
 guid "{26758ABB-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70178,7 +70120,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2066
+// entity 2065
 {
 guid "{334B8965-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70193,7 +70135,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2067
+// entity 2066
 {
 guid "{43848C1B-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70208,7 +70150,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2068
+// entity 2067
 {
 guid "{600C9B58-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70223,7 +70165,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2069
+// entity 2068
 {
 guid "{600C9B63-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70238,7 +70180,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2070
+// entity 2069
 {
 guid "{BFFB459B-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70253,7 +70195,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2071
+// entity 2070
 {
 guid "{C6CCE3E9-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70268,7 +70210,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2072
+// entity 2071
 {
 guid "{E4DBF6C5-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70283,7 +70225,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2073
+// entity 2072
 {
 guid "{F172B87F-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70298,7 +70240,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2074
+// entity 2073
 {
 guid "{F172B890-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70313,7 +70255,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2075
+// entity 2074
 {
 guid "{F172B89B-B058-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70328,7 +70270,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2076
+// entity 2075
 {
 guid "{4D6CB64B-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70345,7 +70287,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2077
+// entity 2076
 {
 guid "{6EB67AA1-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70362,7 +70304,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2078
+// entity 2077
 {
 guid "{6EB67AA9-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70379,7 +70321,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2079
+// entity 2078
 {
 guid "{6EB67AB1-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70396,7 +70338,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2080
+// entity 2079
 {
 guid "{6EB67AB9-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70413,7 +70355,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2081
+// entity 2080
 {
 guid "{6EB67AC1-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70430,7 +70372,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2082
+// entity 2081
 {
 guid "{6EB67AC9-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70447,7 +70389,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2083
+// entity 2082
 {
 guid "{8D8A7FEF-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70464,7 +70406,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2084
+// entity 2083
 {
 guid "{B1FA39FC-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70481,7 +70423,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2085
+// entity 2084
 {
 guid "{B1FA3A05-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70498,7 +70440,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2086
+// entity 2085
 {
 guid "{B1FA3A0D-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70515,7 +70457,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2087
+// entity 2086
 {
 guid "{B7F0FECB-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70532,7 +70474,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2088
+// entity 2087
 {
 guid "{B7F0FED3-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70549,7 +70491,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2089
+// entity 2088
 {
 guid "{B7F0FEDB-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70566,7 +70508,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2090
+// entity 2089
 {
 guid "{B7F0FEE3-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70583,7 +70525,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2091
+// entity 2090
 {
 guid "{B7F0FEEB-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70600,7 +70542,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2092
+// entity 2091
 {
 guid "{B7F0FEF3-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70617,7 +70559,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2093
+// entity 2092
 {
 guid "{C5292302-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70634,7 +70576,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2094
+// entity 2093
 {
 guid "{C5292313-B059-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70651,7 +70593,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2095
+// entity 2094
 {
 guid "{39E01368-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70666,7 +70608,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2096
+// entity 2095
 {
 guid "{772F0FD0-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70683,7 +70625,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2097
+// entity 2096
 {
 guid "{AD4FC96B-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70700,7 +70642,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2098
+// entity 2097
 {
 guid "{AD4FC973-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70717,7 +70659,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2099
+// entity 2098
 {
 guid "{B3B067DE-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70734,7 +70676,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2100
+// entity 2099
 {
 guid "{B3B067E6-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70751,7 +70693,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2101
+// entity 2100
 {
 guid "{B3B067EE-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70768,7 +70710,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2102
+// entity 2101
 {
 guid "{B3B067F6-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70785,7 +70727,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2103
+// entity 2102
 {
 guid "{B3B067FE-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70802,7 +70744,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2104
+// entity 2103
 {
 guid "{B3B06806-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70819,7 +70761,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2105
+// entity 2104
 {
 guid "{B3B0680E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70836,7 +70778,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2106
+// entity 2105
 {
 guid "{B3B06816-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70853,7 +70795,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2107
+// entity 2106
 {
 guid "{B3B0681E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70870,7 +70812,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2108
+// entity 2107
 {
 guid "{B3B06826-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70887,7 +70829,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2109
+// entity 2108
 {
 guid "{B3B0682E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70904,7 +70846,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2110
+// entity 2109
 {
 guid "{B3B06836-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70921,7 +70863,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2111
+// entity 2110
 {
 guid "{B3B0683E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70938,7 +70880,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2112
+// entity 2111
 {
 guid "{B3B06846-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70955,7 +70897,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2113
+// entity 2112
 {
 guid "{B3B0684E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70972,7 +70914,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2114
+// entity 2113
 {
 guid "{B3B06856-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -70989,7 +70931,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2115
+// entity 2114
 {
 guid "{B3B0685E-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71006,7 +70948,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2116
+// entity 2115
 {
 guid "{B3B06866-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71023,7 +70965,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2117
+// entity 2116
 {
 guid "{B9A9C865-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71040,7 +70982,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2118
+// entity 2117
 {
 guid "{B9A9C86D-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71057,7 +70999,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2119
+// entity 2118
 {
 guid "{B9A9C875-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71074,7 +71016,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2120
+// entity 2119
 {
 guid "{B9A9C87D-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71091,7 +71033,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2121
+// entity 2120
 {
 guid "{B9A9C885-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71108,7 +71050,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2122
+// entity 2121
 {
 guid "{B9A9C88D-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71125,7 +71067,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2123
+// entity 2122
 {
 guid "{B9A9C895-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71142,7 +71084,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2124
+// entity 2123
 {
 guid "{CC15D38D-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71159,7 +71101,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2125
+// entity 2124
 {
 guid "{CC15D395-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71176,7 +71118,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2126
+// entity 2125
 {
 guid "{CC15D39D-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71193,7 +71135,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2127
+// entity 2126
 {
 guid "{CC15D3A5-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71210,7 +71152,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2128
+// entity 2127
 {
 guid "{CC15D3AD-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71227,7 +71169,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2129
+// entity 2128
 {
 guid "{CC15D3B5-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71244,7 +71186,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2130
+// entity 2129
 {
 guid "{CC15D3BD-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71261,7 +71203,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2131
+// entity 2130
 {
 guid "{CC15D3C5-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71278,7 +71220,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2132
+// entity 2131
 {
 guid "{CC15D3CD-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71295,7 +71237,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2133
+// entity 2132
 {
 guid "{CC15D3D5-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71312,7 +71254,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2134
+// entity 2133
 {
 guid "{CC15D3DD-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71329,7 +71271,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2135
+// entity 2134
 {
 guid "{CC15D3E5-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71346,7 +71288,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2136
+// entity 2135
 {
 guid "{D20E0229-B05A-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71363,7 +71305,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "spawnflags" "32"
 }
-// entity 2137
+// entity 2136
 {
 guid "{0E76D75D-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71378,7 +71320,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2138
+// entity 2137
 {
 guid "{1529AEAD-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71393,7 +71335,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2139
+// entity 2138
 {
 guid "{1D8CF815-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71408,7 +71350,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2140
+// entity 2139
 {
 guid "{1D8CF818-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71423,7 +71365,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2141
+// entity 2140
 {
 guid "{259BAF66-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71438,7 +71380,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2142
+// entity 2141
 {
 guid "{259BAF69-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71453,7 +71395,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2143
+// entity 2142
 {
 guid "{3F9246ED-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71469,7 +71411,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2144
+// entity 2143
 {
 guid "{3F9246F0-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71485,7 +71427,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2145
+// entity 2144
 {
 guid "{3F9246F3-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71501,7 +71443,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2146
+// entity 2145
 {
 guid "{3F9246F6-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71517,7 +71459,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2147
+// entity 2146
 {
 guid "{3F9246F9-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71533,7 +71475,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2148
+// entity 2147
 {
 guid "{3F9246FC-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71549,7 +71491,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2149
+// entity 2148
 {
 guid "{83C1659B-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71565,7 +71507,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2150
+// entity 2149
 {
 guid "{9FF73CD4-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71581,7 +71523,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2151
+// entity 2150
 {
 guid "{9FF73CE2-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71597,7 +71539,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2152
+// entity 2151
 {
 guid "{BB4E76FD-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71612,7 +71554,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2153
+// entity 2152
 {
 guid "{BB4E770E-B062-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71627,7 +71569,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2154
+// entity 2153
 {
 guid "{CFA6B71C-B06C-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71638,7 +71580,7 @@ layer "undead_asylum"
 "targetname" "westwing_staircase_spawner"
 "_color" "1 0 0"
 }
-// entity 2155
+// entity 2154
 {
 guid "{D07A4DEF-B06D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71649,7 +71591,7 @@ layer "undead_asylum"
 "targetname" "upper_spawner"
 "_color" "1 0 0"
 }
-// entity 2156
+// entity 2155
 {
 guid "{E01A2B22-B06D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71660,7 +71602,7 @@ layer "undead_asylum"
 "targetname" "upper_spawner"
 "_color" "1 0 0"
 }
-// entity 2157
+// entity 2156
 {
 guid "{FE252A4C-B06D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71671,7 +71613,7 @@ layer "undead_asylum"
 "targetname" "upper_spawner"
 "_color" "1 0 0"
 }
-// entity 2158
+// entity 2157
 {
 guid "{FB829E38-B06E-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71682,7 +71624,7 @@ layer "undead_asylum"
 "targetname" "bow_spawner"
 "_color" "1 0 0"
 }
-// entity 2159
+// entity 2158
 {
 guid "{3D3546C2-B06F-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71690,7 +71632,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_up_224.map"
 "origin" "-7947 5976 2732"
 }
-// entity 2160
+// entity 2159
 {
 guid "{9B468EA4-A4DB-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71707,7 +71649,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2161
+// entity 2160
 {
 guid "{5FC20DB6-A4DB-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71724,7 +71666,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2162
+// entity 2161
 {
 guid "{0B9CB279-B156-11ED-91F3-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71748,7 +71690,7 @@ layer "undead_asylum"
  ( -10092.5 6737.5 2615 ) ( -10092.5 6705.5 2615 ) ( -10092.5 6705.5 2599 ) t7_decal_fixture_door_wood_02 55.543484 -65.08065 -6450.75 -132.75 180 0 lightmap_gray 16384 16384 6549.5 -67 0 0
 }
 }
-// entity 2163
+// entity 2162
 {
 guid "{82952299-B156-11ED-91F3-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71768,7 +71710,7 @@ layer "undead_asylum"
  ( -10112.342 6628.3174 2532.5 ) ( -10080.342 6628.3174 2532.5 ) ( -10080.342 6628.3174 2516.5 ) trigger 64 -64 9333.209 453.99658 180 0 lightmap_gray 16384 -16384 9333.209 453.99658 180 0
 }
 }
-// entity 2164
+// entity 2163
 {
 guid "{CB23EF16-B15F-11ED-91F3-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71788,7 +71730,7 @@ layer "undead_asylum"
  ( -8986.75 7106 2583.75 ) ( -8986.75 7074 2583.75 ) ( -8986.75 7074 2567.75 ) trigger 64 64 6530 16.5 0 0 lightmap_gray 16384 16384 6530 16.5 0 0
 }
 }
-// entity 2165
+// entity 2164
 {
 guid "{6BCB4AC2-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71798,7 +71740,7 @@ layer "undead_asylum"
 "origin" "-8714.66 7604.16 1846.38"
 "targetname" "start_hallway_zone_spawner"
 }
-// entity 2166
+// entity 2165
 {
 guid "{6BCB4AC5-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71808,7 +71750,7 @@ layer "undead_asylum"
 "origin" "-6892.2 7571.85 2033.88"
 "targetname" "start_hallway_zone_spawner"
 }
-// entity 2167
+// entity 2166
 {
 guid "{6BCB4AC8-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71818,7 +71760,7 @@ layer "undead_asylum"
 "origin" "-7822.65 7151.99 2407.17"
 "targetname" "southing_lower_zone_spawner"
 }
-// entity 2168
+// entity 2167
 {
 guid "{6BCB4ACB-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71828,7 +71770,7 @@ layer "undead_asylum"
 "origin" "-8396.11 6673.68 2532.17"
 "targetname" "southing_lower_zone_spawner"
 }
-// entity 2169
+// entity 2168
 {
 guid "{6BCB4ACE-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71838,7 +71780,7 @@ layer "undead_asylum"
 "origin" "-9947.11 6673.68 2532.17"
 "targetname" "main_room_spawner"
 }
-// entity 2170
+// entity 2169
 {
 guid "{6BCB4AD1-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71848,7 +71790,7 @@ layer "undead_asylum"
 "origin" "-8586.21 6670.63 2532.17"
 "targetname" "main_room_spawner"
 }
-// entity 2171
+// entity 2170
 {
 guid "{6BCB4AD4-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71858,7 +71800,7 @@ layer "undead_asylum"
 "origin" "-9709.38 4792.8 2189.92"
 "targetname" "westwing_middle_spawner"
 }
-// entity 2172
+// entity 2171
 {
 guid "{6BCB4AD7-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71868,7 +71810,7 @@ layer "undead_asylum"
 "origin" "-7158.99 5983.48 2730.42"
 "targetname" "westwing_staircase_02_spawner"
 }
-// entity 2173
+// entity 2172
 {
 guid "{6BCB4ADA-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71878,7 +71820,7 @@ layer "undead_asylum"
 "origin" "-7730.54 5914.05 2726.42"
 "targetname" "upper_spawner"
 }
-// entity 2174
+// entity 2173
 {
 guid "{6BCB4AE0-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71888,7 +71830,7 @@ layer "undead_asylum"
 "origin" "-7825.7 4467.19 2556.67"
 "targetname" "westwing_middle_spawner"
 }
-// entity 2175
+// entity 2174
 {
 guid "{6BCB4AE3-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71898,7 +71840,7 @@ layer "undead_asylum"
 "origin" "-8372.9 4888.88 2501.42"
 "targetname" "westwing_middle_spawner"
 }
-// entity 2176
+// entity 2175
 {
 guid "{6BCB4AE6-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71908,7 +71850,7 @@ layer "undead_asylum"
 "origin" "-8858.82 4509.77 2446.17"
 "targetname" "westwing_middle_spawner"
 }
-// entity 2177
+// entity 2176
 {
 guid "{6BCB4AE9-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71918,7 +71860,7 @@ layer "undead_asylum"
 "origin" "-7454.7 4490.19 2612.67"
 "targetname" "westwing_middle_spawner"
 }
-// entity 2178
+// entity 2177
 {
 guid "{6BCB4AEC-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71928,7 +71870,7 @@ layer "undead_asylum"
 "origin" "-10183.9 7366.01 3097.42"
 "targetname" "balcony_lt_spawner"
 }
-// entity 2179
+// entity 2178
 {
 guid "{6BCB4AEF-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71938,7 +71880,7 @@ layer "undead_asylum"
 "origin" "-10031.5 6176.26 3098.17"
 "targetname" "bow_spawner"
 }
-// entity 2180
+// entity 2179
 {
 guid "{6BCB4AF5-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71948,7 +71890,7 @@ layer "undead_asylum"
 "origin" "-7846.1 6188.26 2407.17"
 "targetname" "southing_lower_zone_spawner"
 }
-// entity 2181
+// entity 2180
 {
 guid "{6BCB4AF8-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71958,7 +71900,7 @@ layer "undead_asylum"
 "origin" "-9871.25 7603 1825"
 "targetname" "start_zone_spawners"
 }
-// entity 2182
+// entity 2181
 {
 guid "{C15C3862-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71968,7 +71910,7 @@ layer "undead_asylum"
 "origin" "-7398.46 7471.31 2729.92"
 "targetname" "upper_spawner"
 }
-// entity 2183
+// entity 2182
 {
 guid "{EE8E3754-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71978,7 +71920,7 @@ layer "undead_asylum"
 "origin" "-10360.1 6674.27 2513.17"
 "targetname" "pap_spawner"
 }
-// entity 2184
+// entity 2183
 {
 guid "{EE8E3768-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71988,7 +71930,7 @@ layer "undead_asylum"
 "origin" "-10494.2 6350.51 2445.47"
 "targetname" "pap_spawner"
 }
-// entity 2185
+// entity 2184
 {
 guid "{F4B182E2-B16E-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -71998,7 +71940,7 @@ layer "undead_asylum"
 "origin" "-10478.5 6960.55 2448.73"
 "targetname" "pap_spawner"
 }
-// entity 2186
+// entity 2185
 {
 guid "{129E972F-B16F-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72007,7 +71949,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/mechz/mech_jump_both_custom.map"
 "origin" "-6957.25 6827 2137.75"
 }
-// entity 2187
+// entity 2186
 {
 guid "{42B833C2-B170-11ED-91F4-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72015,7 +71957,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/mechz/t7_genesis_mech_zombie_spawner.map"
 "origin" "-12020 4185 3834"
 }
-// entity 2188
+// entity 2187
 {
 guid "{2C272598-B2DE-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72030,7 +71972,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2189
+// entity 2188
 {
 guid "{EA9A84AC-B2E2-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72045,7 +71987,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2190
+// entity 2189
 {
 guid "{D23916DB-B2F2-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72060,7 +72002,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2191
+// entity 2190
 {
 guid "{74362676-B2F4-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72075,7 +72017,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2192
+// entity 2191
 {
 guid "{D4C80C4B-B2F4-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72090,7 +72032,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2193
+// entity 2192
 {
 guid "{A73339A1-9F6D-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72116,7 +72058,7 @@ layer "undead_asylum"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2194
+// entity 2193
 {
 guid "{F6033410-B2E1-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72131,7 +72073,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2195
+// entity 2194
 {
 guid "{66A3C339-B2DF-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72146,7 +72088,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2196
+// entity 2195
 {
 guid "{E492DC58-B2EF-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72161,7 +72103,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2197
+// entity 2196
 {
 guid "{87E2D3DE-AD8D-11ED-91F0-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72170,7 +72112,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_widows_struct.map"
 "origin" "-8710.5 7433.5 2731"
 }
-// entity 2198
+// entity 2197
 {
 guid "{DCD4713C-B82C-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72180,7 +72122,7 @@ layer "undead_asylum"
 "targetname" "podium_challenge_redeem_0"
 "_color" "1 0 0"
 }
-// entity 2199
+// entity 2198
 {
 guid "{5A761BFE-B8F3-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72195,7 +72137,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2200
+// entity 2199
 {
 guid "{5A761C01-B8F3-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72210,7 +72152,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2201
+// entity 2200
 {
 guid "{5A761C04-B8F3-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72225,7 +72167,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2202
+// entity 2201
 {
 guid "{7238A21E-B8F3-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72240,7 +72182,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2203
+// entity 2202
 {
 guid "{BDCCDDC7-B8F4-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72255,7 +72197,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2204
+// entity 2203
 {
 guid "{BB7EB32B-B92D-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72270,7 +72212,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2205
+// entity 2204
 {
 guid "{AB561DD9-B885-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72280,7 +72222,7 @@ layer "undead_asylum"
 "targetname" "podium_challenge"
 "_color" "1 0 0"
 }
-// entity 2206
+// entity 2205
 {
 guid "{223F7565-9F71-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72289,7 +72231,7 @@ layer "undead_asylum"
 "model" "_prefabs/custom gobblegum/vending_bgb_machine_struct.map"
 "origin" "-7773.5 6672.5 2408"
 }
-// entity 2207
+// entity 2206
 {
 guid "{75EEB205-B92F-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72304,7 +72246,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2208
+// entity 2207
 {
 guid "{8D34E0D9-B92F-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72319,7 +72261,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2209
+// entity 2208
 {
 guid "{DF9FD833-A7C6-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72334,7 +72276,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2210
+// entity 2209
 {
 guid "{C5DEA5E7-B92F-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72349,7 +72291,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2211
+// entity 2210
 {
 guid "{D296A0B9-B92F-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72364,7 +72306,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2212
+// entity 2211
 {
 guid "{FDC3271F-B92F-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72373,7 +72315,7 @@ layer "undead_asylum"
 "targetname" "podium_challenge_redeem_1"
 "_color" "1 0 0"
 }
-// entity 2213
+// entity 2212
 {
 guid "{0DEBDF03-B930-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72383,7 +72325,7 @@ layer "undead_asylum"
 "targetname" "podium_challenge_redeem_2"
 "_color" "1 0 0"
 }
-// entity 2214
+// entity 2213
 {
 guid "{154FD71E-B930-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72393,7 +72335,7 @@ layer "undead_asylum"
 "targetname" "podium_challenge_redeem_3"
 "_color" "1 0 0"
 }
-// entity 2215
+// entity 2214
 {
 guid "{31342378-B931-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72402,7 +72344,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/craftables/craftable_table_open.map"
 "origin" "-7053.57 7262.42 2712.5"
 }
-// entity 2216
+// entity 2215
 {
 guid "{968873EF-B936-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72411,7 +72353,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_0.map"
 "origin" "-7607.25 7348.4 2419.48"
 }
-// entity 2217
+// entity 2216
 {
 guid "{FCC2C25B-B936-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72420,7 +72362,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_0.map"
 "origin" "-7069.83 4762.85 2410.48"
 }
-// entity 2218
+// entity 2217
 {
 guid "{6E68B6AA-B937-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72429,7 +72371,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_1.map"
 "origin" "-7697.75 6134 2428.75"
 }
-// entity 2219
+// entity 2218
 {
 guid "{89B2A54B-B937-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72438,7 +72380,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_1.map"
 "origin" "-9238.25 7019.84 2549"
 }
-// entity 2220
+// entity 2219
 {
 guid "{C55A688B-B937-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72447,7 +72389,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_1.map"
 "origin" "-9689.54 4932.28 2207.75"
 }
-// entity 2221
+// entity 2220
 {
 guid "{F2550167-B937-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72455,7 +72397,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_2.map"
 "origin" "-7452.5 6672 2459"
 }
-// entity 2222
+// entity 2221
 {
 guid "{D4CDDB56-B936-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72464,7 +72406,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_0.map"
 "origin" "-8574.41 7241.71 2543.95"
 }
-// entity 2223
+// entity 2222
 {
 guid "{4305574F-B938-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72473,7 +72415,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_2.map"
 "origin" "-8816.33 7166.9 2545.69"
 }
-// entity 2224
+// entity 2223
 {
 guid "{53EC883C-B938-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72482,7 +72424,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_part_2.map"
 "origin" "-7993.95 4638.91 2350.69"
 }
-// entity 2225
+// entity 2224
 {
 guid "{5FF5292E-B93A-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72490,7 +72432,7 @@ layer "undead_asylum"
 "model" "_prefabs/_Sphynx/craftables/vine_shield_craftable_bench.map"
 "origin" "-8661.75 5407 1421.5"
 }
-// entity 2226
+// entity 2225
 {
 guid "{FBC89137-B9D0-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72519,7 +72461,7 @@ layer "fire_link_shrine"
  ( -4375.25 4561.5 4498.75 ) ( -4375.25 465.5 4498.75 ) ( -4375.25 465.5 3474.75 ) sun_volume 32 32 2513.5 -3538.75 0 0 lightmap_gray 16384 16384 2513.5 -3538.75 0 0
 }
 }
-// entity 2227
+// entity 2226
 {
 guid "{A07C7DC7-BA96-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72553,7 +72495,7 @@ layer "fire_link_shrine"
  ( -3079.25 1402 366.5 ) ( -3079.25 1330 366.5 ) ( -3079.25 1330 354.5 ) litfog_volume 64 64 1450 2273.5 0 0 lightmap_gray 16384 16384 1450 2273.5 0 0
 }
 }
-// entity 2228
+// entity 2227
 {
 guid "{7A87FED4-B9CF-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72568,7 +72510,7 @@ layer "fire_link_shrine"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2229
+// entity 2228
 {
 guid "{7740C6F6-BA95-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72595,7 +72537,7 @@ layer "fire_link_shrine"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2230
+// entity 2229
 {
 guid "{A7DCD7A0-BA8A-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72622,7 +72564,7 @@ layer "fire_link_shrine"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2231
+// entity 2230
 {
 guid "{4044D692-BA9E-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72637,7 +72579,7 @@ layer "fire_link_shrine"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2232
+// entity 2231
 {
 guid "{4044D695-BA9E-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72653,7 +72595,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2233
+// entity 2232
 {
 guid "{EDF96EA6-B9CF-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72680,7 +72622,7 @@ layer "fire_link_shrine"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2234
+// entity 2233
 {
 guid "{226E0651-BAA9-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72706,7 +72648,7 @@ layer "undead_asylum"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2235
+// entity 2234
 {
 guid "{D6AC0F4C-BAB3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72715,7 +72657,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/zm/harrybo21_prefabs/pack_a_punch/t7_pack_a_punch.map"
 "origin" "-1416.93 5929.34 679.818"
 }
-// entity 2236
+// entity 2235
 {
 guid "{D6AC0F4F-BAB3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72724,7 +72666,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/zm/harrybo21_prefabs/perks/vending_wunderfizz.map"
 "origin" "-1396.36 5618.44 642.67"
 }
-// entity 2237
+// entity 2236
 {
 guid "{A9478567-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72739,7 +72681,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2238
+// entity 2237
 {
 guid "{C0861152-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72754,7 +72696,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2239
+// entity 2238
 {
 guid "{C086115A-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72769,7 +72711,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2240
+// entity 2239
 {
 guid "{C0861162-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72784,7 +72726,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2241
+// entity 2240
 {
 guid "{C6C22B98-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72799,7 +72741,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2242
+// entity 2241
 {
 guid "{C0861147-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72814,7 +72756,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2243
+// entity 2242
 {
 guid "{DF8004E7-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72830,7 +72772,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2244
+// entity 2243
 {
 guid "{F0C83EA2-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72846,7 +72788,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2245
+// entity 2244
 {
 guid "{F0C83EB0-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72862,7 +72804,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2246
+// entity 2245
 {
 guid "{F77D2078-BAB4-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72878,7 +72820,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2247
+// entity 2246
 {
 guid "{76AB90D1-BABF-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72886,7 +72828,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/_NSZ/Kino_Teleporter/setup_black_box.map"
 "origin" "-1176 6042 225"
 }
-// entity 2248
+// entity 2247
 {
 guid "{93EDB8DB-BABF-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72906,7 +72848,7 @@ layer "fire_link_shrine"
  ( -569.5 7384.75 454.75 ) ( -569.5 7384.75 134.75 ) ( 1670.5 7384.75 134.75 ) volume 64 64 718.5 -270.75 0 0 lightmap_gray 16384 16384 718.5 -270.75 0 0
 }
 }
-// entity 2249
+// entity 2248
 {
 guid "{D5B2D8C9-BABF-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72926,7 +72868,7 @@ layer "undead_asylum"
  ( -9929 7123 2577 ) ( -9919 7110.5 2577 ) ( -9919 7110.5 2561 ) trigger 50.153259 64 8094.6753 -2545 0 0 lightmap_gray 12839.5 16384 8094.666 -2545 0 0
 }
 }
-// entity 2250
+// entity 2249
 {
 guid "{AAFE4268-B2F2-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -72941,7 +72883,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2251
+// entity 2250
 {
 guid "{DF431E23-BAC3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72950,7 +72892,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "-836 5933 610"
 }
-// entity 2252
+// entity 2251
 {
 guid "{E561F456-BAC3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72959,7 +72901,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "-807 5870 610"
 }
-// entity 2253
+// entity 2252
 {
 guid "{E561F45E-BAC3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72968,7 +72910,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "-809 5794 610"
 }
-// entity 2254
+// entity 2253
 {
 guid "{E561F466-BAC3-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72977,7 +72919,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/_NSZ/Kino_Teleporter/pap_spawn.map"
 "origin" "-850 5738 617"
 }
-// entity 2255
+// entity 2254
 {
 guid "{67B34584-BAC9-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72986,7 +72928,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/zm/skye_prefabs/iw8_aug_smg_wallbuy.map"
 "origin" "-1432.75 6151.75 678"
 }
-// entity 2256
+// entity 2255
 {
 guid "{B1B4ED07-BAC9-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -72995,7 +72937,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/zm/skye_prefabs/iw8_scar_pdw_wallbuy.map"
 "origin" "-1237.78 6511.51 719"
 }
-// entity 2257
+// entity 2256
 {
 guid "{E8F4E7A9-BAC9-11ED-91F7-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -73004,7 +72946,7 @@ layer "fire_link_shrine"
 "model" "_prefabs/zm/skye_prefabs/iw8_uzi_wallbuy.map"
 "origin" "-1131.49 6808.15 745"
 }
-// entity 2258
+// entity 2257
 {
 guid "{DF874816-BB49-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73028,7 +72970,7 @@ layer "undead_asylum"
  ( -9338.75 5472.75 1329.75 ) ( -9338.75 5440.75 1329.75 ) ( -9338.75 5440.75 1313.75 ) floor_03 143.66072 -9.4117641 -5306.75 -1189.25 180 0 lightmap_gray 12288 12288 5565.5 1208.5 0 0
 }
 }
-// entity 2259
+// entity 2258
 {
 guid "{D34946F5-BB4B-11ED-91F8-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -73044,7 +72986,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2260
+// entity 2259
 {
 guid "{D3494706-BB4B-11ED-91F8-34CFF6FAFB90}"
 layer "fire_link_shrine"
@@ -73060,7 +73002,7 @@ layer "fire_link_shrine"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2261
+// entity 2260
 {
 guid "{B01E7B9C-B8F2-11ED-91F7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73069,7 +73011,7 @@ layer "undead_asylum"
 "model" "_prefabs/custom gobblegum/vending_bgb_machine_struct.map"
 "origin" "-9393.28 6322.53 2532"
 }
-// entity 2262
+// entity 2261
 {
 guid "{C9778709-BC3A-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73078,7 +73020,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/acidgat/acidgat_craftable_part_2.map"
 "origin" "-7976.56 7013.9 2417.8"
 }
-// entity 2263
+// entity 2262
 {
 guid "{4821210C-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73096,7 +73038,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2264
+// entity 2263
 {
 guid "{48212103-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73105,7 +73047,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/elemental_bows/bow_base_pedestal.map"
 "origin" "-9891.25 6034.5 2558.75"
 }
-// entity 2265
+// entity 2264
 {
 guid "{BAF05BC4-A7C8-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73146,7 +73088,7 @@ layer "undead_asylum"
 "volumetricSampleCount" "4"
 "spawnflags" "66"
 }
-// entity 2266
+// entity 2265
 {
 guid "{BAF05BC7-A7C8-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73187,7 +73129,7 @@ layer "undead_asylum"
 "volumetricSampleCount" "4"
 "spawnflags" "66"
 }
-// entity 2267
+// entity 2266
 {
 guid "{DEBF074C-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73202,7 +73144,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2268
+// entity 2267
 {
 guid "{DEBF0746-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73217,7 +73159,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2269
+// entity 2268
 {
 guid "{A9DCB394-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73235,7 +73177,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2270
+// entity 2269
 {
 guid "{A9DCB397-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73253,7 +73195,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2271
+// entity 2270
 {
 guid "{A9DCB38E-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73268,7 +73210,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2272
+// entity 2271
 {
 guid "{A9DCB391-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73283,7 +73225,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2273
+// entity 2272
 {
 guid "{48212106-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73298,7 +73240,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2274
+// entity 2273
 {
 guid "{2769CE33-BDEA-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73313,7 +73255,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2275
+// entity 2274
 {
 guid "{2769CE36-BDEA-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73328,7 +73270,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2276
+// entity 2275
 {
 guid "{88807751-BDEA-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73343,7 +73285,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2277
+// entity 2276
 {
 guid "{EA297B3A-BDEA-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73353,7 +73295,7 @@ layer "undead_asylum"
 "origin" "-8876.88 7034.54 2532.17"
 "targetname" "main_room_spawner"
 }
-// entity 2278
+// entity 2277
 {
 guid "{F083F926-BDEA-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73363,7 +73305,7 @@ layer "undead_asylum"
 "origin" "-9141.12 6319.71 2532.17"
 "targetname" "main_room_spawner"
 }
-// entity 2279
+// entity 2278
 {
 guid "{14C51879-BDEB-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73378,7 +73320,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2280
+// entity 2279
 {
 guid "{48212109-A7C7-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73396,7 +73338,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "shadow_casting" "1"
 }
-// entity 2281
+// entity 2280
 {
 guid "{5A3F91D5-A6EC-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73406,7 +73348,7 @@ layer "undead_asylum"
 "_color" "0.4 0 0.8"
 "client_server" "ClientSide"
 }
-// entity 2282
+// entity 2281
 {
 guid "{DF4DB615-A6E8-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73422,7 +73364,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2283
+// entity 2282
 {
 guid "{81F17294-BDEE-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73438,7 +73380,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2284
+// entity 2283
 {
 guid "{81F17297-BDEE-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73448,7 +73390,7 @@ layer "undead_asylum"
 "_color" "0.4 0 0.8"
 "client_server" "ClientSide"
 }
-// entity 2285
+// entity 2284
 {
 guid "{08782F3B-BDEF-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73465,7 +73407,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2286
+// entity 2285
 {
 guid "{4D907343-BDF1-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73480,7 +73422,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2287
+// entity 2286
 {
 guid "{5D673EBE-BDF1-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73495,7 +73437,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2288
+// entity 2287
 {
 guid "{637DED26-BDF1-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73510,7 +73452,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2289
+// entity 2288
 {
 guid "{637DED35-BDF1-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73525,7 +73467,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2290
+// entity 2289
 {
 guid "{7BCFBDDA-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73540,7 +73482,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2291
+// entity 2290
 {
 guid "{964A6412-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73555,7 +73497,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2292
+// entity 2291
 {
 guid "{964A6415-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73570,7 +73512,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2293
+// entity 2292
 {
 guid "{964A6418-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73585,7 +73527,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2294
+// entity 2293
 {
 guid "{964A6440-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73600,7 +73542,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2295
+// entity 2294
 {
 guid "{964A6443-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73616,7 +73558,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2296
+// entity 2295
 {
 guid "{964A6446-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73632,7 +73574,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2297
+// entity 2296
 {
 guid "{D1F1130D-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73647,7 +73589,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2298
+// entity 2297
 {
 guid "{E9D12E9D-BDF2-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73662,7 +73604,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2299
+// entity 2298
 {
 guid "{121DE0DD-BDF3-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73677,7 +73619,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2300
+// entity 2299
 {
 guid "{EF32BE02-BE0E-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73703,7 +73645,7 @@ layer "undead_asylum"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2301
+// entity 2300
 {
 guid "{3B68663C-BEB6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73718,7 +73660,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2302
+// entity 2301
 {
 guid "{D98B1ADF-BEB7-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73739,7 +73681,7 @@ layer "undead_asylum"
  ( -8481.75 6693.75 2931.5 ) ( -8481.75 6661.75 2931.5 ) ( -8481.75 6661.75 2915.5 ) trigger 64 64 6210.5 -329.25 0 0 lightmap_gray 16384 16384 6210.5 -329.25 0 0
 }
 }
-// entity 2303
+// entity 2302
 {
 guid "{A6F2EBE7-BEB7-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73757,7 +73699,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "shadow_casting" "1"
 }
-// entity 2304
+// entity 2303
 {
 guid "{EA384D79-BEB9-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73775,7 +73717,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2305
+// entity 2304
 {
 guid "{6B83D8BE-BEBA-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73785,7 +73727,7 @@ layer "undead_asylum"
 "targetname" "wolf_arrow_pos"
 "client_server" "ClientSide"
 }
-// entity 2306
+// entity 2305
 {
 guid "{AB5A7EB7-BEC1-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73805,7 +73747,7 @@ layer "undead_asylum"
  ( -8564.75 6733.5 2516.75 ) ( -8564.75 6701.5 2516.75 ) ( -8564.75 6701.5 2500.75 ) trigger 64 64 5954.3657 -438.3064 0 0 lightmap_gray 16384 16384 5954.3657 -438.3064 0 0
 }
 }
-// entity 2307
+// entity 2306
 {
 guid "{1807DB5E-BEC3-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73823,7 +73765,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2308
+// entity 2307
 {
 guid "{3C086009-BEC3-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73841,7 +73783,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2309
+// entity 2308
 {
 guid "{635BB837-9FFC-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73849,7 +73791,7 @@ layer "undead_asylum"
 "model" "_prefabs/undead_asylum/zm_ua_door_rt.map"
 "origin" "-9008 6570 0"
 }
-// entity 2310
+// entity 2309
 {
 guid "{21845F4B-BEC4-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73888,7 +73830,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "66"
 }
-// entity 2311
+// entity 2310
 {
 guid "{F9CAD05B-BEC4-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73906,7 +73848,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2312
+// entity 2311
 {
 guid "{0E62DFDB-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73924,7 +73866,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2313
+// entity 2312
 {
 guid "{14F5F077-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73942,7 +73884,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2314
+// entity 2313
 {
 guid "{14F5F07A-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73960,7 +73902,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2315
+// entity 2314
 {
 guid "{14F5F089-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73978,7 +73920,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2316
+// entity 2315
 {
 guid "{14F5F08C-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -73996,7 +73938,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2317
+// entity 2316
 {
 guid "{1B2C7518-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74014,7 +73956,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2318
+// entity 2317
 {
 guid "{23AC304C-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74032,7 +73974,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2319
+// entity 2318
 {
 guid "{23AC304F-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74050,7 +73992,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2320
+// entity 2319
 {
 guid "{23AC3052-BEC5-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74068,7 +74010,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2321
+// entity 2320
 {
 guid "{7CC9B310-BEC3-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74085,7 +74027,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2322
+// entity 2321
 {
 guid "{7EBE0952-BF64-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74116,7 +74058,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 2323
+// entity 2322
 {
 guid "{ADA3C911-BF78-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74126,7 +74068,7 @@ layer "undead_asylum"
 "_color" "0.4 0 0.8"
 "client_server" "ClientSide"
 }
-// entity 2324
+// entity 2323
 {
 guid "{4C850707-BF79-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74136,7 +74078,7 @@ layer "undead_asylum"
 "_color" "0.4 0 0.8"
 "client_server" "ClientSide"
 }
-// entity 2325
+// entity 2324
 {
 guid "{A1C81BC9-BF75-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74153,7 +74095,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2326
+// entity 2325
 {
 guid "{B3FD2791-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74186,7 +74128,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2327
+// entity 2326
 {
 guid "{717B04B3-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74219,7 +74161,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2328
+// entity 2327
 {
 guid "{B3FD27AA-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74252,7 +74194,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2329
+// entity 2328
 {
 guid "{CA432902-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74285,7 +74227,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2330
+// entity 2329
 {
 guid "{CA43291B-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74318,7 +74260,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2331
+// entity 2330
 {
 guid "{CA432921-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74351,7 +74293,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2332
+// entity 2331
 {
 guid "{CA432908-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74384,7 +74326,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2333
+// entity 2332
 {
 guid "{B3FD27B0-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74417,7 +74359,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2334
+// entity 2333
 {
 guid "{B3FD2797-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74450,7 +74392,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2335
+// entity 2334
 {
 guid "{717B04B9-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74483,7 +74425,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2336
+// entity 2335
 {
 guid "{42B7ECAF-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74516,7 +74458,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2337
+// entity 2336
 {
 guid "{42B7ECA4-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74549,7 +74491,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2338
+// entity 2337
 {
 guid "{717B04B6-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74582,7 +74524,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2339
+// entity 2338
 {
 guid "{B3FD2794-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74615,7 +74557,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2340
+// entity 2339
 {
 guid "{B3FD27AD-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74648,7 +74590,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2341
+// entity 2340
 {
 guid "{CA432905-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74681,7 +74623,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2342
+// entity 2341
 {
 guid "{A5D7FCB7-C2AD-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74714,7 +74656,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2343
+// entity 2342
 {
 guid "{13B7FFC4-C2AF-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74729,7 +74671,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2344
+// entity 2343
 {
 guid "{41FCB61A-9FC9-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74765,7 +74707,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "68"
 }
-// entity 2345
+// entity 2344
 {
 guid "{1452E7F7-A6D6-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74801,7 +74743,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "spawnflags" "68"
 }
-// entity 2346
+// entity 2345
 {
 guid "{D80E1B2B-C2C6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74816,7 +74758,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2347
+// entity 2346
 {
 guid "{AB03321A-C2C6-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74831,7 +74773,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2348
+// entity 2347
 {
 guid "{62D18406-C2C8-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74850,7 +74792,7 @@ layer "undead_asylum"
  ( -7641.25 5703 1802 ) ( -7641.25 5703 1482 ) ( -5401.25 5703 1482 ) volume 64 64 -6353.25 -1618 0 0 lightmap_gray 16384 16384 -6353.25 -1618 0 0
 }
 }
-// entity 2349
+// entity 2348
 {
 guid "{62F83D8E-C334-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74859,7 +74801,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-8808 7407.5 1954.75"
 }
-// entity 2350
+// entity 2349
 {
 guid "{259ECB4C-C336-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74868,7 +74810,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-9667.25 7397.25 1954.75"
 }
-// entity 2351
+// entity 2350
 {
 guid "{8339EF41-C337-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74877,7 +74819,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-9667.25 5920.5 1954.75"
 }
-// entity 2352
+// entity 2351
 {
 guid "{66DD084F-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74886,7 +74828,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-8808 5920.5 1954.75"
 }
-// entity 2353
+// entity 2352
 {
 guid "{60A8F389-C335-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74906,7 +74848,7 @@ layer "undead_asylum"
  ( -10115.25 7509.25 1980.5 ) ( -10115.25 7509.25 1660.5 ) ( -7875.25 7509.25 1660.5 ) volume 64 64 -8827.25 -1796.5 0 0 lightmap_gray 16384 16384 -8827.25 -1796.5 0 0
 }
 }
-// entity 2354
+// entity 2353
 {
 guid "{944DD041-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74918,7 +74860,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2355
+// entity 2354
 {
 guid "{C0EB1F52-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74930,7 +74872,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2356
+// entity 2355
 {
 guid "{C0EB1F60-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74939,7 +74881,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-8703.25 6020.25 1954.75"
 }
-// entity 2357
+// entity 2356
 {
 guid "{F3ECD6DC-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74951,7 +74893,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2358
+// entity 2357
 {
 guid "{F3ECD6DF-C339-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74963,7 +74905,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2359
+// entity 2358
 {
 guid "{00A4BD1B-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74972,7 +74914,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-8724.25 7329 1954.75"
 }
-// entity 2360
+// entity 2359
 {
 guid "{1B3C9F79-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74981,7 +74923,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-9776.5 7329 1954.75"
 }
-// entity 2361
+// entity 2360
 {
 guid "{2EDACFB1-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -74993,7 +74935,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2362
+// entity 2361
 {
 guid "{2EDACFB4-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75005,7 +74947,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2363
+// entity 2362
 {
 guid "{359FB047-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75017,7 +74959,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2364
+// entity 2363
 {
 guid "{359FB04A-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75029,7 +74971,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2365
+// entity 2364
 {
 guid "{3C54A1C7-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75038,7 +74980,7 @@ layer "undead_asylum"
 "model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
 "origin" "-9757.5 6020.25 1954.75"
 }
-// entity 2366
+// entity 2365
 {
 guid "{58B46E54-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75049,7 +74991,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2367
+// entity 2366
 {
 guid "{773C7BCB-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75060,7 +75002,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2368
+// entity 2367
 {
 guid "{7F179156-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75071,7 +75013,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2369
+// entity 2368
 {
 guid "{7F179161-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75082,7 +75024,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2370
+// entity 2369
 {
 guid "{85EACB58-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75093,7 +75035,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2371
+// entity 2370
 {
 guid "{85EACB63-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75104,7 +75046,7 @@ layer "undead_asylum"
 "targetname" "boss_room_spawner"
 "_color" "1 0 0"
 }
-// entity 2372
+// entity 2371
 {
 guid "{B4F902F4-C33A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75124,7 +75066,7 @@ layer "undead_asylum"
  ( -9241.25 6692.25 1742.25 ) ( -9273.25 6692.25 1742.25 ) ( -9273.25 6692.25 1741.25 ) trigger 64 64 -8810.25 -1741.25 0 0 lightmap_gray 16384 16384 -8810.25 -1741.25 0 0
 }
 }
-// entity 2373
+// entity 2372
 {
 guid "{9969B90C-C37A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75139,7 +75081,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2374
+// entity 2373
 {
 guid "{8DABA9CD-C37A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75154,7 +75096,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2375
+// entity 2374
 {
 guid "{4343A34C-C37A-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75169,7 +75111,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2376
+// entity 2375
 {
 guid "{413EB36A-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75184,7 +75126,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2377
+// entity 2376
 {
 guid "{413EB36D-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75199,7 +75141,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2378
+// entity 2377
 {
 guid "{413EB370-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75214,7 +75156,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2379
+// entity 2378
 {
 guid "{4A397105-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75229,7 +75171,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2380
+// entity 2379
 {
 guid "{4A397108-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75244,7 +75186,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2381
+// entity 2380
 {
 guid "{4A39710B-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75259,7 +75201,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2382
+// entity 2381
 {
 guid "{55EB1958-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75274,7 +75216,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2383
+// entity 2382
 {
 guid "{55EB195B-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75289,7 +75231,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2384
+// entity 2383
 {
 guid "{55EB195E-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75304,7 +75246,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2385
+// entity 2384
 {
 guid "{75138286-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75319,7 +75261,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2386
+// entity 2385
 {
 guid "{75138289-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75334,7 +75276,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2387
+// entity 2386
 {
 guid "{7513828C-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75349,7 +75291,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2388
+// entity 2387
 {
 guid "{7E56B7FA-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75364,7 +75306,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2389
+// entity 2388
 {
 guid "{7E56B7FD-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75379,7 +75321,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2390
+// entity 2389
 {
 guid "{7E56B800-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75394,7 +75336,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2391
+// entity 2390
 {
 guid "{99392135-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75409,7 +75351,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2392
+// entity 2391
 {
 guid "{99392138-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75424,7 +75366,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2393
+// entity 2392
 {
 guid "{9939213B-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75439,7 +75381,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2394
+// entity 2393
 {
 guid "{9939213E-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75454,7 +75396,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2395
+// entity 2394
 {
 guid "{99392141-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75469,7 +75411,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2396
+// entity 2395
 {
 guid "{99392144-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75484,7 +75426,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2397
+// entity 2396
 {
 guid "{99392147-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75499,7 +75441,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2398
+// entity 2397
 {
 guid "{9939214A-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75514,7 +75456,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2399
+// entity 2398
 {
 guid "{9939214D-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75529,7 +75471,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2400
+// entity 2399
 {
 guid "{A6DEBA2A-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75544,7 +75486,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2401
+// entity 2400
 {
 guid "{A6DEBA2D-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75559,7 +75501,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2402
+// entity 2401
 {
 guid "{A6DEBA30-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75574,7 +75516,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2403
+// entity 2402
 {
 guid "{A6DEBA33-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75589,7 +75531,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2404
+// entity 2403
 {
 guid "{A6DEBA36-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75604,7 +75546,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2405
+// entity 2404
 {
 guid "{A6DEBA39-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75619,7 +75561,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2406
+// entity 2405
 {
 guid "{A6DEBA3C-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75634,7 +75576,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2407
+// entity 2406
 {
 guid "{A6DEBA3F-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75649,7 +75591,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2408
+// entity 2407
 {
 guid "{A6DEBA42-C37B-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75664,7 +75606,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2409
+// entity 2408
 {
 guid "{5CB89D3D-C37C-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75674,7 +75616,7 @@ layer "undead_asylum"
 "targetname" "tele_room_boss"
 "_color" "1 0 0"
 }
-// entity 2410
+// entity 2409
 {
 guid "{5CB89D4A-C37C-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75684,7 +75626,7 @@ layer "undead_asylum"
 "targetname" "tele_room_boss"
 "_color" "1 0 0"
 }
-// entity 2411
+// entity 2410
 {
 guid "{5CB89D57-C37C-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75694,7 +75636,7 @@ layer "undead_asylum"
 "targetname" "tele_room_boss"
 "_color" "1 0 0"
 }
-// entity 2412
+// entity 2411
 {
 guid "{5CB89D64-C37C-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75704,27 +75646,7 @@ layer "undead_asylum"
 "targetname" "tele_room_boss"
 "_color" "1 0 0"
 }
-// entity 2413
-{
-guid "{8366D1E5-C37E-11ED-91FA-34CFF6FAFB90}"
-layer "undead_asylum"
-"classname" "trigger_use"
-"cursorhint" "HINT_NOICON"
-"targetname" "tele_boss_trig"
-"_color" "0.3 0.5 0.8"
-// brush 0
-{
- guid "{8366D1E4-C37E-11ED-91FA-34CFF6FAFB90}"
-layer "undead_asylum"
- ( -9635.9561 7252.624 2548.75 ) ( -9667.3027 7246.1885 2548.75 ) ( -9660.8711 7214.8438 2548.75 ) trigger 64 63.998474 -10057.631 -8263.0713 11.600626 6.8512265e-005 lightmap_gray 16384.289 16382.881 -10057.679 -8263.1348 11.600628 6.8714769e-005
- ( -9662.8281 7214.4414 2595.25 ) ( -9669.2617 7245.7871 2595.25 ) ( -9637.916 7252.2217 2595.25 ) trigger 64 64 -10059.25 -8263.1729 11.600488 1.0445618e-005 lightmap_gray 16383.686 16383.57 -10059.08 -8263.0195 11.600488 1.0460065e-005
- ( -9656.3906 7201.7266 2525.5 ) ( -9625.0449 7208.1602 2525.5 ) ( -9625.0449 7208.1602 2509.5 ) trigger 62.691414 64 -11658.917 -447.0564 0 0 lightmap_gray 16049.002 16384 -11658.91 -447.0564 0 0
- ( -9603.8711 7229.3496 2525.5 ) ( -9610.3066 7260.6963 2525.5 ) ( -9610.3066 7260.6963 2509.5 ) trigger 62.69241 64 6497.5 -447.0564 0 0 lightmap_gray 16049.5 16384 6497.4673 -447.0564 0 0
- ( -9634.6406 7225.0762 2525.5 ) ( -9665.9883 7218.6416 2525.5 ) ( -9665.9883 7218.6416 2509.5 ) trigger 62.695324 64 -11668.634 -447.0564 0 0 lightmap_gray 16049.997 16384 -11668.631 -447.0564 0 0
- ( -9697.376 7239.7617 2525.5 ) ( -9690.9404 7208.415 2525.5 ) ( -9690.9404 7208.415 2509.5 ) trigger 62.693596 64 6476.5298 -447.0564 0 0 lightmap_gray 16049.493 16384 6476.5381 -447.0564 0 0
-}
-}
-// entity 2414
+// entity 2412
 {
 guid "{437B0E91-C396-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75734,7 +75656,7 @@ layer "undead_asylum"
 "origin" "-8552.73 6668.85 1631.25"
 "targetname" "boss_room_spawner"
 }
-// entity 2415
+// entity 2413
 {
 guid "{437B0E9C-C396-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75744,7 +75666,7 @@ layer "undead_asylum"
 "origin" "-9948.15 6677.49 1631.25"
 "targetname" "boss_room_spawner"
 }
-// entity 2416
+// entity 2414
 {
 guid "{D4F0DC4B-C40C-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75758,7 +75680,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2417
+// entity 2415
 {
 guid "{FB6727E4-A548-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75776,7 +75698,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2418
+// entity 2416
 {
 guid "{E1A877AA-BF63-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75790,7 +75712,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2419
+// entity 2417
 {
 guid "{E1A87799-BF63-11ED-91FA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75804,7 +75726,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2420
+// entity 2418
 {
 guid "{FB6727E1-A548-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75822,7 +75744,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2421
+// entity 2419
 {
 guid "{C51FFEEC-C40D-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75837,7 +75759,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2422
+// entity 2420
 {
 guid "{C51FFEFA-C40D-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75852,7 +75774,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2423
+// entity 2421
 {
 guid "{CB3DFF5B-C40D-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75866,7 +75788,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2424
+// entity 2422
 {
 guid "{22B04703-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75881,7 +75803,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2425
+// entity 2423
 {
 guid "{339DCE7E-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75896,7 +75818,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2426
+// entity 2424
 {
 guid "{43239E06-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75911,7 +75833,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2427
+// entity 2425
 {
 guid "{43239E17-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75926,7 +75848,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2428
+// entity 2426
 {
 guid "{4A103B7D-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75941,7 +75863,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2429
+// entity 2427
 {
 guid "{59053166-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75956,7 +75878,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2430
+// entity 2428
 {
 guid "{5F7873FA-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75971,7 +75893,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2431
+// entity 2429
 {
 guid "{6771260D-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -75986,7 +75908,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2432
+// entity 2430
 {
 guid "{7D8EA815-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76001,7 +75923,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2433
+// entity 2431
 {
 guid "{CD76A612-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76033,7 +75955,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2434
+// entity 2432
 {
 guid "{FC6D4F1D-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76065,7 +75987,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2435
+// entity 2433
 {
 guid "{0607E3EB-C40F-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76079,7 +76001,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2436
+// entity 2434
 {
 guid "{0C501928-C40F-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76093,7 +76015,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2437
+// entity 2435
 {
 guid "{70089FE7-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76108,7 +76030,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2438
+// entity 2436
 {
 guid "{5D0D23C6-C412-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76122,7 +76044,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2439
+// entity 2437
 {
 guid "{A7333A4C-9F6D-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76154,7 +76076,7 @@ layer "undead_asylum"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2440
+// entity 2438
 {
 guid "{ACF64AE9-C413-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76170,7 +76092,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2441
+// entity 2439
 {
 guid "{C1C5F3DF-C413-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76186,7 +76108,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2442
+// entity 2440
 {
 guid "{C7E9C640-C413-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76202,7 +76124,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2443
+// entity 2441
 {
 guid "{E5692BBE-C413-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76218,7 +76140,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2444
+// entity 2442
 {
 guid "{E5692BC6-C413-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76234,7 +76156,7 @@ layer "undead_asylum"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2445
+// entity 2443
 {
 guid "{E787D7CB-BDED-11ED-91F8-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76253,7 +76175,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "shadow_casting" "1"
 }
-// entity 2446
+// entity 2444
 {
 guid "{8D90AF31-C40E-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76268,7 +76190,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2447
+// entity 2445
 {
 guid "{6B2E25BF-C459-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76300,7 +76222,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2448
+// entity 2446
 {
 guid "{CB0CB45D-C45A-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76333,7 +76255,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2449
+// entity 2447
 {
 guid "{3F33D32D-A4D4-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76366,7 +76288,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2450
+// entity 2448
 {
 guid "{3F33D31F-A4D4-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76399,7 +76321,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2451
+// entity 2449
 {
 guid "{D9E3450D-A4D1-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76432,7 +76354,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2452
+// entity 2450
 {
 guid "{D395D4E1-A4D1-11ED-91E7-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76465,7 +76387,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2453
+// entity 2451
 {
 guid "{27747750-9F6B-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76496,7 +76418,7 @@ layer "undead_asylum"
  ( -14511.75 3386 1840.25 ) ( -14511.75 3354 1840.25 ) ( -14511.75 3354 1824.25 ) fog 64 64 2323.25 0 0 0 lightmap_gray 16384 16384 2323.25 0 0 0
 }
 }
-// entity 2454
+// entity 2452
 {
 guid "{CA43291E-A0C5-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76529,7 +76451,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2455
+// entity 2453
 {
 guid "{86840AB2-C45D-11ED-91FD-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76560,7 +76482,7 @@ layer "undead_asylum"
  ( -10086.25 3456.5 1842.25 ) ( -10086.25 3424.5 1842.25 ) ( -10086.25 3424.5 1826.25 ) fog 64 64 2393.75 -2 0 0 lightmap_gray 16384 16384 2393.75 -2 0 0
 }
 }
-// entity 2456
+// entity 2454
 {
 guid "{7C9730D9-9FCC-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76593,7 +76515,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2457
+// entity 2455
 {
 guid "{7C9730D6-9FCC-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76626,7 +76548,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2458
+// entity 2456
 {
 guid "{7C9730D3-9FCC-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76659,7 +76581,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2459
+// entity 2457
 {
 guid "{7C9730D0-9FCC-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76692,7 +76614,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2460
+// entity 2458
 {
 guid "{E2B62FCD-9FC9-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76725,7 +76647,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2461
+// entity 2459
 {
 guid "{E2B62FD0-9FC9-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76758,7 +76680,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2462
+// entity 2460
 {
 guid "{B87561D1-9FC9-11ED-91E6-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76791,7 +76713,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2463
+// entity 2461
 {
 guid "{A2562750-C4C4-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76824,7 +76746,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2464
+// entity 2462
 {
 guid "{AF570E9A-C4C4-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76857,7 +76779,7 @@ layer "undead_asylum"
 "superellipse" "0.75 1 0.75 1"
 "spawnflags" "82"
 }
-// entity 2465
+// entity 2463
 {
 guid "{CD30B664-C4C4-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76888,7 +76810,7 @@ layer "undead_asylum"
  ( -10086.25 3456.5 753.5 ) ( -10086.25 3424.5 753.5 ) ( -10086.25 3424.5 737.5 ) fog 64 64 2393.75 1086.75 0 0 lightmap_gray 16384 16384 2393.75 1086.75 0 0
 }
 }
-// entity 2466
+// entity 2464
 {
 guid "{DF9FDE0D-A7C6-11ED-91EA-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76903,7 +76825,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2467
+// entity 2465
 {
 guid "{71A71755-C4C9-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76918,7 +76840,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2468
+// entity 2466
 {
 guid "{7ABDA3A8-C4C9-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76933,7 +76855,7 @@ layer "undead_asylum"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2469
+// entity 2467
 {
 guid "{6DB85E39-C4CA-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76951,7 +76873,7 @@ layer "undead_asylum"
 "scriptbundlename" "p7_fxanim_zm_factory_diff_engine_bundle"
 "spawnflags" "2"
 }
-// entity 2470
+// entity 2468
 {
 guid "{891D1640-C4CA-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76969,7 +76891,7 @@ layer "undead_asylum"
 "scriptbundlename" "p7_fxanim_zm_factory_diff_engine_bundle"
 "spawnflags" "2"
 }
-// entity 2471
+// entity 2469
 {
 guid "{E79E3A21-C4CB-11ED-91FE-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -76978,7 +76900,7 @@ layer "undead_asylum"
 "model" "_prefabs/undead_asylum/zm_ua_teleporterpad_02.map"
 "origin" "-9268 6672.75 2493.25"
 }
-// entity 2472
+// entity 2470
 {
 guid "{E75CE63A-C5AF-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77012,7 +76934,7 @@ layer "kiln_of_the_first_flame"
  ( -8931.25 1702 -6112.5 ) ( -8931.25 1630 -6112.5 ) ( -8931.25 1630 -6124.5 ) litfog_volume 64 64 1750 8752.5 0 0 lightmap_gray 16384 16384 1750 8752.5 0 0
 }
 }
-// entity 2473
+// entity 2471
 {
 guid "{68339143-C5B1-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77043,7 +76965,7 @@ layer "kiln_of_the_first_flame"
  ( -14511.75 3386 251.25 ) ( -14511.75 3354 251.25 ) ( -14511.75 3354 235.25 ) fog 64 64 2323.25 1589 0 0 lightmap_gray 16384 16384 2323.25 1589 0 0
 }
 }
-// entity 2474
+// entity 2472
 {
 guid "{821830EE-C5B9-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77072,7 +76994,7 @@ layer "kiln_of_the_first_flame"
  ( -9897.5 4167.25 -6528.25 ) ( -9897.5 71.25 -6528.25 ) ( -9897.5 71.25 -7552.25 ) sun_volume 32 32 2119.25 7488.25 0 0 lightmap_gray 16384 16384 2119.25 7488.25 0 0
 }
 }
-// entity 2475
+// entity 2473
 {
 guid "{24FD8113-C5CB-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77089,7 +77011,7 @@ layer "kiln_of_the_first_flame"
  ( -15667 6066 -5693 ) ( -15667 6034 -5693 ) ( -15667 6034 -5709 ) vista_volume 64 64 8765 1139 0 0 lightmap_gray 16384 16384 8765 1139 0 0
 }
 }
-// entity 2476
+// entity 2474
 {
 guid "{3D15F43B-C5CF-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77110,7 +77032,7 @@ layer "kiln_of_the_first_flame"
  ( -6867.75 8183.25 -5845.5 ) ( -6867.75 8183.25 -6165.5 ) ( -4627.75 8183.25 -6165.5 ) volume 64 64 -5579.75 6029.5 0 0 lightmap_gray 16384 16384 -5579.75 6029.5 0 0
 }
 }
-// entity 2477
+// entity 2475
 {
 guid "{8FF96359-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77227,7 +77149,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2478
+// entity 2476
 {
 guid "{9FA3DC79-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77290,7 +77212,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2479
+// entity 2477
 {
 guid "{B3C4F238-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77353,7 +77275,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2480
+// entity 2478
 {
 guid "{DA8664A7-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77416,7 +77338,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2481
+// entity 2479
 {
 guid "{EBA08A4B-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77479,7 +77401,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2482
+// entity 2480
 {
 guid "{F505A813-C5E7-11ED-91FE-34CFF6FAFB90}"
 "classname" "func_group"
@@ -77542,7 +77464,7 @@ layer "kiln_of_the_first_flame"
   }
  }
 }
-// entity 2483
+// entity 2481
 {
 guid "{2637AF14-B2F1-11ED-91F5-34CFF6FAFB90}"
 layer "undead_asylum"
@@ -77557,7 +77479,7 @@ layer "undead_asylum"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2484
+// entity 2482
 {
 guid "{50F7A5B7-C736-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -77586,7 +77508,7 @@ layer "sif_arena"
  ( -11129.5 -14464.75 -7712.25 ) ( -11129.5 -18560.75 -7712.25 ) ( -11129.5 -18560.75 -8736.25 ) sun_volume 32 32 -16512.75 8672.25 0 0 lightmap_gray 16384 16384 -16512.75 8672.25 0 0
 }
 }
-// entity 2485
+// entity 2483
 {
 guid "{A5D4348D-C739-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -77603,7 +77525,7 @@ layer "sif_arena"
  ( -15667 6066 -6877 ) ( -15667 6034 -6877 ) ( -15667 6034 -6893 ) vista_volume 64 64 8765 2323 0 0 lightmap_gray 16384 16384 8765 2323 0 0
 }
 }
-// entity 2486
+// entity 2484
 {
 guid "{7039D44D-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -77637,7 +77559,7 @@ layer "sif_arena"
  ( -11123.25 -15298 -7296.5 ) ( -11123.25 -15370 -7296.5 ) ( -11123.25 -15370 -7308.5 ) litfog_volume 64 64 -15250 9936.5 0 0 lightmap_gray 16384 16384 -15250 9936.5 0 0
 }
 }
-// entity 2487
+// entity 2485
 {
 guid "{8A56A28B-C5B3-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77664,7 +77586,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2488
+// entity 2486
 {
 guid "{F7977411-C5B9-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77691,7 +77613,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2489
+// entity 2487
 {
 guid "{FFC68F15-C5B9-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77718,7 +77640,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2490
+// entity 2488
 {
 guid "{0FB86435-C5BA-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77745,7 +77667,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2491
+// entity 2489
 {
 guid "{F838728E-C5A9-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77760,7 +77682,7 @@ layer "kiln_of_the_first_flame"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2492
+// entity 2490
 {
 guid "{5ED7487D-C5C6-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77775,7 +77697,7 @@ layer "kiln_of_the_first_flame"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2493
+// entity 2491
 {
 guid "{6B0E14F7-C5CE-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77802,7 +77724,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2494
+// entity 2492
 {
 guid "{6B0E14FA-C5CE-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77829,7 +77751,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2495
+// entity 2493
 {
 guid "{6B0E14FD-C5CE-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77856,7 +77778,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2496
+// entity 2494
 {
 guid "{6B0E1500-C5CE-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77883,7 +77805,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2497
+// entity 2495
 {
 guid "{5C40A823-C5D6-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77898,7 +77820,7 @@ layer "kiln_of_the_first_flame"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2498
+// entity 2496
 {
 guid "{71D7581C-C5D7-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77913,7 +77835,7 @@ layer "kiln_of_the_first_flame"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2499
+// entity 2497
 {
 guid "{3EE7BED6-C5D6-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77928,7 +77850,7 @@ layer "kiln_of_the_first_flame"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2500
+// entity 2498
 {
 guid "{62809F16-C5D6-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77943,7 +77865,7 @@ layer "kiln_of_the_first_flame"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2501
+// entity 2499
 {
 guid "{7EEEF695-C5EE-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77955,7 +77877,7 @@ layer "kiln_of_the_first_flame"
 "script_sound" "kiln_ambience"
 "targetname" "kiln_looper"
 }
-// entity 2502
+// entity 2500
 {
 guid "{586C9CBA-C5CC-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77970,7 +77892,7 @@ layer "kiln_of_the_first_flame"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2503
+// entity 2501
 {
 guid "{A763FDE9-C5B4-11ED-91FE-34CFF6FAFB90}"
 layer "kiln_of_the_first_flame"
@@ -77997,7 +77919,7 @@ layer "kiln_of_the_first_flame"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2504
+// entity 2502
 {
 guid "{B66F047F-C723-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78011,7 +77933,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2505
+// entity 2503
 {
 guid "{76DE42DB-C737-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78038,7 +77960,7 @@ layer "sif_arena"
 "placement_offset" "72"
 "resolution" "4x"
 }
-// entity 2506
+// entity 2504
 {
 guid "{5035C62A-C735-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78053,7 +77975,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2507
+// entity 2505
 {
 guid "{D7A2457A-C723-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78067,7 +77989,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2508
+// entity 2506
 {
 guid "{A1D51B2E-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78081,7 +78003,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2509
+// entity 2507
 {
 guid "{A1D51B76-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78095,7 +78017,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2510
+// entity 2508
 {
 guid "{A1D51B6E-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78109,7 +78031,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2511
+// entity 2509
 {
 guid "{A1D51B66-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78123,7 +78045,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2512
+// entity 2510
 {
 guid "{A1D51B5E-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78137,7 +78059,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2513
+// entity 2511
 {
 guid "{A1D51B56-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78151,7 +78073,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2514
+// entity 2512
 {
 guid "{A1D51B4E-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78165,7 +78087,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2515
+// entity 2513
 {
 guid "{A1D51B46-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78179,7 +78101,7 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2516
+// entity 2514
 {
 guid "{A1D51B3E-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
@@ -78193,13 +78115,952 @@ layer "sif_arena"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2517
+// entity 2515
 {
 guid "{A1D51B36-C73B-11ED-91FE-34CFF6FAFB90}"
 layer "sif_arena"
 "classname" "misc_model"
 "model" "p7_foliage_tree_redwood_sml_01_sml"
 "origin" "-9372 -11041 -6895.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2516
+{
+guid "{C82CF42B-C806-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 89.9996 0"
+"origin" "-7846.98 6138.97 2508"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "southwing_lower"
+"target" "auto399"
+"targetname" "player_respawn_point"
+}
+// entity 2517
+{
+guid "{C82CF434-C806-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7806 6069 2412"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto399"
+}
+// entity 2518
+{
+guid "{C82CF437-C806-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 89.9996 0"
+"origin" "-7726 6069 2412"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto399"
+}
+// entity 2519
+{
+guid "{C82CF42E-C806-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7973 6069 2412"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto399"
+}
+// entity 2520
+{
+guid "{C82CF431-C806-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7893 6069 2412"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto399"
+}
+// entity 2521
+{
+guid "{50984257-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 180 0"
+"origin" "-9267.97 6673.03 2607"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "main_room"
+"target" "auto400"
+"targetname" "player_respawn_point"
+}
+// entity 2522
+{
+guid "{5098425A-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-9189 6158 2527"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto400"
+}
+// entity 2523
+{
+guid "{5098425D-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-9109 6158 2527"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto400"
+}
+// entity 2524
+{
+guid "{50984260-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-8851 7191 2527"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto400"
+}
+// entity 2525
+{
+guid "{50984263-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-8931 7191 2527"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto400"
+}
+// entity 2526
+{
+guid "{A7DA1D27-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-9625.03 4784.98 2287"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "westwing_staircase_01"
+"target" "auto401"
+"targetname" "player_respawn_point"
+}
+// entity 2527
+{
+guid "{A7DA1D2A-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-9671 4926 2191"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto401"
+}
+// entity 2528
+{
+guid "{A7DA1D2D-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 3.4151e-006 0"
+"origin" "-9728 4718 2191"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto401"
+}
+// entity 2529
+{
+guid "{A7DA1D30-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-9554 4924 2191"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto401"
+}
+// entity 2530
+{
+guid "{A7DA1D33-C807-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 3.4151e-006 0"
+"origin" "-9729 4868 2191"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto401"
+}
+// entity 2531
+{
+guid "{00B5854A-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7154.98 7000.97 2828"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "southwing_sideroom"
+"target" "auto402"
+"targetname" "player_respawn_point"
+}
+// entity 2532
+{
+guid "{00B5854D-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7234 6961 2712"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto402"
+}
+// entity 2533
+{
+guid "{00B58550-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7083 6961 2712"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto402"
+}
+// entity 2534
+{
+guid "{00B58553-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7234 7041 2712"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto402"
+}
+// entity 2535
+{
+guid "{00B58556-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 90 0"
+"origin" "-7083 7041 2712"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto402"
+}
+// entity 2536
+{
+guid "{162DED66-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-10339 6672.98 3228"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "balcony_mdl"
+"target" "auto403"
+"targetname" "player_respawn_point"
+}
+// entity 2537
+{
+guid "{162DED69-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-10379 6713 3132"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto403"
+}
+// entity 2538
+{
+guid "{162DED6C-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-10379 6633 3132"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto403"
+}
+// entity 2539
+{
+guid "{162DED72-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-10299 6633 3125"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto403"
+}
+// entity 2540
+{
+guid "{162DED6F-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-10299 6713 3125"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto403"
+}
+// entity 2541
+{
+guid "{3DCE43A9-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm/harrybo21_prefabs/zombie_traverses/zombie_jump_down_200.map"
+"origin" "-8630 7369.25 3097.75"
+}
+// entity 2542
+{
+guid "{BDE5BE81-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "node_negotiation_begin"
+"PROCEDURAL" "1"
+"angles" "0 3.41509e-006 0"
+"animscript" "jump_down_160"
+"movementtype_require" "zombie_boss"
+"origin" "-8384.69 7447.14 2747.5"
+"previewanim1" "ai_zm_dlc1_soldat_jump_down_160"
+"previewmdl1" "c_zom_mech_body"
+"target" "auto2108"
+"_color" "0.5 0.6 0.5"
+"cost_modifier" "1"
+"spawnflags" "1024"
+}
+// entity 2543
+{
+guid "{BDE5BE7E-C808-11ED-91FE-34CFF6FAFB90}"
+"classname" "node_negotiation_end"
+"PROCEDURAL" "1"
+"angles" "0 180 0"
+"animscript" "jump_up_160"
+"origin" "-8320.69 7447.14 2434.25"
+"previewanim1" "ai_zm_dlc1_soldat_jump_up_160"
+"previewmdl1" "c_zom_mech_body"
+"targetname" "auto2108"
+"_color" "0.6 0.5 0.5"
+"spawnflags" "1024"
+}
+// entity 2544
+{
+guid "{5DC063C6-C809-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_brushmodel"
+"targetname" "main_room_floor"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+ {
+  guid "{6897EF65-C809-11ED-91FE-34CFF6FAFB90}"
+  mesh
+  {
+  toolFlags;
+   floor_03
+   lightmap_gray
+   3 5 16 8
+   (
+	v -9722.75 6886 2419.75 t -38891 -27544 -607.67188 -430.375
+	v -9722.75 6789.4375 2486.75 t -38891 -27157.75 -607.67188 -424.33984
+	v -9722.75 6684.875 2507.75 t -38891 -26739.5 -607.67188 -417.80469
+	v -9722.75 6566.3125 2488.75 t -38891 -26265.25 -607.67188 -410.39453
+	v -9722.75 6462.75 2434.75 t -38891 -25851 -607.67188 -403.92188
+   )
+   (
+	v -9421.125 6886 2419.75 t -37684.5 -27544 -588.82031 -430.375
+	v -9421.125 6789.4375 2486.75 t -37684.5 -27157.75 -588.82031 -424.33984
+	v -9421.125 6684.875 2488.75 t -37684.5 -26739.5 -588.82031 -417.80469
+	v -9421.125 6566.3125 2488.75 t -37684.5 -26265.25 -588.82031 -410.39453
+	v -9421.125 6462.75 2434.75 t -37684.5 -25851 -588.82031 -403.92188
+   )
+   (
+	v -9119.5 6886 2419.75 t -36478 -27544 -569.96875 -430.375
+	v -9119.5 6789.4375 2486.75 t -36478 -27157.75 -569.96875 -424.33984
+	v -9119.5 6684.875 2496.75 t -36478 -26739.5 -569.96875 -417.80469
+	v -9119.5 6566.3125 2488.75 t -36478 -26265.25 -569.96875 -410.39453
+	v -9119.5 6462.75 2434.75 t -36478 -25851 -569.96875 -403.92188
+   )
+  }
+ }
+}
+// entity 2545
+{
+guid "{35D30F2C-C80A-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"PRIMARY_NOSHADOWMAP" "1"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.902 1 0.9458"
+"angles" "0 0 180"
+"far_edge" "0.399999998509884"
+"fov_outer" "89"
+"name" "light_007"
+"origin" "-9285.75 6672.25 2353.75"
+"penumbraRadius" "1.5"
+"radius" "200"
+"roundness" "1"
+"stops" "15.0000000029802"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"superellipse" "0.75 1 0.75 1"
+"spawnflags" "84"
+}
+// entity 2546
+{
+guid "{747F0A29-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-7032.02 7568.03 2130"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "start_hallway_zone_2"
+"target" "auto2109"
+"targetname" "player_respawn_point"
+}
+// entity 2547
+{
+guid "{747F0A2C-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-6993 7684 2034"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto2109"
+}
+// entity 2548
+{
+guid "{747F0A2F-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 270 0"
+"origin" "-7161 7684 2034"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto2109"
+}
+// entity 2549
+{
+guid "{747F0A32-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 180 0"
+"origin" "-6886 7504 2034"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto2109"
+}
+// entity 2550
+{
+guid "{747F0A35-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 3.4151e-006 0"
+"origin" "-7179 7528 2034"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto2109"
+}
+// entity 2551
+{
+guid "{C796BD6F-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 360 0"
+"origin" "-11505 6714.98 2854"
+"radius" "2000"
+"script_int" "2000"
+"script_noteworthy" "pap2"
+"target" "auto2110"
+"targetname" "player_respawn_point"
+}
+// entity 2552
+{
+guid "{C796BD72-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 330.599 0"
+"origin" "-11520 6920 2748.12"
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto2110"
+}
+// entity 2553
+{
+guid "{C796BD78-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 302.598 0"
+"origin" "-11456 6983 2742.75"
+"script_int" "1"
+"script_noteworthy" "player_1"
+"targetname" "auto2110"
+}
+// entity 2554
+{
+guid "{C796BD7B-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 36.3989 0"
+"origin" "-11465 6411 2769.34"
+"script_int" "4"
+"script_noteworthy" "player_4"
+"targetname" "auto2110"
+}
+// entity 2555
+{
+guid "{C796BD75-C80B-11ED-91FE-34CFF6FAFB90}"
+"classname" "script_struct"
+"_color" "0 0.9961 0.8907"
+"angles" "0 11.9996 0"
+"origin" "-11505 6485 2760.57"
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto2110"
+}
+// entity 2556
+{
+guid "{090355B4-C80D-11ED-91FE-34CFF6FAFB90}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "p7_zm_sha_lever_metal_base"
+"origin" "-9685 7152 2532"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2557
+{
+guid "{090355BF-C80D-11ED-91FE-34CFF6FAFB90}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "p7_zm_sha_lever_metal_handle"
+"origin" "-9685 7152 2532"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2558
+{
+guid "{2F2A3E0D-C80D-11ED-91FE-34CFF6FAFB90}"
+"classname" "misc_model"
+"model" "p7_zm_der_teleporter_control_whole"
+"origin" "-9621 7140 2532"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 2559
+{
+guid "{40001D79-C80D-11ED-91FE-34CFF6FAFB90}"
+"classname" "trigger_use"
+"cursorhint" "HINT_NOICON"
+"targetname" "tele_boss_trig"
+"_color" "0.3 0.5 0.8"
+// brush 0
+{
+ guid "{40001D78-C80D-11ED-91FE-34CFF6FAFB90}"
+ ( -9638 7189 2564 ) ( -9670 7189 2564 ) ( -9670 7157 2564 ) trigger 64 64 -40 -114 0 0 lightmap_gray 16384 16384 -40 -114 0 0
+ ( -9667 7157 2601 ) ( -9667 7189 2601 ) ( -9635 7189 2601 ) trigger 64 64 -36 -114 0 0 lightmap_gray 16384 16384 -36 -114 0 0
+ ( -9670 7157 2580 ) ( -9638 7157 2580 ) ( -9638 7157 2564 ) trigger 64 64 -40 -32 0 0 lightmap_gray 16384 16384 -40 -32 0 0
+ ( -9635 7157 2601 ) ( -9635 7189 2601 ) ( -9635 7189 2585 ) trigger 64 64 114 -44 0 0 lightmap_gray 16384 16384 114 -44 0 0
+ ( -9643 7210 2580 ) ( -9675 7210 2580 ) ( -9675 7210 2564 ) trigger 64 64 -45 -32 0 0 lightmap_gray 16384 16384 -45 -32 0 0
+ ( -9695 7210 2580 ) ( -9695 7178 2580 ) ( -9695 7178 2564 ) trigger 64 64 135 -32 0 0 lightmap_gray 16384 16384 135 -32 0 0
+}
+}
+// entity 2560
+{
+guid "{663C802E-C80D-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "misc_prefab"
+"angles" "360 180 -36.6003"
+"model" "_prefabs/zm/zm_giant/geo/zm_giant_light_cage_06.map"
+"origin" "-9540.18 7046.4 2769.29"
+}
+// entity 2561
+{
+guid "{663C8031-C80D-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "fx"
+"angles" "36.5996 270 -0.000167248"
+"delay" "-15755"
+"fxdef" "lensflares/fx_lensflare_light_warm_sm"
+"fxstate2" "0"
+"origin" "-9569.95 7050.41 2763.75"
+"fxstate1" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 2562
+{
+guid "{663C8034-C80D-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "1 0.6588 0.2588"
+"angles" "34.2246 254.683 -21.4184"
+"culling_cutoff" "100"
+"culling_falloff" "200"
+"cut_on" "14"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.22"
+"def_tile" "0 0"
+"far_edge" "1"
+"fov_outer" "73"
+"name" "light_014"
+"origin" "-9564.89 7041.44 2776.07"
+"penumbraRadius" "1.5"
+"radius" "550"
+"roundness" "1"
+"shadowUpdate" "Always"
+"shadowmapScale" "4"
+"stops" "17"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"superellipse" "0.75 1 0.75 1"
+"spawnflags" "68"
+}
+// entity 2563
+{
+guid "{38557AA1-C80E-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "1 0.5412 0"
+"angles" "317.788 247.87 99.1801"
+"culling_cutoff" "100"
+"culling_falloff" "200"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"far_edge" "0.100000001490116"
+"name" "light_013"
+"origin" "-9570.11 7050.48 2763.7"
+"penumbraRadius" "1.5"
+"radius" "20"
+"roundness" "0.499999998509884"
+"stops" "12"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2564
+{
+guid "{5B420E79-C80E-11ED-91FE-34CFF6FAFB90}"
+"classname" "fx"
+"angles" "0 306.999 0"
+"delay" "-26751"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 snd= off=0 name=teleport_cooldown_fx"
+"fxdef" "dlc5/theater/fx_teleport_cooldown"
+"origin" "-9868 7168 2569"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 2565
+{
+guid "{162EAB24-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "1 0 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_redlight_1"
+"far_edge" "0"
+"name" "light_014"
+"origin" "-9826.11 7100.23 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "20"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2566
+{
+guid "{660E7197-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "1 0 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_redlight_2"
+"far_edge" "0"
+"name" "light_015"
+"origin" "-9819.86 7104.73 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "20"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2567
+{
+guid "{660E719F-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "1 0 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_redlight_3"
+"far_edge" "0"
+"name" "light_016"
+"origin" "-9813.86 7109.23 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "20"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2568
+{
+guid "{C1CCAA9C-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "0 1 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_greenlight_1"
+"far_edge" "0"
+"name" "light_015"
+"origin" "-9826.11 7100.23 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "18.5000000074506"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2569
+{
+guid "{C1CCAA9F-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "0 1 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_greenlight_2"
+"far_edge" "0"
+"name" "light_016"
+"origin" "-9819.86 7104.73 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "18.5000000074506"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2570
+{
+guid "{C1CCAAA2-C80F-11ED-91FE-34CFF6FAFB90}"
+layer "undead_asylum"
+"classname" "light"
+"_color" "0 1 0"
+"angles" "317.788 247.87 99.1801"
+"def" "cookie_flicker"
+"def_scroll" "0.2 0.2"
+"def_tile" "0 0"
+"exploder_count" "1"
+"exploder_index_0" "ver=2 don=0 doff=0 fin=0 fout=0 off=0 name=teleport_greenlight_3"
+"far_edge" "0"
+"name" "light_017"
+"origin" "-9813.86 7109.23 2641.7"
+"penumbraRadius" "1.5"
+"radius" "3"
+"roundness" "0.499999998509884"
+"stops" "18.5000000074506"
+"superellipse" "0.28 0.4 0.23 0.54"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "1"
+"volumetricSampleCount" "1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"spawnflags" "66"
+}
+// entity 2571
+{
+guid "{B2E3F09A-C810-11ED-91FE-34CFF6FAFB90}"
+"classname" "misc_model"
+"model" "p7_fxanim_zm_zod_summoning_key_centered"
+"origin" "-9658 7129 2588"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"

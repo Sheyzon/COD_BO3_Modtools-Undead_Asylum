@@ -92,6 +92,12 @@
 	"Specs" : [ ]
 },
 {
+	"Type" : "ALIAS",
+	"Name" : "trap_sounds",
+	"Filename" : "trap_sounds.csv",
+	"Specs" : [ ] 
+},
+{
  "Type" : "AMBIENT",
  "Name" : "ambient_mod",
  "Filename" : "ambient_mod.csv",

@@ -7,4 +7,8 @@ begin negotiation node at ( -7549.84, 6415.53, 2445 ) will overlap with begin ne
 
 end negotiation node at ( -7549.84, 6533.53, 2445 ) will overlap with end negotiation node at ( -7549.84, 6533.53, 2445 ) in game, marked as a bad node
 
+begin negotiation node at ( -8630, 7345.25, 3121.75 ) or its opposite end will not have navmesh underneath it in game, marked as a bad node
+
+end negotiation node at ( -8630, 7393.25, 2865.75 ) or its opposite end will not have navmesh underneath it in game, marked as a bad node
+
 

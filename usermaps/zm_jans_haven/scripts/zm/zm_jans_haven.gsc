@@ -48,6 +48,21 @@
 #using scripts\zm\_zm_perk_elemental_pop;
 #using scripts\zm\_zm_perk_random;
 
+/*
+//Traps
+#using scripts\zm\_zm_trap_electric;
+#using scripts\zm\_zm_trap_fire;
+#using scripts\zm\_hb21_sym_zm_trap_turret;
+#using scripts\zm\_hb21_zm_trap_flogger;
+#using scripts\zm\_hb21_zm_trap_centrifuge;
+#using scripts\zm\_hb21_zm_trap_flinger;
+#using scripts\zm\_hb21_sym_zm_trap_chain;
+#using scripts\zm\_hb21_sym_zm_trap_fan;
+#using scripts\zm\_hb21_sym_zm_trap_acid;
+#using scripts\zm\_hb21_sym_zm_trap_gate;
+*/
+
+
 // MECHZ ZOMBIE
 #using scripts\zm\_zm_ai_mechz;
 
@@ -227,7 +242,7 @@ function main()
 
 	//init custom attributes for later use
 	players = GetPlayers();
-	for( i=0;i<players.size;i++ )
+	for( i = 0; i < players.size; i++ )
 	{
 		players[i].has_arrow = "";
 		players[i].has_perkshard = 0;

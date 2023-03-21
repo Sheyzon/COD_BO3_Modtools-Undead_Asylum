@@ -40,8 +40,9 @@ include,hb21_mystery_boxes
 include,hb21_perks
 include,hb21_pack_a_punches
 include,hb21_elemental_bows
-include,zm_ai_mechz
+//include,hb21_traps
 //include,db_wunderfizz
+include,zm_ai_mechz
 include,t7_weapons_dlc
 include,lednors_wolf_souls
 include,lednors_bw

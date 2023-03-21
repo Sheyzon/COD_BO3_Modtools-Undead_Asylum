@@ -30,6 +30,16 @@
 #using scripts\zm\_zm_perk_elemental_pop;
 #using scripts\zm\_zm_perk_random;
 
+/*
+//Traps
+#using scripts\zm\_zm_trap_electric;
+#using scripts\zm\_zm_trap_fire;
+#using scripts\zm\_hb21_zm_trap_centrifuge;
+#using scripts\zm\_hb21_sym_zm_trap_fan;
+#using scripts\zm\_hb21_sym_zm_trap_acid;
+
+*/
+
 // MECHZ ZOMBIE
 #using scripts\zm\_zm_ai_mechz;
 
