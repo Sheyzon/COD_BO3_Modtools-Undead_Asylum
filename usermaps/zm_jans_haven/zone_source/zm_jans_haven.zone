@@ -70,6 +70,7 @@ stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 stringtable,gamedata/audio/zm/zm_genesis_vox.csv
 
+scriptparsetree,scripts/zm/_zm_ammomatic.gsc
 scriptparsetree,scripts/zm/_zm_ee_behaviour.gsc
 scriptparsetree,scripts/zm/_zm_arenamode.gsc
 scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.gsc

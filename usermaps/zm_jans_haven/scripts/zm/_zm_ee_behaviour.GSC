@@ -426,6 +426,7 @@ function asylumEntrance()
 		}
 		else
 		{
+            player PlayLocalSound( "zmb_no_cha_ching" );
 			player zm_audio::create_and_play_dialog( "general", "outofmoney" );
 		}
 	}

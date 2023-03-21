@@ -14944,6 +14944,7 @@ scriptparsetree,scripts/zm/_hb21_zm_weap_magmagat.gsh
 scriptparsetree,scripts/zm/_zm_ai_mechz.csc
 scriptparsetree,scripts/zm/_zm_ai_mechz.gsc
 scriptparsetree,scripts/zm/_zm_ai_mechz.gsh
+scriptparsetree,scripts/zm/_zm_ammomatic.gsc
 scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.csc
 scriptparsetree,scripts/zm/_zm_ancient_evil_challenges.gsc
 scriptparsetree,scripts/zm/_zm_arenamode.gsc

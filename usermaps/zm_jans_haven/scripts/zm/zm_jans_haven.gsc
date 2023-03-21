@@ -110,6 +110,7 @@
 
 #using scripts\zm\_zm_arenamode;
 #using scripts\zm\_zm_ee_behaviour;
+#using scripts\zm\_zm_ammomatic;
 
 //-----FX Cache-----
 #precache( "fx", "dlc2/island/fx_fire_spot_xxsm_island" );
@@ -220,7 +221,7 @@ function main()
 	thread _zm_ee_behaviour::bosstrigger();
 	thread _zm_ee_behaviour::wolf_bow_();
 	thread _zm_arenamode::lockdown_test();
-	thread MaxAmmo();
+	thread _zm_ammomatic::MaxAmmo();
 	
 	level.player_starting_points = 500;
 
@@ -276,47 +277,13 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "jump_2");
 }
 
-function MaxAmmo()
-{
-	wip = GetEnt("trigger_wip","targetname");
-    wip SetHintString("This area is under construction!"); 
-    wip SetCursorHint("HINT_NOICON"); 
-   
-    trigger = GetEnt("maxammo_trigger", "targetname");
-    trigger SetHintString("You must turn on the Power first!");
-    trigger SetCursorHint("HINT_NOICON"); 
-    trigger1cost = 25000;
-
-	level flag::wait_till("power_on");
-
-	trigger SetHintString("Press ^3&&1^7 for max ammo. Cost [25000]"); 
-
-	while(1)
-	{
-		// Purchase Code
-		trigger waittill("trigger", player);
-				
-		if(player.score >= trigger1cost)
-		{
-			player zm_score::minus_to_player_score(trigger1cost);
-			player PlayLocalSound("zmb_cha_ching");
-			level thread zm_powerups::specific_powerup_drop("full_ammo", player.origin);
-			wait(5);
-		}
-		else
-		{
-			player PlayLocalSound( "zmb_no_cha_ching" );
-			//zm_utility::play_sound_at_pos( "no_purchase", player.origin );
-			player zm_audio::create_and_play_dialog( "general", "outofmoney" );
-		}
-	}
-}
-
+/*
 function usermap_test_zone_init()
 {
 	level flag::init( "always_on" );
 	level flag::set( "always_on" );
 }	
+*/
 
 function custom_add_weapons()
 {
@@ -337,7 +304,7 @@ function enemy_location_override( zombie, enemy )
 	return undefined;
 }
 
-// model thread zm_sphynx_util::rotateRandomFull(6, 8);
+// model thread zm_jans_haven::rotateRandomFull(6, 8);
 function rotateRandomFull(rotateSpeedMin = 6, rotateSpeedMax = 7){
     while(isdefined(self)){
         rotationSpeed = RandomIntRange(rotateSpeedMin, rotateSpeedMax);
