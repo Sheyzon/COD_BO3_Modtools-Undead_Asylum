@@ -223,13 +223,17 @@ function main()
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
 	
-	level.player_starting_points = 500;
+	level.player_starting_points = 500000;
 
+	//init custom attributes for later use
 	players = GetPlayers();
-	players[0].has_arrow = "";
-	players[1].has_arrow = "";
-	players[2].has_arrow = "";
-	players[3].has_arrow = "";
+	for( i=0;i<players.size;i++ )
+	{
+		players[i].has_arrow = "";
+		players[i].has_perkshard = 0;
+		players[i].perkshard_count = 0;
+		players[i].is_ready_for_boss = false;
+	}
 
 	SetDvar("ai_DisableSpawn",0);
 

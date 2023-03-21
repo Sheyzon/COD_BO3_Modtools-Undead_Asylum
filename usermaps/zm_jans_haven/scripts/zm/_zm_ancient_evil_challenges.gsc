@@ -50,20 +50,6 @@ function challeneges_init()
 	callback::on_connect( &on_player_connect );
 	level waittill( "intro_hud_done" );
 
-	//precachemodel( "wpn_t7_zmb_perk_bottle_jugg_view" );
-
-	players = GetPlayers();
-	players[0].has_perkshard = 0;
-	players[1].has_perkshard = 0;
-	players[2].has_perkshard = 0;
-	players[3].has_perkshard = 0;
-
-	players[0].perkshard_count = 0;
-	players[1].perkshard_count = 0;
-	players[2].perkshard_count = 0;
-	players[3].perkshard_count = 0;
-
-
 	add_challenege("Headshots",			&challenege_headshot,		"Kill Zombies With Headshots");
 	add_challenege("Kills",				&challenege_kill,			"Kill Zombies With Anything");
 	add_challenege("Melee Kills",		&challenege_melee,			"Kill Zombies With Melee Weapons");
