@@ -34,4 +34,4 @@ return 7003000
     col_map:maps/zm/zm_jans_haven.d3dbsp
 ^3Found 2 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
   game_map:maps/zm/zm_jans_haven.d3dbsp
-^3Found 174 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
+^3Found 175 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.

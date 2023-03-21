@@ -34,7 +34,8 @@ function lockdown_test()
 		
 		// Edit 0: 	need to exclude mech rounds. 
 		// 			May crash internal server during mech rounds!
-		// Edit1: 	Clear map of all ai when spawning into bossroom
+		// Edit1: 	Clear map of all ai when spawning into bossroom (Dumb idea)
+		//			lowers zombie_total count end potentially ends round. Not wanted!
 		// Edit2: 	Dog rounds behave... Strange but OK
 		
 		s_loc = zm_ai_mechz::get_mechz_spawn_pos();
