@@ -10,11 +10,12 @@ dawn_of_victory,,,music\dawn_of_victory.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,
 welcome_to_the_breakdown_RA,,,music\Welcome_to_the_breakdown_RA.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,,,100,100,,,,,,,,,,,,,,100,100,0,1,,2d,music_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 hide_n_seek,,,music\hide_n_seek.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,,,100,100,,,,,,,,,,,,,,100,100,0,1,,2d,music_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-bonfire_lit,,,music\bonfire_lit.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,85,85,,,,,,,,3,oldest,,,1,1,,,,,,3d,wpn_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+bonfire_lit,,,music\bonfire_lit.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,85,85,100,500,700,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 collect_soul_sound,,,music\collect_soul_sound.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,70,70,,,,,,,,3,oldest,,,1,1,,,,,,3d,wpn_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ee_loop_trigger,,,music\ee_loop_trigger.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,72,72,100,500,750,,,,,,,,,0,0,100,100,0,1,,3d,,, LOOPING,,,,,,,0.3,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ee_trigger,,,music\ee_trigger.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,75,75,100,500,700,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 # custom ambient sounds 
+warning_00,,,zmb\level\zm_verruckt\traps\warning\warning_00.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,75,75,100,4500,4500,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 perkslot_bought,,,sounds\perkslot_bought.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,85,85,100,500,700,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kiln_ambience,,,sounds\kiln_ambience.wav,,,UIN_MOD,,,,,BUS_FX,,,,0,0,90,90,0,2000,2000,,,,,,,,,0,0,100,100,0,1,,2d,front,,LOOPING,,,,,,,0.3,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

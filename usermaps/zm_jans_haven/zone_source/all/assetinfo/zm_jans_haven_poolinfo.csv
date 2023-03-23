@@ -3,12 +3,12 @@ physpreset,276,33
 physconstraints,198,0
 destructibledef,128,0
 xanim,25000,3110
-xmodel,10240,910
-xmodelmesh,34816,2679
-material,20480,3317
+xmodel,10240,913
+xmodelmesh,34816,2682
+material,20480,3361
 computeshaderset,256,0
-techset,1024,191
-image,49152,5985
+techset,1024,192
+image,49152,6019
 sound,32,1
 sound_patch,16,0
 col_map,2,1
@@ -53,7 +53,7 @@ leaderboarddef,256,0
 ddl,64,0
 glasses,2,0
 texturelist,8,0
-scriptparsetree,1024,116
+scriptparsetree,1024,117
 keyvaluepairs,64,1
 vehicle,64,0
 addon_map_ents,1,0

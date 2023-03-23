@@ -62,9 +62,13 @@
 #using scripts\zm\_hb21_sym_zm_trap_gate;
 */
 
-
-// MECHZ ZOMBIE
+// Custom AI
 #using scripts\zm\_zm_ai_mechz;
+#using scripts\zm\zm_genesis_apothicon_fury;
+#using scripts\zm\_zm_ai_napalm;
+#using scripts\zm\_hb21_zm_ai_margwa;
+// #using scripts\zm\_zm_ai_wasp;
+// #using scripts\zm\_zm_ai_raps;
 
 // BO3 WEAPONS
 #using scripts\zm\craftables\_hb21_zm_craft_blundersplat;
@@ -117,6 +121,9 @@
 #using scripts\_redspace\rs_o_jump_pad;
 #using scripts\zm\growing_soulbox;
 
+// NSZ Buyable Ending
+#using scripts\_NSZ\nsz_buyable_ending;
+
 // Sphynx's Buyable Perk Slot
 #using scripts\Sphynx\_zm_perk_increment;
 
@@ -167,6 +174,8 @@ function main()
 	
 	callback::on_ai_spawned(&_zm_arenamode::infinite_spawning);
 	
+	level thread buyable_ending::init(); 
+
 	level thread nsz_kino_teleporter::init(); 
 	level.randomize_perk_machine_location = false; // set before zm_usermap::main 
  	level.dog_rounds_allowed=1; // set before zm_usermap::main
@@ -224,6 +233,7 @@ function main()
 	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
 	level thread intro_screen_text("Music is on", "The music slider!", undefined, 20, -350);
 
+	thread init_user_attributes();
 	thread _zm_ee_behaviour::asylumEntrance();
 	thread _zm_ee_behaviour::buildable_bonfire();
 	thread _zm_ee_behaviour::lit_bonfire();
@@ -239,16 +249,6 @@ function main()
 	thread _zm_ammomatic::MaxAmmo();
 	
 	level.player_starting_points = 500000;
-
-	//init custom attributes for later use
-	players = GetPlayers();
-	for( i = 0; i < players.size; i++ )
-	{
-		players[i].has_arrow = "";
-		players[i].has_perkshard = 0;
-		players[i].perkshard_count = 0;
-		players[i].is_ready_for_boss = false;
-	}
 
 	SetDvar("ai_DisableSpawn",0);
 
@@ -296,13 +296,19 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "jump_2");
 }
 
-/*
-function usermap_test_zone_init()
+function init_user_attributes()
 {
-	level flag::init( "always_on" );
-	level flag::set( "always_on" );
+	//init custom attributes for later use
+	level flag::wait_till("initial_blackscreen_passed");
+	players = GetPlayers();
+	for( i = 0; i < players.size; i++ )
+	{
+		players[i].has_arrow = "";
+		players[i].has_perkshard = 0;
+		players[i].perkshard_count = 0;
+		players[i].is_ready_for_boss = false;
+	}
 }	
-*/
 
 function custom_add_weapons()
 {

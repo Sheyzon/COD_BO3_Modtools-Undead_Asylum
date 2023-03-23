@@ -40,14 +40,17 @@ include,hb21_mystery_boxes
 include,hb21_perks
 include,hb21_pack_a_punches
 include,hb21_elemental_bows
-//include,hb21_traps
-//include,db_wunderfizz
 include,zm_ai_mechz
+include,zm_ai_margwa
 include,t7_weapons_dlc
 include,lednors_wolf_souls
 include,lednors_bw
 include,ww2_power_switch
 include,spx_craftable_vine_shield
+//include,hb21_traps
+//include,db_wunderfizz
+
+aitype,spawner_zm_genesis_apothicon_fury
 
 localize,craftables
 
@@ -71,6 +74,7 @@ stringtable,gamedata/weapons/zm/zm_levelcommon_bgb.csv
 stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
 stringtable,gamedata/audio/zm/zm_genesis_vox.csv
 
+scriptparsetree,scripts/_NSZ/nsz_buyable_ending.gsc
 scriptparsetree,scripts/zm/_zm_ammomatic.gsc
 scriptparsetree,scripts/zm/_zm_ee_behaviour.gsc
 scriptparsetree,scripts/zm/_zm_arenamode.gsc

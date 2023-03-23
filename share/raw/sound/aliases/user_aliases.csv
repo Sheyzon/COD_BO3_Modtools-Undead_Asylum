@@ -33,7 +33,7 @@ kino_top_spark,,,_NSZ\Kino_Tele\top_spark_00_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,100,1
 kino_activate_start,,,_NSZ\Kino_Tele\activate_start_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,100,100,0,1000,1000,,,,,,,,,,,,,,,,3d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kino_arc_loop,,,_NSZ\Kino_Tele\arc_loop_00_l_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,100,100,0,1000,1000,,,,,,,,,,,,,,,,3d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kino_beam_fx,,,_NSZ\Kino_Tele\beam_fx_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,100,100,0,1000,1000,,,,,,,,,,,,,,,,3d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kino_cooldown,,,_NSZ\Kino_Tele\cooldown_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,85,85,0,1000,1000,,,,,,,,,,,,,,,,2d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+kino_cooldown,,,_NSZ\Kino_Tele\cooldown_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,90,90,0,1000,1000,,,,,,,,,,,,,,,,2d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 kino_activate_finish,,,_NSZ\Kino_Tele\activate_finish_PCM.wav,,,UIN_MOD,,,,,,,,,0,0,100,100,0,1000,1000,,,,,,,,,,,,,,,,3d,front,,NONLOOPING,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 #PPSh-41

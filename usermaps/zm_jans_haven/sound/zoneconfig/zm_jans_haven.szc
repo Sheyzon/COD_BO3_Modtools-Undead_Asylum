@@ -87,6 +87,24 @@
 },
 {
 	"Type" : "ALIAS",
+	"Name" : "zm_ai_apothicon_fury",
+	"Filename" : "zm_ai_apothicon_fury.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
+	"Name" : "zm_ai_napalm",
+	"Filename" : "zm_ai_napalm.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
+	"Name" : "zm_ai_margwa",
+	"Filename" : "zm_ai_margwa.csv",
+	"Specs" : [ ] 
+},
+{
+	"Type" : "ALIAS",
 	"Name" : "music",
 	"Filename" : "music.csv",
 	"Specs" : [ ]
