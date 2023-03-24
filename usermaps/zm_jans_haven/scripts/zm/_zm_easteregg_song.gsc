@@ -8,7 +8,7 @@ function init()
 	level.easterEggTriggerLoopSound = "ee_loop_trigger";	// sound alias name for the loop sound when you are near a trigger
 	level.som = "soundofmadness";
 	level.eym = "ease_your_mind";
-	level.bmth = "bring_me_the_horizon";
+	level.bmth = "sons_of_forest_uncomfortable";
 	level.dov = "dawn_of_victory";
 	level.wtb = "welcome_to_the_breakdown_RA";
 	level.multipleActivations = true;						// whether or not the song can be activated multiple times (true means it can, false means just once)

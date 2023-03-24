@@ -1,0 +1,19 @@
+return 6000000
+^1ERROR: xmodel 'p7_gib_chunk_meat_02' is missing
+  xmodel:p7_gib_chunk_meat_02
+    csv:zone_source/loc/zm_jans_haven.zone
+^1ERROR: xmodel 'p7_gib_chunk_meat_03' is missing
+  xmodel:p7_gib_chunk_meat_03
+    csv:zone_source/loc/zm_jans_haven.zone
+^1ERROR: xmodel 'p7_gib_chunk_flesh_01' is missing
+  xmodel:p7_gib_chunk_flesh_01
+    csv:zone_source/loc/zm_jans_haven.zone
+^1ERROR: xmodel 'p7_gib_chunk_flesh_03' is missing
+  xmodel:p7_gib_chunk_flesh_03
+    csv:zone_source/loc/zm_jans_haven.zone
+^1ERROR: xmodel 'p7_gib_chunk_bone_03' is missing
+  xmodel:p7_gib_chunk_bone_03
+    csv:zone_source/loc/zm_jans_haven.zone
+^1ERROR: xmodel 'p7_ven_charred_body_advanced' is missing
+  xmodel:p7_ven_charred_body_advanced
+    csv:zone_source/loc/zm_jans_haven.zone

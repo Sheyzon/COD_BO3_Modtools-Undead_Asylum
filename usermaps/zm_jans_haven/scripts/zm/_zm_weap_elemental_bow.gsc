@@ -72,11 +72,14 @@ function pickup( w_weapon )
 		//level flag::wait_till("rune_arrow_done");
 		level flag::wait_till("lockdown_end");
 
-	model = GetEnt("basic_bitch_bow","targetname");	
-	model MoveZ(78, 1, 0.1, 0.3);
-	exploder::exploder("basic_bitch_bow_fx");
-	wait(1);
-	
+	if (w_weapon == getWeapon("elemental_bow"))
+	{
+		model = GetEnt("basic_bitch_bow","targetname");	
+		model MoveZ(78, 1, 0, 0.5);
+		exploder::exploder("basic_bitch_bow_fx");
+		wait(1);
+	}
+
 	self setHintString( "Press and hold ^3&&1^7 to take " + w_weapon.displayname );
 	while ( isDefined( self ) )
 	{

@@ -42,10 +42,6 @@
 // MECHZ ZOMBIE
 #using scripts\zm\_zm_ai_mechz;
 #using scripts\zm\zm_genesis_apothicon_fury;
-#using scripts\zm\_zm_ai_napalm;
-#using scripts\zm\_hb21_zm_ai_margwa;
-// #using scripts\zm\_zm_ai_wasp;
-// #using scripts\zm\_zm_ai_raps;
 
 // BO3 WEAPONS
 #using scripts\zm\craftables\_hb21_zm_craft_blundersplat;

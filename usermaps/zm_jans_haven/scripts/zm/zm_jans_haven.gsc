@@ -65,10 +65,6 @@
 // Custom AI
 #using scripts\zm\_zm_ai_mechz;
 #using scripts\zm\zm_genesis_apothicon_fury;
-#using scripts\zm\_zm_ai_napalm;
-#using scripts\zm\_hb21_zm_ai_margwa;
-// #using scripts\zm\_zm_ai_wasp;
-// #using scripts\zm\_zm_ai_raps;
 
 // BO3 WEAPONS
 #using scripts\zm\craftables\_hb21_zm_craft_blundersplat;
@@ -231,7 +227,7 @@ function main()
 	thread zombie_limit_increase(28, 10);
 
 	level thread intro_screen_text("Lordran", "13th - 15th Century", "Northern Undead Asylum", 120, -50);
-	level thread intro_screen_text("Music is on", "The music slider!", undefined, 20, -350);
+	level thread intro_screen_text("Music is on", "The music slider!", "Copyrighted!", 20, -350);
 
 	thread init_user_attributes();
 	thread _zm_ee_behaviour::asylumEntrance();
@@ -248,7 +244,7 @@ function main()
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
 	
-	level.player_starting_points = 500000;
+	level.player_starting_points = 500;
 
 	SetDvar("ai_DisableSpawn",0);
 
@@ -338,6 +334,20 @@ function rotateRandomFull(rotateSpeedMin = 6, rotateSpeedMax = 7){
     }
 }
 
+function floatRandom(floatSpeedMin = 1, floatingDist = 35)
+{
+	if (floatSpeedMin < 1)
+		floatSpeedMin = 1;
+	
+	while(isdefined(self))
+	{
+		self MoveZ(floatingDist, floatSpeedMin, 0.5, 0.5);
+		wait(floatSpeedMin);
+		self MoveZ(-floatingDist, floatSpeedMin, 0.5, 0.5);
+		wait(floatSpeedMin);
+	}
+}
+
 function zombie_limit_increase( base_limit, increase_by )
 {
     level endon( "end_game" );
@@ -348,6 +358,17 @@ function zombie_limit_increase( base_limit, increase_by )
         level.zombie_actor_limit = base_limit + (increase_by * GetPlayers().size);
         level.zombie_ai_limit = base_limit + (increase_by * GetPlayers().size);
     }
+}
+
+// For trigger and co
+function show_only_to_player(num)
+{
+	while(1)
+	{
+		self SetInvisibleToAll(); 
+		self SetVisibleToPlayer( GetPlayers()[num] );
+		wait 1;
+	}
 }
 
 function intro_screen_text(text_1 = "", text_2 = "", text_3 = "", _x, _y)

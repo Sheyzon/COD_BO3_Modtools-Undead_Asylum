@@ -8,27 +8,46 @@
 //Custom Util
 #using scripts\zm\zm_jans_haven;
 
+//Here are different coding styles together working. 
+//Some are better and some are worse.
+//Technically everything needs to be rewritten with my latest knowledge in COD Coding
+//Get to that after release.
+
 function bosstrigger()
 {
 	level flag::wait_till("initial_blackscreen_passed");
     trig = GetEnt("tele_boss_trig","targetname");
+	lever_trig = GetEnt("tele_lever_trig","targetname");
+	lever_model = GetEnt("tele_lever_model","targetname");
+	trig UseTriggerRequireLookAt();
+	lever_trig UseTriggerRequireLookAt();
+
 	wait(5); //Dirty fix for now
 	level flag::set("is_boss_time");
 	level flag::clear("is_boss_time");
+
 	level flag::wait_till("summoningkey_done");
-	trig SetHintString("Press ^3&&1^7 for bossflag"); 
+	trig waittill("trigger", player);
+	trig SetHintString(""); 
+
+	lever_trig SetHintString("Press ^3&&1^7 for lever"); 
+
+	summoningkey = util::spawn_model( "script_model", (-9593, 7207, 2590));
+	summoningkey SetModel("p7_fxanim_zm_zod_summoning_key_centered");
+	summoningkey thread zm_jans_haven::rotateRandomFull(6, 8);
+
 	while (1)
 	{
-		trig waittill("trigger", player);
+		lever_trig waittill("trigger", player);
 		if (!level flag::get("is_boss_time"))
 		{
+			lever_model RotatePitch(25, 0.2);
 			level flag::set("is_boss_time");
-			trig SetHintString("Press ^3&&1^7: flag is set"); 
 		}
 		else
 		{
+			lever_model RotatePitch(-25, 0.2);
 			level flag::clear("is_boss_time");
-			trig SetHintString("Press ^3&&1^7: flag is not set"); 
 		}
 	}
 }
@@ -55,8 +74,8 @@ function buildable_bonfire()
 	trig2 SetHintString("Press ^3&&1^7 to Place Part"); // Changes the string that shows when looking at the trigger.
 
 	trig2 waittill("trigger", player);
-	//struct MoveTo(bonfire_origin.origin, 1, 1, 1);
-	struct MoveZ(76.75, 0.01, 0, 0);
+	//struct MoveZ(76.75, 0.01, 0, 0);
+	struct.origin = struct.origin + (0, 0, 76.75);
 
 	trig2 SetHintString("Press ^3&&1^7 to Light Bonfire"); 
 
@@ -85,7 +104,7 @@ function buildable_bonfire()
 			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
-			chest thread zm_jans_haven::rotateRandomFull(6,8);
+			chest thread zm_jans_haven::rotateRandomFull(6, 8);
 			exploder::exploder("collecting_souls_summoning_fx_4");
 			trig Delete();
 			bullshit = false;
@@ -153,7 +172,7 @@ function bonfire_1()
 			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
-			chest thread zm_jans_haven::rotateRandomFull(6,8);
+			chest thread zm_jans_haven::rotateRandomFull(6, 8);
 			exploder::exploder("collecting_souls_summoning_fx_1");
 			trig Delete();
 			bullshit = false;
@@ -201,7 +220,7 @@ function bonfire_2()
 			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
-			chest thread zm_jans_haven::rotateRandomFull(6,8);
+			chest thread zm_jans_haven::rotateRandomFull(6, 8);
 			exploder::exploder("collecting_souls_summoning_fx_2");
 			trig Delete();
 			bullshit = false;
@@ -249,7 +268,7 @@ function bonfire_3()
 			chest MoveZ(80, 1, 0.1, 0.1);
 			wait(0.9);
 			chest.origin = pos.origin;
-			chest thread zm_jans_haven::rotateRandomFull(6,8);
+			chest thread zm_jans_haven::rotateRandomFull(6, 8);
 			exploder::exploder("collecting_souls_summoning_fx_3");
 			trig Delete();
 			bullshit = false;
@@ -362,7 +381,6 @@ function drop_summoning_key()
 	fxOrg = util::spawn_model( "tag_origin", trig.origin );
 	fx = PlayFxOnTag("dlc1/castle/fx_ritual_key_soul_tgt_igc", fxOrg, "tag_origin" );
 	model SetModel("p7_fxanim_zm_zod_summoning_key_centered");
-	model thread zm_jans_haven::rotateRandomFull(6,8);
 	model MoveZ(50, 1, 0.1, 0.1);
 	fxOrg MoveTo(fxOrg.origin + (0,0,50), 1, 0.1, 0.1);
 	
@@ -377,7 +395,8 @@ function drop_summoning_key()
 	model MoveZ(-50, 1, 0.1, 0.1);
 	
 	wait(1);
-	
+
+	model thread zm_jans_haven::rotateRandomFull(6, 8);
 	fxOrg = util::spawn_model( "tag_origin", trig.origin );
 	fx = PlayFxOnTag("dlc1/castle/fx_ritual_key_soul_tgt_igc", fxOrg, "tag_origin" );
 	trig SetHintString("Press ^3&&1^7 to pick up"); 
@@ -457,8 +476,9 @@ function MonitorPower()
 	//level util::set_lighting_state(0);
 }
 
-function wolf_bow_()
+function wolf_bow_() //Needs to be rewritten. Uses old method of moving objects
 {
+	// TODO: Make arrow float
 	level flag::wait_till("initial_blackscreen_passed");
 	istriggered = true;
 	trig = GetEnt("wolf_bow_trig", "targetname");
@@ -468,6 +488,8 @@ function wolf_bow_()
 	arrow_model = GetEnt("wolf_arrow", "targetname");
 	arrow_trig = GetEnt("wolf_arrow_trig", "targetname");
 	arrow_trig SetCursorHint( "HINT_NOICON" );
+	arrow_trig SetHintString(""); 
+	active_player = undefined;
 
 	desiredweapon = getWeapon("elemental_bow"); // Weapon you want the player to have when shot
 
@@ -479,53 +501,67 @@ function wolf_bow_()
         
         if( current_weapon == desiredweapon )
         {
-			arrow_model MoveZ(41, 1, 0.1, 2);
 			exploder::exploder("wolf_painting_fx");
-			wait(1);
 			exploder::exploder("wolf_arrow_fx");
 			arrow_model.origin = pos.origin;
-			arrow_trig SetHintString("Press ^3&&1^7 to pick up arrow"); 
 			arrow_trig waittill( "trigger", player );
-			arrow_model MoveZ(-41, 1, 0.1, 0.1);
+			arrow_model.origin = pos.origin + ( 0, 0, -41 );
 			player.has_arrow = "has_wolf_arrow";
 			level flag::set( "player_has_wolf_arrow" );
 			player PlayLocalSound("ee_trigger");
 			player zm_audio::create_and_play_dialog( "general", "pickup" );
 			exploder::kill_exploder("wolf_arrow_fx");
-			arrow_trig SetHintString(""); 
 			istriggered = false;
         }
 		wait(1);
     }
+
 	level flag::wait_till("soul_catchers_charged");
-	arrow_trig SetHintString("Press ^3&&1^7 to use this twigger"); 
+
+	players = GetPlayers();
+	for ( i = 0; i < players.size; i++ )
+	{
+		if (players[i].has_arrow == "has_wolf_arrow")
+		{
+			arrow_trig thread zm_jans_haven::show_only_to_player(i);
+			active_player = players[i];
+		}
+	}
+
 	exploder::exploder("wolf_recive_arrow_fx");
 	arrow_trig waittill( "trigger", player );
-	arrow_trig SetHintString(""); 
 	exploder::kill_exploder("wolf_recive_arrow_fx");
 	fxOrg = util::spawn_model( "tag_origin", fxStart.origin );
 	fx = PlayFxOnTag("dlc1/zmb_weapon/fx_bow_wolf_arrow_trail_zmb", fxOrg, "tag_origin" );
-	time = Distance(fxStart.origin,fxEnd.origin)/100;
-	fxOrg MoveTo(fxEnd.origin,time);
+	
+	wait(1);
+	
+	time = Distance(fxStart.origin,fxEnd.origin)/250;
+	wait(1);
+	fxOrg MoveTo(fxEnd.origin,time,0,1);
 	wait(time - .05);
-	fxOrg moveto(fxEnd.origin, .5);
+	fxOrg MoveTo(fxEnd.origin, .5);
 	fxOrg waittill("movedone");
 	fx = PlayFxOnTag("dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb", fxOrg, "tag_origin" );
 	
 	wait(1);
 
+	time = Distance(fxStart.origin,fxEnd.origin)/100;
 	fxOrg MoveTo(fxStart.origin,time);
 	fxOrg waittill("movedone");
 	fx Delete();
-	arrow_model MoveZ(41, 1, 0.1, 0.1);
-	wait(1);
-	arrow_trig SetHintString("Press ^3&&1^7 to pickup"); 
+	arrow_model.origin = pos.origin;
 	exploder::exploder("wolf_arrow_fx");
 	arrow_model.origin = pos.origin;
 	arrow_trig waittill( "trigger", player );
+	active_player zm_audio::create_and_play_dialog( "general", "pickup" );
 	arrow_trig Delete();
 	arrow_model Delete();
 	exploder::kill_exploder("wolf_arrow_fx");
 	exploder::kill_exploder("wolf_painting_fx");
 	level flag::set("wolf_arrow_done");
+}
+
+function second_bossfight()
+{
 }

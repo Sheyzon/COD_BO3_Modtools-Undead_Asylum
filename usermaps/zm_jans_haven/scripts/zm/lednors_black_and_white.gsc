@@ -39,6 +39,7 @@ REGISTER_SYSTEM( "lednors_bw", &__init__, undefined )
 function __init__()
 {
   level waittill( "initial_blackscreen_passed" );
+  level waittill( "intro_hud_done" );
 	thread bw_vision();
   thread ending_bw_vision();
   foreach(player in getplayers())

@@ -6,6 +6,7 @@
 #using scripts\zm\_zm_ai_dogs;
 #using scripts\zm\_zm_easteregg_song;
 #using scripts\zm\_zm_ai_mechz;
+#using scripts\zm\zm_genesis_apothicon_fury;
 
 #insert scripts\shared\shared.gsh;
 #insert scripts\shared\version.gsh;
@@ -15,22 +16,16 @@
 
 function lockdown_test()
 {
-	level flag::wait_till("initial_blackscreen_passed");
-	trig = GetEnt("lockdown", "targetname");
-	trig SetCursorHint("HINT_NOICON");
 	while (1)
 	{
-		trig SetHintString("Press ^3&&1^7 to start"); 
-
-		trig waittill("trigger", player);
-
+		level flag::wait_till("tele_to_boss_done");
+		wait(5);
 		SetDvar("ai_DisableSpawn",0);
 		thread zm_easteregg_song::play_2D_sound("hide_n_seek");
 		ori_zom_count = level.zombie_total;
 		level.infinite_spawning_enabled = true;
 		level.hellhound_spawning_enabled = true;
 		zombie_utility::set_run_speed();
-		trig SetHintString(""); 
 		
 		// Edit 0: 	need to exclude mech rounds. 
 		// 			May crash internal server during mech rounds!
@@ -38,20 +33,29 @@ function lockdown_test()
 		//			lowers zombie_total count end potentially ends round. Not wanted!
 		// Edit2: 	Dog rounds behave... Strange but OK
 		
+		wait(7);
+		zm_ai_dogs::special_dog_spawn(2);
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		s_loc = zm_ai_mechz::get_mechz_spawn_pos();
-		wait (60);
+		wait (49);
 		ai = zm_ai_mechz::spawn_mechz( s_loc, 1 );
 		waitTillFrameEnd;
 		wait (5);
 		ai = zm_ai_mechz::spawn_mechz( s_loc, 1 );
 		waitTillFrameEnd;
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		wait (115);
 		ai = zm_ai_mechz::spawn_mechz( s_loc, 1 );
 		waitTillFrameEnd;
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
+		zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		wait (44);
 		
 		level.infinite_spawning_enabled = false;
 		level.hellhound_spawning_enabled = false;
+		
 		SetDvar("ai_DisableSpawn",1);
 		zoms = GetAISpeciesArray( "axis" ); 
 		for( i=0;i<zoms.size;i++ )
@@ -62,6 +66,7 @@ function lockdown_test()
 		level.zombie_total = ori_zom_count;
 		wait(20);
 		level flag::set("lockdown_end");
+		level flag::clear("tele_to_boss_done");
 		wait(20);
 		SetDvar("ai_DisableSpawn",0);
 	}
