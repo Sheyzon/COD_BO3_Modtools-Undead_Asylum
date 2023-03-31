@@ -13,6 +13,7 @@ function init()
 	level.wtb = "welcome_to_the_breakdown_RA";
 	level.multipleActivations = true;						// whether or not the song can be activated multiple times (true means it can, false means just once)
 	level.canBePlayed = true;
+	level.music_ent = undefined;
 	/*	End of Editable Variables - don't touch anything below here */
 	
 	setupMusic();
@@ -64,11 +65,12 @@ function play_2D_sound(sound)
 	{
 		level.canBePlayed = false;
 
-		temp_ent = spawn("script_origin", (0,0,0));
-		temp_ent PlaySoundWithNotify(sound, sound + "wait");
-		temp_ent waittill (sound + "wait");
+		level.music_ent = spawn("script_origin", (0,0,0));
+		level.music_ent.targetname = "music_ent";
+		level.music_ent PlaySoundWithNotify(sound, sound + "wait");
+		level.music_ent waittill (sound + "wait");
 		wait(0.05);
-		temp_ent delete();	
+		level.music_ent delete();	
 		
 		level.canBePlayed = true;
 	}
@@ -138,5 +140,14 @@ function welcome_to_the_breakdown_RA()
 	{
 		trigger waittill("trigger", player);
 		play_2D_sound(level.wtb);
+	}
+}
+
+function kill_music()
+{
+	if (isdefined(level.music_ent))
+	{
+		level.music_ent Delete();
+		level.canBePlayed = true;
 	}
 }

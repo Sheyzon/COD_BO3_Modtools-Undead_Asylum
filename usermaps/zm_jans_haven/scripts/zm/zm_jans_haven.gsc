@@ -161,15 +161,19 @@ function main()
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_scar_pdw_up"), 5.13 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi"), 4.66 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_uzi_up"), 4.66 );
-	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
-	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg"), 5.13 );
 	inspectable::add_inspectable_weapon( GetWeapon("iw8_aug_smg_up"), 5.13 );
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun"), 5.63 );
+	inspectable::add_inspectable_weapon( GetWeapon("t9_nail_gun_up"), 5.63 );
 	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun"), 2.76 );
 	inspectable::add_inspectable_weapon( GetWeapon("t9_ray_gun_up"), 2.76 );
+	inspectable::add_inspectable_weapon( GetWeapon("s2_ppsh41_base"), 4 );
+	inspectable::add_inspectable_weapon( GetWeapon("s2_ppsh41_base_up"), 4 );
+	inspectable::add_inspectable_weapon( GetWeapon("s2_ppsh41_drum"), 4 );
+	inspectable::add_inspectable_weapon( GetWeapon("s2_ppsh41_drum_up"), 4 );
 	
 	callback::on_ai_spawned(&_zm_arenamode::infinite_spawning);
-	
+
 	level thread buyable_ending::init(); 
 
 	level thread nsz_kino_teleporter::init(); 

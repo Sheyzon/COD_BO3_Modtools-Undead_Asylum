@@ -264,7 +264,7 @@ function podium_challenge_redeem(num)
 		if(players[num].ancient_evil_challenge_power > 75)
 			reward_level = "^4Rare";
 		if(players[num].ancient_evil_challenge_power == 100)
-			reward_level = "^1Epic";
+			reward_level = "^1Epic: Max Reward Level Reached!";
 		if(isdefined(trig.has_reward))
 			trig SetHintString( "Press & Hold ^3[{+activate}]^7 To Take Reward" );
 		else

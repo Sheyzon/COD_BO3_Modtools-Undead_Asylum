@@ -1033,7 +1033,7 @@ function mechz_damage_override( e_inflictor, e_attacker, n_damage, n_flags, str_
 		if ( isDefined( level.mechz_explosive_damage_reaction_callback ) )
 			[ [ level.mechz_explosive_damage_reaction_callback ] ]();
 		
-		e_attacker mechzServerUtils::show_hit_marker();
+		//e_attacker mechzServerUtils::show_hit_marker();
 	}
 	else
 	{
@@ -1072,7 +1072,7 @@ function mechz_damage_override( e_inflictor, e_attacker, n_damage, n_flags, str_
 		else if ( str_hit_loc == "head" )
 			n_final_damage = n_damage * n_mechz_headshot_modifier;
 		
-		e_attacker mechzServerUtils::show_hit_marker();
+		//e_attacker mechzServerUtils::show_hit_marker();
 	}
 	if ( !isDefined( w_weapon ) || w_weapon.name == "none" )
 		if ( !isPlayer( e_attacker ) )

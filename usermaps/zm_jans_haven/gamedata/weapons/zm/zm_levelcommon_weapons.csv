@@ -72,7 +72,7 @@ smg_standard,smg_standard_upgraded,,1250,smg,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,
 smg_versatile,smg_versatile_upgraded,,1300,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,fastreload
 smg_sten,smg_sten_upgraded,,2000,rifle,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
 # smg_mp40,smg_mp40_upgraded,,5000,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,fastreload
-smg_ppsh,smg_ppsh_upgraded,,5000,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
+# smg_ppsh,smg_ppsh_upgraded,,5000,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
 smg_thompson,smg_thompson_upgraded,,1750,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,FALSE,smg,,,
 smg_longrange,smg_longrange_upgraded,,1750,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,FALSE,smg,,,fastreload
 smg_ak74u,smg_ak74u_upgraded,,1300,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
@@ -108,3 +108,5 @@ t8_shotgun_blundergat,t8_shotgun_blundergat_upgraded,,5000,shotgun,,,,,TRUE,FALS
 t8_shotgun_acidgat,t8_shotgun_acidgat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
 t8_shotgun_magmagat,t8_shotgun_magmagat_upgraded,,5000,shotgun,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,shotgun,,,
 spx_vine_shield,spx_vine_shield_upgraded,,500,,,,,,FALSE,FALSE,FALSE,,,FALSE,TRUE,special,TRUE,,
+s2_ppsh41_base,s2_ppsh41_base_up,,1300,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
+s2_ppsh41_drum,s2_ppsh41_drum_up,,2000,smg,,,,,TRUE,FALSE,FALSE,,,FALSE,TRUE,smg,,,
