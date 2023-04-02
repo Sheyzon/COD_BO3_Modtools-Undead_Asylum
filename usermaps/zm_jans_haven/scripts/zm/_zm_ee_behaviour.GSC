@@ -28,6 +28,7 @@ function bosstrigger()
 
 	level flag::wait_till("summoningkey_done");
 	trig waittill("trigger", player);
+	thread second_bossfight();
 	trig SetHintString(""); 
 
 	lever_trig SetHintString("Press ^3&&1^7 for lever"); 
@@ -119,16 +120,24 @@ function buildable_bonfire()
 
 function lit_bonfire()
 {
+	level flag::wait_till("initial_blackscreen_passed");
+	drop_trig = GetEnt("power_door_drop", "targetname");
 	trig = GetEnt("power_hintstring","targetname");
-	trig SetHintString("Ignite the flames"); 
+	trig SetHintString("Gate is locked. Key required"); 
 	
 	model = GetEnt("power_gate","targetname");
 	clip = GetEnt("power_door_gate_clip","targetname");
 
-	level flag::wait_till("bbf");
-	level flag::wait_till("bf1");
-	level flag::wait_till("bf2");
-	level flag::wait_till("bf3");
+	drop_trig SetHintString("Press ^3&&1^7 to Pillage altar"); 
+	exploder::exploder("powerdoor_drop_fx");
+	drop_trig waittill("trigger", player);
+	player PlayLocalSound("ee_trigger");
+	wait(1);
+	thread zm_jans_haven::intro_screen_text("Power Gate Key found", undefined, undefined, 20, -280);
+	drop_trig Delete();
+	exploder::kill_exploder("powerdoor_drop_fx");
+	trig SetHintString("Press ^3&&1^7 to open gate"); 
+	trig waittill("trigger", player);
 
 	//model MoveZ(-69, 1, 0.15, 0.05); //time needs to be at least 1
 	model RotateYaw(90, 1);
@@ -564,4 +573,15 @@ function wolf_bow_() //Needs to be rewritten. Uses old method of moving objects
 
 function second_bossfight()
 {
+	wait(1);
+	players = GetPlayers();
+	for( i = 0; i < players.size; i++ )
+	{
+		players[i] PlayLocalSound("mr");
+		Earthquake( 0.2, 2, players[i].origin, 1000);
+		wait(.7);
+		Earthquake( 0.4, 3, players[i].origin, 1000);
+		wait(2);
+		Earthquake( 0.2, 4, players[i].origin, 1000);
+	}
 }

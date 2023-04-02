@@ -10,7 +10,7 @@ dawn_of_victory,,,music\dawn_of_victory.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,
 welcome_to_the_breakdown_RA,,,music\Welcome_to_the_breakdown_RA.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,,,100,100,,,,,,,,,,,,,,100,100,0,1,,2d,music_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 hide_n_seek,,,music\hide_n_seek.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,,,100,100,,,,,,,,,,,,,,100,100,0,1,,2d,music_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 sons_of_forest_uncomfortable,,,music\sons_of_forest_uncomfortable.wav,,,UIN_MOD,,,,,BUS_MUSIC,grp_music,,,,,100,100,,,,,,,,,,,,,,100,100,0,1,,2d,music_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,yes,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-
+mr,,,sounds\matthias.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,100,100,,,,,,,,,,,,0,0,100,100,0,1,,2d,,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 bonfire_lit,,,music\bonfire_lit.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,85,85,100,500,700,,,,,,,,,0,0,100,100,0,1,,3d,,,NONLOOPING,,,,,,,0.45,,,,,,,,,,,,,,,,,,,,yes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 collect_soul_sound,,,music\collect_soul_sound.wav,,,UIN_MOD,,,,,BUS_FX,,,,,,70,70,,,,,,,,3,oldest,,,1,1,,,,,,3d,wpn_all,,NONLOOPING,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

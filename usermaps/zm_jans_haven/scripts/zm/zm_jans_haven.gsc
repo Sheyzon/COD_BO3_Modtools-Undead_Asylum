@@ -247,7 +247,7 @@ function main()
 	thread _zm_ee_behaviour::wolf_bow_();
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
-	
+
 	level.player_starting_points = 500;
 
 	SetDvar("ai_DisableSpawn",0);
