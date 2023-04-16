@@ -63,8 +63,10 @@
 */
 
 // Custom AI
+//#using scripts\zm\_hb21_zm_ai_margwa;
 #using scripts\zm\_zm_ai_mechz;
 #using scripts\zm\zm_genesis_apothicon_fury;
+#using scripts\zm\_zm_ai_napalm;
 
 // BO3 WEAPONS
 #using scripts\zm\craftables\_hb21_zm_craft_blundersplat;
@@ -200,7 +202,7 @@ function main()
 	level.explodefx = "dlc1/castle/fx_ritual_key_soul_exp_igc";
 	level thread _zm_ee_behaviour::MonitorPower();
 	//-----Perklimit-----
-	level.perk_purchase_limit = 4;
+	level.perk_purchase_limit = 5;
 
 	// Last Stand Weapon
 	lastStandWeapon = "t9_nail_gun_up";
@@ -287,6 +289,10 @@ function asylum_zone_init()
 	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "jump");
 	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "southwing_stairs_lower", "ez5");
 	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "southwing_sideroom", "ez5");
+	
+	zm_zonemgr::add_adjacent_zone( "Southwing_upper_middle", "westwing_staircase_02", "ez5");
+	zm_zonemgr::add_adjacent_zone( "westwing_staircase_02", "westwing_middle", "ez5");
+	zm_zonemgr::add_adjacent_zone( "westwing_middle", "westwing_staircase_01", "ez5");
 
 	zm_zonemgr::add_adjacent_zone( "southwing_stairs_upper", "balcony_lt", "ez6");
 	zm_zonemgr::add_adjacent_zone( "balcony_mdl", "balcony_lt", "ez6");

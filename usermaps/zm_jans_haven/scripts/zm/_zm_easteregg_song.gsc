@@ -64,6 +64,7 @@ function play_2D_sound(sound)
 	if(level.canBePlayed)
 	{
 		level.canBePlayed = false;
+		level.active_music = sound;
 
 		level.music_ent = spawn("script_origin", (0,0,0));
 		level.music_ent.targetname = "music_ent";

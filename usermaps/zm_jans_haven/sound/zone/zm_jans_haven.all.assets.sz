@@ -248,7 +248,6 @@ music\ee_loop_trigger.LL100.pc.snd
 music\ee_trigger.LN100.pc.snd
 music\end.LN100.pc.snd
 music\gameover.LN100.pc.snd
-music\hide_n_seek.LN100.pc.snd
 music\intro.LN100.pc.snd
 music\my_demons_starset.LN100.pc.snd
 music\short1.LN100.pc.snd
@@ -2066,3 +2065,4 @@ zombie\perks\perkacola\dispense.LN100.pc.snd
 zombie\perks\perkacola\open.LN100.pc.snd
 zombie\perks\perkacola\swallow.LN100.pc.snd
 sounds\matthias.LN100.pc.snd
+music\hide_n_seek.LN100.pc.snd

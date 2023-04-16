@@ -28,7 +28,6 @@ function bosstrigger()
 
 	level flag::wait_till("summoningkey_done");
 	trig waittill("trigger", player);
-	thread second_bossfight();
 	trig SetHintString(""); 
 
 	lever_trig SetHintString("Press ^3&&1^7 for lever"); 
