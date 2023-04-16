@@ -26,7 +26,7 @@ function bosstrigger()
 	level flag::set("is_boss_time");
 	level flag::clear("is_boss_time");
 
-	level flag::wait_till("summoningkey_done");
+	//level flag::wait_till("summoningkey_done");
 	trig waittill("trigger", player);
 	trig SetHintString(""); 
 
@@ -363,7 +363,10 @@ function drop_summoning_key()
 	trig = GetEnt("drop_trig_1","targetname");
 	trig UseTriggerRequireLookAt();
 
-	level flag::wait_till("power_on");
+	//level flag::wait_till("bf1");
+	//level flag::wait_till("bf2");
+	//level flag::wait_till("bf3");
+	//level flag::wait_till("bbf");
 
 	exploder::exploder("drop_1");
 	trig SetHintString("Press ^3&&1^7 to Pillage altar"); 
@@ -379,10 +382,10 @@ function drop_summoning_key()
 	wait(1);
 	
 	player zm_audio::create_and_play_dialog( "general", "pickup" );
-	level flag::wait_till("soul_trig");
-	level flag::wait_till("soul_trig2");
-	level flag::wait_till("soul_trig3");
-	level flag::wait_till("soul_trig4");
+	//level flag::wait_till("soul_trig");
+	//level flag::wait_till("soul_trig2");
+	//level flag::wait_till("soul_trig3");
+	//level flag::wait_till("soul_trig4");
 	trig waittill("trigger", player);
 
 	model = util::spawn_model( "script_model", trig.origin );
@@ -395,6 +398,11 @@ function drop_summoning_key()
 	wait(1);
 	
 	fx = PlayFxOnTag("dlc1/castle/fx_ritual_key_soul_exp_igc", fxOrg, "tag_origin" );
+	dz_painting = GetEnt("dz_painting", "targetname");
+	painting = util::spawn_model( "script_model", dz_painting.origin, (0,0,90));
+	painting SetModel("zm_asylum_bonfire_ritual_circle_ee_ver");
+	painting SetScale(0.7);
+	exploder::exploder("demongirl_zombiechan_fire_fx");
 	
 	wait(1.5);
 	

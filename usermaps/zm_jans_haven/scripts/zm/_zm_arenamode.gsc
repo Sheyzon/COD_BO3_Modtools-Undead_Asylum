@@ -3,6 +3,7 @@
 #using scripts\shared\flag_shared;
 #using scripts\shared\math_shared;
 #using scripts\shared\util_shared;
+#using scripts\shared\exploder_shared;
 #using scripts\zm\_zm_audio;
 #using scripts\zm\_zm_ai_dogs;
 #using scripts\zm\_zm_easteregg_song;
@@ -35,35 +36,37 @@ function lockdown_test()
 {
 	while (1)
 	{
-		//level flag::wait_till("tele_to_boss_done");
-		wait(5);
-		SetDvar("ai_DisableSpawn",0);
-
+		level flag::wait_till("tele_to_boss_done");
+		
 		trig = GetEnt("first_bonfire_trig", "targetname");
 		trig SetHintString("Press ^3&&1^7 to Light Bonfire");
 		trig waittill("trigger", player);
 		trig SetHintString("");
 		arenamode_init();
 
+		SetDvar("ai_DisableSpawn",0);
+		
 		wait (10);
 		// thread zm_ai_margwa_elemental::spawn_fire_margwa();
 		thread zm_ai_napalm::special_napalm_zombie_spawn(3);
 		for (i = 0; i < 6; i++)
 		{
+			wait .5;
 			thread zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		}
 		wait (15);
 		thread zm_ai_napalm::special_napalm_zombie_spawn(2);
 		for (i = 0; i < 6; i++)
 		{
+			wait .5;
 			thread zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		}
 		wait(56);
 		
+		SetDvar("ai_DisableSpawn",1);
 		level.infinite_spawning_enabled = false;
 		level.hellhound_spawning_enabled = false;
-		
-		SetDvar("ai_DisableSpawn",1);
+				
 		zoms = GetAISpeciesArray( "axis" ); 
 		for( i=0;i<zoms.size;i++ )
 		{
@@ -92,6 +95,7 @@ function arenamode_init()
 
 function set_exploder()
 {
+	exploder::exploder("kotff_bonfire_fire_fx");
 }
 
 function infinite_spawning() //gets called on every zombie!

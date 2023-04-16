@@ -12,6 +12,7 @@ wpn_t7_zmb_perk_bottle_stimup_view,1,18.08,23334.41,1,3438,5604
 wpn_t7_zmb_perk_bottle_wido_view,1,18.08,23334.41,1,3438,5604
 wpn_t7_zmb_perk_bottle_powerup_view,1,18.08,23334.41,1,3438,5604
 tag_origin,1,0.20,263.72,1,24,12
+zm_asylum_bonfire_ritual_circle_ee_ver,1,235.15,303501.28,8,4,2,4,2,4,2,4,2,4,2,4,2,4,2,4,2
 p8_anim_zm_chaos_magic_box_skull,1,85.42,110247.09,1,6242,8694
 p8_anim_zm_al_magic_box_lock_red,1,25.32,32676.89,1,2636,3009
 p7_zm_ori_magic_box_base_light_on_green,1,56.02,72305.72,1,61,100
@@ -727,7 +728,6 @@ p7_candle_med_melt_on,2,11.05,14259.92,3,129,114,164,192,336,456
 p7_candle_med_melt,3,11.05,14259.92,3,129,114,164,192,336,456
 p7_candle_sml_on,2,6.41,8270.40,3,48,34,69,78,200,296
 cob_church_candle_table_01_off,3,219.85,283751.03,3,5878,5036,10695,10072,17110,20145
-zm_asylum_bonfire_ritual_circle,2,235.15,303501.28,8,4,2,4,2,4,2,4,2,4,2,4,2,4,2,4,2
 asylum_outdoor_maya,2,8309.97,10725397.00,1,103140,77225
 kiln_of_the_first_flame,2,16206.72,20917450.00,1,282741,266314
 p7_foliage_tree_elm_english_tall_background,2,863.30,1114228.13,7,3163,2097,4105,2797,5929,4545,10491,8741,18154,18349,20871,24199,26587,34966
@@ -759,6 +759,7 @@ p7_newspaper_group_02_wet,2,141.84,183063.36,8,76,49,145,98,259,197,422,345,675,
 p7_newspaper_group_02,2,141.84,183063.36,8,76,49,145,98,259,197,422,345,675,592,1153,1234,2016,2469,3573,4938
 aac_floor_dmg_section_wood_04,2,240.76,310741.81,4,748,404,1490,842,2589,1684,4390,3370
 aac_floor_dmg_section_wood_06,2,325.79,420484.34,4,718,386,1440,808,2466,1616,4247,3232
+zm_asylum_bonfire_ritual_circle,2,235.15,303501.28,8,4,2,4,2,4,2,4,2,4,2,4,2,4,2,4,2
 wpn_t9_zm_perk_can_stamina_up_world,1,9.64,12438.19,1,8666,12978
 p8_anim_zm_chaos_magic_box_debris,1,128.16,165410.53,1,52237,70814
 p8_anim_zm_chaos_magic_box_base,1,96.09,124023.30,1,1750,2922

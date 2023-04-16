@@ -3936,6 +3936,7 @@ xmodel,zbr_cabaret_dress_04
 xmodel,zbr_cabaret_drums_01
 xmodel,zbr_ger_rack_power_02
 xmodel,zm_asylum_bonfire_ritual_circle
+xmodel,zm_asylum_bonfire_ritual_circle_ee_ver
 xmodel,zmb_barrel_beer_wood_01
 xmodel,zombietron_gib_chunk_flesh_02
 xmodelmesh,aac_coffee_table_01_lod05dcc0183
@@ -6902,6 +6903,7 @@ material,mc/metal_00
 material,mc/metal_01
 material,mc/metal_10
 material,mc/mlt_zm_asylum_ritual_circle
+material,mc/mlt_zm_asylum_ritual_circle_ee
 material,mc/mtl_aac_coffee_table_01
 material,mc/mtl_aac_couch_01_sofa
 material,mc/mtl_aac_floor_dmg_section_wood_01
@@ -10331,6 +10333,10 @@ image,i_metal_01_c
 image,i_metal_10_c
 image,i_metal_10_g
 image,i_mlt_zm_asylum_ritual_circle_c
+image,i_mlt_zm_asylum_ritual_circle_e
+image,i_mlt_zm_asylum_ritual_circle_ee_c
+image,i_mlt_zm_asylum_ritual_circle_ee_e
+image,i_mlt_zm_asylum_ritual_circle_n
 image,i_mp_hub_allies_portable_power_gen_c
 image,i_mp_hub_allies_portable_power_gen_g
 image,i_mp_hub_allies_portable_power_gen_n

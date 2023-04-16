@@ -250,7 +250,7 @@ function main()
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
 
-	level.player_starting_points = 500;
+	level.player_starting_points = 50000;
 
 	SetDvar("ai_DisableSpawn",0);
 
