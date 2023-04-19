@@ -10,7 +10,7 @@
 #define	MECHZ_POWERCAP_COVER_BASE_HEALTH								500		
 #define	MECHZ_POWERCAP_BASE_HEALTH											500		
 #define	MECHZ_ARMOR_BASE_HEALTH												250		
-#define	MECHZ_HEALTH_MAX_BASE													33500	//22500	
+#define	MECHZ_HEALTH_MAX_BASE													35500	//22500	
 #define	MECHZ_HEALTH_CO_OP_MULTI												.75		
 #define	MECHZ_HEALTH_INCREASE													12000		
 #define	MECHZ_SHOTGUN_DAMAGE_MOD											1.5		
@@ -31,7 +31,7 @@
 #define	MECHZ_MIN_ROUND_SOLO													4
 #define	MECHZ_MAX_ROUND_SOLO													6
 #define	MECHZ_ZOMBIE_PER_ROUND													1
-#define	MECHZ_ZOMBIE_MAX_PER_ROUND											1
+#define	MECHZ_ZOMBIE_MAX_PER_ROUND											2
 #define	MECHZ_FIRST_SPAWN_ROUND												8
 #define	MECHZ_FIRST_SPAWN_ROUND_SOLO										8
 #define	MECHZ_POWERUPS_ON_DEATH												array( "double_points", "insta_kill", "full_ammo", "nuke" )

@@ -1,4 +1,4 @@
-return 7003000
+return 7021000
 ^1ERROR: Material gfx_dlc1_keeper_beam was not found in gdtDB
   material:el/gfx_dlc1_keeper_beam
     fx:dlc1/castle/fx_ritual_key_soul_src_igc
@@ -29,9 +29,99 @@ return 7003000
     weaponcamo:t9_camo_nail_gun_table
       weapon:t9_nail_gun_up
         csv:zone_source/zm_jans_haven.zone
+^32 warnings encountered while processing xmodel 'p7_fxanim_zm_stal_flinger_trap_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_stal_flinger_trap_mod_f0_s1.000000_geo_BXFSHSFMMZXS2PUNWD3FGJZD5C.log
+  xmodel:p7_fxanim_zm_stal_flinger_trap_mod
+    scriptbundle:zm_stal_flinger_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^32 warnings encountered while processing xmodel 'p7_fxanim_zm_stal_flinger_trap_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_stal_flinger_trap_mod_f0_s1.000000_collision_rigid_JAIPO3DNIOEQFYYH4QGEVNS3WV.log
+  xmodel:p7_fxanim_zm_stal_flinger_trap_mod
+    scriptbundle:zm_stal_flinger_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^32 warnings encountered while processing xmodel 'p7_fxanim_zm_stal_flinger_trap_mod'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_stal_flinger_trap_mod_f0_s1.000000_geo_rigid_YW6RJ5K6PNVB6LJKM3FRYCHPX4.log
+  xmodel:p7_fxanim_zm_stal_flinger_trap_mod
+    scriptbundle:zm_stal_flinger_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3672 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod0'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod0_f0_s1.000000_geo_5K7XD2QTFPRFAE7XRPQJTJACEX.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3121 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod6'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod6_f0_s1.000000_geo_3EGPQARDHE4QDL35BEK3MTZB5W.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3DROPPED VERTS. 2 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod3'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod3_f0_s1.000000_geo_LJHBUP4NMKWNVJLYD5ELUS2W65.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3121 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod7'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod7_f0_s1.000000_geo_R5NLBWIGGUJTEWEADI5FMHGV6H.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3121 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod5'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod5_f0_s1.000000_geo_DLADVBIZL7TNQ7UP4ALD3HMH4G.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3121 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod4'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod4_f0_s1.000000_geo_LSGCAKQ5QD3M2TY5AE6L4NBCRE.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3672 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_lod1'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_lod1_f0_s1.000000_geo_LMKFLAWQFY2IKLRJGCER5RPQPB.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^34822 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod0'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod0_f0_s1.000000_geo_4UTF3KNYHYVFPKDBC23CYFH4XO.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3219 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod7'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod7_f0_s1.000000_geo_SGQZRT7YXDKJGVAX57Z5RIDEHO.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3398 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod6'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod6_f0_s1.000000_geo_RHI575A32TOWWDTUNER64L6A6E.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3703 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod4'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod4_f0_s1.000000_geo_VYA5VKQR3HATMKOD4FLCZT256U.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^3535 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod5'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod5_f0_s1.000000_geo_KUYV2TYCKSLO2YGMZAJMFSTX7W.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^31464 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod3'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod3_f0_s1.000000_geo_WLXHIGLOJWZTPSQ2RRGSFKITYJ.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^32570 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod2'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod2_f0_s1.000000_geo_H5LUVMAAVGTQA2KCOQPQJDTR37.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
+^33699 warnings encountered while processing xmodel 'p7_fxanim_zm_zod_chain_trap_heart_lod1'. Log can be found here: D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\share\assetconvert\\xmesh\v6\p7_fxanim_zm_zod_chain_trap_heart_lod1_f0_s1.000000_geo_SWJTDHLLFX4V52FWXQK4CPYX4F.log
+  xmodel:p7_fxanim_zm_zod_chain_trap_heart_mod
+    scriptbundle:zm_zod_chain_trap
+      csv:hb21_traps.zpkg
+        csv:zone_source/zm_jans_haven.zone
 ^3WARNING: "zmcore_bgb_machine" is not a valid zbarrier
   zbarrier:zmcore_bgb_machine
     col_map:maps/zm/zm_jans_haven.d3dbsp
-^3Found 4 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
+^3Found 3 bad nodes, 0 useless nodes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven.badnodes file.
   game_map:maps/zm/zm_jans_haven.d3dbsp
-^3Found 188 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.
+^3Found 195 bad bulletmeshes, dumped to D:\SteamLibrary\steamapps\common\Call of Duty Black Ops III\/usermaps\zm_jans_haven/zone_source/all/assetinfo/zm_jans_haven_bulletreport.csv file.

@@ -51,7 +51,6 @@
 /*
 //Traps
 #using scripts\zm\_zm_trap_electric;
-#using scripts\zm\_zm_trap_fire;
 #using scripts\zm\_hb21_sym_zm_trap_turret;
 #using scripts\zm\_hb21_zm_trap_flogger;
 #using scripts\zm\_hb21_zm_trap_centrifuge;
@@ -61,6 +60,7 @@
 #using scripts\zm\_hb21_sym_zm_trap_acid;
 #using scripts\zm\_hb21_sym_zm_trap_gate;
 */
+#using scripts\zm\_zm_trap_fire;
 
 // Custom AI
 //#using scripts\zm\_hb21_zm_ai_margwa;
@@ -202,7 +202,7 @@ function main()
 	level.explodefx = "dlc1/castle/fx_ritual_key_soul_exp_igc";
 	level thread _zm_ee_behaviour::MonitorPower();
 	//-----Perklimit-----
-	level.perk_purchase_limit = 5;
+	level.perk_purchase_limit = 4;
 
 	// Last Stand Weapon
 	lastStandWeapon = "t9_nail_gun_up";

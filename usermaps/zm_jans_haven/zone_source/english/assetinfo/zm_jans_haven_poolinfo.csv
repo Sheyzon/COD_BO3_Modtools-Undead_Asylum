@@ -3,8 +3,8 @@ physpreset,276,1
 physconstraints,128,0
 destructibledef,128,0
 xanim,25000,0
-xmodel,10240,8
-xmodelmesh,34816,43
+xmodel,10240,11
+xmodelmesh,34816,64
 material,20480,10
 computeshaderset,256,0
 techset,1024,5
