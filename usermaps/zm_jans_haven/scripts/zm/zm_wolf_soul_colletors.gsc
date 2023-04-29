@@ -573,7 +573,20 @@ function get_the_zoms()
 
 function watch_for_death()
 {   
+	rune_1 = GetEnt("rune_1","targetname");
+	rune_2 = GetEnt("rune_2","targetname");
+	rune_3 = GetEnt("rune_3","targetname");
+
+	rune_1 Hide();
+	rune_2 Hide();
+	rune_3 Hide();
+
     level flag::wait_till( "player_has_wolf_arrow" ); //add a gsh with a flag 
+
+	rune_1 Show();
+	rune_2 Show();
+	rune_3 Show();
+	
 	self waittill("death", attacker);
 	//IPrintLnBold("zombie_died");
 	i = 0;

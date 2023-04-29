@@ -63,7 +63,7 @@
 #using scripts\zm\_zm_trap_fire;
 
 // Custom AI
-//#using scripts\zm\_hb21_zm_ai_margwa;
+//#using scripts\zm\_hb21_zm_ai_margwa; //Not compatible with mechz
 #using scripts\zm\_zm_ai_mechz;
 #using scripts\zm\zm_genesis_apothicon_fury;
 #using scripts\zm\_zm_ai_napalm;
@@ -149,6 +149,13 @@
 #precache( "fx", "dlc1/zmb_weapon/fx_bow_wolf_impact_ug_zmb" );
 #precache( "fx", "dlc1/castle/fx_ritual_key_soul_tgt_igc" );
 
+#precache( "ssi", "undead_asylum_fantasy_ssi" );
+#precache( "ssi", "undead_asylum_fantasy_override" );
+#precache( "ssi", "firelink_shrine_fantasy_ssi" );
+#precache( "ssi", "firelink_shrine_fantasy_override" );
+#precache( "ssi", "kiln_of_the_first_flame_ssi" );
+#precache( "ssi", "kiln_of_the_first_flame_override" );
+
 #define QUICK_REVIVE_MACHINE_LIGHT_FX                       "revive_light"
 #define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX                    "sleight_light"
 #define ADDITIONAL_PRIMARY_WEAPON_MACHINE_LIGHT_FX          "additionalprimaryweapon_light"
@@ -175,7 +182,7 @@ function main()
 	inspectable::add_inspectable_weapon( GetWeapon("s2_ppsh41_drum_up"), 4 );
 	
 	callback::on_ai_spawned(&_zm_arenamode::infinite_spawning);
-
+	
 	level thread buyable_ending::init(); 
 
 	level thread nsz_kino_teleporter::init(); 
@@ -250,7 +257,7 @@ function main()
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
 
-	level.player_starting_points = 50000;
+	level.player_starting_points = 500;
 
 	SetDvar("ai_DisableSpawn",0);
 
@@ -262,17 +269,17 @@ function main()
 function asylum_zone_init()
 {
 	zm_zonemgr::add_adjacent_zone( "start_zone", "start_hallway_zone", "ez1");
-	zm_zonemgr::add_adjacent_zone( "start_hallway_zone", "start_hallway_zone_2", "ez1");
+	zm_zonemgr::add_adjacent_zone( "start_hallway_zone", "start_hallway_zone_2");
+
 	zm_zonemgr::add_adjacent_zone( "start_hallway_zone_2", "jumpad_lower", "ez2");
+	zm_zonemgr::add_adjacent_zone( "jumpad_lower", "jumpad_upper");
+	zm_zonemgr::add_adjacent_zone( "jumpad_upper", "southwing_lower");
 
-	zm_zonemgr::add_adjacent_zone( "jumpad_lower", "jumpad_upper", "ez2");
-
-	zm_zonemgr::add_adjacent_zone( "jumpad_upper", "southwing_lower", "ez2");
 	zm_zonemgr::add_adjacent_zone( "southwing_lower", "main_room", "ez3");
 
 	zm_zonemgr::add_adjacent_zone( "main_room", "pap", "pap_flag");
-	zm_zonemgr::add_adjacent_zone( "main_room", "pap2", "pap_flag");
-	zm_zonemgr::add_adjacent_zone( "pap", "pap2", "pap_flag");
+	zm_zonemgr::add_adjacent_zone( "main_room", "pap2");
+	zm_zonemgr::add_adjacent_zone( "pap", "pap2");
 	
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_middle", "ez4");
 	zm_zonemgr::add_adjacent_zone( "main_room", "westwing_staircase_01", "ez4");

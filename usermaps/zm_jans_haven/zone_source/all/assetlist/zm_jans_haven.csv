@@ -3048,7 +3048,6 @@ xmodel,asylum_mainroom_floor_maya
 xmodel,asylum_mainroom_maya
 xmodel,asylum_mainroom_pillar_top
 xmodel,asylum_outdoor_maya
-xmodel,asylum_outmap_maya
 xmodel,asylum_sith_painting
 xmodel,asylum_southwing_lower_maya
 xmodel,asylum_southwing_upper_maya
@@ -3671,6 +3670,7 @@ xmodel,sif_arena_temp
 xmodel,skybox_default_black
 xmodel,skybox_default_day
 xmodel,skybox_zm_cotd
+xmodel,skybox_zm_cotd_fls
 xmodel,skybox_zm_cotd_kiln
 xmodel,skybox_zm_der_riese
 xmodel,t8_wpn_zmb_projectile_blundergat
@@ -3992,7 +3992,6 @@ xmodelmesh,asylum_main_room_pillar_top7cab4942
 xmodelmesh,asylum_main_room_pillar_topa42aa177
 xmodelmesh,asylum_main_room_pillar_topda32786d
 xmodelmesh,asylum_outdoor_foliage_maya3ae37171
-xmodelmesh,asylum_outmap_maya16142720
 xmodelmesh,asylum_pap_mayaa0f937d3
 xmodelmesh,asylum_southwing_lower_maya9a930188
 xmodelmesh,asylum_southwing_upper_maya7370f70f
@@ -6951,9 +6950,6 @@ material,mc/m18_melt_pillar_02
 material,mc/m18_pillar_detail_01
 material,mc/m18_pillar_detail_02
 material,mc/m18_stair_01
-material,mc/m19_back_ground_10
-material,mc/m19_back_ground_13
-material,mc/m19_back_ground_13_2
 material,mc/mag_rock_lava_solid
 material,mc/mask_of_the_father_surface
 material,mc/mc_mtl_p6_zm_work_bench
@@ -8416,6 +8412,7 @@ material,mc/mtl_rus_ppsh41_receiver_base
 material,mc/mtl_rus_ppsh41_stock_base
 material,mc/mtl_rus_ppsh41_stock_base_hydrus
 material,mc/mtl_skybox_cotd
+material,mc/mtl_skybox_cotd_fls
 material,mc/mtl_skybox_cotd_kiln
 material,mc/mtl_skybox_default_black
 material,mc/mtl_skybox_default_day
@@ -9307,6 +9304,7 @@ material,wc/infinite_blackness
 material,wc/mt_pt_number_lightning_flash
 material,wc/mtl_buttercake_pie
 material,wc/mtl_drawing_unique_bunnygirl
+material,wc/mtl_ds_runes
 material,wc/mtl_hyperspeedstep
 material,wc/mtl_kiara
 material,wc/mtl_p7_zur_blood_waterfall_01
@@ -10068,6 +10066,7 @@ image,i_dragon_tooth_surface_c
 image,i_dragon_tooth_surface_g
 image,i_dragon_tooth_surface_n
 image,i_drawing_unique_bunnygirl_c
+image,i_ds_runes_c
 image,i_dun_food_sandwich_plate_01_g
 image,i_dun_food_sandwich_plate_01_o
 image,i_ease_your_mind_ganja_white_night_c
@@ -10441,9 +10440,6 @@ image,i_m18_pillar_detail_02_n
 image,i_m18_stair_01_c
 image,i_m18_stair_01_g
 image,i_m18_stair_01_n
-image,i_m19_back_ground_10_c
-image,i_m19_back_ground_13_2_c
-image,i_m19_back_ground_13_c
 image,i_mag_rock_lava_solid_c
 image,i_mag_rock_lava_solid_g
 image,i_mag_rock_lava_solid_n

@@ -27,7 +27,7 @@ function bosstrigger()
 	level flag::set("is_boss_time");
 	level flag::clear("is_boss_time");
 
-	//level flag::wait_till("summoningkey_done");
+	level flag::wait_till("summoningkey_done");
 	trig waittill("trigger", player);
 	trig SetHintString(""); 
 
@@ -387,13 +387,14 @@ function drop_summoning_key()
 	level flag::wait_till("soul_trig2");
 	level flag::wait_till("soul_trig3");
 	level flag::wait_till("soul_trig4");
-	trig waittill("trigger", player);
 
 	dz_painting = GetEnt("dz_painting", "targetname");
 	painting = util::spawn_model( "script_model", dz_painting.origin, (0,0,90));
 	painting SetModel("zm_asylum_bonfire_ritual_circle_ee_ver");
 	painting SetScale(0.7);
 	exploder::exploder("demongirl_zombiechan_fire_fx");
+
+	trig waittill("trigger", player);
 
 	model = util::spawn_model( "script_model", trig.origin );
 	fxOrg = util::spawn_model( "tag_origin", trig.origin );
