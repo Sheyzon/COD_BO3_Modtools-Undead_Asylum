@@ -155,6 +155,8 @@
 #precache( "ssi", "firelink_shrine_fantasy_override" );
 #precache( "ssi", "kiln_of_the_first_flame_ssi" );
 #precache( "ssi", "kiln_of_the_first_flame_override" );
+#precache( "fog", "undead_asylum_atmofog_spawn" );
+#precache( "fog", "undead_asylum_atmofog_bossroom" );
 
 #define QUICK_REVIVE_MACHINE_LIGHT_FX                       "revive_light"
 #define SLEIGHT_OF_HAND_MACHINE_LIGHT_FX                    "sleight_light"
@@ -254,6 +256,7 @@ function main()
 	thread _zm_ee_behaviour::watch_pap_door();
 	thread _zm_ee_behaviour::bosstrigger();
 	thread _zm_ee_behaviour::wolf_bow_();
+	thread _zm_ee_behaviour::rune_bow();
 	thread _zm_arenamode::lockdown_test();
 	thread _zm_ammomatic::MaxAmmo();
 

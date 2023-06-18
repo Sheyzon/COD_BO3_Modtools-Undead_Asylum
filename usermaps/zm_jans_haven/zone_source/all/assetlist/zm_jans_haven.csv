@@ -3185,6 +3185,7 @@ xmodel,ger_tea_set_teapot_01
 xmodel,girls_and_panzer_dakimakura
 xmodel,girls_and_panzer_poster
 xmodel,guitar
+xmodel,gwyn_statue_model
 xmodel,hur_ceiling_hook_01_b
 xmodel,hur_coffee_grinder_01
 xmodel,hur_fireplace_01
@@ -3553,6 +3554,8 @@ xmodel,p7_zm_isl_power_station_panel_03
 xmodel,p7_zm_isl_signage_medical_03
 xmodel,p7_zm_isl_specimen_container_egg
 xmodel,p7_zm_isl_specimen_container_lg
+xmodel,p7_zm_isl_specimen_container_mutant_2
+xmodel,p7_zm_isl_specimen_container_mutant_3
 xmodel,p7_zm_isl_stone_deco_01_dmg_01a_wet
 xmodel,p7_zm_isl_ww_extractor_motor_01
 xmodel,p7_zm_isl_ww_extractor_pipe_01
@@ -3595,6 +3598,7 @@ xmodel,p7_zm_shi_medical_divider_cloth_panel_02
 xmodel,p7_zm_shi_straw_thatch_debris_hay_sml
 xmodel,p7_zm_sta_computer_tower_03
 xmodel,p7_zm_sta_hay_piles_eggs_group_06
+xmodel,p7_zm_sta_statue_stone_base
 xmodel,p7_zm_sta_transformer_power
 xmodel,p7_zm_sta_wall_trench_barbed_fence_01
 xmodel,p7_zm_teddybear_sitting
@@ -3602,7 +3606,6 @@ xmodel,p7_zm_vending_packapunch
 xmodel,p7_zm_vending_packapunch_on
 xmodel,p7_zm_vending_packapunch_weapon
 xmodel,p7_zm_ver_bathtub
-xmodel,p7_zm_ver_fountain
 xmodel,p7_zm_ver_fountain_base
 xmodel,p7_zm_ver_pole_telephone_whole
 xmodel,p7_zm_ver_poster_perk_doubletap
@@ -4343,6 +4346,7 @@ xmodelmesh,guitar2cb4efcd
 xmodelmesh,guitar4c276822
 xmodelmesh,guitar7e97731f
 xmodelmesh,guitar9cc7b74
+xmodelmesh,gwyn_statue_maya_3d741625d
 xmodelmesh,havels_greatshield4d3cbc4f
 xmodelmesh,havels_greatshield66a397ad
 xmodelmesh,havels_greatshield91e3c373
@@ -6052,6 +6056,8 @@ xmodelmesh,p7_zm_isl_specimen_container_lg_lod07d273088
 xmodelmesh,p7_zm_isl_specimen_container_lg_lod08054dc86
 xmodelmesh,p7_zm_isl_specimen_container_lg_lod0a1a30891
 xmodelmesh,p7_zm_isl_specimen_container_lg_lod0a503ac04
+xmodelmesh,p7_zm_isl_specimen_container_mutant_2_lod08ac6389c
+xmodelmesh,p7_zm_isl_specimen_container_mutant_3_lod03e613aa0
 xmodelmesh,p7_zm_isl_stone_deco_01_dmg_01a_wet_lod0d7ade6d1
 xmodelmesh,p7_zm_isl_ww_extractor_motor_01_lod0bce47dfe
 xmodelmesh,p7_zm_isl_ww_extractor_pipe_01_lod03a3470f4
@@ -6119,6 +6125,7 @@ xmodelmesh,p7_zm_sta_computer_tower_03_lod017b859a9
 xmodelmesh,p7_zm_sta_computer_tower_03_lod09ac69313
 xmodelmesh,p7_zm_sta_computer_tower_03_lod09afc357f
 xmodelmesh,p7_zm_sta_hay_piles_eggs_group_06_lod02cab2fdd
+xmodelmesh,p7_zm_sta_statue_stone_base_lod0e8ff8b5
 xmodelmesh,p7_zm_sta_transformer_power_lod086921cf1
 xmodelmesh,p7_zm_sta_wall_trench_barbed_fence_01_lod011baf2e9
 xmodelmesh,p7_zm_sta_wall_trench_barbed_fence_01_lod01d5d1447
@@ -6145,7 +6152,6 @@ xmodelmesh,p7_zm_vending_packapunch_weapon_lod02b8eda8
 xmodelmesh,p7_zm_vending_pap_body_col75e90a9
 xmodelmesh,p7_zm_ver_bathtub_lod0854a8c7e
 xmodelmesh,p7_zm_ver_fountain_base_lod0ae8a7d05
-xmodelmesh,p7_zm_ver_fountain_lod056ffaaec
 xmodelmesh,p7_zm_ver_pole_telephone_whole_lod0d4306976
 xmodelmesh,p7_zm_ver_poster_perk_doubletap_lod063f76d08
 xmodelmesh,p7_zm_ver_poster_perk_juggernog_lod07e1f4f9f
@@ -7706,12 +7712,14 @@ material,mc/mtl_p7_zm_isl_pipe_hp_12_straight_rust
 material,mc/mtl_p7_zm_isl_pipe_hp_12_valve_01_rust
 material,mc/mtl_p7_zm_isl_power_station_panel
 material,mc/mtl_p7_zm_isl_signage_medical_03
+material,mc/mtl_p7_zm_isl_specimen_container_clone
 material,mc/mtl_p7_zm_isl_specimen_container_drips_decal_01
 material,mc/mtl_p7_zm_isl_specimen_container_glass
 material,mc/mtl_p7_zm_isl_specimen_container_interior
 material,mc/mtl_p7_zm_isl_specimen_container_metal_stainless
 material,mc/mtl_p7_zm_isl_specimen_container_screws_chrome
 material,mc/mtl_p7_zm_isl_specimen_container_silhouette
+material,mc/mtl_p7_zm_isl_specimen_container_tentacles
 material,mc/mtl_p7_zm_isl_specimen_container_trims_brass
 material,mc/mtl_p7_zm_isl_specimen_container_trims_copper
 material,mc/mtl_p7_zm_isl_specimen_container_trims_copper2
@@ -7929,6 +7937,15 @@ material,mc/mtl_p7_zm_sta_flinger_trap_gate_metal2
 material,mc/mtl_p7_zm_sta_flinger_trap_gate_metal3
 material,mc/mtl_p7_zm_sta_sophia_metal_ball_01
 material,mc/mtl_p7_zm_sta_sophia_metal_ball_01_gold
+material,mc/mtl_p7_zm_sta_statue_stone_set_01
+material,mc/mtl_p7_zm_sta_statue_stone_set_03
+material,mc/mtl_p7_zm_sta_statue_stone_set_05
+material,mc/mtl_p7_zm_sta_statue_stone_set_decal_01
+material,mc/mtl_p7_zm_sta_statue_stone_set_decal_02
+material,mc/mtl_p7_zm_sta_statue_stone_set_decal_03
+material,mc/mtl_p7_zm_sta_statue_stone_set_decal_04
+material,mc/mtl_p7_zm_sta_statue_stone_set_dirt_01
+material,mc/mtl_p7_zm_sta_statue_stone_set_dirt_02
 material,mc/mtl_p7_zm_sta_transformer_power_decal
 material,mc/mtl_p7_zm_sta_transformer_power_metal
 material,mc/mtl_p7_zm_sta_transformer_power_paint_01
@@ -7978,10 +7995,7 @@ material,mc/mtl_p7_zm_ver_bathtub_broken
 material,mc/mtl_p7_zm_ver_bathtub_dirty_01
 material,mc/mtl_p7_zm_ver_bathtub_dirty_02
 material,mc/mtl_p7_zm_ver_bathtub_metal
-material,mc/mtl_p7_zm_ver_fountain_01
-material,mc/mtl_p7_zm_ver_fountain_02
 material,mc/mtl_p7_zm_ver_fountain_03
-material,mc/mtl_p7_zm_ver_fountain_04
 material,mc/mtl_p7_zm_ver_fountain_decal_01
 material,mc/mtl_p7_zm_ver_fountain_decal_02
 material,mc/mtl_p7_zm_ver_fountain_decal_03
@@ -11280,6 +11294,8 @@ image,i_mtl_p7_zm_isl_light_wall_vintage_metal_m
 image,i_mtl_p7_zm_isl_light_wall_vintage_metal_n
 image,i_mtl_p7_zm_isl_medical_stool_leather_m
 image,i_mtl_p7_zm_isl_medical_stool_leather_n
+image,i_mtl_p7_zm_isl_plant_babysitter_tentacles_n
+image,i_mtl_p7_zm_isl_plant_clone_n
 image,i_mtl_p7_zm_isl_power_station_panel_c
 image,i_mtl_p7_zm_isl_power_station_panel_g
 image,i_mtl_p7_zm_isl_power_station_panel_n
@@ -11391,6 +11407,8 @@ image,i_mtl_p7_zm_shi_lamp_post_wood_lrg_n
 image,i_mtl_p7_zm_shi_lamp_post_wood_med_m
 image,i_mtl_p7_zm_shi_lamp_post_wood_med_n
 image,i_mtl_p7_zm_shi_straw_thatch_debris_hay_c
+image,i_mtl_p7_zm_sta_statue_stone_set_01_m
+image,i_mtl_p7_zm_sta_statue_stone_set_01_n
 image,i_mtl_p7_zm_sta_transformer_power_paint_01_m
 image,i_mtl_p7_zm_sta_transformer_power_paint_01_n
 image,i_mtl_p7_zm_sta_transformer_power_paint_02_m
@@ -11458,10 +11476,6 @@ image,i_mtl_p7_zm_vending_wonder_04_m
 image,i_mtl_p7_zm_vending_wonder_04_n
 image,i_mtl_p7_zm_ver_bathtub_m
 image,i_mtl_p7_zm_ver_bathtub_n
-image,i_mtl_p7_zm_ver_fountain_01_m
-image,i_mtl_p7_zm_ver_fountain_01_n
-image,i_mtl_p7_zm_ver_fountain_02_m
-image,i_mtl_p7_zm_ver_fountain_02_n
 image,i_mtl_p7_zm_ver_fountain_03_m
 image,i_mtl_p7_zm_ver_poster_perk_doubletap_c
 image,i_mtl_p7_zm_ver_poster_perk_juggernog_c
@@ -15328,6 +15342,8 @@ fx,dlc1/castle/fx_parasite_acid_drop_impact_115_doa
 fx,dlc1/castle/fx_ritual_key_soul_exp_igc
 fx,dlc1/castle/fx_ritual_key_soul_src_igc
 fx,dlc1/castle/fx_ritual_key_soul_tgt_igc
+fx,dlc1/castle/fx_rune_arrow_reveal_glow
+fx,dlc1/castle/fx_rune_arrow_shaft_float_glow
 fx,dlc1/castle/fx_tesla_trap_body_exp.efx
 fx,dlc1/castle/fx_trap_smasher_impact_point
 fx,dlc1/castle/fx_trap_smasher_impact_point.efx
@@ -15444,6 +15460,8 @@ fx,dlc4/genesis/fx_apothicon_fury_wisp_trail_wide
 fx,dlc4/genesis/fx_corrupteng_zombie_death_energy_trail_thick
 fx,dlc4/genesis/fx_corrupteng_zombie_death_energy_trail_thin
 fx,dlc4/genesis/fx_corrupteng_zombie_soul_115
+fx,dlc4/genesis/fx_fire_torch_pitch
+fx,dlc4/genesis/fx_lgt_gen_fire_01
 fx,dlc4/genesis/fx_rune_glow_purple
 fx,dlc4/genesis/fx_wisp_tendril_115_loop
 fx,dlc5/cosmo/fx_zmb_csm_centrifuge_steam_blst.efx
@@ -15706,6 +15724,7 @@ tagfx,weapon_elemental_rune_zm_1p_persist
 tagfx,weapon_elemental_storm_zm_1p_persist
 klf,0c7f653a-0762-49fa-9e45-c5ba413cc43e
 klf,1048996b-dc27-49b9-ad3d-0d4ee1ea0c8a
+klf,15a172c2-68f3-4d20-8135-5678c64d3e42
 klf,1b41e645-ae40-4347-a981-171578678b6d
 klf,22be5420-fe3b-4ccf-9111-cfd465c44764
 klf,2c9e86c8-ae82-4b63-b71a-e7852c5d2cc2
@@ -16088,6 +16107,7 @@ lightdescription,light896162568312647000
 lightdescription,new-1021104245
 lightdescription,new-1178179403
 lightdescription,new-1194646738
+lightdescription,new-1239563590
 lightdescription,new-1349465614
 lightdescription,new-1396942381
 lightdescription,new-1416858157
@@ -16200,6 +16220,7 @@ lightdescription,new884123318758818327
 lightdescription,new954888721292720938
 lightdescription,new95801446-1771607721
 lightdescription,zm_factory_barrel_fire_test_1b-1309833037
+lightdescription,zm_factory_barrel_fire_test_1b-1456571281
 lightdescription,zm_factory_barrel_fire_test_1b-582539130
 lightdescription,zm_factory_barrel_fire_test_1b14540711662014451197
 lightdescription,zm_factory_barrel_fire_test_1b1506139125

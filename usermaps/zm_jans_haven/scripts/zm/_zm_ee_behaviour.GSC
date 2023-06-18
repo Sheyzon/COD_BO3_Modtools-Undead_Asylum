@@ -496,6 +496,7 @@ function MonitorPower()
 function wolf_bow_() //Needs to be rewritten. Uses old method of moving objects
 {
 	// TODO: Make arrow float
+	// TODO: Sounds
 	level flag::wait_till("initial_blackscreen_passed");
 	istriggered = true;
 	trig = GetEnt("wolf_bow_trig", "targetname");
@@ -577,6 +578,40 @@ function wolf_bow_() //Needs to be rewritten. Uses old method of moving objects
 	exploder::kill_exploder("wolf_arrow_fx");
 	exploder::kill_exploder("wolf_painting_fx");
 	level flag::set("wolf_arrow_done");
+}
+
+function rune_bow() //Needs to be rewritten. Uses old method of moving objects
+{
+	level flag::wait_till("initial_blackscreen_passed");
+	trig = GetEnt("rune_bow_trig", "targetname");
+	arrow_trig = GetEnt("rune_arrow_trig", "targetname");
+	arrow_trig SetCursorHint( "HINT_NOICON" );
+	arrow_trig SetHintString(""); 
+	desiredweapon = getWeapon("elemental_bow"); // Weapon you want the player to have when shot
+	istriggered = true;
+
+    while(istriggered)
+    {        
+        trig waittill( "trigger", player );
+        current_weapon = player getCurrentWeapon();
+		        
+        if( current_weapon == desiredweapon )
+        {	
+			exploder::exploder("rune_arrow_fx");
+			rune_arrow_model = util::spawn_model( "script_model", (-7747, 6677, 2430));
+			rune_arrow_model SetModel("wpn_t7_zmb_bow_rune_projectile");
+			arrow_trig waittill( "trigger", player );
+			rune_arrow_model Delete();
+			exploder::kill_exploder("rune_arrow_fx");
+			player.has_arrow = "has_rune_arrow";
+			level flag::set( "player_has_rune_arrow" );
+			player PlayLocalSound("ee_trigger");
+			player zm_audio::create_and_play_dialog( "general", "pickup" );
+        }
+		wait(1);
+    }
+
+	//TODO: Actual EE steps
 }
 
 function second_bossfight()

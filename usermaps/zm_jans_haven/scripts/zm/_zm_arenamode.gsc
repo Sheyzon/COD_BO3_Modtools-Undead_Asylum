@@ -61,7 +61,14 @@ function lockdown_test()
 			wait .5;
 			thread zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
 		}
-		wait(56);
+		wait (15);
+		thread zm_ai_napalm::special_napalm_zombie_spawn(2);
+		for (i = 0; i < 6; i++)
+		{
+			wait .5;
+			thread zm_genesis_apothicon_fury::apothicon_fury_special_spawn();
+		}
+		wait(30);
 		
 		SetDvar("ai_DisableSpawn",1);
 		level.infinite_spawning_enabled = false;
